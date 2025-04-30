@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "title": "Krastorio 2 Spaced Out",
   "description": "Overhaul merging Krastorio 2 with Space Age Mechanics.",
-  "author": "Emily37",
+  "contact": "https://discord.gg/wCR2MVYqef",
+  "homepage": "https://github.com/Polka37/Krastorio2-Spaced-Out",
+  "author": "Polka_37",
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0.42",
