@@ -263,26 +263,6 @@ data:extend({
       { type = "unlock-recipe", recipe = "kr-portable-generator-equipment" },
     },
   },
-  -- TODO: Remove this and modify the base tech instead
-  {
-    type = "technology",
-    name = "kr-radar",
-    icon = "__Krastorio2Assets__/technologies/radar.png",
-    icon_size = 256,
-    unit = {
-      time = 30,
-      count = 200,
-      ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
-      },
-    },
-    prerequisites = { "chemical-science-pack", "kr-sentinel" },
-    effects = {
-      { type = "unlock-recipe", recipe = "radar" },
-    },
-  },
   {
     type = "technology",
     name = "kr-reinforced-plates",

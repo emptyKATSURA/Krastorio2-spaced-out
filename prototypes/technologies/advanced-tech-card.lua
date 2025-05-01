@@ -30,9 +30,10 @@ data:extend({
         { "utility-science-pack", 1 },
         { "kr-matter-tech-card", 1 },
         { "kr-advanced-tech-card", 1 },
+        { "agricultural-science-pack", 1 },
       },
     },
-    prerequisites = { "kr-advanced-tech-card" },
+    prerequisites = { "kr-advanced-tech-card", "carbon-fiber" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-advanced-chemical-plant" },
       { type = "unlock-recipe", recipe = "kr-electronic-components-with-lithium" },
@@ -44,16 +45,17 @@ data:extend({
     icon = "__Krastorio2Assets__/technologies/advanced-furnace.png",
     icon_size = 256,
     unit = {
-      time = 45,
-      count = 500,
+      time = 30,
+      count = 2000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
         { "kr-matter-tech-card", 1 },
         { "kr-advanced-tech-card", 1 },
+        { "metallurgic-science-pack", 1 },
       },
     },
-    prerequisites = { "kr-energy-control-unit", "kr-advanced-tech-card" },
+    prerequisites = { "kr-energy-control-unit", "kr-advanced-tech-card", "metallurgic-science-pack" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-advanced-furnace" },
     },
@@ -221,14 +223,15 @@ data:extend({
     icon_size = 256,
     unit = {
       time = 45,
-      count = 750,
+      count = 2000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
         { "kr-advanced-tech-card", 1 },
+        { "kr-singularity-tech-card", 1 },
       },
     },
-    prerequisites = { "kr-logistic-4", "kr-advanced-tech-card" },
+    prerequisites = { "turbo-transport-belt", "kr-singularity-tech-card" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-superior-splitter" },
       { type = "unlock-recipe", recipe = "kr-superior-transport-belt" },

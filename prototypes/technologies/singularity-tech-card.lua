@@ -80,7 +80,7 @@ data:extend({
     icon_size = 256,
     unit = {
       time = 60,
-      count = 3000,
+      count = 10000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -88,34 +88,12 @@ data:extend({
         { "kr-matter-tech-card", 1 },
         { "kr-advanced-tech-card", 1 },
         { "kr-singularity-tech-card", 1 },
+        { "promethium-science-pack", 1 },
       },
     },
-    prerequisites = { "kr-singularity-tech-card" },
+    prerequisites = { "kr-singularity-tech-card", "promethium-science-pack" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-intergalactic-transceiver" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-logo",
-    enabled = false,
-    icon = "__Krastorio2Assets__/technologies/k-logo.png",
-    icon_size = 256,
-    unit = {
-      time = 60,
-      count = 666000,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "kr-singularity-tech-card", 1 },
-      },
-    },
-    prerequisites = { "kr-intergalactic-transceiver" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-logo" },
     },
   },
   {
@@ -185,7 +163,7 @@ data:extend({
     prerequisites = { "effect-transmission", "kr-singularity-tech-card" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-planetary-teleporter" },
-      { type = "unlock-recipe", recipe = "kr-gps-satellite" },
+      { type = "unlock-recipe", recipe = "kr-gps-satellite" }, --change to gps module
     },
   },
   {

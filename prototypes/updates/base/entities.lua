@@ -436,7 +436,7 @@ data.raw["spider-vehicle"]["spidertron"].energy_source = {
 }
 data.raw["spider-vehicle"]["spidertron"].movement_energy_consumption = "3MW"
 
-data.raw["splitter"]["express-splitter"].next_upgrade = "kr-advanced-splitter"
+data.raw["splitter"]["turbo-splitter"].next_upgrade = "kr-superior-splitter"
 
 data.raw["generator"]["steam-turbine"].effectivity = 1
 data.raw["generator"]["steam-turbine"].fluid_box.minimum_temperature = 100
@@ -456,7 +456,7 @@ data.raw.wall["stone-wall"].resistances = {
   { type = "laser", percent = 70 },
 }
 
-data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "kr-advanced-transport-belt"
+data.raw["transport-belt"]["turbo-transport-belt"].next_upgrade = "kr-superior-transport-belt"
 
 data.raw["turret"]["behemoth-worm-turret"].max_health = 5000
 data.raw["turret"]["big-worm-turret"].max_health = 2500
@@ -464,8 +464,8 @@ data.raw["turret"]["medium-worm-turret"].max_health = 950
 
 data.raw["underground-belt"]["fast-underground-belt"].max_distance = 10
 
-data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "kr-advanced-underground-belt"
-data.raw["underground-belt"]["express-underground-belt"].max_distance = 20
+data.raw["underground-belt"]["turbo-underground-belt"].next_upgrade = "kr-superior-underground-belt"
+data.raw["underground-belt"]["turbo-underground-belt"].max_distance = 20
 
 data.raw["unit"]["behemoth-biter"].max_health = 3500
 data.raw["unit"]["big-biter"].max_health = 500
@@ -501,3 +501,22 @@ data.raw.corpse["spitter-spawner-corpse"].time_before_removed = 5 * minute
 data.raw.corpse["spitter-spawner-corpse"].hidden_in_factoriopedia = false
 data.raw.corpse["spitter-spawner-corpse"].mined_sound =
   { filename = "__Krastorio2Assets__/sounds/tiles/creep-deconstruction.ogg" }
+
+data.raw["lab"]["biolab"].inputs = {
+      "kr-basic-tech-card",
+      "automation-science-pack",
+      "logistic-science-pack",
+      "military-science-pack",
+      "chemical-science-pack",
+      "production-science-pack",
+      "utility-science-pack",
+      "space-science-pack",
+      "kr-matter-tech-card",
+      "kr-advanced-tech-card",
+      "kr-singularity-tech-card",
+      "metallurgic-science-pack",
+      "agricultural-science-pack",
+      "electromagnetic-science-pack",
+      "cryogenic-science-pack",
+      "promethium-science-pack",
+    }

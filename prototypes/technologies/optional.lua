@@ -1,7 +1,6 @@
 local data_util = require("data-util")
 
 if settings.startup["kr-loaders"].value then
-  data_util.add_recipe_unlock("kr-logistic-4", "kr-advanced-loader")
   data_util.add_recipe_unlock("kr-logistic-5", "kr-superior-loader")
 end
 

@@ -39,7 +39,7 @@ data:extend({
       { type = "unlock-recipe", recipe = "kr-advanced-solar-panel" },
     },
   },
-  {
+  --[[{
     type = "technology",
     name = "kr-battery-mk3-equipment",
     icon_size = 256,
@@ -60,7 +60,7 @@ data:extend({
       { type = "unlock-recipe", recipe = "kr-battery-mk3-equipment" },
       { type = "unlock-recipe", recipe = "kr-big-battery-mk3-equipment" },
     },
-  },
+  },]]--
   {
     type = "technology",
     name = "kr-nuclear-locomotive",
