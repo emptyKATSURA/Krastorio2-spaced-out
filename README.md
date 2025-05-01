@@ -6,7 +6,7 @@
 ### Manual installation
 - Download as zip
 - Move to factorio mods folder
-- Rename the zipped file to "Krastorio2-spaced-out_[Current_Version]"
+- Rename the zipped file to "Krastorio2-spaced-out_[Current_Version].zip"
 
 ## Description:
 Version of Krastorio2 compatibile with Space Age DLC and Quality.
