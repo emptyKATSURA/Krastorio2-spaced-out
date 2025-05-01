@@ -1,9 +1,12 @@
 # Krastorio2-Spaced-Out
 
 ## Installing:
+### Download from mod portal
+- Download the modin game
+### Manual installation
 - Download as zip
 - Move to factorio mods folder
-- Rename the zipped file to "Krastorio2-spaced-out_0.0.1"
+- Rename the zipped file to "Krastorio2-spaced-out_[Current_Version]"
 
 ## Description:
 Version of Krastorio2 compatibile with Space Age DLC and Quality.
@@ -11,9 +14,8 @@ Version of Krastorio2 compatibile with Space Age DLC and Quality.
 Thanks to raigurd, Krastor and Linver for making original Krastorio2
 
 ## Plans:
-- add a liquid mineral ocean moon rich in rare metals to Nauvis
-- add a new planet "Imimersos" focusing on immersite and matter reconstruction
-- Rebalance Space Age & Krastorio2
-- Fix the tech tree
+- add a liquid mineral ocean moon rich in rare metals orbiting around Nauvis
+- add a new planet "Imersos" focusing on immersite and matter reconstruction
+- Further improve K2 intergration with Space Age
   
 # TODO
