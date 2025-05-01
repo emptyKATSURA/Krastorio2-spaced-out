@@ -104,15 +104,13 @@ function data_util.add_recipe_unlock(technology_name, recipe_name)
   if not technology then
     error("Technology " .. technology_name .. " does not exist.")
   end
-end --temp
---[[  for _, effect in pairs(technology.effects) do
+  for _, effect in pairs(technology.effects) do
     if effect.type == "unlock-recipe" and effect.recipe == recipe_name then
       error("Technology " .. technology_name .. " already unlocks recipe " .. recipe_name .. ".")
     end
   end
   table.insert(technology.effects, { type = "unlock-recipe", recipe = recipe_name })
 end
---]]
 --- Removes the given recipe from the unlocks of the given technology.
 --- @param technology_name data.TechnologyID
 --- @param recipe_name data.RecipeID
@@ -155,7 +153,7 @@ end
 --- Removes the given prerequisite from the technology.
 --- @param technology_id data.TechnologyID
 --- @param prerequisite_id data.TechnologyID
---[[ function data_util.remove_prerequisite(technology_id, prerequisite_id)
+function data_util.remove_prerequisite(technology_id, prerequisite_id)
   local technology = data.raw.technology[technology_id]
   if not technology then
     error("Technology " .. technology_id .. " does not exist.")
@@ -169,7 +167,7 @@ end
     error("Technology " .. technology_id .. " does not have prerequisite " .. prerequisite_id)
   end
   table.remove(technology.prerequisites, i)
-end --]]
+end
 
 --- Converts one research unit ingredient to another, updating science pack prerequisites if needed.
 --- @param technology_id data.TechnologyID

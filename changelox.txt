@@ -1,6 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2025-04-01
+     Changes:
+        -Made the game completable from start to finish (I think)
+        -Moved Technologies around the tech tree
+        -Rebalanced Krastorio2 buildings around space age
+        -Added molten recipes for enriched ores
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2025-04-30
-    Features:
-        -just started.
+     Changes:
+        -just started
 ---------------------------------------------------------------------------------------------------
