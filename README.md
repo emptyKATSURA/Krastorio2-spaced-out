@@ -2,7 +2,7 @@
 
 ## Installing:
 ### Download from mod portal
-- Download the modin game
+- Download the mod with ingame mod manager
 ### Manual installation
 - Download as zip
 - Move to factorio mods folder
