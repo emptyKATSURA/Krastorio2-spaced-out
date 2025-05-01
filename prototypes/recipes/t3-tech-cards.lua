@@ -80,4 +80,28 @@ data:extend({
     },
     allow_productivity = true,
   },
+    {
+    type = "recipe",
+    name = "kr-space-research-data",
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+      { type = "item", name = "carbon", amount = 1 },
+      { type = "item", name = "ice", amount = 1 },
+      { type = "item", name = "iron-plate", amount = 2 },
+    },
+       surface_conditions =
+    {
+      {
+        property = "gravity",
+        min = 0,
+        max = 0
+      }
+    },
+    results = {
+      { type = "item", name = "kr-space-research-data", amount = 5 },
+    },
+    allow_productivity = true,
+     main_product = "kr-space-research-data"
+  },
 })
