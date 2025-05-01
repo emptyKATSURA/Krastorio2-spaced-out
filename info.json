@@ -1,6 +1,6 @@
 {
   "name": "Krastorio2-spaced-out",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "title": "Krastorio 2 Spaced Out",
   "description": "Overhaul merging Krastorio 2 with Space Age Mechanics.",
   "contact": "https://discord.gg/wCR2MVYqef",
@@ -13,6 +13,7 @@
     "ChangeInserterDropLane >= 1.1.0",
     "quality >= 2.0.42",
     "space-age >= 2.0.42",
+    "PlanetsLib >= 1.3.4",
     "! Krastorio2"
   ],
     "quality_required": true,
