@@ -41,6 +41,7 @@ data:extend({
     energy_usage = "750kW",
     supply_area_distance = 2.0,
     distribution_effectivity = 2.25,
+    distribution_effectivity_bonus_per_quality_level = 0.25,
     profile = require("prototypes.buildings.singularity-beacon-profile"),
     beacon_counter = "same_type",
     max_health = 300,

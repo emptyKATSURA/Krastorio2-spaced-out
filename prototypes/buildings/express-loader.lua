@@ -35,7 +35,7 @@ data:extend({
     minable = { mining_time = 0.25, result = "kr-express-loader" },
     placeable_by = { item = "kr-express-loader", count = 1 },
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "kr-advanced-loader",
+    next_upgrade = "kr-superior-loader",
     collision_box = { { -0.4, -0.45 }, { 0.4, 0.45 } },
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     speed = data.raw["transport-belt"]["express-transport-belt"].speed,

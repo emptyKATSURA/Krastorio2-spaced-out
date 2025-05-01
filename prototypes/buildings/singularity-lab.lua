@@ -8,11 +8,11 @@ data:extend({
     energy_required = 120,
     enabled = false,
     ingredients = {
-      { type = "item", name = "kr-ai-core", amount = 20 },
-      { type = "item", name = "kr-advanced-lab", amount = 5 },
-      { type = "item", name = "steel-plate", amount = 40 },
-      { type = "item", name = "electric-engine-unit", amount = 30 },
-      { type = "item", name = "kr-rare-metals", amount = 60 },
+      { type = "item", name = "kr-ai-core", amount = 100 },
+      { type = "item", name = "biolab", amount = 5 },
+      { type = "item", name = "lithium-plate", amount = 300 },
+      { type = "item", name = "electric-engine-unit", amount = 50 },
+      { type = "item", name = "kr-rare-metals", amount = 200 },
       { type = "item", name = "processing-unit", amount = 100 },
     },
     results = { { type = "item", name = "kr-singularity-lab", amount = 1 } },
@@ -35,20 +35,39 @@ data:extend({
     fast_replaceable_group = "assembling-machine",
     collision_box = { { -3.75, -3.75 }, { 3.75, 3.75 } },
     selection_box = { { -3.9, -3.9 }, { 3.9, 3.9 } },
-    researching_speed = 1,
-    science_pack_drain_rate_percent = 35, --new
+    researching_speed = 10,
+    science_pack_drain_rate_percent = 40, --new
+        include_all_base_lab_science = true, --PlanetsLib
     inputs = {
+      "kr-basic-tech-card",
+      "automation-science-pack",
+      "logistic-science-pack",
+      "military-science-pack",
+      "chemical-science-pack",
       "production-science-pack",
       "utility-science-pack",
-      kr_optimization_tech_card_name,
+      "space-science-pack",
       "kr-matter-tech-card",
       "kr-advanced-tech-card",
       "kr-singularity-tech-card",
+      "metallurgic-science-pack",
+      "agricultural-science-pack",
+      "electromagnetic-science-pack",
+      "cryogenic-science-pack",
+      "promethium-science-pack",
     },
-    module_slots = 4,
+    module_slots = 6,
     energy_source = { type = "electric", usage_priority = "secondary-input" },
-    energy_usage = "10MW",
+    energy_usage = "100MW",
     max_health = 2000,
+    surface_conditions =
+      {
+        {
+          property = "pressure",
+          min = 0,
+          max = 0
+        }
+      },
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "big-explosion",
     corpse = "kr-big-random-pipes-remnant",

@@ -34,7 +34,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "kr-advanced-furnace" },
     max_health = 2000,
-    effect_receiver = { base_effect = { productivity = 1 }}, --new
+    effect_receiver = { base_effect = { productivity = 0.5 }},
     corpse = "kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
     resistances = {
@@ -115,7 +115,7 @@ data:extend({
     crafting_categories = { "smelting", "kr-advanced-smelting", "metallurgy", "pressing", "crafting-with-fluid-or-metallurgy", "metallurgy-or-assembling" }, --edited
     crafting_speed = 12,
     ingredient_count = 6,
-    module_slots = 4,
+    module_slots = 6,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     energy_source = {
       type = "electric",

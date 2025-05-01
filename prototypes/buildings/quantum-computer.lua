@@ -43,11 +43,9 @@ data:extend({
     energy_required = 120,
     enabled = false,
     ingredients = {
-      { type = "item", name = "kr-steel-beam", amount = 20 },
-      { type = "item", name = "copper-plate", amount = 20 },
       { type = "item", name = "kr-rare-metals", amount = 50 },
       { type = "item", name = "kr-ai-core", amount = 50 },
-      { type = "item", name = "kr-electronic-components", amount = 100 },
+      { type = "item", name = "quantum-processor", amount = 50 },
       { type = "item", name = "processing-unit", amount = 100 },
     },
     results = { { type = "item", name = "kr-quantum-computer", amount = 1 } },
@@ -73,7 +71,7 @@ data:extend({
     crafting_categories = { "kr-research-data", "kr-t2-tech-cards", "kr-t3-tech-cards" },
     crafting_speed = 3,
     module_slots = 4,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     fluid_boxes = {
       {
         production_type = "input",
@@ -102,7 +100,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = { pollution = 5 },
     },
-    energy_usage = "1MW",
+    energy_usage = "5MW",
     max_health = 1000,
     corpse = "kr-medium-random-pipes-remnant",
     dying_explosion = "medium-explosion",

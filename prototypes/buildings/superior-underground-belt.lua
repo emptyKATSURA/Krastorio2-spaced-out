@@ -2,11 +2,12 @@ data:extend({
   {
     type = "recipe",
     name = "kr-superior-underground-belt",
+    category = "metallurgy",
     energy_required = 2,
     enabled = false,
     ingredients = {
-      { type = "item", name = "kr-advanced-underground-belt", amount = 2 },
-      { type = "item", name = "kr-superior-transport-belt", amount = 40 },
+      { type = "item", name = "turbo-underground-belt", amount = 2 },
+      { type = "item", name = "turbo-transport-belt", amount = 40 },
     },
     results = { { type = "item", name = "kr-superior-underground-belt", amount = 2 } },
   },

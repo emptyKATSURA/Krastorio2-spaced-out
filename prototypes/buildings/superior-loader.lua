@@ -9,11 +9,12 @@ data:extend({
   {
     type = "recipe",
     name = "kr-superior-loader",
+    category = "metallurgy",
     energy_required = 2,
     enabled = false,
     ingredients = {
-      { type = "item", name = "kr-superior-transport-belt", amount = 1 },
-      { type = "item", name = "kr-advanced-loader", amount = 2 },
+      { type = "item", name = "turbo-transport-belt", amount = 1 },
+      { type = "item", name = "turbo-loader", amount = 2 },
       { type = "item", name = "kr-imersium-gear-wheel", amount = 10 },
     },
     results = { { type = "item", name = "kr-superior-loader", amount = 1 } },
