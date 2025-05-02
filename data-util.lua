@@ -40,7 +40,7 @@ end
 function data_util.add_effect(technology_name, new_effect)
   local technology = data.raw.technology[technology_name]
   if not technology then
-    error("Technology " .. technology_name .. " does not exist.")
+    --error("Technology " .. technology_name .. " does not exist.")
   end
   local effects = technology.effects
   if not effects or not next(effects) then
@@ -106,7 +106,7 @@ function data_util.add_recipe_unlock(technology_name, recipe_name)
   end
   for _, effect in pairs(technology.effects) do
     if effect.type == "unlock-recipe" and effect.recipe == recipe_name then
-      error("Technology " .. technology_name .. " already unlocks recipe " .. recipe_name .. ".")
+      --error("Technology " .. technology_name .. " already unlocks recipe " .. recipe_name .. ".")
     end
   end
   table.insert(technology.effects, { type = "unlock-recipe", recipe = recipe_name })
@@ -134,18 +134,18 @@ end
 function data_util.add_prerequisite(technology_id, prerequisite_id)
   local technology = data.raw.technology[technology_id]
   if not technology then
-    error("Technology " .. technology_id .. " does not exist.")
+    --error("Technology " .. technology_id .. " does not exist.")
   end
   local prerequisite = data.raw.technology[prerequisite_id]
   if not prerequisite then
-    error("Technology prerequisite " .. prerequisite_id .. " does not exist.")
+    --error("Technology prerequisite " .. prerequisite_id .. " does not exist.")
   end
   if not technology.prerequisites then
     technology.prerequisites = { prerequisite_id }
     return
   end
   if flib_table.find(technology.prerequisites, prerequisite_id) then
-    error("Technology " .. technology_id .. " already has prerequisite " .. prerequisite_id)
+    --error("Technology " .. technology_id .. " already has prerequisite " .. prerequisite_id)
   end
   table.insert(technology.prerequisites, prerequisite_id)
 end
@@ -160,11 +160,11 @@ function data_util.remove_prerequisite(technology_id, prerequisite_id)
   end
   local prerequisite = data.raw.technology[prerequisite_id]
   if not prerequisite then
-    error("Technology prerequisite " .. prerequisite_id .. " does not exist.")
+    --error("Technology prerequisite " .. prerequisite_id .. " does not exist.")
   end
   local i = flib_table.find(technology.prerequisites or {}, prerequisite_id)
   if not i then
-    error("Technology " .. technology_id .. " does not have prerequisite " .. prerequisite_id)
+    --error("Technology " .. technology_id .. " does not have prerequisite " .. prerequisite_id)
   end
   table.remove(technology.prerequisites, i)
 end
@@ -187,7 +187,7 @@ function data_util.convert_research_unit_ingredient(technology_id, from_id, to_i
       converted = true
       ingredient[1] = to_id
     elseif ingredient[1] == to_id then
-      error("Technology " .. technology_id .. " already has research unit ingredient " .. to_id)
+      --error("Technology " .. technology_id .. " already has research unit ingredient " .. to_id)
     end
   end
   if not converted then

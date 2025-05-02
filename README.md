@@ -6,12 +6,12 @@
 ### Manual installation
 - Download as zip
 - Move to factorio mods folder
-- Rename the zipped file to "Krastorio2-spaced-out_[Current_Version].zip"
+- Rename the zipped file to "Krastorio2-spaced-out_[Current_Version]"
 
 ## Description:
 Version of Krastorio2 compatibile with Space Age DLC and Quality.
 ## Credits:
-Thanks to raiguard, Krastor and Linver for making original Krastorio2
+Thanks to raigurd, Krastor and Linver for making original Krastorio2
 
 ## Plans:
 - add a liquid mineral ocean moon rich in rare metals orbiting around Nauvis
