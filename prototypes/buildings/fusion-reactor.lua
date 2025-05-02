@@ -22,6 +22,7 @@ data:extend({
     order = "f[nuclear-energy]-b2[fusion-reactor]",
     place_result = "kr-fusion-reactor",
     stack_size = 1,
+        weight = 1000*kg,
   },
   {
     type = "assembling-machine",

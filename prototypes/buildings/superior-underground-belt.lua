@@ -19,6 +19,7 @@ data:extend({
     order = "b[underground-belt]-e[superior-underground-belt]",
     place_result = "kr-superior-underground-belt",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "underground-belt",

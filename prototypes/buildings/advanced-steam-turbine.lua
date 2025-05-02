@@ -21,6 +21,7 @@ data:extend({
     order = "f[nuclear-energy]-e2[advanced-steam-turbine]",
     place_result = "kr-advanced-steam-turbine",
     stack_size = 25,
+    weight = 250*kg,
   },
   {
     type = "generator",

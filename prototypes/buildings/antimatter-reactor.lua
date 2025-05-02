@@ -25,6 +25,7 @@ data:extend({
     order = "z-h[antimatter-reactor]-c[antimatter-reactor]",
     place_result = "kr-antimatter-reactor",
     stack_size = 1,
+    weight = 1000*kg,
   },
   {
     type = "burner-generator",

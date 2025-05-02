@@ -25,6 +25,7 @@ data:extend({
     order = "g[lab]-g3[kr-singularity-lab]",
     place_result = "kr-singularity-lab",
     stack_size = 25,
+    weight = 1000*kg,
   },
   {
     type = "lab",

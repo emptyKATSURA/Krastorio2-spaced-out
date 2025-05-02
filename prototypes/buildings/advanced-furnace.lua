@@ -26,6 +26,7 @@ data:extend({
     order = "c[electric-furnace]-f[advanced-furnace]",
     place_result = "kr-advanced-furnace",
     stack_size = 50,
+    weight = 300*kg,
   },
   {
     type = "assembling-machine",

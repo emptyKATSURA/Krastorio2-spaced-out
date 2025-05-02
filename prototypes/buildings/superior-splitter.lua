@@ -21,6 +21,7 @@ data:extend({
     order = "c[splitter]-e[superior-splitter]",
     place_result = "kr-superior-splitter",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "splitter",

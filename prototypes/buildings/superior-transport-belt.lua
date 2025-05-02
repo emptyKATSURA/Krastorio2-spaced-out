@@ -22,6 +22,7 @@ data:extend({
     order = "a[transport-belt]-e[superior-transport-belt]",
     place_result = "kr-superior-transport-belt",
     stack_size = 100,
+    weight = 20*kg,
   },
   {
     type = "transport-belt",
