@@ -944,7 +944,7 @@ data:extend({
     order = "e01[ei-inserter-parts]",
     stack_size = 200,
   },
-  {
+--[[ {
     type = "item",
     name = "kr-gps-satellite",
     rocket_launch_products = { { type = "item", name = "kr-teleportation-gps-module", amount = 1 } },
@@ -968,7 +968,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "u01[a1-gps-satellite]",
     stack_size = 1,
-  },
+  },--]]
   {
     type = "item",
     name = "kr-teleportation-gps-module",
