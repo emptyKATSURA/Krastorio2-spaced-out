@@ -10,11 +10,11 @@
 
 ## Description:
 Version of Krastorio2 compatibile with Space Age DLC and Quality.
+
 ## Credits:
-Thanks to raigurd, Krastor and Linver for making original Krastorio2
+Thanks to raiguard, Krastor and Linver for making original Krastorio2
 
 ## Plans:
-- add a liquid mineral ocean moon rich in rare metals orbiting around Nauvis
 - add a new planet "Imersos" focusing on immersite and matter reconstruction
 - Further improve K2 intergration with Space Age
   
