@@ -163,7 +163,7 @@ data:extend({
     prerequisites = { "effect-transmission", "kr-singularity-tech-card" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-planetary-teleporter" },
-      { type = "unlock-recipe", recipe = "kr-gps-satellite" }, --change to gps module
+      { type = "unlock-recipe", recipe = "kr-teleportation-gps-module" },
     },
   },
   {

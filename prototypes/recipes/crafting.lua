@@ -190,14 +190,14 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-gps-satellite",
+    name = "kr-teleportation-gps-module",
     enabled = false,
     energy_required = 5,
     ingredients = {
       { type = "item", name = "processing-unit", amount = 20 },
       { type = "item", name = "kr-ai-core", amount = 10 },
     },
-    results = { { type = "item", name = "kr-gps-satellite", amount = 1 } },
+    results = { { type = "item", name = "kr-teleportation-gps-module", amount = 1 } },
   },
   {
     type = "recipe",
