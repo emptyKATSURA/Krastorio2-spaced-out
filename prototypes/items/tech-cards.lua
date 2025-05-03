@@ -6,6 +6,7 @@ data:extend({
     subgroup = "science-pack",
     order = "a00[blank-tech-card]",
     stack_size = 200,
+    hidden = true,
   },
   {
     type = "item",

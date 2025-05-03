@@ -13,7 +13,7 @@ data:extend({
       { type = "fluid", name = "kr-nitrogen", amount = 50 },
     },
     results = {
-      { type = "fluid", name = "kr-ammonia", amount = 50 },
+      { type = "fluid", name = "ammonia", amount = 50 },
     },
     always_show_made_in = true,
     always_show_products = true,
@@ -60,7 +60,7 @@ data:extend({
     },
     results = {
       { type = "item", name = "kr-enriched-copper", amount = 6 },
-      { type = "fluid", name = "kr-dirty-water", amount = 25, catalyst_amount = 25 },
+      { type = "fluid", name = "kr-dirty-water", amount = 25, ignored_by_productivity = 25 },
     },
     allow_productivity = true,
     always_show_made_in = true,
@@ -90,7 +90,7 @@ data:extend({
     },
     results = {
       { type = "item", name = "kr-enriched-iron", amount = 6 },
-      { type = "fluid", name = "kr-dirty-water", amount = 25, catalyst_amount = 25 },
+      { type = "fluid", name = "kr-dirty-water", amount = 25, ignored_by_productivity = 25 },
     },
     always_show_made_in = true,
     always_show_products = true,
@@ -118,7 +118,7 @@ data:extend({
     },
     results = {
       { type = "item", name = "kr-enriched-rare-metals", amount = 6 },
-      { type = "fluid", name = "kr-dirty-water", amount = 25, catalyst_amount = 25 },
+      { type = "fluid", name = "kr-dirty-water", amount = 25, ignored_by_productivity = 25 },
     },
     allow_productivity = true,
     always_show_made_in = true,
@@ -287,7 +287,7 @@ data:extend({
     category = "chemistry",
     energy_required = 5,
     ingredients = {
-      { type = "fluid", name = "kr-ammonia", amount = 50 },
+      { type = "fluid", name = "ammonia", amount = 50 },
       { type = "fluid", name = "kr-mineral-water", amount = 25 },
       { type = "item", name = "kr-rare-metals", amount = 1 },
     },

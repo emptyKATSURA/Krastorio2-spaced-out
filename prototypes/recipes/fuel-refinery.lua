@@ -154,7 +154,7 @@ data:extend({
     category = "kr-fuel-refinery",
     ingredients = {
       { type = "item", name = "iron-plate", amount = 1 },
-      { type = "fluid", name = "kr-ammonia", amount = 50 },
+      { type = "fluid", name = "ammonia", amount = 50 },
       { type = "fluid", name = "kr-oxygen", amount = 50 },
     },
     results = {

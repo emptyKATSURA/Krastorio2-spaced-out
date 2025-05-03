@@ -1,4 +1,20 @@
 data:extend({
+    {
+        type = "recipe",
+        name = "kr-carbide-processing-circuit",
+        icons = {
+          { icon = "__base__/graphics/icons/processing-unit.png" },
+          { icon = "__space-age__/graphics/icons/tungsten-carbide.png", scale = 0.26, shift = { -8, -8 } },
+        },
+        category = "electronics",
+        energy_required = 6,
+        ingredients = {
+          { type = "fluid", name = "sulfuric-acid", amount = 10 },
+          { type = "item", name = "advanced-circuit", amount = 6 },
+          { type = "item", name = "tungsten-carbide", amount = 3 },
+        },
+        results = { { type = "item", name = "processing-unit", amount = 2 } },
+  },
   {
     type = "recipe",
     name = "kr-antimatter-artillery-shell",
@@ -74,18 +90,6 @@ data:extend({
       { type = "item", name = "advanced-circuit", amount = 1 },
     },
     results = { { type = "item", name = "kr-basic-railgun-shell", amount = 1 } },
-  },
-  {
-    type = "recipe",
-    name = "kr-basic-tech-card",
-    enabled = true,
-    energy_required = 20,
-    ingredients = {
-      { type = "item", name = "wood", amount = 5 },
-      { type = "item", name = "copper-cable", amount = 5 },
-    },
-    results = { { type = "item", name = "kr-basic-tech-card", amount = 5 } },
-    allow_productivity = true,
   },
   {
     type = "recipe",

@@ -75,7 +75,7 @@ end
 --- Specifies a custom emissions multiplier for each fluid.
 --- @type table<data.FluidID, double>
 local auto_fluid_emissions_multiplier = {
-  ["kr-ammonia"] = 4.0,
+  ["ammonia"] = 4.0,
   ["kr-chlorine"] = 2.0,
   ["crude-oil"] = 9.0,
   ["kr-dirty-water"] = 6.0,

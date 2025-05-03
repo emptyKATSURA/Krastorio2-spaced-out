@@ -3,7 +3,7 @@ data:extend({
     type = "recipe",
     name = "kr-advanced-tech-card",
     enabled = false,
-    category = "kr-t3-tech-cards",
+--    category = "kr-t3-tech-cards",
     energy_required = 20,
     ingredients = {
       { type = "item", name = "kr-blank-tech-card", amount = 15 },
@@ -20,7 +20,7 @@ data:extend({
     type = "recipe",
     name = "kr-matter-research-data",
     enabled = false,
-    category = "kr-t3-tech-cards",
+--    category = "kr-tech-cards",
     energy_required = 20,
     ingredients = {
       { type = "item", name = "kr-imersite-crystal", amount = 5 },
@@ -37,7 +37,6 @@ data:extend({
     type = "recipe",
     name = "kr-matter-tech-card",
     enabled = false,
-    category = "kr-t3-tech-cards",
     energy_required = 20,
     ingredients = {
       { type = "item", name = "kr-blank-tech-card", amount = 15 },
@@ -53,7 +52,6 @@ data:extend({
     type = "recipe",
     name = "kr-singularity-tech-card",
     enabled = false,
-    category = "kr-t3-tech-cards",
     energy_required = 20,
     ingredients = {
       { type = "item", name = "kr-blank-tech-card", amount = 15 },
@@ -69,7 +67,7 @@ data:extend({
     type = "recipe",
     name = kr_optimization_tech_card_name,
     enabled = false,
-    category = "kr-t3-tech-cards",
+--    category = "kr-tech-cards",
     energy_required = 20,
     ingredients = {
       { type = "item", name = "kr-blank-tech-card", amount = 10 },

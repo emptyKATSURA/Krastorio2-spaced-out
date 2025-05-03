@@ -16,6 +16,21 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "kr-coke-carbon",
+    enabled = false,
+    category = "smelting",
+    energy_required = 16,
+    ingredients = {
+      { type = "item", name = "carbon", amount = 6 },
+      { type = "item", name = "wood", amount = 6 },
+    },
+    results = {
+      { type = "item", name = "kr-coke", amount = 6 },
+    },
+    allow_productivity = true,
+  },
+  {
+    type = "recipe",
     name = "kr-copper-plate-from-enriched-copper",
     icons = {
       { icon = "__Krastorio2Assets__/icons/items/copper-plate.png" },
