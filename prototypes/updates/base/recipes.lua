@@ -36,6 +36,11 @@ data_util.add_or_replace_ingredient(
   "iron-plate",
   { type = "item", name = "kr-iron-beam", amount = 4 }
 )
+data_util.add_or_replace_ingredient(
+  "assembling-machine-1",
+  "electronic-circuit",
+  { type = "item", name = "kr-automation-core", amount = 3 }
+)
 
 data.raw.recipe["assembling-machine-2"].energy_required = 2
 

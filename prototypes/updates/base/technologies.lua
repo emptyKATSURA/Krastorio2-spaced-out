@@ -2,7 +2,7 @@ local data_util = require("data-util")
 
 data_util.add_prerequisite("advanced-circuit", "kr-silicon-processing")
 data_util.add_prerequisite("atomic-bomb", "kr-military-5")
-data_util.add_prerequisite("automation", "electronics")
+data_util.add_prerequisite("automation", "kr-automation-core")
 data_util.add_prerequisite("automation-science-pack", "kr-laboratory")
 data_util.add_prerequisite("automobilism", "kr-fuel")
 data_util.add_prerequisite("battery-equipment", "modular-armor")
@@ -107,9 +107,13 @@ data_util.remove_recipe_unlock("military-3", "slowdown-capsule")
 data_util.remove_recipe_unlock("oil-processing", "chemical-plant")
 
 data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
---data.raw.technology["automation-science-pack"].research_trigger = nil
 
-
+data.raw.technology["automation"].unit = nil
+data.raw.technology["automation"].research_trigger = {
+      type = "craft-item",
+      item = "kr-automation-core",
+      count = 10
+    }
 
 data.raw.technology["artillery"].unit.count = 1000
 data.raw.technology["atomic-bomb"].unit.count = 1500

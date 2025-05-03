@@ -1,19 +1,21 @@
 data:extend({
-    {
-        type = "recipe",
-        name = "kr-carbide-processing-circuit",
-        icons = {
-          { icon = "__base__/graphics/icons/processing-unit.png" },
-          { icon = "__space-age__/graphics/icons/tungsten-carbide.png", scale = 0.26, shift = { -8, -8 } },
-        },
-        category = "electronics",
-        energy_required = 6,
-        ingredients = {
-          { type = "fluid", name = "sulfuric-acid", amount = 10 },
-          { type = "item", name = "advanced-circuit", amount = 6 },
-          { type = "item", name = "tungsten-carbide", amount = 3 },
-        },
-        results = { { type = "item", name = "processing-unit", amount = 2 } },
+  {
+    type = "recipe",
+    name = "kr-carbide-processing-circuit",
+    enabled = false,
+    energy_required = 12,
+    icons = {
+      { icon = "__base__/graphics/icons/processing-unit.png" },
+      { icon = "__space-age__/graphics/icons/tungsten-carbide.png", scale = 0.26, shift = { -8, -8 } },
+    },
+    category = "electronics",
+    energy_required = 6,
+    ingredients = {
+      { type = "fluid", name = "sulfuric-acid", amount = 10 },
+      { type = "item", name = "advanced-circuit", amount = 6 },
+      { type = "item", name = "tungsten-carbide", amount = 3 },
+    },
+    results = { { type = "item", name = "processing-unit", amount = 2 } },
   },
   {
     type = "recipe",
