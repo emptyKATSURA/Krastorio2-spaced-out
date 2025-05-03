@@ -16,7 +16,7 @@ require("prototypes.updates.base.weapons-realistic")
 require("prototypes.updates.base.weapons-standard")
 
 require("prototypes.updates.add-automation-core-recipes")
-require("prototypes.updates.add-basic-tech-card")
+--require("prototypes.updates.add-basic-tech-card")
 require("prototypes.updates.adjust-spawn-rates")
 require("prototypes.updates.adjust-stack-sizes")
 require("prototypes.updates.convert-furnaces-to-assemblers")
