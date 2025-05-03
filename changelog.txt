@@ -1,31 +1,39 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2025-04-03
+  Changes:
+    - Moved automation 1, so there is less handcrafting required in early game
+  Bugfixes:
+    - Fixed that changelog didn't show up in game
+    - Fixed recipe processing units from carbide being available from the start
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 2025-04-03
-   Features:
+  Features:
     - Added alternative recipes for coke and proccesing units to make them craftable on gleba and vulcanus.
     - Evolved past need for basic tech cards. Early game techs are now handled by triggers.
-   Changes:
+  Changes:
     - Krastorio ammonia and vanilla ammonia had been merged.
     - Buffed infinite techs.
-   Bugfixes:
+  Bugfixes:
     - Fixed that ore enrichment recipes produced extra heavy water with productivity.
     - Fixed now superior loader now requires correct loader to craft.
     - Fixed optimisation tech cards should now be craftable.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2025-04-02
-   Changes:
+  Changes:
     - Rifle ammo now only requires iron to make it craftable in space.
     - Added weight to ensure all correct buildings can be send to platforms.
     - Removed GPS satellite and made GPS module craftable.
-   Bugfixes:
+  Bugfixes:
     - Fixed Squeak Through 2 compatability.
     - Fixed crash in experimental version related to lack of lubricant in express belts.
     - Fixed the migration script relating to original krastorio2 versions.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2025-04-01
-   Changes:
+  Changes:
     - Made the game completable from start to finish. (I think)
     - Moved Technologies around the tech tree.
     - Rebalanced Krastorio2 buildings around space age.
@@ -33,5 +41,5 @@ Date: 2025-04-01
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2025-04-30
-   Changes:
+  Changes:
     - Just started.
