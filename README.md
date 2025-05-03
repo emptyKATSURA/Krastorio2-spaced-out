@@ -13,9 +13,3 @@ Version of Krastorio2 compatibile with Space Age DLC and Quality.
 
 ## Credits:
 Thanks to raiguard, Krastor and Linver for making original Krastorio2
-
-## Plans:
-- add a new planet "Imersos" focusing on immersite and matter reconstruction
-- Further improve K2 intergration with Space Age
-  
-# TODO
