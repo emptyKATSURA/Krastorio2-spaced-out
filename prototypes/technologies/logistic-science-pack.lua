@@ -8,7 +8,6 @@ data:extend({
       time = 45,
       count = 150,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },
@@ -27,7 +26,6 @@ data:extend({
       time = 45,
       count = 125,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },
@@ -48,7 +46,6 @@ data:extend({
       time = 30,
       count = 250,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },
@@ -67,7 +64,6 @@ data:extend({
       time = 30,
       count = 50,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },
@@ -87,7 +83,6 @@ data:extend({
       time = 30,
       count = 125,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },
@@ -108,7 +103,6 @@ data:extend({
       time = 30,
       count = 100,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },
@@ -129,7 +123,6 @@ data:extend({
       time = 30,
       count = 120,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },

@@ -1,5 +1,5 @@
 data:extend({
-  {
+--[[ {
     type = "fluid",
     name = "kr-ammonia",
     icon = "__Krastorio2Assets__/icons/fluids/ammonia.png",
@@ -11,7 +11,8 @@ data:extend({
     base_color = { r = 0.25, g = 0.25, b = 0.45 },
     flow_color = { r = 0.25, g = 0.25, b = 0.45 },
     auto_barrel = true,
-  },
+    hidden = true,
+  },]]--
   {
     type = "fluid",
     name = "kr-biomethanol",

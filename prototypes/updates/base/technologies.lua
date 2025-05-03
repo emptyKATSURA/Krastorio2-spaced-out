@@ -62,12 +62,7 @@ data_util.remove_prerequisite("solar-energy", "steel-processing")
 --  data_util.remove_prerequisite("elevated-rail", "concrete")
 --end
 
-data_util.convert_research_unit_ingredient("military", "automation-science-pack", "kr-basic-tech-card")
-data_util.convert_research_unit_ingredient("stone-wall", "automation-science-pack", "kr-basic-tech-card")
-
-data_util.add_research_unit_ingredient("automation", "kr-basic-tech-card")
-
-data_util.remove_research_unit_ingredient("automation", "automation-science-pack")
+--data_util.remove_research_unit_ingredient("automation", "automation-science-pack")
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 
 data_util.add_recipe_unlock("advanced-circuit", "kr-electronic-components")
@@ -90,10 +85,12 @@ data_util.add_recipe_unlock("rocket-fuel", "kr-rocket-fuel-with-ammonia")
 data_util.add_recipe_unlock("rocket-fuel", "kr-rocket-fuel-with-hydrogen-chloride")
 data_util.add_recipe_unlock("solar-panel-equipment", "kr-big-solar-panel-equipment")
 data_util.add_recipe_unlock("steel-processing", "kr-coke")
+data_util.add_recipe_unlock("steel-processing", "kr-coke-carbon")
 data_util.add_recipe_unlock("steel-processing", "kr-steel-beam")
 data_util.add_recipe_unlock("steel-processing", "kr-steel-gear-wheel")
 data_util.add_recipe_unlock("foundry", "molten-enriched-copper")
 data_util.add_recipe_unlock("foundry", "molten-enriched-iron")
+data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
 
 if settings.startup["kr-loaders"].value then
   data_util.add_recipe_unlock("logistics", "kr-loader")
@@ -110,45 +107,9 @@ data_util.remove_recipe_unlock("military-3", "slowdown-capsule")
 data_util.remove_recipe_unlock("oil-processing", "chemical-plant")
 
 data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
-data.raw.technology["automation-science-pack"].research_trigger = nil
-data.raw.technology["automation-science-pack"].unit = {
-  time = 30,
-  count = 50,
-  ingredients = {
-    { "kr-basic-tech-card", 1 },
-  },
-}
-data.raw.technology["electronics"].research_trigger = nil
--- Disable cost multiplier to avoid manually crafting unreasonable amount of basic tech cards due to assembly machines not being available.
-data.raw.technology["electronics"].ignore_tech_cost_multiplier = true
-data.raw.technology["electronics"].unit = {
-  time = 10,
-  count = 10,
-  ingredients = {
-    { "kr-basic-tech-card", 1 },
-  },
-}
+--data.raw.technology["automation-science-pack"].research_trigger = nil
 
-data.raw.technology["steam-power"].research_trigger = nil
--- Disable cost multiplier to avoid manually crafting unreasonable amount of wind turbines.
-data.raw.technology["steam-power"].ignore_tech_cost_multiplier = true
-data.raw.technology["steam-power"].unit = {
-  time = 10,
-  count = 10,
-  ingredients = {
-    { "kr-basic-tech-card", 1 },
-  },
-}
 
-data.raw.technology["steel-axe"].research_trigger = nil
-data.raw.technology["steel-axe"].unit = {
-  time = 30,
-  count = 50,
-  ingredients = {
-    { "kr-basic-tech-card", 1 },
-    { "automation-science-pack", 1 },
-  },
-}
 
 data.raw.technology["artillery"].unit.count = 1000
 data.raw.technology["atomic-bomb"].unit.count = 1500
@@ -396,10 +357,10 @@ data:extend({
     },
     prerequisites = { "physical-projectile-damage-7", "kr-advanced-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "bullet", modifier = 0.1 },
-      { type = "turret-attack", turret_id = "gun-turret", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "shotgun-shell", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "cannon-shell", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "bullet", modifier = 0.3 },
+      { type = "turret-attack", turret_id = "gun-turret", modifier = 0.3 },
+      { type = "ammo-damage", ammo_category = "shotgun-shell", modifier = 0.4 },
+      { type = "ammo-damage", ammo_category = "cannon-shell", modifier = 1 },
     },
   },
   {
@@ -432,10 +393,10 @@ data:extend({
     },
     prerequisites = { "physical-projectile-damage-11", "kr-singularity-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "bullet", modifier = 0.1 },
-      { type = "turret-attack", turret_id = "gun-turret", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "shotgun-shell", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "cannon-shell", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "bullet", modifier = 0.3 },
+      { type = "turret-attack", turret_id = "gun-turret", modifier = 0.3 },
+      { type = "ammo-damage", ammo_category = "shotgun-shell", modifier = 0.4 },
+      { type = "ammo-damage", ammo_category = "cannon-shell", modifier = 1 },
     },
   },
   {
@@ -467,10 +428,9 @@ data:extend({
     },
     prerequisites = { "stronger-explosives-7", "kr-advanced-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "rocket", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "grenade", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "artillery-shell", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "landmine", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "rocket", modifier = 0.5 },
+      { type = "ammo-damage", ammo_category = "grenade", modifier = 0.2 },
+      { type = "ammo-damage", ammo_category = "landmine", modifier = 0.2 },
     },
   },
   {
@@ -503,10 +463,9 @@ data:extend({
     },
     prerequisites = { "stronger-explosives-11", "kr-singularity-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "rocket", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "grenade", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "artillery-shell", modifier = 0.1 },
-      { type = "ammo-damage", ammo_category = "landmine", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "rocket", modifier = 0.5 },
+      { type = "ammo-damage", ammo_category = "grenade", modifier = 0.2 },
+      { type = "ammo-damage", ammo_category = "landmine", modifier = 0.2 },
     },
   },
   {
@@ -538,8 +497,8 @@ data:extend({
     },
     prerequisites = { "refined-flammables-7", "kr-advanced-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "flamethrower", modifier = 0.1 },
-      { type = "turret-attack", turret_id = "flamethrower-turret", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "flamethrower", modifier = 0.2 },
+      { type = "turret-attack", turret_id = "flamethrower-turret", modifier = 0.2 },
     },
   },
   {
@@ -572,8 +531,8 @@ data:extend({
     },
     prerequisites = { "refined-flammables-11", "kr-singularity-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "flamethrower", modifier = 0.1 },
-      { type = "turret-attack", turret_id = "flamethrower-turret", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "flamethrower", modifier = 0.2 },
+      { type = "turret-attack", turret_id = "flamethrower-turret", modifier = 0.2 },
     },
   },
   {
@@ -604,7 +563,7 @@ data:extend({
     },
     prerequisites = { "laser-weapons-damage-7", "kr-advanced-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "laser", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "laser", modifier = 1 },
     },
   },
   {
@@ -636,7 +595,7 @@ data:extend({
     },
     prerequisites = { "laser-weapons-damage-11", "kr-singularity-tech-card" },
     effects = {
-      { type = "ammo-damage", ammo_category = "laser", modifier = 0.1 },
+      { type = "ammo-damage", ammo_category = "laser", modifier = 1 },
     },
   },
   {

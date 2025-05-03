@@ -33,7 +33,6 @@ data:extend({
       time = 30,
       count = 300,
       ingredients = {
-        { "kr-basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
         { "chemical-science-pack", 1 },

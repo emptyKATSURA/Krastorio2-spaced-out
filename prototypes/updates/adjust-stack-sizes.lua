@@ -89,6 +89,5 @@ data.raw.item["kr-steel-gear-wheel"].stack_size = kr_stack_size_value
 data.raw.item["kr-tritium"].stack_size = kr_stack_size_value
 data.raw.item["kr-used-pollution-filter"].stack_size = kr_stack_size_value * 0.5
 data.raw.tool["kr-advanced-tech-card"].stack_size = 200
-data.raw.tool["kr-basic-tech-card"].stack_size = 200
 data.raw.tool["kr-matter-tech-card"].stack_size = 200
 data.raw.tool["kr-singularity-tech-card"].stack_size = 200
