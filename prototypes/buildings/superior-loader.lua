@@ -14,7 +14,7 @@ data:extend({
     enabled = false,
     ingredients = {
       { type = "item", name = "turbo-transport-belt", amount = 1 },
-      { type = "item", name = "turbo-loader", amount = 2 },
+      { type = "item", name = "kr-express-loader", amount = 2 },
       { type = "item", name = "kr-imersium-gear-wheel", amount = 10 },
     },
     results = { { type = "item", name = "kr-superior-loader", amount = 1 } },

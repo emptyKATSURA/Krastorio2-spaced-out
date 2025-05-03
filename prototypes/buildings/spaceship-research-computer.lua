@@ -39,7 +39,7 @@ data:extend({
     },
     energy_usage = "60kW",
     researching_speed = 1,
-    inputs = { "kr-basic-tech-card" },
+    inputs = { "automation-science-pack" },
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     vehicle_impact_sound = sounds.generic_impact,

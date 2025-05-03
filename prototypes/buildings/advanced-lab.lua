@@ -36,7 +36,6 @@ data:extend({
     science_pack_drain_rate_percent = 80, --new
     include_all_base_lab_science = true,
     inputs = {
-      "kr-basic-tech-card",
       "automation-science-pack",
       "logistic-science-pack",
       "military-science-pack",

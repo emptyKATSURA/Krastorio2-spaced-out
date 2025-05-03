@@ -45,7 +45,7 @@ data:extend({
     ingredients = {
       { type = "item", name = "kr-rare-metals", amount = 50 },
       { type = "item", name = "kr-ai-core", amount = 50 },
-      { type = "item", name = "quantum-processor", amount = 50 },
+      { type = "item", name = "steel-plate", amount = 100 },
       { type = "item", name = "processing-unit", amount = 100 },
     },
     results = { { type = "item", name = "kr-quantum-computer", amount = 1 } },
