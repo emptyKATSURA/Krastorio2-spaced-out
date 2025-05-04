@@ -24,6 +24,7 @@ data:extend({
     order = "c[signal]-b[small-roboport]",
     place_result = "kr-small-roboport",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "roboport",
@@ -61,6 +62,9 @@ data:extend({
     },
     energy_usage = "50kW",
     max_health = 350,
+    surface_conditions = {
+      { property = "pressure", min = 10, }
+    },
     corpse = "medium-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "medium-explosion",

@@ -20,6 +20,7 @@ data:extend({
     order = "03[advanced-radar]",
     place_result = "kr-advanced-radar",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "radar",

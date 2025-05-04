@@ -22,6 +22,7 @@ data:extend({
     order = "i[matter]-c[stabilizer-charging-station]",
     place_result = "kr-stabilizer-charging-station",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "furnace",

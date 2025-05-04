@@ -23,6 +23,7 @@ data:extend({
     order = "e-b1[filtration-plant]",
     place_result = "kr-filtration-plant",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "assembling-machine",
@@ -63,7 +64,7 @@ data:extend({
     scale_entity_info_icon = true,
     ingredient_count = 6,
     module_slots = 2,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

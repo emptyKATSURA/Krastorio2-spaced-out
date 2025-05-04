@@ -25,6 +25,7 @@ data:extend({
     order = "e[chemical-plant]-b[advanced-chemical-plant]",
     place_result = "kr-advanced-chemical-plant",
     stack_size = 50,
+    weight = 200*kg,
   },
   {
     type = "assembling-machine",

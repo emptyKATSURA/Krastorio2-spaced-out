@@ -23,6 +23,7 @@ data:extend({
     order = "i[matter]-b[matter-associator]",
     place_result = "kr-matter-associator",
     stack_size = 25,
+    weight = 200*kg,
   },
   {
     type = "assembling-machine",
@@ -46,7 +47,7 @@ data:extend({
     crafting_speed = 1.0,
     ingredient_count = 6,
     module_slots = 4,
-    allowed_effects = { "consumption", "productivity", "speed", "pollution" },
+    allowed_effects = { "consumption", "productivity", "speed", "pollution", "quality" },
     fluid_boxes = {
       {
         production_type = "input",

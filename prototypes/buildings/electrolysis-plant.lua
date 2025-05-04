@@ -23,6 +23,7 @@ data:extend({
     order = "e-a1[electrolysis-plant]",
     place_result = "kr-electrolysis-plant",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "assembling-machine",
@@ -83,7 +84,7 @@ data:extend({
     energy_usage = "0.375MW",
     ingredient_count = 6,
     module_slots = 2,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },

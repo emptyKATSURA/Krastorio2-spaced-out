@@ -23,6 +23,7 @@ data:extend({
     order = "e[accumulator]-b[energy-storage]",
     place_result = "kr-energy-storage",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "accumulator",

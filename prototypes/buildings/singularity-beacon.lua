@@ -23,6 +23,7 @@ data:extend({
     order = "8[singularity-beacon]",
     place_result = "kr-singularity-beacon",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "beacon",

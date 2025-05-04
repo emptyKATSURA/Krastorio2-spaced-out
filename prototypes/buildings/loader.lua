@@ -9,6 +9,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-loader",
+    category = "pressing",
     energy_required = 2,
     enabled = false,
     ingredients = {
@@ -26,6 +27,7 @@ data:extend({
     order = "d[loader]-a1[kr-loader]",
     place_result = "kr-loader",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "loader-1x1",

@@ -25,6 +25,7 @@ data:extend({
     order = "a[warehouse]",
     place_result = "kr-warehouse",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "container",
@@ -37,6 +38,9 @@ data:extend({
     selection_box = { { -3, -3 }, { 3, 3 } },
     inventory_size = 500,
     max_health = 1500,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     corpse = "kr-big-random-pipes-remnant",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

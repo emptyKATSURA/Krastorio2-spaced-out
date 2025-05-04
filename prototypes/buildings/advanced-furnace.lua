@@ -26,7 +26,7 @@ data:extend({
     order = "c[electric-furnace]-f[advanced-furnace]",
     place_result = "kr-advanced-furnace",
     stack_size = 50,
-    weight = 300*kg,
+    weight = 500*kg,
   },
   {
     type = "assembling-machine",
@@ -113,11 +113,11 @@ data:extend({
       },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,
-    crafting_categories = { "smelting", "kr-advanced-smelting", "metallurgy", "pressing", "crafting-with-fluid-or-metallurgy", "metallurgy-or-assembling" }, --edited
+    crafting_categories = { "smelting", "kr-advanced-smelting", "metallurgy", "pressing", "crafting-with-fluid-or-metallurgy", "metallurgy-or-assembling" },
     crafting_speed = 12,
     ingredient_count = 6,
     module_slots = 6,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

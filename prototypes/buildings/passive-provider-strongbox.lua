@@ -25,6 +25,7 @@ data:extend({
     order = "d[passive-provider-strongbox]",
     place_result = "kr-passive-provider-strongbox",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "logistic-container",
@@ -38,6 +39,9 @@ data:extend({
     inventory_size = 120,
     logistic_mode = "passive-provider",
     max_health = 500,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     corpse = "big-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

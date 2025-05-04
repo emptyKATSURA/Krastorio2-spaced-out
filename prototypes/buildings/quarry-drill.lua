@@ -24,6 +24,7 @@ data:extend({
     order = "a[items]-e[quarry-drill]",
     place_result = "kr-quarry-drill",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "mining-drill",
@@ -39,7 +40,7 @@ data:extend({
     resource_searching_radius = 0.49,
     vector_to_place_result = { 0, -3.65 },
     module_slots = 2,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

@@ -58,6 +58,7 @@ data:extend({
     order = "f3[research-servers]-b1[quantum-computer]",
     place_result = "kr-quantum-computer",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "assembling-machine",
@@ -72,6 +73,7 @@ data:extend({
     crafting_speed = 3,
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
+    effect_receiver = { base_effect = { productivity = 0.5 }},
     fluid_boxes = {
       {
         production_type = "input",

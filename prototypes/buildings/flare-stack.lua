@@ -21,6 +21,7 @@ data:extend({
     order = "e-d1[flare-stack]",
     place_result = "kr-flare-stack",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "furnace",

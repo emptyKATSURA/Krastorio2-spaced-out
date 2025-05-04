@@ -23,6 +23,7 @@ data:extend({
     order = "z-z-b[kr-planetary-teleporter]",
     place_result = "kr-planetary-teleporter",
     stack_size = 50,
+    weight = 200*kg,
   },
   {
     type = "accumulator",
@@ -42,6 +43,9 @@ data:extend({
     drawing_box_vertical_extension = 1,
     collision_mask = { layers = { item = true, object = true, water_tile = true } },
     max_health = 20000,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
     damaged_trigger_effect = hit_effects.entity(),

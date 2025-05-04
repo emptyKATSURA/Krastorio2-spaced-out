@@ -25,6 +25,7 @@ data:extend({
     order = "a[strongbox]",
     place_result = "kr-strongbox",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "container",
@@ -37,6 +38,9 @@ data:extend({
     selection_box = { { -1, -1 }, { 1, 1 } },
     inventory_size = 120,
     max_health = 500,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     corpse = "big-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

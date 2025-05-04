@@ -9,10 +9,11 @@ data:extend({
   {
     type = "recipe",
     name = "kr-advanced-loader",
+    category = "metallurgy",
     energy_required = 2,
     enabled = false,
     ingredients = {
-      { type = "item", name = "kr-advanced-transport-belt", amount = 1 },
+      { type = "item", name = "turbo-transport-belt", amount = 1 },
       { type = "item", name = "kr-express-loader", amount = 2 },
       { type = "item", name = "kr-rare-metals", amount = 10 },
     },
@@ -26,6 +27,7 @@ data:extend({
     order = "d[loader]-a4[kr-advanced-loader]",
     place_result = "kr-advanced-loader",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "loader-1x1",

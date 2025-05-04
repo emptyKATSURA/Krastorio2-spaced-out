@@ -19,6 +19,7 @@ data:extend({
     order = "b[fluid]-bb2[storage-tank-2]",
     place_result = "kr-big-storage-tank",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "storage-tank",

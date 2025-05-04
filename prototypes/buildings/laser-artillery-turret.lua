@@ -67,6 +67,7 @@ data:extend({
     order = "b[turret]-e[artillery-turret]-a[laser-artillery-turret]",
     place_result = "kr-laser-artillery-turret",
     stack_size = 50,
+    weight = 200*kg,
   },
   {
     type = "electric-turret",

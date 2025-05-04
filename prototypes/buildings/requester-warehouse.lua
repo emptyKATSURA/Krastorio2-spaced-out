@@ -25,6 +25,7 @@ data:extend({
     order = "e[requester-warehouse]",
     place_result = "kr-requester-warehouse",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "logistic-container",
@@ -38,6 +39,9 @@ data:extend({
     inventory_size = 500,
     logistic_mode = "requester",
     max_health = 1500,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     corpse = "kr-big-random-pipes-remnant",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

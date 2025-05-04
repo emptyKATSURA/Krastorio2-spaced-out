@@ -24,6 +24,7 @@ data:extend({
     order = "z-a[energy]-f2[tesla-coil]",
     place_result = "kr-tesla-coil",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "electric-energy-interface",
@@ -49,6 +50,9 @@ data:extend({
     },
     energy_usage = "60kW",
     max_health = 200,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     corpse = "medium-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

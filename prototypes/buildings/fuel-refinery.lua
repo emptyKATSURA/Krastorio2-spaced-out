@@ -22,6 +22,7 @@ data:extend({
     order = "e[fuel-refinery]",
     place_result = "kr-fuel-refinery",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "assembling-machine",
@@ -36,7 +37,7 @@ data:extend({
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     drawing_box = { { -1.5, -1.9 }, { 1.5, 1.5 } },
     module_slots = 3,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
     crafting_speed = 1,
     ingredient_count = 4,
     crafting_categories = { "kr-fuel-refinery" },

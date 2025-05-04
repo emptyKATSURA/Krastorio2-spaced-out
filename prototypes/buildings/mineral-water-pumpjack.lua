@@ -20,6 +20,7 @@ data:extend({
     order = "b[fluids]-b2[mineral-water-pumpjack]",
     place_result = "kr-mineral-water-pumpjack",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "mining-drill",

@@ -22,6 +22,7 @@ data:extend({
     order = "d-g1[greenhouse]",
     place_result = "kr-greenhouse",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "assembling-machine",
@@ -33,6 +34,9 @@ data:extend({
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "kr-greenhouse",
     max_health = 500,
+    surface_conditions = {
+      { property = "pressure", min = 1000, max = 2000, }
+    },
     corpse = "kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
     damaged_trigger_effect = hit_effects.entity(),
@@ -55,7 +59,7 @@ data:extend({
     ingredient_count = 4,
     return_ingredients_on_change = true,
     module_slots = 3,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality", },
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

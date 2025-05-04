@@ -25,6 +25,7 @@ data:extend({
     order = "c[signal]-c[big-roboport]",
     place_result = "kr-big-roboport",
     stack_size = 50,
+    weight = 200*kg,
   },
   {
     type = "roboport",
@@ -74,6 +75,9 @@ data:extend({
     recharge_minimum = "50MJ",
     charging_energy = "5MW",
     max_health = 3500,
+    surface_conditions = {
+      { property = "pressure", min = 10, }
+    },
     corpse = "kr-big-random-pipes-remnant",
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "big-explosion",

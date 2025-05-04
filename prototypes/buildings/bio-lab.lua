@@ -23,6 +23,7 @@ data:extend({
     order = "d-g2[bio-lab]",
     place_result = "kr-bio-lab",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "assembling-machine",
@@ -31,6 +32,9 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { hardness = 1, mining_time = 1, result = "kr-bio-lab" },
     max_health = 500,
+    surface_conditions = {
+      { property = "pressure", min = 1000, max = 1000, }
+    },
     corpse = "kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
     damaged_trigger_effect = hit_effects.entity(),
@@ -81,7 +85,7 @@ data:extend({
     crafting_speed = 1,
     ingredient_count = 4,
     return_ingredients_on_change = true,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality", },
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

@@ -22,6 +22,7 @@ data:extend({
     order = "g[lab]-g2[advanced-lab]",
     place_result = "kr-advanced-lab",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "lab",

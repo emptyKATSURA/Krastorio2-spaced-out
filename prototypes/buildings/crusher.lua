@@ -22,6 +22,7 @@ data:extend({
     order = "d-h1[crusher]",
     place_result = "kr-crusher",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "furnace",

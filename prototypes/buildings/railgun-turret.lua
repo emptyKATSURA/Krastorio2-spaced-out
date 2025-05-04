@@ -131,6 +131,7 @@ data:extend({
     order = "a01[railgun-turret]",
     place_result = "kr-railgun-turret",
     stack_size = 50,
+    weight = 200*kg,
   },
   {
     type = "ammo-turret",

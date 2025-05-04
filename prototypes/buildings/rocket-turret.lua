@@ -69,6 +69,7 @@ data:extend({
     order = "a02[rocket-turret]",
     place_result = "kr-rocket-turret",
     stack_size = 50,
+    weight = 200*kg,
   },
   {
     type = "ammo-turret",

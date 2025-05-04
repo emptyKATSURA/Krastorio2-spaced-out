@@ -24,6 +24,7 @@ data:extend({
     order = "a[energy]-e[substation-mk2]",
     place_result = "kr-superior-substation",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "electric-pole",

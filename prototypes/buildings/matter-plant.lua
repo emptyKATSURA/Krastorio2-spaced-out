@@ -23,6 +23,7 @@ data:extend({
     order = "i[matter]-a[matter-plant]",
     place_result = "kr-matter-plant",
     stack_size = 10,
+    weight = 200*kg,
   },
   {
     type = "assembling-machine",

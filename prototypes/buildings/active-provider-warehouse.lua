@@ -25,6 +25,7 @@ data:extend({
     order = "b[active-provider-warehouse]",
     place_result = "kr-active-provider-warehouse",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "logistic-container",
@@ -36,6 +37,9 @@ data:extend({
     collision_box = { { -2.75, -2.75 }, { 2.75, 2.75 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
     inventory_size = 500,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     logistic_mode = "active-provider",
     max_health = 1500,
     corpse = "kr-big-random-pipes-remnant",

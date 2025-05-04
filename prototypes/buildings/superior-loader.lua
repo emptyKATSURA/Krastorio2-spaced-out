@@ -13,8 +13,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     ingredients = {
-      { type = "item", name = "turbo-transport-belt", amount = 1 },
-      { type = "item", name = "kr-express-loader", amount = 2 },
+      { type = "item", name = "kr-superior-transport-belt", amount = 1 },
+      { type = "item", name = "kr-advanced-loader", amount = 2 },
       { type = "item", name = "kr-imersium-gear-wheel", amount = 10 },
     },
     results = { { type = "item", name = "kr-superior-loader", amount = 1 } },
@@ -27,6 +27,7 @@ data:extend({
     order = "d[loader]-a5[kr-superior-loader]",
     place_result = "kr-superior-loader",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "loader-1x1",

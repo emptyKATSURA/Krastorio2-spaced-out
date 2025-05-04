@@ -25,6 +25,7 @@ data:extend({
     order = "f[storage-strongbox]",
     place_result = "kr-storage-strongbox",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "logistic-container",
@@ -39,6 +40,9 @@ data:extend({
     logistic_mode = "storage",
     max_logistic_slots = 1,
     max_health = 500,
+    surface_conditions = {
+      { property = "pressure", min = 0.1, }
+    },
     corpse = "big-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

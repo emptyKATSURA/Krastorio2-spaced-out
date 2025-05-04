@@ -57,6 +57,7 @@ data:extend({
     order = "f3[research-servers]-a1[research-server]",
     place_result = "kr-research-server",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "assembling-machine",
@@ -70,7 +71,8 @@ data:extend({
     crafting_speed = 1,
     ingredient_count = 6,
     module_slots = 2,
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
+    effect_receiver = { base_effect = { productivity = 0.2 }},
     fluid_boxes = {
       {
         production_type = "input",

@@ -23,6 +23,7 @@ data:extend({
     order = "e-c1[atmospheric-condenser]",
     place_result = "kr-atmospheric-condenser",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "assembling-machine",
@@ -31,6 +32,9 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "kr-atmospheric-condenser" },
     max_health = 500,
+    surface_conditions = {
+      { property = "pressure", min = 500, }
+    },
     corpse = "kr-medium-random-pipes-remnant",
     dying_explosion = "big-explosion",
     resistances = {

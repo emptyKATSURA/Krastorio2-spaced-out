@@ -19,6 +19,7 @@ data:extend({
     order = "a[pipe]-ba[steel-pipe-to-ground]",
     place_result = "kr-steel-pipe-to-ground",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "pipe-to-ground",

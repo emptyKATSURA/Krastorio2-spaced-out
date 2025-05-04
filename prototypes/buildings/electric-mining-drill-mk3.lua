@@ -24,6 +24,7 @@ data:extend({
     order = "a[items]-c[electric-mining-drill-mk3]",
     place_result = "kr-electric-mining-drill-mk3",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "mining-drill",
