@@ -9,12 +9,14 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local function convert_equipment_grid(vehicle_type, vehicle_name, new_equipment_grid_id)
   local vehicle = data.raw[vehicle_type][vehicle_name]
   if not vehicle then
-    error("Vehicle " .. vehicle_type .. "/" .. vehicle_name .. " does not exist.")
+    data_util.error("Vehicle " .. vehicle_type .. "/" .. vehicle_name .. " does not exist.")
+    return
   end
 
   local new_equipment_grid = data.raw["equipment-grid"][new_equipment_grid_id]
   if not new_equipment_grid then
-    error("Equipment grid " .. new_equipment_grid_id .. " does not exist.")
+    data_util.error("Equipment grid " .. new_equipment_grid_id .. " does not exist.")
+    return
   end
 
   local old_equipment_grid_id = vehicle.equipment_grid
@@ -290,7 +292,6 @@ data.raw["inserter"]["long-handed-inserter"].next_upgrade = "kr-superior-long-in
 data.raw.lab["lab"].energy_usage = "200kW"
 data.raw.lab["lab"].fast_replaceable_group = "lab"
 data.raw.lab["lab"].next_upgrade = "kr-advanced-lab"
-table.insert(data.raw.lab["lab"].inputs, 1, "kr-basic-tech-card")
 data_util.remove_lab_input("lab", "production-science-pack")
 data_util.remove_lab_input("lab", "utility-science-pack")
 data_util.remove_lab_input("lab", kr_optimization_tech_card_name)
@@ -503,7 +504,6 @@ data.raw.corpse["spitter-spawner-corpse"].mined_sound =
   { filename = "__Krastorio2Assets__/sounds/tiles/creep-deconstruction.ogg" }
 
 data.raw["lab"]["biolab"].inputs = {
-      "kr-basic-tech-card",
       "automation-science-pack",
       "logistic-science-pack",
       "military-science-pack",

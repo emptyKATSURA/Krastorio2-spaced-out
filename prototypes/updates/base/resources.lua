@@ -1,9 +1,11 @@
+local data_util = require("data-util")
+
 --- @param resource_name data.ResourceID
 --- @param multiplier double
 local function increase_base_density(resource_name, multiplier)
   local resource = data.raw.resource[resource_name]
   if not resource then
-    error("Resource " .. resource_name .. " does not exist.")
+    data_util.error("Resource " .. resource_name .. " does not exist.")
   end
   resource.autoplace.base_density = (resource.autoplace.base_density or 1) * multiplier
 end

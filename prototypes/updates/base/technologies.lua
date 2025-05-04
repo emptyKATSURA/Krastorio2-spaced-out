@@ -58,11 +58,7 @@ data_util.remove_prerequisite("rocket-silo", "concrete")
 data_util.remove_prerequisite("rocket-silo", "rocket-fuel")
 data_util.remove_prerequisite("solar-energy", "logistic-science-pack")
 data_util.remove_prerequisite("solar-energy", "steel-processing")
---if mods["elevated-rails"] then
---  data_util.remove_prerequisite("elevated-rail", "concrete")
---end
 
---data_util.remove_research_unit_ingredient("automation", "automation-science-pack")
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 
 data_util.add_recipe_unlock("advanced-circuit", "kr-electronic-components")
@@ -75,7 +71,6 @@ data_util.add_recipe_unlock("battery-equipment", "kr-small-portable-generator-eq
 data_util.add_recipe_unlock("coal-liquefaction", "kr-coke-liquefaction")
 data_util.add_recipe_unlock("electric-engine", "kr-additional-engine-equipment")
 data_util.add_recipe_unlock(kr_optimization_tech_card_name, "kr-space-research-data")
---data_util.add_recipe_unlock(kr_optimization_tech_card_name, kr_optimization_tech_card_name)
 data_util.add_recipe_unlock("landfill", "kr-landfill-with-sand")
 data_util.add_recipe_unlock("logistics", "long-handed-inserter")
 data_util.add_recipe_unlock("military-science-pack", "kr-biter-research-data")
@@ -91,6 +86,7 @@ data_util.add_recipe_unlock("steel-processing", "kr-steel-gear-wheel")
 data_util.add_recipe_unlock("foundry", "molten-enriched-copper")
 data_util.add_recipe_unlock("foundry", "molten-enriched-iron")
 data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
+data_util.add_recipe_unlock("turbo-transport-belt", "kr-advanced-loader")
 
 if settings.startup["kr-loaders"].value then
   data_util.add_recipe_unlock("logistics", "kr-loader")

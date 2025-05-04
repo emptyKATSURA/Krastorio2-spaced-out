@@ -1,4 +1,5 @@
 local flib_prototypes = require("__flib__.prototypes")
+local data_util = require("data-util")
 
 table.insert(data.raw["active-defense-equipment"]["discharge-defense-equipment"].categories, "kr-vehicle")
 
@@ -147,7 +148,8 @@ local function update_equipment_graphics(item_name, icon, icon_size, sprite_size
   end
   local equipment_id = item.place_as_equipment_result
   if not equipment_id then
-    error("Item " .. item_name .. " has no related equipment.")
+    data_util.error("Item " .. item_name .. " has no related equipment.")
+    return
   end
   local equipment = flib_prototypes.get("equipment", equipment_id)
   equipment.sprite = {

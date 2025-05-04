@@ -19,6 +19,7 @@ data:extend({
     subgroup = "terrain",
     order = "z[black-reinforced-plate]-a1[black-reinforced-plate]",
     stack_size = 200,
+    weight = 5*kg,
     place_as_tile = {
       result = "kr-black-reinforced-plate",
       condition_size = 1,

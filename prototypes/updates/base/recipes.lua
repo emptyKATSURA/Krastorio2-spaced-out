@@ -143,13 +143,6 @@ data.raw.recipe["efficiency-module-2"].ingredients = {
   { type = "item", name = "efficiency-module", amount = 5 },
 }
 
-data.raw.recipe["efficiency-module-3"].energy_required = 15
-data.raw.recipe["efficiency-module-3"].ingredients = {
-  { type = "item", name = "processing-unit", amount = 5 },
-  { type = "item", name = "advanced-circuit", amount = 5 },
-  { type = "item", name = "efficiency-module-2", amount = 5 },
-}
-
 data_util.add_or_replace_ingredient(
   "electric-mining-drill",
   "iron-plate",
@@ -158,11 +151,10 @@ data_util.add_or_replace_ingredient(
 
 data.raw.recipe["electronic-circuit"].enabled = false
 data.raw.recipe["electronic-circuit"].energy_required = 2
-table.insert(data.raw.recipe["electronic-circuit"].ingredients, { type = "item", name = "wood", amount = 1 })
 data_util.add_or_replace_ingredient(
   "electronic-circuit",
   "iron-plate",
-  { type = "item", name = "iron-plate", amount = 1 }
+  { type = "item", name = "iron-plate", amount = 2 }
 )
 data_util.add_or_replace_ingredient(
   "electronic-circuit",
@@ -499,13 +491,6 @@ data.raw.recipe["productivity-module-2"].ingredients = {
   { type = "item", name = "productivity-module", amount = 5 },
 }
 
-data.raw.recipe["productivity-module-3"].energy_required = 15
-data.raw.recipe["productivity-module-3"].ingredients = {
-  { type = "item", name = "processing-unit", amount = 5 },
-  { type = "item", name = "advanced-circuit", amount = 5 },
-  { type = "item", name = "productivity-module-2", amount = 5 },
-}
-
 data_util.convert_ingredient("pumpjack", "iron-gear-wheel", "kr-steel-gear-wheel")
 data_util.add_or_replace_ingredient("pumpjack", "iron-plate", { type = "item", name = "kr-steel-beam", amount = 4 })
 
@@ -598,13 +583,6 @@ data.raw.recipe["speed-module-2"].ingredients = {
   { type = "item", name = "advanced-circuit", amount = 5 },
   { type = "item", name = "electronic-circuit", amount = 5 },
   { type = "item", name = "speed-module", amount = 5 },
-}
-
-data.raw.recipe["speed-module-3"].energy_required = 15
-data.raw.recipe["speed-module-3"].ingredients = {
-  { type = "item", name = "processing-unit", amount = 5 },
-  { type = "item", name = "advanced-circuit", amount = 5 },
-  { type = "item", name = "speed-module-2", amount = 5 },
 }
 
 data_util.add_or_replace_ingredient(

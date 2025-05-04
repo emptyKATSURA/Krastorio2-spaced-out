@@ -73,6 +73,9 @@ data:extend({
     },
     consumption = "5MW",
     max_health = 5000,
+    surface_conditions = {
+      { property = "gravity", min = 1, }
+    },
     corpse = "kr-advanced-tank-remnant",
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "big-explosion",
