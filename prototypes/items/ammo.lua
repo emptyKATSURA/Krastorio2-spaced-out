@@ -6,6 +6,7 @@ data:extend({
     subgroup = "ammo",
     order = "a[basic-clips]-d[imersite-rounds-magazine]",
     stack_size = 200,
+    weight = 5*kg,
     magazine_size = 10,
     ammo_category = "bullet",
     ammo_type = {
@@ -54,6 +55,7 @@ data:extend({
     subgroup = "ammo",
     order = "d[explosive-cannon-shell]-e[antimatter-artillery-shell]",
     stack_size = 25,
+    weight = 1000*kg,
     ammo_category = "artillery-shell",
     ammo_type = {
       target_type = "position",
@@ -96,6 +98,7 @@ data:extend({
     subgroup = "ammo",
     order = "c[impulse-rifle-ammo]",
     stack_size = 200,
+    weight = 80*kg,
     magazine_size = 3,
     ammo_category = "kr-impulse-rifle",
     ammo_type = {
@@ -142,6 +145,7 @@ data:extend({
     subgroup = "ammo",
     order = "d[rocket-launcher]-b[explosive]",
     stack_size = 50,
+    weight = 40*kg,
     ammo_category = "kr-heavy-rocket",
     ammo_type = {
       cooldown_modifier = 0.75,
@@ -170,6 +174,7 @@ data:extend({
     subgroup = "ammo",
     order = "d[rocket-launcher]-d[antimatter-rocket]",
     stack_size = 10,
+    weight = 1000*kg,
     ammo_category = "kr-heavy-rocket",
     ammo_type = {
       range_modifier = 3,
@@ -215,6 +220,7 @@ data:extend({
     subgroup = "kr-railgun-turret",
     order = "b01[basic-railgun-shell]",
     stack_size = 100,
+    weight = 40*kg,
     magazine_size = 1,
     ammo_category = "kr-railgun-shell",
     ammo_type = {
@@ -243,6 +249,7 @@ data:extend({
     subgroup = "kr-railgun-turret",
     order = "b02[explosion-railgun-shell]",
     stack_size = 100,
+    weight = 40*kg,
     magazine_size = 1,
     ammo_category = "kr-railgun-shell",
     ammo_type = {
@@ -271,6 +278,7 @@ data:extend({
     subgroup = "kr-railgun-turret",
     order = "b03[antimatter-railgun-shell]",
     stack_size = 100,
+    weight = 80*kg,
     magazine_size = 1,
     ammo_category = "kr-railgun-shell",
     ammo_type = {
@@ -315,6 +323,7 @@ data:extend({
     subgroup = "kr-rocket-turret",
     order = "b01[explosion-rocket-for-turret]",
     stack_size = 25,
+    weight = 40*kg,
     magazine_size = 1,
     ammo_category = "kr-turret-missile",
     ammo_type = {
@@ -343,6 +352,7 @@ data:extend({
     subgroup = "kr-rocket-turret",
     order = "b02[kr-nuclear-turret-rocket]",
     stack_size = 25,
+    weight = 1000*kg,
     magazine_size = 1,
     ammo_category = "kr-turret-missile",
     ammo_type = {
@@ -387,6 +397,7 @@ data:extend({
     subgroup = "kr-rocket-turret",
     order = "b03[antimatter-rocket-for-turret]",
     stack_size = 25,
+    weight = 1000*kg,
     magazine_size = 1,
     ammo_category = "kr-turret-missile",
     ammo_type = {
@@ -431,6 +442,7 @@ data:extend({
     subgroup = "ammo",
     order = "d[explosive-cannon-shell]-d[artillery]-a2[nuclear-artillery]",
     stack_size = 25,
+    weight = 1000*kg,
     ammo_category = "artillery-shell",
     ammo_type = {
       target_type = "position",

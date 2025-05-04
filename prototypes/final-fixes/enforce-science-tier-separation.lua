@@ -1,3 +1,5 @@
+local data_util = require("data-util")
+
 --- For every technology with `base_pack`, removes all occurrences of `incompatible_packs`.
 --- @param base_pack data.ItemID
 --- @param incompatible_packs table<data.ItemID, boolean>
@@ -9,7 +11,8 @@ local function remove_incompatible_packs(base_pack, incompatible_packs)
 
     local ingredients = technology.unit.ingredients
     if not ingredients then
-      error("Technology " .. technology.name .. " unit ingredients are nil")
+      data_util.error("Technology " .. technology.name .. " unit ingredients are nil")
+      return
     end
 
     local has_base = false

@@ -34,6 +34,7 @@ data:extend({
     subgroup = "raw-material",
     order = "a[biomass]",
     stack_size = 200,
+    weight = 2.5*kg,
   },
   {
     type = "item",
@@ -42,6 +43,7 @@ data:extend({
     subgroup = "raw-material",
     order = "a2[fertilizer]",
     stack_size = 200,
+    weight = 2.5*kg,
   },
   {
     type = "item",
@@ -58,6 +60,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "e1[automation-core]",
     stack_size = 200,
+    weight = 2.5*kg,
   },
   {
     type = "item",
@@ -83,6 +86,7 @@ data:extend({
     subgroup = "raw-resource",
     order = "a[sand]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -91,6 +95,7 @@ data:extend({
     subgroup = "raw-material",
     order = "a1[glass]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -121,6 +126,7 @@ data:extend({
     subgroup = "raw-material",
     order = "b3[quartz]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -146,6 +152,7 @@ data:extend({
     subgroup = "raw-material",
     order = "b4[silicon]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -186,6 +193,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "e02[ei-electronic-components]",
     stack_size = 200,
+    weight = 2.5*kg,
   },
   ---
   -- Fuels
@@ -219,6 +227,7 @@ data:extend({
     subgroup = "raw-material",
     order = "a1[coke]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -232,6 +241,7 @@ data:extend({
     subgroup = "raw-material",
     order = "w01[fuel]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -245,6 +255,7 @@ data:extend({
     subgroup = "raw-material",
     order = "w02[bio-fuel]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -258,6 +269,7 @@ data:extend({
     subgroup = "raw-material",
     order = "w03[advanced-fuel]",
     stack_size = 200,
+    weight = 5*kg,
   },
   ---
   {
@@ -267,6 +279,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "c-a2[iron-beam]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -275,6 +288,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "d-a2[steel-gear-wheel]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -283,6 +297,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "c-a2[steel-beam]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -307,6 +322,7 @@ data:extend({
     subgroup = "raw-material",
     order = "e00-a2[imersium-plate]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -331,6 +347,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "d-a3[imersium-gear-wheel]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -355,6 +372,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "c-a3[imersium-beam]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -400,6 +418,7 @@ data:extend({
     subgroup = "raw-material",
     order = "c[kr-rare-metals]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -425,6 +444,7 @@ data:extend({
     subgroup = "raw-material",
     order = "e05-a[enriched-ores]-a1[enriched-iron]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -450,6 +470,7 @@ data:extend({
     subgroup = "raw-material",
     order = "e05-a[enriched-ores]-a2[enriched-copper]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -475,6 +496,7 @@ data:extend({
     subgroup = "raw-material",
     order = "e05-a[enriched-ores]-a3[enriched-rare-metals]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -500,6 +522,7 @@ data:extend({
     subgroup = "raw-material",
     order = "h2[lithium]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -520,6 +543,7 @@ data:extend({
     subgroup = "raw-material",
     order = "h1[lithium-chloride]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -584,6 +608,7 @@ data:extend({
     subgroup = "raw-material",
     order = "q01[imersite-powder]",
     stack_size = 200,
+    weight = 1*kg,
   },
   {
     type = "item",
@@ -684,6 +709,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "q03[imersite-crystal]",
     stack_size = 50,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -708,6 +734,7 @@ data:extend({
     subgroup = "raw-material",
     order = "i2[lithium-sulfur-battery]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -732,6 +759,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "h1[ai-core]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -740,6 +768,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "w2-a1[pollution-filter]",
     stack_size = 50,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -748,6 +777,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "w2-a2[used-pollution-filter]",
     stack_size = 50,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -772,6 +802,7 @@ data:extend({
     subgroup = "raw-material",
     order = "s[tritium]",
     stack_size = 200,
+    weight = 5*kg,
   },
   {
     type = "item",
@@ -780,6 +811,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-b1[dt-fuel]-a1[empty-dt-fuel]",
     stack_size = 10,
+    weight = 100*kg,
   },
   {
     type = "item",
@@ -807,6 +839,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-b1[dt-fuel]-a2[dt-fuel]",
     stack_size = 10,
+    weight = 100*kg,
   },
   ---
   {
@@ -832,6 +865,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "j1[energy-control-unit]",
     stack_size = 100,
+    weight = 10*kg,
   },
   ---
   {
@@ -841,6 +875,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "w1[matter-stabilizers]-a1[matter-stabilizer]",
     stack_size = 100,
+    weight = 10*kg,
   },
   {
     type = "item",
@@ -865,6 +900,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "w1[matter-stabilizers]-a2[charged-matter-stabilizer]",
     stack_size = 100,
+    weight = 10*kg,
   },
   {
     type = "item",
@@ -873,6 +909,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "000[matter]-000[matter-cube]",
     stack_size = 200,
+    weight = 20*kg,
   },
   {
     type = "item",
@@ -881,6 +918,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-b2[antimatter-fuel-cell]-a1[empty-antimatter-fuel-cell]",
     stack_size = 10,
+    weight = 100*kg,
   },
   {
     type = "item",
@@ -908,6 +946,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-b2[antimatter-fuel-cell]-a2[charged-antimatter-fuel-cell]",
     stack_size = 10,
+    weight = 100*kg,
   },
   {
     type = "item",
@@ -943,32 +982,8 @@ data:extend({
     subgroup = "intermediate-product",
     order = "e01[ei-inserter-parts]",
     stack_size = 200,
+    weight = 5*kg,
   },
---[[ {
-    type = "item",
-    name = "kr-gps-satellite",
-    rocket_launch_products = { { type = "item", name = "kr-teleportation-gps-module", amount = 1 } },
-    icon = "__Krastorio2Assets__/icons/items/gps-satellite.png",
-    pictures = {
-      layers = {
-        {
-          size = 64,
-          filename = "__Krastorio2Assets__/icons/items/gps-satellite.png",
-          scale = 0.5,
-        },
-        {
-          draw_as_light = true,
-          flags = { "light" },
-          size = 64,
-          filename = "__Krastorio2Assets__/icons/items/gps-satellite-light.png",
-          scale = 0.5,
-        },
-      },
-    },
-    subgroup = "intermediate-product",
-    order = "u01[a1-gps-satellite]",
-    stack_size = 1,
-  },--]]
   {
     type = "item",
     name = "kr-teleportation-gps-module",
@@ -992,5 +1007,6 @@ data:extend({
     subgroup = "intermediate-product",
     order = "u01[a2-teleportation-gps-module]",
     stack_size = 10,
+    weight = 100*kg,
   },
 })

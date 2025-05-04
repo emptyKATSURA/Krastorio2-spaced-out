@@ -84,5 +84,6 @@ if settings.startup["kr-loaders"].value then
   data.raw["loader-1x1"]["kr-express-loader"].squeak_behavior = false
   data.raw["loader-1x1"]["kr-fast-loader"].squeak_behavior = false
   data.raw["loader-1x1"]["kr-loader"].squeak_behavior = false
+  data.raw["loader-1x1"]["kr-advanced-loader"].squeak_behavior = false
   data.raw["loader-1x1"]["kr-superior-loader"].squeak_behavior = false
 end

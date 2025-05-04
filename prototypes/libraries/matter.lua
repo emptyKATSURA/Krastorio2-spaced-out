@@ -22,7 +22,8 @@ function matter_lib.make_conversion_recipe(def)
   --- @cast material data.IngredientPrototype
   local recipe_name = "kr-" .. material.name .. "-to-matter"
   if data.raw.recipe[recipe_name] then
-    error("Recipe '" .. recipe_name .. "' already exists.'")
+    data_util.error("Recipe '" .. recipe_name .. "' already exists.'")
+    return
   end
   local prototype = flib_prototypes.get(material.type, material.name) --[[@as data.FluidPrototype|data.ItemPrototype]]
   data:extend({
@@ -42,10 +43,12 @@ function matter_lib.make_conversion_recipe(def)
       energy_required = def.energy_required or 2,
       ingredients = {
         { type = material.type, name = material.name, amount = material.amount },
+        def.needs_stabilizer and { type = "item", name = "kr-charged-matter-stabilizer", amount = 1 } or nil,
       },
       results = {
         { type = "fluid", name = "kr-matter", amount = def.matter_count },
-        def.needs_stabilizer and { type = "item", name = "kr-charged-matter-stabilizer", amount = 1 } or nil,
+        def.needs_stabilizer and { type = "item", name = "kr-matter-stabilizer", amount = 1, probability = 0.99 }
+          or nil,
       },
       main_product = "",
       allow_as_intermediate = false,
@@ -62,10 +65,12 @@ function matter_lib.make_deconversion_recipe(def)
   --- @cast material data.ProductPrototype
   local recipe_name = "kr-matter-to-" .. material.name
   if data.raw.recipe[recipe_name] then
-    error("Recipe '" .. recipe_name .. "' already exists.'")
+    data_util.error("Recipe '" .. recipe_name .. "' already exists.'")
+    return
   end
   if material.type == "research-progress" then
-    error("research-progress is not supported in matter recipes.")
+    data_util.error("research-progress is not supported in matter recipes.")
+    return
   end
   local prototype = flib_prototypes.get(def.material.type --[[@as string]], def.material.name) --[[@as data.FluidPrototype|data.ItemPrototype]]
   data:extend({

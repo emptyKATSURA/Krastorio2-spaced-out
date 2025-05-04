@@ -181,31 +181,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "molten-enriched-iron",
-    icon = "__space-age__/graphics/icons/fluid/molten-iron.png",
-    category = "metallurgy",
-    subgroup = "vulcanus-processes",
-    order = "a[melting]-b[molten-iron]",
-    auto_recycle = false,
-    show_amount_in_title = false,
-    always_show_products = true,
-    enabled = false,
-    ingredients =
-    {
-      {type = "item", name = "kr-enriched-iron", amount = 40},
-      {type = "item", name = "calcite", amount = 1},
-    },
-    energy_required = 24,
-    results =
-    {
-      {type = "fluid", name = "molten-iron", amount = 750},
-    },
-    allow_productivity = true,
-    hide_from_signal_gui = false,
-    main_product =  "molten-iron"
-  },
-  {
-    type = "recipe",
     name = "molten-enriched-copper",
     icon = "__space-age__/graphics/icons/fluid/molten-copper.png",
     category = "metallurgy",
@@ -229,5 +204,29 @@ data:extend({
     hide_from_signal_gui = false,
     main_product =  "molten-copper"
   },
-
+  {
+    type = "recipe",
+    name = "molten-enriched-iron",
+    icon = "__space-age__/graphics/icons/fluid/molten-iron.png",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "a[melting]-b[molten-iron]",
+    auto_recycle = false,
+    show_amount_in_title = false,
+    always_show_products = true,
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "kr-enriched-iron", amount = 40},
+      {type = "item", name = "calcite", amount = 1},
+    },
+    energy_required = 24,
+    results =
+    {
+      {type = "fluid", name = "molten-iron", amount = 750},
+    },
+    allow_productivity = true,
+    hide_from_signal_gui = false,
+    main_product =  "molten-iron"
+  },
 })

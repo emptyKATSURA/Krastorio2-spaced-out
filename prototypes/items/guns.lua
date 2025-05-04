@@ -6,6 +6,7 @@ data:extend({
     subgroup = "gun",
     order = "a[basic-clips]-a[pistol]",
     stack_size = 1,
+    weight = 1000*kg,
     attack_parameters = {
       type = "projectile",
       ammo_category = "bullet",
@@ -34,6 +35,7 @@ data:extend({
     subgroup = "other",
     hidden = true,
     stack_size = 1,
+    weight = 1000*kg,
     attack_parameters = {
       type = "projectile",
       ammo_category = "kr-heavy-rocket",
@@ -52,6 +54,7 @@ data:extend({
     subgroup = "gun",
     order = "d[heavy-rocket-launcher]",
     stack_size = 5,
+    weight = 200*kg,
     attack_parameters = {
       type = "projectile",
       ammo_category = "kr-heavy-rocket",
@@ -70,6 +73,7 @@ data:extend({
     subgroup = "gun",
     order = "c2[impulse-rifle]",
     stack_size = 10,
+    weight = 100*kg,
     attack_parameters = {
       type = "projectile",
       ammo_category = "kr-impulse-rifle",

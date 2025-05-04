@@ -8,6 +8,7 @@ data:extend({
     subgroup = "capsule",
     order = "c[poison-capsule]",
     stack_size = 100,
+    weight = 10*kg,
     pictures = {
       layers = {
         {
@@ -69,6 +70,7 @@ data:extend({
     hidden = true,
     subgroup = "other",
     stack_size = 50,
+    weight = 20*kg,
     rocket_launch_products = { { type = "item", name = "kr-poop", amount = 1 } },
     capsule_action = {
       type = "use-on-self",
@@ -102,6 +104,7 @@ data:extend({
     subgroup = "other",
     hidden = true,
     stack_size = 50,
+    weight = 20*kg,
     rocket_launch_products = { { type = "item", name = "kr-note-1", amount = 1 } },
     capsule_action = {
       type = "throw",
@@ -148,6 +151,7 @@ data:extend({
     subgroup = "raw-resource",
     order = "h[first-aid-kit]",
     stack_size = 50,
+    weight = 20*kg,
     capsule_action = {
       type = "use-on-self",
       attack_parameters = {
@@ -179,6 +183,7 @@ data:extend({
     subgroup = "other",
     hidden = true,
     stack_size = 50,
+    weight = 20*kg,
     rocket_launch_products = { { type = "item", name = "kr-cyber-potato-equipment", amount = 1 } },
     capsule_action = {
       type = "use-on-self",
