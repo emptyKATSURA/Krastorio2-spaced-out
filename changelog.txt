@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2025-05-05
+  Bugfixes:
+    - Fixed big mining drill prerequisite electric mining drill wasn't deleted correctly.
+    - Added dependency for factorio library 0.16.2, it crashes for versions before 0.16.2
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2025-05-05
   Features:
