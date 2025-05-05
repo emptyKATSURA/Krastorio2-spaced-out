@@ -105,7 +105,6 @@ local function on_cutscene_finished(e)
     return
   end
   storage.intergalactic_transceiver.in_cutscene[player.force_index] = nil
-  player.force.technologies["kr-logo"].enabled = true
   if player.character then
     player.character.destructible = true
   end

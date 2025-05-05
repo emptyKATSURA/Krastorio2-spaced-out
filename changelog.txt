@@ -1,6 +1,25 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-05-05
+  Features:
+    - Added proccesing unit recipe for Gleba.
+    - Fully implemented research servers/quantum computers.
+    - Finished reworking tech tree.
+  Changes:
+    - Readjusted infinite tehcnologies.
+    - Optimisation tech card now requires research servers to be researched.
+    - Rebalanced battery equipment.
+    - Singularity tech card research now requires all close planets science pack to be researched.
+    - Singularity tech cards now require biter eggs :3
+  Bugfixes:
+    - Fixed express underground belts having incorrect lenght.
+    - Fixed express loader not upgrading into advanced loaders.
+    - Fixed space age equipment couldn't be used in vechicles.
+    - Fixed intergalactic transreceiver causing crash on cutscene.
+    - Fixed advanced tank couldn't be driven remotely and didn't had logistic access.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
-Date: 2025-04-04
+Date: 2025-05-04
   Compatibility:
     - Improper use of Krastorio prototype stage functions will now print log messages instead of raising script errors. Thanks Raiguard for fix.
   Features:
@@ -10,10 +29,10 @@ Date: 2025-04-04
     - Re added advanced loader and is now unlocked alongside turbo belts.
   Changes:
     - Electronic circuits no longer require wood, so they can be made on any planet.
-    - Returned origal tier 3 modules recipes.
+    - Returned original tier 3 modules recipes.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
-Date: 2025-04-03
+Date: 2025-05-03
   Changes:
     - Moved automation 1, so there is less handcrafting required in early game
   Bugfixes:
@@ -21,7 +40,7 @@ Date: 2025-04-03
     - Fixed recipe processing units from carbide being available from the start
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
-Date: 2025-04-03
+Date: 2025-05-03
   Features:
     - Added alternative recipes for coke and proccesing units to make them craftable on gleba and vulcanus.
     - Evolved past need for basic tech cards. Early game techs are now handled by triggers.
@@ -34,7 +53,7 @@ Date: 2025-04-03
     - Fixed optimisation tech cards should be now craftable.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
-Date: 2025-04-02
+Date: 2025-05-02
   Changes:
     - Rifle ammo now only requires iron to make it craftable in space.
     - Added weight to ensure all correct buildings can be send to platforms.
@@ -45,7 +64,7 @@ Date: 2025-04-02
     - Fixed the migration script relating to original krastorio2 versions.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 2025-04-01
+Date: 2025-05-01
   Changes:
     - Made the game completable from start to finish. (I think)
     - Moved Technologies around the tech tree.
@@ -53,6 +72,6 @@ Date: 2025-04-01
     - Added molten recipes for enriched ores.
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 2025-04-30
+Date: 2025-05-30
   Changes:
     - Just started.
