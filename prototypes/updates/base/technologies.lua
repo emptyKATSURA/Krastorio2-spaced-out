@@ -64,7 +64,7 @@ data_util.remove_prerequisite("solar-energy", "steel-processing")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "power-armor")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "military-4")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "electromagnetic-science-pack")
-data_util.remove_prerequisite("big-mining-drill", "mining-drill")
+data_util.remove_prerequisite("big-mining-drill", "electric-mining-drill")
 
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 
