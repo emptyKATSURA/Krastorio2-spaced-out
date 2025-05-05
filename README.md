@@ -1,4 +1,4 @@
-# Krastorio2-Spaced-Out
+# Krastorio2 Spaced Out
 
 ## Installing:
 ### Download from mod portal
