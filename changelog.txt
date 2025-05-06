@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2025-05-06
+  Features:
+    - Added item stacking functionality to loader
+  Changes:
+    - Changed weight of some equipment
+  Bugfixes:
+    - Fixed flare stack generated unsusable recipes for parameters.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2025-05-05
   Bugfixes:
