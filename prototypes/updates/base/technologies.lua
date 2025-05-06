@@ -168,6 +168,22 @@ data.raw.technology[kr_optimization_tech_card_name].localised_name = { "item-nam
 data.raw.technology[kr_optimization_tech_card_name].localised_description =
   { "technology-description.optimization-tech-card" }
 
+if mods["aai-industry"] then
+  data_util.remove_prerequisite("electronics", "electricity")
+  data_util.remove_prerequisite("fluid-handling", "steam-power")
+  data_util.remove_prerequisite("automation-science-pack", "kr-laboratory")
+  data.raw.technology["kr-laboratory"] = nil
+  data_util.add_prerequisite("automation-science-pack", "electronics")
+end
+
+--Remove once aai industry updates
+data.raw.technology["kr-automation-core"].unit = nil
+data.raw.technology["kr-automation-core"].research_trigger = {
+      type = "craft-item",
+      item = "iron-gear-wheel",
+      count = 10
+    }
+
 -- stylua: ignore start
 data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png", 256))
 data_util.set_icon(data.raw.technology["chemical-science-pack"], "__Krastorio2Assets__/technologies/chemical-tech-card.png", 256)

@@ -768,3 +768,10 @@ data.raw.recipe["utility-science-pack"] = {
   results = { { type = "item", name = "utility-science-pack", amount = 5 } },
   allow_productivity = true,
 }
+
+if mods["aai-industry"] then
+  data_util.remove_ingredient("repair-pack", "stone")
+  data_util.remove_ingredient("repair-pack", "iron-plate")
+  data_util.remove_ingredient("repair-pack", "copper-plate")
+  data_util.remove_ingredient("assembling-machine-3", "advanced-circuit")
+end
