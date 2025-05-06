@@ -22,6 +22,7 @@ data:extend({
     subgroup = "kr-vehicle-motor",
     order = "e[additional-engines]-e2[advanced-additional-engine-equipment]",
     stack_size = 5,
+    weight = 200*kg,
   },
   {
     type = "movement-bonus-equipment",

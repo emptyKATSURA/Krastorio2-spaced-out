@@ -20,6 +20,7 @@ data:extend({
     subgroup = "equipment",
     order = "a1[energy-source]-a1[energy-absorber-equipment]",
     stack_size = 10,
+    weight = 100*kg,
   },
   {
     type = "battery-equipment",

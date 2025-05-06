@@ -22,6 +22,16 @@ local flare_stack_lib = {}
 --- @type table<data.FluidID, boolean>
 local auto_blacklist = {
   ["kr-matter"] = true,
+  ["parameter-0"] = true,
+  ["parameter-1"] = true,
+  ["parameter-2"] = true,
+  ["parameter-3"] = true,
+  ["parameter-4"] = true,
+  ["parameter-5"] = true,
+  ["parameter-6"] = true,
+  ["parameter-7"] = true,
+  ["parameter-8"] = true,
+  ["parameter-9"] = true,
 }
 
 --- Adds the given fluid to the auto-generation blacklist.

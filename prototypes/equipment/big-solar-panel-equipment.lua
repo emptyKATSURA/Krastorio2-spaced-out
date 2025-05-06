@@ -21,6 +21,7 @@ data:extend({
     subgroup = "equipment",
     order = "a[energy-source]-a3[big-solar-panel-equipment]",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "solar-panel-equipment",

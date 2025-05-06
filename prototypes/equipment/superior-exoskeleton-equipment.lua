@@ -23,6 +23,7 @@ data:extend({
     subgroup = "kr-character-equipment",
     order = "e[exoskeleton]-a3[superior-exoskeleton-equipment]",
     stack_size = 20,
+    weight = 100*kg,
   },
   {
     type = "movement-bonus-equipment",

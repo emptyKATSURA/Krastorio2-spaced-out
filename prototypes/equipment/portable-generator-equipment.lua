@@ -22,6 +22,7 @@ data:extend({
     subgroup = "equipment",
     order = "a2[energy-source]-a3[k-generator]",
     stack_size = 10,
+    weight = 100*kg,
   },
   {
     type = "generator-equipment",

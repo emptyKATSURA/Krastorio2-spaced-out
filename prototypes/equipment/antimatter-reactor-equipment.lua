@@ -38,6 +38,7 @@ data:extend({
     subgroup = "equipment",
     order = "a2[energy-source]-a6[antimatter-reactor-equipment]",
     stack_size = 10,
+    weight = 1000*kg,
   },
   {
     type = "generator-equipment",

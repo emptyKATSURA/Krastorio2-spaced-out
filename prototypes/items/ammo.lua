@@ -98,7 +98,7 @@ data:extend({
     subgroup = "ammo",
     order = "c[impulse-rifle-ammo]",
     stack_size = 200,
-    weight = 80*kg,
+    weight = 10*kg,
     magazine_size = 3,
     ammo_category = "kr-impulse-rifle",
     ammo_type = {

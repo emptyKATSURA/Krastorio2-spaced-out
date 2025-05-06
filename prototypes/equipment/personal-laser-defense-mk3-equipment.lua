@@ -23,6 +23,7 @@ data:extend({
     order = "d[active-defense]-b3[personal-laser-defense-mk3-equipment]",
     place_as_equipment_result = "kr-personal-laser-defense-mk3-equipment",
     stack_size = 20,
+    weight = 200*kg,
   },
   {
     type = "active-defense-equipment",

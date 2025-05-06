@@ -22,6 +22,7 @@ data:extend({
     subgroup = "equipment",
     order = "b[shield]-c[energy-shield-equipment-mk3]",
     stack_size = 50,
+    weight = 100*kg,
   },
   {
     type = "energy-shield-equipment",
