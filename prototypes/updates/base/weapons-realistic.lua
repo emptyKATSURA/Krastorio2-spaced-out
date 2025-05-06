@@ -1337,6 +1337,7 @@ data:extend({
     subgroup = "ammo",
     order = "a[basic-clips]-a07[anti-materiel-rifle-magazine]",
     stack_size = 200,
+    weight = 5*kg,
   },
 
   {
@@ -1451,6 +1452,7 @@ data:extend({
     subgroup = "ammo",
     order = "a[basic-clips]-a08[anti-materiel-rifle-magazine]",
     stack_size = 200,
+    weight = 10*kg,
   },
 
   {
@@ -1565,6 +1567,7 @@ data:extend({
     subgroup = "ammo",
     order = "a[basic-clips]-a09[anti-materiel-rifle-magazine]",
     stack_size = 200,
+    weight = 20*kg,
   },
 
   {
@@ -1682,6 +1685,7 @@ data:extend({
     subgroup = "ammo",
     order = "a[basic-clips]-a10[anti-materiel-rifle-magazine]",
     stack_size = 200,
+    weight = 20*kg,
   },
 
   {
