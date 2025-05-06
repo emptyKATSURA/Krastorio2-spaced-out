@@ -22,6 +22,7 @@ data:extend({
     order = "b[pipe]-ca[steel-pump]",
     place_result = "kr-steel-pump",
     stack_size = 50,
+    weight = 20*kg,
   },
   {
     type = "pump",

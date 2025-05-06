@@ -41,6 +41,8 @@ data:extend({
     collision_box = { { -0.4, -0.45 }, { 0.4, 0.45 } },
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     speed = data.raw["transport-belt"]["express-transport-belt"].speed,
+    max_belt_stack_size = 4,
+    adjustable_belt_stack_size = true,
     container_distance = 0.75,
     filter_count = 5,
     energy_source = {
