@@ -4,11 +4,20 @@ data:extend({
     name = "kr-automation-core",
     icon = "__Krastorio2Assets__/technologies/automation-core.png",
     icon_size = 256,
-    research_trigger = {
+    -- Only used to spoof aai industry. trigger one is true one. change it back later once it updates
+    unit = {
+      time = 10,
+      count = 10,
+      ingredients = {
+      { "automation-science-pack", 1 },
+      },
+    },
+--[[
+      research_trigger = {
       type = "craft-item",
       item = "iron-gear-wheel",
       count = 10
-    },
+    }, ]]--
     prerequisites = {},
     effects = {
       { type = "unlock-recipe", recipe = "kr-automation-core" },
