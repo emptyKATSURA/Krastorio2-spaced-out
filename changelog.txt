@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2025-05-7
+  Compatibility:
+    - Basic lab now accepts all science packs since other mods depend on it
+  Changes:
+    - Biolab now requires advanced lab
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 2025-05-7
   Compatibility:
