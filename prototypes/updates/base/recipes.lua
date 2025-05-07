@@ -16,6 +16,11 @@ data_util.add_or_replace_ingredient(
   "plastic-bar",
   { type = "item", name = "kr-electronic-components", amount = 2 }
 )
+data_util.add_or_replace_ingredient(
+  "biolab",
+  "lab",
+  { type = "item", name = "kr-advanced-lab", amount = 2 }
+)
 data.raw.recipe["advanced-circuit"].results = {
   { type = "item", name = "advanced-circuit", amount = 2 },
 }

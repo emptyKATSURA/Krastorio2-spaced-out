@@ -292,9 +292,6 @@ data.raw["inserter"]["long-handed-inserter"].next_upgrade = "kr-superior-long-in
 data.raw.lab["lab"].energy_usage = "200kW"
 data.raw.lab["lab"].fast_replaceable_group = "lab"
 data.raw.lab["lab"].next_upgrade = "kr-advanced-lab"
-data_util.remove_lab_input("lab", "production-science-pack")
-data_util.remove_lab_input("lab", "utility-science-pack")
-data_util.remove_lab_input("lab", kr_optimization_tech_card_name)
 
 data.raw.lamp["small-lamp"].glow_size = 8 --6
 
