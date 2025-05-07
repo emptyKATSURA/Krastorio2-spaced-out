@@ -19,7 +19,7 @@ data_util.add_or_replace_ingredient(
 data_util.add_or_replace_ingredient(
   "biolab",
   "lab",
-  { type = "item", name = "kr-advanced-lab", amount = 2 }
+  { type = "item", name = "kr-advanced-lab", amount = 1 }
 )
 data.raw.recipe["advanced-circuit"].results = {
   { type = "item", name = "advanced-circuit", amount = 2 },
