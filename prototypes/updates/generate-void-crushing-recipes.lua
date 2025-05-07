@@ -12,7 +12,7 @@ for _, recipe in pairs(data.raw.recipe) do
 end
 
 for _, item in pairs(flib_prototypes.all("item")) do
-  if item.type ~= "module" and not crushing_ingredients[item.name] then
+  if item.type ~= "module" and not crushing_ingredients[item.name] and not "cryolab" then
     data:extend({
       {
         type = "recipe",
