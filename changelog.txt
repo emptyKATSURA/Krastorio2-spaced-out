@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
-Date: 2025-05-6
+Date: 2025-05-7
   Compatibility:
     - Fixed the circular dependency with muluna and bz ores together
     - AAI circuit no longer needs iron plates.
