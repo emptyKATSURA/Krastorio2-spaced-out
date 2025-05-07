@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 2025-05-6
+  Compatibility:
+    - Fixed the circular dependency with muluna and bz ores together
+    - AAI circuit no longer needs iron plates.
+  Bugfixes:
+    - Fixed kovarex process produced more U-235 than it should
+    - Fixed Mech armor didn't had resistances for radioacticity
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2025-05-6
   Compatibility:
