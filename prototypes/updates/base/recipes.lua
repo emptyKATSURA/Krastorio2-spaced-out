@@ -294,7 +294,7 @@ data.raw.recipe["kovarex-enrichment-process"].energy_required = 60
 data_util.add_or_replace_ingredient(
   "kovarex-enrichment-process",
   "uranium-235",
-  { type = "item", name = "uranium-235", amount = 30 }
+  { type = "item", name = "uranium-235", amount = 30, ignored_by_stats = 30 }
 )
 data_util.add_or_replace_ingredient(
   "kovarex-enrichment-process",
@@ -304,7 +304,7 @@ data_util.add_or_replace_ingredient(
 data_util.add_or_replace_product(
   "kovarex-enrichment-process",
   "uranium-235",
-  { type = "item", name = "uranium-235", amount = 31 }
+  { type = "item", name = "uranium-235", amount = 31, ignored_by_stats = 30, ignored_by_productivity = 30 }
 )
 data_util.add_or_replace_product(
   "kovarex-enrichment-process",
@@ -774,4 +774,5 @@ if mods["aai-industry"] then
   data_util.remove_ingredient("repair-pack", "iron-plate")
   data_util.remove_ingredient("repair-pack", "copper-plate")
   data_util.remove_ingredient("assembling-machine-3", "advanced-circuit")
+  data_util.remove_ingredient("electronic-circuit", "iron-plate")
 end

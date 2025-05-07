@@ -13,7 +13,10 @@ table.insert(
   flib_table.get_or_insert(data.raw.armor["power-armor-mk2"], "resistances", {}),
   { type = "kr-radioactive", decrease = 4, percent = 45 }
 )
-
+table.insert(
+  flib_table.get_or_insert(data.raw.armor["mech-armor"], "resistances", {}),
+  { type = "kr-radioactive", decrease = 6, percent = 60 }
+)
 -- TODO: Redo equipment subgrouping
 
 data.raw.capsule["discharge-defense-remote"].order = "f[active-defense-equipment]-b[discharge-defense-remote]"
