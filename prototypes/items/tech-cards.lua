@@ -7,7 +7,6 @@ data:extend({
     order = "a00[blank-tech-card]",
     stack_size = 200,
     weight = 1*kg,
-    hidden = true,
   },
   {
     type = "item",
