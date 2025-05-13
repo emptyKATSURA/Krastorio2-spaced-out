@@ -332,10 +332,10 @@ data.raw["mining-drill"]["electric-mining-drill"].module_slots = 2
 data.raw["mining-drill"]["pumpjack"].localised_name = { "entity-name.kr-oil-pumpjack" }
 
 data.raw.pipe["pipe"].fast_replaceable_group = "pipe"
-data.raw.pipe["pipe"].next_upgrade = "kr-steel-pipe"
+--data.raw.pipe["pipe"].next_upgrade = "kr-steel-pipe"
 
 data.raw["pipe-to-ground"]["pipe-to-ground"].fast_replaceable_group = "pipe"
-data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "kr-steel-pipe-to-ground"
+--data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "kr-steel-pipe-to-ground"
 
 data.raw.pump["pump"].fast_replaceable_group = "pump"
 data.raw.pump["pump"].next_upgrade = "kr-steel-pump"
@@ -378,15 +378,6 @@ data.raw.reactor["nuclear-reactor"].meltdown_action.action_delivery.target_effec
     },
   },
 }
-
-if not mods["aai-industry"] then
-  data.raw["offshore-pump"]["offshore-pump"].energy_usage = "19kW"
-  data.raw["offshore-pump"]["offshore-pump"].energy_source = {
-    type = "electric",
-    usage_priority = "secondary-input",
-    drain = "1kW",
-  }
-end
 
 data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.pipe_connections[2].max_underground_distance = 20
 
@@ -484,7 +475,7 @@ data.raw["unit-spawner"]["spitter-spawner"].max_health = 750
 
 data.raw.corpse["biter-spawner-corpse"].minable = {
   mining_time = 1,
-  results = { { type = "item", name = "kr-biomass", amount_min = 1, amount_max = 5 } },
+  results = { { type = "item", name = "kr-biomass", amount_min = 10, amount_max = 20 } },
 }
 data.raw.corpse["biter-spawner-corpse"].selectable_in_game = true
 data.raw.corpse["biter-spawner-corpse"].time_before_removed = 5 * minute
@@ -519,3 +510,6 @@ data.raw["lab"]["biolab"].inputs = {
       "cryogenic-science-pack",
       "promethium-science-pack",
     }
+
+table.insert( data.raw ["assembling-machine"]["crusher"].crafting_categories, "kr-crushing" )
+data.raw ["assembling-machine"]["crusher"].surface_conditions = nil

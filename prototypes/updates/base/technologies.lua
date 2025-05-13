@@ -90,13 +90,13 @@ data_util.add_recipe_unlock("steel-processing", "kr-steel-gear-wheel")
 data_util.add_recipe_unlock("foundry", "molten-enriched-copper")
 data_util.add_recipe_unlock("foundry", "molten-enriched-iron")
 data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
-data_util.add_recipe_unlock("turbo-transport-belt", "kr-advanced-loader")
 data_util.add_recipe_unlock("biochamber", "kr-bio-processing-circuit")
 
 if settings.startup["kr-loaders"].value then
   data_util.add_recipe_unlock("logistics", "kr-loader")
   data_util.add_recipe_unlock("logistics-2", "kr-fast-loader")
   data_util.add_recipe_unlock("logistics-3", "kr-express-loader")
+  data_util.add_recipe_unlock("turbo-transport-belt", "kr-advanced-loader")
 end
 
 data_util.remove_recipe_unlock("automation", "long-handed-inserter")
@@ -167,14 +167,6 @@ data.raw.technology["utility-science-pack"].localised_name = { "item-name.utilit
 data.raw.technology[kr_optimization_tech_card_name].localised_name = { "item-name.optimization-tech-card" }
 data.raw.technology[kr_optimization_tech_card_name].localised_description =
   { "technology-description.optimization-tech-card" }
-
-if mods["aai-industry"] then
-  data_util.remove_prerequisite("electronics", "electricity")
-  data_util.remove_prerequisite("fluid-handling", "steam-power")
-  data_util.remove_prerequisite("automation-science-pack", "kr-laboratory")
-  data.raw.technology["kr-laboratory"] = nil
-  data_util.add_prerequisite("automation-science-pack", "electronics")
-end
 
 --Remove once aai industry updates
 data.raw.technology["kr-automation-core"].unit = nil

@@ -590,6 +590,18 @@ data.raw.recipe["speed-module-2"].ingredients = {
   { type = "item", name = "speed-module", amount = 5 },
 }
 
+data.raw.recipe["quality-module"].energy_required = 15
+data.raw.recipe["quality-module"].ingredients = {
+  { type = "item", name = "electronic-circuit", amount = 5 },
+  { type = "item", name = "kr-electronic-components", amount = 10 },
+}
+
+data.raw.recipe["quality-module-2"].energy_required = 15
+data.raw.recipe["quality-module-2"].ingredients = {
+  { type = "item", name = "advanced-circuit", amount = 5 },
+  { type = "item", name = "electronic-circuit", amount = 5 },
+  { type = "item", name = "quality-module", amount = 5 },
+}
 data_util.add_or_replace_ingredient(
   "spidertron",
   "fission-reactor-equipment",
@@ -773,11 +785,3 @@ data.raw.recipe["utility-science-pack"] = {
   results = { { type = "item", name = "utility-science-pack", amount = 5 } },
   allow_productivity = true,
 }
-
-if mods["aai-industry"] then
-  data_util.remove_ingredient("repair-pack", "stone")
-  data_util.remove_ingredient("repair-pack", "iron-plate")
-  data_util.remove_ingredient("repair-pack", "copper-plate")
-  data_util.remove_ingredient("assembling-machine-3", "advanced-circuit")
-  data_util.remove_ingredient("electronic-circuit", "iron-plate")
-end
