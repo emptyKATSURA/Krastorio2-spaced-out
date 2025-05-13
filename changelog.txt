@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2025-05-14
+  Features:
+    - Added casting recipes for rest of items
+  Changes:
+    - Kr rocket turret now can shoot vanilla rockets
+    - All tech cards are now essential research
+    - Singularity lab needs gravity to be 0 instead of pressure
+    - Superior substation can be crapted in EMP
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2025-05-13
   Compatibility:
