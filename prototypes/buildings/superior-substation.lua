@@ -6,6 +6,7 @@ data:extend({
     type = "recipe",
     name = "kr-superior-substation",
     energy_required = 1,
+    category = "electronics",
     enabled = false,
     ingredients = {
       { type = "item", name = "kr-imersium-beam", amount = 3 },

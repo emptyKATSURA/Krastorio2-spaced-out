@@ -87,7 +87,7 @@ data:extend({
     call_for_help_radius = 90,
     attack_parameters = {
       type = "projectile",
-      ammo_category = "kr-turret-missile",
+      ammo_categories = { "kr-turret-missile", "rocket" },
       cooldown = 120,
       turn_range = 1 / 7,
       projectile_creation_distance = 3.35,
