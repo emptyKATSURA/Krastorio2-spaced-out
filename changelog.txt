@@ -1,4 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-05-13
+  Compatibility:
+    - Fixed AAI Industry Compatibility
+  Changes:
+    - Quality modules require the same stuff as other modules
+    - Spaceship parts can be mined by default
+    - Singularity lab needs gravity to be 0 instead of pressure
+    - Vannila crusher now can crush using krastorio 2 recipes
+    - Increased amount of biomass from biter nests corpes
+  Bugfixes:
+    - Fixed Disabling Loaders caused a crash
+    - Fixed Advanced assembling machine couldn't output fluids
+    - Fixed that clicking the rename button in the planetary teleporter GUI would not save the new name.
+    - Fixed a crash when a planetary teleporter was destroyed while its GUI was open.
+    - Fixed that the planetary teleporter GUI would show status as "nil" if the teleporter was marked for deconstruction.
+    - Fixed missing localisation when attempting to place an entity that collides with a planetary teleporter.
+    - Fixed that turrets could not be connected to the circuit network.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 2025-05-7
   Bugfixes:

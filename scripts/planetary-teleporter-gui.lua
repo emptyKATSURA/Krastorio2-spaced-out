@@ -89,6 +89,11 @@ local function destroy_gui(self)
   storage.planetary_teleporter_gui[self.player.index] = nil
 end
 
+--- @param self PlanetaryTeleporterGui
+local function update_name_label(self)
+  self.elems.name_label.caption = self.data.name or { "gui.kr-planetary-teleporter-unnamed" }
+end
+
 --- @param e EventData.on_gui_closed|EventData.on_gui_click
 local function on_window_closed(e)
   local self = storage.planetary_teleporter_gui[e.player_index]
@@ -131,6 +136,13 @@ local function on_rename_button_clicked(e)
   local textfield = self.elems.name_textfield
   local label = self.elems.name_label
   if textfield.visible then
+    local text = textfield.text
+    if #text > 0 then
+      self.data.name = text
+    else
+      self.data.name = nil
+    end
+    update_name_label(self)
     label.visible = true
     textfield.visible = false
   else
@@ -144,16 +156,7 @@ end
 
 --- @param e EventData.on_gui_confirmed
 local function on_name_textfield_confirmed(e)
-  local self = storage.planetary_teleporter_gui[e.player_index]
-  if not self or not self.elems.kr_planetary_teleporter_window.valid then
-    return
-  end
-  local text = e.element.text
-  if #text > 0 then
-    self.data.name = e.element.text
-  else
-    self.data.name = nil
-  end
+  -- Just pass through the logic because it's all the same anyway.
   on_rename_button_clicked(e --[[@as EventData.on_gui_click]])
 end
 
@@ -190,10 +193,18 @@ local status_sprites = {
   },
   [defines.entity_status.no_power] = { label = { "entity-status.no-power" }, sprite = "utility/status_not_working" },
   [defines.entity_status.normal] = { label = { "entity-status.normal" }, sprite = "utility/status_working" },
+  [defines.entity_status.marked_for_deconstruction] = {
+    label = { "entity-status.marked-for-deconstruction" },
+    sprite = "utility/status_not_working",
+  },
 }
 
 --- @param self PlanetaryTeleporterGui
 local function update_gui(self)
+  if not self.entity.valid then
+    destroy_gui(self)
+    return
+  end
   local buffer_capacity = self.entity.prototype.electric_energy_source_prototype.buffer_capacity
   local status = self.entity.status
   local status_properties = status_sprites[status] or {}
@@ -224,7 +235,7 @@ local function update_gui(self)
     end
   end
 
-  self.elems.name_label.caption = self.data.name or { "gui.kr-planetary-teleporter-unnamed" }
+  update_name_label(self)
 
   for _, frame in pairs(self.elems.destinations_table.children) do
     local unit_number = tonumber(frame.name) --[[@as uint]]

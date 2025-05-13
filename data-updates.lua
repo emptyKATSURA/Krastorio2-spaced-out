@@ -30,4 +30,5 @@ require("prototypes.updates.set-new-resource-autoplace")
 
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")
+require("prototypes.compatibility.aai-industry")
 
