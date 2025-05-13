@@ -141,6 +141,7 @@ data:extend({
     name = "kr-matter-tech-card",
     icon = "__Krastorio2Assets__/technologies/matter-tech-card.png",
     icon_size = 256,
+    essential = true,
     unit = {
       time = 60,
       count = 750,

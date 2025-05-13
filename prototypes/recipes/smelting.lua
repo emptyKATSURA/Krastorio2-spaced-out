@@ -210,7 +210,7 @@ data:extend({
     icon = "__space-age__/graphics/icons/fluid/molten-iron.png",
     category = "metallurgy",
     subgroup = "vulcanus-processes",
-    order = "a[melting]-b[molten-iron]",
+    order = "a[melting]-a[molten-iron]",
     auto_recycle = false,
     show_amount_in_title = false,
     always_show_products = true,
@@ -228,5 +228,65 @@ data:extend({
     allow_productivity = true,
     hide_from_signal_gui = false,
     main_product =  "molten-iron"
+  },
+  {
+    type = "recipe",
+    name = "kr-casting-iron-beam",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-e[casting-iron]",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/items/iron-beam.png" },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "kr-iron-beam", amount = 1}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "kr-casting-steel-beam",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-e[casting-iron]",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/items/steel-beam.png" },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 60, fluidbox_multiplier = 10},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "kr-steel-beam", amount = 1}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "kr-casting-steel-gear",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-d[casting-iron]",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/items/steel-gear-wheel.png" },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 30, fluidbox_multiplier = 10},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "kr-steel-gear-wheel", amount = 1}},
+    allow_productivity = true
   },
 })

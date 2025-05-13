@@ -45,6 +45,7 @@ data_util.add_prerequisite("weapon-shooting-speed-1", "automation-science-pack")
 data_util.add_prerequisite(kr_optimization_tech_card_name, "kr-research-server")
 data_util.add_prerequisite("energy-shield-mk2-equipment", "power-armor-mk2")
 data_util.add_prerequisite("big-mining-drill", "kr-electric-mining-drill-mk2")
+data_util.add_prerequisite("promethium-science-pack", "kr-singularity-tech-card")
 
 data_util.remove_prerequisite("atomic-bomb", "military-4")
 data_util.remove_prerequisite("automation-2", "automation")
@@ -89,6 +90,9 @@ data_util.add_recipe_unlock("steel-processing", "kr-steel-beam")
 data_util.add_recipe_unlock("steel-processing", "kr-steel-gear-wheel")
 data_util.add_recipe_unlock("foundry", "molten-enriched-copper")
 data_util.add_recipe_unlock("foundry", "molten-enriched-iron")
+data_util.add_recipe_unlock("foundry", "kr-casting-iron-beam")
+data_util.add_recipe_unlock("foundry", "kr-casting-steel-beam")
+data_util.add_recipe_unlock("foundry", "kr-casting-steel-gear")
 data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
 data_util.add_recipe_unlock("biochamber", "kr-bio-processing-circuit")
 
@@ -118,6 +122,9 @@ data.raw.technology["energy-shield-mk2-equipment"].unit = {
         {kr_optimization_tech_card_name, 1}
       }
 }
+table.insert ( data.raw.technology["promethium-science-pack"].unit.ingredients,
+    { "kr-singularity-tech-card", 1 }
+)
 
 data.raw.technology["automation"].unit = nil
 data.raw.technology["automation"].research_trigger = {

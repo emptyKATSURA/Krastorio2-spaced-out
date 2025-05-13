@@ -274,6 +274,7 @@ data:extend({
     name = "kr-singularity-tech-card",
     icon = "__Krastorio2Assets__/technologies/singularity-tech-card.png",
     icon_size = 256,
+    essential = true,
     unit = {
       time = 45,
       count = 1250,
