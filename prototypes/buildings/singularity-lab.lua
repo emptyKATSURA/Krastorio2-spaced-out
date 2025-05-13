@@ -63,7 +63,7 @@ data:extend({
     surface_conditions =
       {
         {
-          property = "pressure",
+          property = "gravity",
           min = 0,
           max = 0
         }

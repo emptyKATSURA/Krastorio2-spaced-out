@@ -251,6 +251,7 @@ data:extend({
   {
     type = "simple-entity",
     name = "kr-planetary-teleporter-collision-1",
+    localised_name = { "entity-name.kr-planetary-teleporter" },
     flags = { "not-on-map", "not-selectable-in-game", "placeable-off-grid" },
     hidden = true,
     collision_box = { { -1.5, -1 }, { 1.5, 0.4 } },
@@ -259,6 +260,7 @@ data:extend({
   {
     type = "simple-entity",
     name = "kr-planetary-teleporter-collision-2",
+    localised_name = { "entity-name.kr-planetary-teleporter" },
     flags = { "not-on-map", "not-selectable-in-game", "placeable-off-grid" },
     hidden = true,
     collision_box = { { -0.8, -1 }, { 1.4, 1.2 } },
@@ -267,6 +269,7 @@ data:extend({
   {
     type = "simple-entity",
     name = "kr-planetary-teleporter-collision-3",
+    localised_name = { "entity-name.kr-planetary-teleporter" },
     flags = { "not-on-map", "not-selectable-in-game", "placeable-off-grid" },
     hidden = true,
     collision_box = { { -1.4, -1 }, { 0.8, 1.2 } },

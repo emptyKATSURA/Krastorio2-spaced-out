@@ -173,5 +173,19 @@ data:extend({
         orientation_to_variation = false,
       },
     },
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template,
+      {
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+      }
+    )
   },
 })

@@ -205,5 +205,16 @@ data:extend({
     energy_glow_animation = laser_turret_shooting_glow(),
     folded_animation = laser_artillery_turret_sheet({ direction_count = 8, line_length = 1 }),
     glow_light_intensity = 0.5, -- defaults to 0
+
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template,
+      {
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+        { variation = 7, main_offset = util.by_pixel_hr(-61, 61), shadow_offset = util.by_pixel_hr(-61, 61), show_shadow = false },
+      }
+    )
   },
 })
