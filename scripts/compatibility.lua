@@ -11,16 +11,6 @@ function compatibility.aai_industry()
   end
 end
 
-function compatibility.disco_science()
-  if
-    game.active_mods["DiscoScience"]
-    and remote.interfaces["DiscoScience"]
-    and remote.interfaces["DiscoScience"]["setIngredientColor"]
-  then
-    remote.call("DiscoScience", "setIngredientColor", "kr-basic-tech-card", { r = 0.823, g = 0.411, b = 0.117 })
-  end
-end
-
 function compatibility.nuclear_fuel()
   if game.active_mods["Nuclear Fuel"] then
     remote.call("kr-radioactivity", "add_item", "breeder-fuel-cell")

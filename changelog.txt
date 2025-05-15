@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2025-05-15
+  Features:
+    - Biomass now can be made from biter eggs
+  Changes:
+    - Biter Virus Capsule is now gleba tech
+    - Laser Artillery now requires electromagnetics science and artillery to be unlocked. Tech cost 750 -> 2000
+    - Merged krastorio 2 rocket turret and railgun technologies with their vannila counterparts
+    - Decreased loader alt mode scale when drawing a single item
+  Bugfixes:
+    - Fixed Recycling immersite powder would give immersite crystal
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2025-05-14
   Features:
