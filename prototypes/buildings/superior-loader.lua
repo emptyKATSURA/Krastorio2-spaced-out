@@ -57,6 +57,7 @@ data:extend({
     close_sound = sounds.machine_close,
     belt_animation_set = require("prototypes.buildings.superior-belt-animation-set"),
     animation_speed_coefficient = 32,
+    icon_draw_specification = {scale = 0.7},
     structure = graphics.structure({ 151, 34, 191 }),
     structure_render_layer = graphics.structure_render_layer,
     circuit_wire_max_distance = default_circuit_wire_max_distance,

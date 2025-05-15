@@ -58,6 +58,7 @@ data:extend({
     close_sound = sounds.machine_close,
     belt_animation_set = data.raw["transport-belt"]["fast-transport-belt"].belt_animation_set,
     animation_speed_coefficient = 32,
+    icon_draw_specification = {scale = 0.7},
     structure = graphics.structure({ 228, 24, 38 }),
     structure_render_layer = graphics.structure_render_layer,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
