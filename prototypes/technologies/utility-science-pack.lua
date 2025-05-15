@@ -88,30 +88,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "kr-energy-shield-mk3-equipment",
-    icons = util.technology_icon_constant_equipment(
-      "__Krastorio2Assets__/technologies/energy-shield-mk3-equipment.png"
-    ),
-    icon_size = 256,
-    upgrade = false,
-    unit = {
-      time = 60,
-      count = 350,
-      ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "electromagnetic-science-pack", 1 },
-      },
-    },
-    prerequisites = { "energy-shield-mk2-equipment", "kr-lithium-sulfur-battery", "mech-armor" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-energy-shield-mk3-equipment" },
-    },
-  },
-  {
-    type = "technology",
     name = "kr-fusion-energy",
     icon = "__Krastorio2Assets__/technologies/fusion-energy.png",
     icon_size = 256,
@@ -211,81 +187,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "kr-quantum-computer",
-    icon = "__Krastorio2Assets__/technologies/quantum-computer.png",
-    icon_size = 256,
-    unit = {
-      time = 60,
-      count = 750,
-      ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "electromagnetic-science-pack", 1 },
-        { "cryogenic-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-ai-core", "quantum-processor" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-quantum-computer" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-railgun-turret",
-    icon = "__Krastorio2Assets__/technologies/railgun-turret.png",
-    icon_size = 256,
-    prerequisites = { "military-4" },
-    unit = {
-      time = 60,
-      count = 500,
-      ingredients = {
-        { "military-science-pack", 1 },
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-      },
-    },
-    order = "g-f-z",
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-railgun-turret" },
-      { type = "unlock-recipe", recipe = "kr-basic-railgun-shell" },
-      { type = "unlock-recipe", recipe = "kr-explosive-railgun-shell" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-singularity-lab",
-    icon = "__Krastorio2Assets__/technologies/singularity-lab.png",
-    icon_size = 256,
-    unit = {
-      time = 30,
-      count = 10000,
-      ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-matter-tech-card",1},
-        { "kr-advanced-tech-card",1},
-        { "kr-singularity-tech-card",1},
-        { "metallurgic-science-pack", 1 },
-        { "agricultural-science-pack", 1 },
-        { "electromagnetic-science-pack", 1 },
-        { "cryogenic-science-pack", 1 },
-        { "promethium-science-pack", 1 },
-      },
-    },
-    prerequisites = { "promethium-science-pack" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-singularity-lab" },
-    },
-  },
-  {
-    type = "technology",
     name = "kr-superior-night-vision-equipment",
     icons = util.technology_icon_constant_equipment(
       "__Krastorio2Assets__/technologies/superior-night-vision-equipment.png"
@@ -329,6 +230,27 @@ data:extend({
     effects = {
       { type = "unlock-recipe", recipe = "kr-superior-solar-panel-equipment" },
       { type = "unlock-recipe", recipe = "kr-big-superior-solar-panel-equipment" },
+    },
+  },
+  {
+    type = "technology",
+    name = "kr-fusion-reactor-equipment",
+    icons = util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/fusion-reactor-equipment.png"),
+    upgrade = false,
+    unit = {
+      time = 60,
+      count = 250,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "chemical-science-pack", 1 },
+        { "military-science-pack", 1 },
+        { "utility-science-pack", 1 },
+      },
+    },
+    prerequisites = { "fission-reactor-equipment", "kr-fusion-energy" },
+    effects = {
+      { type = "unlock-recipe", recipe = "kr-fusion-reactor-equipment" },
     },
   },
 })

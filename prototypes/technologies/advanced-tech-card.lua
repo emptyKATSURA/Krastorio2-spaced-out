@@ -19,49 +19,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "kr-advanced-chemical-plant",
-    icon = "__Krastorio2Assets__/technologies/advanced-chemical-plant.png",
-    icon_size = 256,
-    unit = {
-      time = 60,
-      count = 500,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "agricultural-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-advanced-tech-card", "carbon-fiber" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-advanced-chemical-plant" },
-      { type = "unlock-recipe", recipe = "kr-electronic-components-with-lithium" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-advanced-furnace",
-    icon = "__Krastorio2Assets__/technologies/advanced-furnace.png",
-    icon_size = 256,
-    unit = {
-      time = 30,
-      count = 2000,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "metallurgic-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-energy-control-unit", "kr-advanced-tech-card", "metallurgic-science-pack" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-advanced-furnace" },
-    },
-  },
-  {
-    type = "technology",
     name = "kr-advanced-roboports",
     icon = "__Krastorio2Assets__/technologies/advanced-roboports.png",
     icon_size = 256,
@@ -95,7 +52,7 @@ data:extend({
         { "kr-advanced-tech-card", 1 },
       },
     },
-    prerequisites = { "tank", "kr-advanced-tech-card", "kr-railgun-turret" },
+    prerequisites = { "tank", "kr-advanced-tech-card", "kr-military-5" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-advanced-tank" },
     },
@@ -135,167 +92,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "kr-biter-virus",
-    icon = "__Krastorio2Assets__/technologies/biter-virus.png",
-    icon_size = 256,
-    unit = {
-      time = 45,
-      count = 3000,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-      },
-    },
-    prerequisites = { "kr-advanced-tech-card", "kr-military-5" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-biter-virus" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-energy-shield-mk4-equipment",
-    icon_size = 256,
-    icons = util.technology_icon_constant_equipment(
-      "__Krastorio2Assets__/technologies/energy-shield-mk4-equipment.png"
-    ),
-    upgrade = false,
-    unit = {
-      time = 30,
-      count = 500,
-      ingredients = {
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "metallurgic-science-pack", 1 },
-        { "agricultural-science-pack", 1 },
-        { "electromagnetic-science-pack", 1 },
-        { "cryogenic-science-pack", 1 },
-
-      },
-    },
-    prerequisites = { "kr-energy-shield-mk3-equipment", "quantum-processor" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-energy-shield-mk4-equipment" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-laser-artillery-turret",
-    icon = "__Krastorio2Assets__/technologies/laser-artillery-turret.png",
-    icon_size = 256,
-    order = "g-f-z",
-    unit = {
-      time = 60,
-      count = 750,
-      ingredients = {
-        { "military-science-pack", 1 },
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-advanced-tech-card", 1 },
-      },
-    },
-    prerequisites = { "kr-military-5", "kr-advanced-tech-card", "kr-railgun-turret", "kr-energy-control-unit" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-laser-artillery-turret" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-logistic-5",
-    localised_description = { "technology-description.logistics" },
-    icon = "__Krastorio2Assets__/technologies/logistics-5.png",
-    icon_size = 256,
-    unit = {
-      time = 45,
-      count = 2000,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "kr-singularity-tech-card", 1 },
-      },
-    },
-    prerequisites = { "turbo-transport-belt", "kr-singularity-tech-card" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-superior-splitter" },
-      { type = "unlock-recipe", recipe = "kr-superior-transport-belt" },
-      { type = "unlock-recipe", recipe = "kr-superior-underground-belt" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-personal-laser-defense-mk3-equipment",
-    icons = util.technology_icon_constant_equipment(
-      "__Krastorio2Assets__/technologies/personal-laser-defense-mk3-equipments.png"
-    ),
-    icon_size = 256,
-    order = "g-m",
-    unit = {
-      time = 75,
-      count = 450,
-      ingredients = {
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "electromagnetic-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-advanced-tech-card", "kr-personal-laser-defense-mk2-equipment", "mech-armor" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-personal-laser-defense-mk3-equipment" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-rocket-turret",
-    icon = "__Krastorio2Assets__/technologies/rocket-turret.png",
-    icon_size = 256,
-    order = "g-f-z",
-    unit = {
-      time = 60,
-      count = 750,
-      ingredients = {
-        { "military-science-pack", 1 },
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-advanced-tech-card", 1 },
-      },
-    },
-    prerequisites = { "kr-advanced-tech-card", "kr-railgun-turret", "atomic-bomb" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-rocket-turret" },
-      { type = "unlock-recipe", recipe = "kr-explosive-turret-rocket" },
-      { type = "unlock-recipe", recipe = "kr-nuclear-turret-rocket" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-singularity-tech-card",
-    icon = "__Krastorio2Assets__/technologies/singularity-tech-card.png",
-    icon_size = 256,
-    essential = true,
-    unit = {
-      time = 45,
-      count = 1250,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "agricultural-science-pack", 1 },
-        { "metallurgic-science-pack", 1 },
-        { "electromagnetic-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-advanced-tech-card", "kr-matter-processing", "electromagnetic-science-pack", "metallurgic-science-pack", "agricultural-science-pack"},
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-singularity-tech-card" },
-    },
-  },
-  {
-    type = "technology",
     name = "kr-superior-exoskeleton-equipment",
     icons = util.technology_icon_constant_equipment(
       "__Krastorio2Assets__/technologies/superior-exoskeleton-equipment.png"
@@ -314,27 +110,6 @@ data:extend({
     prerequisites = { "kr-advanced-exoskeleton-equipment", "kr-advanced-tech-card" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-superior-exoskeleton-equipment" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-superior-inserters",
-    icon = "__Krastorio2Assets__/technologies/superior-inserters.png",
-    icon_size = 256,
-    unit = {
-      time = 45,
-      count = 500,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "kr-singularity-tech-card", 1 },
-      },
-    },
-    prerequisites = { "stack-inserter", "kr-singularity-tech-card" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-superior-inserter" },
-      { type = "unlock-recipe", recipe = "kr-superior-long-inserter" },
     },
   },
 })

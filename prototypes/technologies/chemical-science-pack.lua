@@ -222,27 +222,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "kr-fusion-reactor-equipment",
-    icons = util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/fusion-reactor-equipment.png"),
-    upgrade = false,
-    unit = {
-      time = 60,
-      count = 250,
-      ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
-        { "military-science-pack", 1 },
-        { "utility-science-pack", 1 },
-      },
-    },
-    prerequisites = { "fission-reactor-equipment", "kr-fusion-energy" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-fusion-reactor-equipment" },
-    },
-  },
-  {
-    type = "technology",
     name = "kr-portable-generator-equipment",
     icons = util.technology_icon_constant_equipment(
       "__Krastorio2Assets__/technologies/portable-generator-equipment.png"

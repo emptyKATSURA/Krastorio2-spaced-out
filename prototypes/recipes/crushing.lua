@@ -79,6 +79,7 @@ data:extend({
     allow_intermediates = false,
     always_show_made_in = true,
     always_show_products = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -199,6 +200,28 @@ data:extend({
     },
     allow_as_intermediate = false,
     allow_intermediates = false,
+    always_show_made_in = true,
+    always_show_products = true,
+  },
+  {
+    type = "recipe",
+    name = "kr-biter-biomass",
+    enabled = false,
+    category = "kr-crushing",
+    energy_required = 1,
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/items/biomass.png", scale = 1, shift = { 8, 8 }, },
+      { icon = "__space-age__/graphics/icons//biter-egg.png", scale = 1, shift = { -8, -16 }, },
+    },
+    ingredients = {
+      { type = "item", name = "biter-egg", amount = 1 },
+    },
+    results = {
+      { type = "item", name = "kr-biomass", amount_min = 30, amount_max = 50 },
+    },
+    allow_as_intermediate = false,
+    allow_intermediates = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
   },

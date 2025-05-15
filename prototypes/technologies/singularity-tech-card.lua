@@ -1,106 +1,6 @@
 data:extend({
   {
     type = "technology",
-    name = "kr-antimatter-ammo",
-    icon = "__Krastorio2Assets__/technologies/antimatter-ammo.png",
-    icon_size = 256,
-    unit = {
-      time = 60,
-      count = 2500,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "kr-singularity-tech-card", 1 },
-        { "promethium-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-antimatter-reactor", "kr-laser-artillery-turret", "kr-rocket-turret" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-antimatter-turret-rocket" },
-      { type = "unlock-recipe", recipe = "kr-antimatter-artillery-shell" },
-      { type = "unlock-recipe", recipe = "kr-antimatter-rocket" },
-      { type = "unlock-recipe", recipe = "kr-antimatter-railgun-shell" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-antimatter-reactor",
-    icon = "__Krastorio2Assets__/technologies/antimatter-reactor.png",
-    icon_size = 256,
-    prerequisites = { "kr-fusion-energy", "kr-singularity-tech-card", "promethium-science-pack"  },
-    unit = {
-      time = 60,
-      count = 2000,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "kr-singularity-tech-card", 1 },
-        { "promethium-science-pack", 1 },
-      },
-    },
-    order = "g-f-z",
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-antimatter-reactor" },
-      { type = "unlock-recipe", recipe = "kr-empty-antimatter-fuel-cell" },
-      { type = "unlock-recipe", recipe = "kr-charged-antimatter-fuel-cell" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-antimatter-reactor-equipment",
-    icons = util.technology_icon_constant_equipment(
-      "__Krastorio2Assets__/technologies/antimatter-reactor-equipment.png"
-    ),
-    upgrade = false,
-    unit = {
-      time = 45,
-      count = 500,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "kr-singularity-tech-card", 1 },
-        { "promethium-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-fusion-reactor-equipment", "kr-antimatter-reactor" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-antimatter-reactor-equipment" },
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-intergalactic-transceiver",
-    icon = "__Krastorio2Assets__/technologies/intergalactic-transceiver.png",
-    icon_size = 256,
-    unit = {
-      time = 60,
-      count = 10000,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-matter-tech-card", 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "kr-singularity-tech-card", 1 },
-        { "promethium-science-pack", 1 },
-      },
-    },
-    prerequisites = { "kr-antimatter-reactor" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-intergalactic-transceiver" },
-    },
-  },
-  {
-    type = "technology",
     name = "kr-matter-cube",
     icon = "__Krastorio2Assets__/technologies/matter-cube.png",
     icon_size = 256,
@@ -119,35 +19,6 @@ data:extend({
     },
     prerequisites = { "kr-singularity-tech-card" },
     effects = {}, -- Populated by matter util
-  },
-  {
-    type = "technology",
-    name = "kr-personal-laser-defense-mk4-equipment",
-    icons = util.technology_icon_constant_equipment(
-      "__Krastorio2Assets__/technologies/personal-laser-defense-mk4-equipments.png"
-    ),
-    icon_size = 256,
-    order = "g-m",
-    unit = {
-      time = 90,
-      count = 500,
-      ingredients = {
-        { "utility-science-pack", 1 },
-        { kr_optimization_tech_card_name, 1 },
-        { "kr-advanced-tech-card", 1 },
-        { "metallurgic-science-pack", 1 },
-        { "agricultural-science-pack", 1 },
-        { "electromagnetic-science-pack", 1 },
-        { "cryogenic-science-pack", 1 },
-      },
-    },
-    prerequisites = {
-      "kr-personal-laser-defense-mk3-equipment",
-      "quantum-processor",
-    },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-personal-laser-defense-mk4-equipment" },
-    },
   },
   {
     type = "technology",
@@ -192,6 +63,50 @@ data:extend({
     prerequisites = { "effect-transmission", "kr-singularity-tech-card" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-singularity-beacon" },
+    },
+  },
+  {
+    type = "technology",
+    name = "kr-logistic-5",
+    localised_description = { "technology-description.logistics" },
+    icon = "__Krastorio2Assets__/technologies/logistics-5.png",
+    icon_size = 256,
+    unit = {
+      time = 45,
+      count = 2000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-advanced-tech-card", 1 },
+        { "kr-singularity-tech-card", 1 },
+      },
+    },
+    prerequisites = { "turbo-transport-belt", "kr-singularity-tech-card" },
+    effects = {
+      { type = "unlock-recipe", recipe = "kr-superior-splitter" },
+      { type = "unlock-recipe", recipe = "kr-superior-transport-belt" },
+      { type = "unlock-recipe", recipe = "kr-superior-underground-belt" },
+    },
+  },
+  {
+    type = "technology",
+    name = "kr-superior-inserters",
+    icon = "__Krastorio2Assets__/technologies/superior-inserters.png",
+    icon_size = 256,
+    unit = {
+      time = 45,
+      count = 500,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-advanced-tech-card", 1 },
+        { "kr-singularity-tech-card", 1 },
+      },
+    },
+    prerequisites = { "stack-inserter", "kr-singularity-tech-card" },
+    effects = {
+      { type = "unlock-recipe", recipe = "kr-superior-inserter" },
+      { type = "unlock-recipe", recipe = "kr-superior-long-inserter" },
     },
   },
 })

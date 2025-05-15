@@ -39,28 +39,6 @@ data:extend({
       { type = "unlock-recipe", recipe = "kr-advanced-solar-panel" },
     },
   },
-  --[[{
-    type = "technology",
-    name = "kr-battery-mk3-equipment",
-    icon_size = 256,
-    icons = util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk3-equipment.png"),
-    upgrade = false,
-    unit = {
-      count = 500,
-      ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
-        { "production-science-pack", 1 },
-      },
-      time = 60,
-    },
-    prerequisites = { "kr-quarry-minerals-extraction", "kr-lithium-sulfur-battery", "battery-mk2-equipment" },
-    effects = {
-      { type = "unlock-recipe", recipe = "kr-battery-mk3-equipment" },
-      { type = "unlock-recipe", recipe = "kr-big-battery-mk3-equipment" },
-    },
-  },]]--
   {
     type = "technology",
     name = "kr-nuclear-locomotive",

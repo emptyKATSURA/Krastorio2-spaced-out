@@ -95,6 +95,13 @@ data_util.add_recipe_unlock("foundry", "kr-casting-steel-beam")
 data_util.add_recipe_unlock("foundry", "kr-casting-steel-gear")
 data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
 data_util.add_recipe_unlock("biochamber", "kr-bio-processing-circuit")
+data_util.add_recipe_unlock("rocket-turret", "kr-rocket-turret")
+data_util.add_recipe_unlock("rocket-turret", "kr-explosive-turret-rocket")
+data_util.add_recipe_unlock("rocket-turret", "kr-nuclear-turret-rocket")
+data_util.add_recipe_unlock("railgun", "kr-railgun-turret")
+data_util.add_recipe_unlock("railgun", "kr-basic-railgun-shell")
+data_util.add_recipe_unlock("railgun", "kr-explosive-railgun-shell")
+data_util.add_recipe_unlock("captivity", "kr-biter-biomass")
 
 if settings.startup["kr-loaders"].value then
   data_util.add_recipe_unlock("logistics", "kr-loader")
