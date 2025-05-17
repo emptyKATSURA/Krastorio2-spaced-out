@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2025-05-17
+  Changes:
+    - Vannila rocket turrets can use K2 rockets
+    - Changed order of resources in map generation
+    - AI core, electronic components, energy control unit can be crafted in EMP
+    - Added setting to toggle if steel pipes require pumps to connect to storage tanks
+    - ENDGAME CHANGES ???
+---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 2025-05-15
   Features:
