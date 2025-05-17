@@ -162,7 +162,7 @@ data:extend({
     name = "kr-imersite",
     localised_name = { "", "[entity=kr-imersite] ", { "autoplace-control-names.kr-imersite" } },
     richness = true,
-    order = "b-k",
+    order = "a-i",
     category = "resource",
   },
 })

@@ -99,7 +99,7 @@ data:extend({
     type = "autoplace-control",
     name = "kr-rare-metal-ore",
     localised_name = { "", "[entity=kr-rare-metal-ore] ", { "autoplace-control-names.kr-rare-metal-ore" } },
-    order = "k-a",
+    order = "a-h",
     richness = true,
     category = "resource",
   },

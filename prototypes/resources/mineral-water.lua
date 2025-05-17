@@ -61,7 +61,7 @@ data:extend({
     type = "autoplace-control",
     name = "kr-mineral-water",
     localised_name = { "", "[entity=kr-mineral-water] ", { "autoplace-control-names.kr-mineral-water" } },
-    order = "k-b",
+    order = "a-g",
     richness = true,
     category = "resource",
   },

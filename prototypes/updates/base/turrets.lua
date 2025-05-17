@@ -1,3 +1,6 @@
+local data_util = require("data-util")
+local flib_table = require("__flib__.table")
+
 data.raw["ammo-turret"]["gun-turret"].attack_parameters.cooldown = 10
 data.raw["ammo-turret"]["gun-turret"].attack_parameters.call_for_help_radius = 25
 data.raw["ammo-turret"]["gun-turret"].max_health = 500
@@ -7,6 +10,8 @@ data.raw["artillery-turret"]["artillery-turret"].manual_range_modifier = 5
 
 data.raw["artillery-wagon"]["artillery-wagon"].turn_after_shooting_cooldown = 120
 data.raw["artillery-wagon"]["artillery-wagon"].manual_range_modifier = 3.5
+
+data.raw["ammo-turret"]["rocket-turret"].attack_parameters.ammo_categories = { "kr-turret-missile", "rocket" }
 
 data.raw["electric-turret"]["laser-turret"].max_health = 500 -- nerf /2
 data.raw["electric-turret"]["laser-turret"].call_for_help_radius = 35 -- nerf -5
