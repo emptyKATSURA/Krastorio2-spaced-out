@@ -1,5 +1,9 @@
 -- Allow any fluidbox with a discrete connection to connect to both kinds of pipes, but don't allow them to connect with each other.
 
+if not settings.startup["kr-steel-pipes-need-pumps"].value then
+  return
+end
+
 local flib_prototypes = require("__flib__.prototypes")
 
 --- @param fluid_box data.FluidBox
@@ -8,6 +12,7 @@ local function add_category(fluid_box)
     if not connection.flow_direction or connection.flow_direction == "input-output" then
       goto continue
     end
+    ::next::
     local categories = connection.connection_category or { "default" }
     if #categories == 1 and categories[1] == "default" then
       categories[#categories + 1] = "kr-steel-pipe"

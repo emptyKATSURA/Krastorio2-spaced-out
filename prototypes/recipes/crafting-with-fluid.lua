@@ -3,7 +3,7 @@ data:extend({
     type = "recipe",
     name = "kr-ai-core",
     enabled = false,
-    category = "crafting-with-fluid",
+    category = "electronics-with-fluid",
     energy_required = 16,
     ingredients = {
       { type = "item", name = "processing-unit", amount = 2 },

@@ -37,15 +37,7 @@ local function remove_incompatible_packs(base_pack, incompatible_packs)
   end
 end
 
-local tier_1_incompatibilities = {
-  ["kr-basic-tech-card"] = true,
-}
-
-remove_incompatible_packs("production-science-pack", tier_1_incompatibilities)
-remove_incompatible_packs("utility-science-pack", tier_1_incompatibilities)
-
 local tier_2_incompatibilities = {
-  ["kr-basic-tech-card"] = true,
   ["automation-science-pack"] = true,
   ["logistic-science-pack"] = true,
   ["military-science-pack"] = true,
