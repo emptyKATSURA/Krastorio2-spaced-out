@@ -486,7 +486,7 @@ data.raw.corpse["biter-spawner-corpse"].mined_sound =
 
 data.raw.corpse["spitter-spawner-corpse"].minable = {
   mining_time = 1,
-  results = { { type = "item", name = "kr-biomass", amount_min = 2, amount_max = 3 } },
+  results = { { type = "item", name = "kr-biomass", amount_min = 10, amount_max = 20 } },
 }
 data.raw.corpse["spitter-spawner-corpse"].selectable_in_game = true
 data.raw.corpse["spitter-spawner-corpse"].time_before_removed = 5 * minute
