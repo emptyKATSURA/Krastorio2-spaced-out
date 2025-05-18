@@ -1,5 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 2025-05-18
+  Bugfixes:
+    - Fixed Spitter spawner nests gave less biomass than intended
+---------------------------------------------------------------------------------------------------
 Version: 1.1.4
+Date: 2025-05-18
   Changes:
     - Ashalnd trees now drop wood
     - Energy storage, advanced solar panel and Singularity beacon can be crafted in EMP
