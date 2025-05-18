@@ -482,6 +482,7 @@ data.raw.corpse["biter-spawner-corpse"].time_before_removed = 5 * minute
 data.raw.corpse["biter-spawner-corpse"].hidden_in_factoriopedia = false
 data.raw.corpse["biter-spawner-corpse"].mined_sound =
   { filename = "__Krastorio2Assets__/sounds/tiles/creep-deconstruction.ogg" }
+  data.raw.corpse["biter-spawner-corpse"].selection_priority = 45
 
 data.raw.corpse["spitter-spawner-corpse"].minable = {
   mining_time = 1,
@@ -492,6 +493,7 @@ data.raw.corpse["spitter-spawner-corpse"].time_before_removed = 5 * minute
 data.raw.corpse["spitter-spawner-corpse"].hidden_in_factoriopedia = false
 data.raw.corpse["spitter-spawner-corpse"].mined_sound =
   { filename = "__Krastorio2Assets__/sounds/tiles/creep-deconstruction.ogg" }
+  data.raw.corpse["spitter-spawner-corpse"].selection_priority = 45
 
 data.raw["lab"]["biolab"].inputs = {
       "automation-science-pack",
@@ -513,3 +515,18 @@ data.raw["lab"]["biolab"].inputs = {
 
 table.insert( data.raw ["assembling-machine"]["crusher"].crafting_categories, "kr-crushing" )
 data.raw ["assembling-machine"]["crusher"].surface_conditions = nil
+
+data.raw["tree"]["ashland-lichen-tree"].minable = {
+  mining_time = 0.5,
+  results = {
+  { type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
+  { type = "item", name = "wood", amount_min = 4, amount_max = 4 },
+  },
+}
+data.raw["tree"]["ashland-lichen-tree-flaming"].minable = {
+  mining_time = 0.5,
+  results = {
+  { type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
+  { type = "item", name = "wood", amount_min = 4, amount_max = 4 },
+  },
+}
