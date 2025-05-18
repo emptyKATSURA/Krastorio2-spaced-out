@@ -6,6 +6,7 @@ data:extend({
     type = "recipe",
     name = "kr-singularity-beacon",
     energy_required = 10,
+    category = "electronics",
     enabled = false,
     ingredients = {
       { type = "item", name = "beacon", amount = 1 },

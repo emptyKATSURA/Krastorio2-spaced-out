@@ -6,6 +6,7 @@ data:extend({
     type = "recipe",
     name = "kr-energy-storage",
     energy_required = 30,
+    category = "electronics",
     enabled = false,
     ingredients = {
       { type = "item", name = "kr-steel-beam", amount = 10 },

@@ -42,7 +42,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       pipe_connections = {
         {
-          flow_direction = "input-output",
+          flow_direction = "output",
           direction = defines.direction.north,
           positions = { { 1, -1 }, { 1, -1 }, { -1, 1 }, { -1, 1 } },
         },

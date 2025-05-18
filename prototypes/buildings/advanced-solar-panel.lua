@@ -7,6 +7,7 @@ data:extend({
     name = "kr-advanced-solar-panel",
     category = "crafting-with-fluid",
     energy_required = 10,
+    category = "electronics-with-fluid",
     enabled = false,
     ingredients = {
       { type = "item", name = "solar-panel", amount = 1 },
