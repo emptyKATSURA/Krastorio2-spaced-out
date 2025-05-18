@@ -52,6 +52,10 @@ local function change_mode(entity, player, to_mode)
 
   local new_name = base_name .. new_mode_data.suffix
 
+  if new_name == entity.name then
+    return
+  end
+
   if not prototypes.entity[new_name] then
     util.flying_text_with_sound(player, { "message.kr-roboport-modes-not-supported" }, { position = entity.position })
     return

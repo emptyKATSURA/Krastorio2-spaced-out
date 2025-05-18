@@ -78,6 +78,7 @@ end
 local function add_player(player)
   storage.radioactivity.players[player.index] = {
     entity = false,
+    damaged = false,
     inventory = false,
     last_position = { x = 0, y = 0 },
   }
@@ -160,6 +161,15 @@ end
 local function on_player_inventory_changed(e)
   local player = game.get_player(e.player_index)
   if player then
+    check_inventory(player)
+  end
+end
+
+--- @param e EventData.on_player_died|EventData.on_player_respawned
+local function on_player_alive_state_changed(e)
+  local player = game.get_player(e.player_index)
+  if player then
+    check_around_player(player)
     check_inventory(player)
   end
 end
@@ -252,10 +262,10 @@ radioactivity.events = {
   [defines.events.on_player_changed_surface] = on_player_moved,
   [defines.events.on_player_created] = on_player_created,
   [defines.events.on_player_cursor_stack_changed] = on_player_inventory_changed,
-  [defines.events.on_player_died] = on_player_moved,
+  [defines.events.on_player_died] = on_player_alive_state_changed,
   [defines.events.on_player_main_inventory_changed] = on_player_inventory_changed,
   [defines.events.on_player_removed] = on_player_removed,
-  [defines.events.on_player_respawned] = on_player_moved,
+  [defines.events.on_player_respawned] = on_player_alive_state_changed,
   [defines.events.on_player_toggled_map_editor] = on_player_moved,
   [defines.events.on_player_trash_inventory_changed] = on_player_inventory_changed,
   [defines.events.on_runtime_mod_setting_changed] = on_runtime_mod_setting_changed,
