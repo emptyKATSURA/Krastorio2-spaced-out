@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+  Changes:
+    - Ashalnd trees now drop wood
+    - Energy storage, advanced solar panel and Singularity beacon can be crafted in EMP
+  Bugfixes:
+    - Fixed that mineral water pumpjacks struggled to fill storage tanks
+    - Fixed that it was difficult to select spawner corpses that were on top of resources
+    - Fixed that you could spawn free roboports by clicking the already-selected mode radio button
+    - Fixed that radioactivity checks would not run correctly when the player died or respawned
+---------------------------------------------------------------------------------------------------
 Version: 1.1.3
 Date: 2025-05-17
   Changes:
