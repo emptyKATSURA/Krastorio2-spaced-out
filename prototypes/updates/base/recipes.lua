@@ -695,6 +695,10 @@ data.raw.recipe["uranium-processing"].results = {
   { type = "item", name = "stone", probability = 0.5, amount = 1 },
 }
 
+data.raw.recipe["casting-steel"].icons = {
+      { icon = "__Krastorio2Assets__/icons/items/steel-plate.png" },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
+}
 -- Science packs
 
 data.raw.recipe["automation-science-pack"] = {
