@@ -17,6 +17,7 @@ data:extend({
       { type = "item", name = "tungsten-carbide", amount = 3 },
     },
     results = { { type = "item", name = "processing-unit", amount = 2 } },
+    allow_productivity = true,
   },
     {
     type = "recipe",
@@ -36,6 +37,7 @@ data:extend({
       { type = "item", name = "pentapod-egg", amount = 1 },
     },
     results = { { type = "item", name = "processing-unit", amount = 2 } },
+    allow_productivity = true,
   },
   {
     type = "recipe",
