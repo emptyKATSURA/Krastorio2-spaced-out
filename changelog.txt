@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.6
+Date: 2025-05-19
+  Changes:
+    - Changed steel casting icon to krastorio one
+  Bugfixes:
+    - Fixed alternative proccesing units recipes couldn't take productivity
+---------------------------------------------------------------------------------------------------
 Version: 1.1.5
 Date: 2025-05-18
   Bugfixes:
