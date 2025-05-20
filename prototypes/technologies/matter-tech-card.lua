@@ -358,4 +358,46 @@ data:extend({
       { type = "worker-robot-battery", modifier = 0.6 },
     },
   },
+  {
+    type = "technology",
+    name = "kr-matter-ice-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/ice.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 350,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing" },
+    effects = {},
+  },
+  {
+    type = "technology",
+    name = "kr-matter-carbon-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/carbon.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 350,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing" },
+    effects = {},
+  },
 })

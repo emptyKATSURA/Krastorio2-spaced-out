@@ -23,6 +23,50 @@ data:extend({
       { type = "unlock-recipe", recipe = "kr-advanced-furnace" },
     },
   },
+  {
+    type = "technology",
+    name = "kr-matter-calcite-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/calcite.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 1000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+        { "metallurgic-science-pack", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing", "metallurgic-science-pack" },
+    effects = {},
+  },
+  {
+    type = "technology",
+    name = "kr-matter-tungsten-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/tungsten-ore.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 1000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+        { "metallurgic-science-pack", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing", "metallurgic-science-pack" },
+    effects = {},
+  },
 
 --Fulgora
 
@@ -73,6 +117,28 @@ data:extend({
       { type = "unlock-recipe", recipe = "kr-personal-laser-defense-mk3-equipment" },
     },
   },
+  {
+    type = "technology",
+    name = "kr-matter-holmium-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/holmium-ore.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 1000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+        { "electromagnetic-science-pack", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing", "electromagnetic-science-pack" },
+    effects = {},
+  },
 
 --Gleba
 
@@ -117,6 +183,33 @@ data:extend({
     prerequisites = { "biter-egg-handling", "kr-military-5" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-biter-virus" },
+    },
+  },
+  {
+    type = "technology",
+    name = "kr-gleba-greenhouse",
+    localised_name = {"", {"space-location-name.gleba"}, " ", {"technology-name.kr-greenhouse"} },
+  icons = {
+     { icon = "__Krastorio2Assets__/icons/entities/greenhouse.png" },
+     { icon = "__space-age__/graphics/icons/jellynut.png", scale = 1, shift = { -32, 32 } },
+     { icon = "__space-age__/graphics/icons/yumako.png", scale = 1, shift = { 32, 32 } },
+   },
+    icon_size = 256,
+    unit = {
+      time = 45,
+      count = 1000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+        { "kr-advanced-tech-card", 1 },
+        { "agricultural-science-pack", 1 },
+      },
+    },
+    prerequisites = { "agricultural-science-pack" },
+    effects = {
+      { type = "unlock-recipe", recipe = "kr-jellynut" },
+      { type = "unlock-recipe", recipe = "kr-yumako" },
     },
   },
 
@@ -250,6 +343,50 @@ data:extend({
     effects = {
       { type = "unlock-recipe", recipe = "kr-personal-laser-defense-mk4-equipment" },
     },
+  },
+  {
+    type = "technology",
+    name = "kr-matter-lithium-brine-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/fluid/lithium-brine.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 1000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+        { "cryogenic-science-pack", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing", "cryogenic-science-pack" },
+    effects = {},
+  },
+  {
+    type = "technology",
+    name = "kr-matter-fluorine-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/fluid/fluorine.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 1000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+        { "cryogenic-science-pack", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing", "cryogenic-science-pack" },
+    effects = {},
   },
 
 --Shattered Planet
