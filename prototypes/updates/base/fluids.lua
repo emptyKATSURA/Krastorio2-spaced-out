@@ -5,4 +5,4 @@ data.raw.fluid["steam"].heat_capacity = "0.5kJ"
 
 data.raw.fluid["sulfuric-acid"].heat_capacity = "0.25kJ"
 
-data.raw.fluid["water"].heat_capacity = "0.5kJ"
+data.raw.fluid["water"].heat_capacity = "5kJ"

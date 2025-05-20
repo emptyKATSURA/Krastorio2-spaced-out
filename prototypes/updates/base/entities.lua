@@ -274,7 +274,6 @@ data.raw["generator"]["steam-engine"].maximum_temperature = 165
 data.raw["generator"]["steam-engine"].max_power_output = "0.75MW"
 
 data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_transfer = "6GW"
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.specific_heat = "6MJ"
 data.raw["heat-pipe"]["heat-pipe"].max_health = 100
 
 data.raw["inserter"]["bulk-inserter"].next_upgrade = "kr-superior-inserter"
