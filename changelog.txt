@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-05-20
+  Features:
+    - Added matter conversion recipes for Space Age ores
+    - Added Gleba exlusive yumako and jellynut recipes in greenhouse
+    - Air purifier now can remove spores from Gleba
+  Changes:
+    - Advanced loader now has to be made on Vulcanus
+    - 1 water to 10 steam ratio is back
+---------------------------------------------------------------------------------------------------
 Version: 1.1.6
 Date: 2025-05-19
   Changes:
