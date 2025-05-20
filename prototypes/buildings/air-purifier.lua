@@ -44,7 +44,7 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = { pollution = -50 },
+      emissions_per_minute = { pollution = -50, spores = -5 },
     },
     energy_usage = "75kW",
     open_sound = sounds.machine_open,

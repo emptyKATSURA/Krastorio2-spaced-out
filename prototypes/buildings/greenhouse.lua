@@ -63,7 +63,7 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = { pollution = -5 },
+      emissions_per_minute = { pollution = -5, spores = 0.05 },
     },
     energy_usage = "144.8kW",
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
