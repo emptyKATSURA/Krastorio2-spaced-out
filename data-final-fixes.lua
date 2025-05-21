@@ -1,6 +1,7 @@
 require("prototypes.final-fixes.enforce-science-tier-separation")
 require("prototypes.final-fixes.internal-turret-logic")
 require("prototypes.final-fixes.steel-pipe-connectivity")
+require("prototypes.final-fixes.biter-nests")
 
 if settings.startup["kr-steel-pipes-need-pumps"].value then
   return

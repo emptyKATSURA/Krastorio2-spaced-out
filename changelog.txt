@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-05-21
+  Compatibility:
+    - All modded spawners drop biomass by default
+  Changes:
+    - Adjusted stack sizes for space age items
+    - Cliff explosives now can be lauched 200 at time
+---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 2025-05-20
   Features:
