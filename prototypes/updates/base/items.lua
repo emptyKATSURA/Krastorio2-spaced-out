@@ -46,6 +46,8 @@ data.raw.item["coal"].fuel_acceleration_multiplier = 0.5
 data.raw.item["coal"].fuel_top_speed_multiplier = 0.6
 data.raw.item["coal"].fuel_emissions_multiplier = 2.5
 
+data.raw.capsule["cliff-explosives"].weight = 5*kg
+
 data.raw.item["discharge-defense-equipment"].order = "f[active-defense-equipment]-a[discharge-defense-equipment]"
 data.raw.item["discharge-defense-equipment"].subgroup = "equipment"
 
