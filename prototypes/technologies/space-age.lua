@@ -139,6 +139,28 @@ data:extend({
     prerequisites = { "kr-matter-processing", "electromagnetic-science-pack" },
     effects = {},
   },
+    {
+    type = "technology",
+    name = "kr-matter-scrap-processing",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
+      { icon = "__space-age__/graphics/icons/scrap.png", scale = 0.85 },
+    },
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 45,
+      count = 3000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { "kr-matter-tech-card", 1 },
+        { "electromagnetic-science-pack", 1 },
+      },
+    },
+    prerequisites = { "kr-matter-processing", "electromagnetic-science-pack" },
+    effects = {},
+  },
 
 --Gleba
 
