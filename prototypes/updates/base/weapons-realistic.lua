@@ -207,10 +207,6 @@ data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-7"], 
 
 ------------------------------------------------
 
-data_util.update_ammo_effects(data.raw["technology"]["artillery-shell-range-1"], {
-  { type = "artillery-range", modifier = 0.4 },
-})
-
 data_util.update_ammo_effects(data.raw["technology"]["artillery-shell-speed-1"], {
   { type = "gun-speed", ammo_category = "artillery-shell", modifier = 0.25 },
 })
