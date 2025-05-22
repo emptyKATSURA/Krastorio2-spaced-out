@@ -57,7 +57,7 @@ data:extend({
                 target_effects = {
                   {
                     type = "damage",
-                    damage = { amount = 250, type = "kr-explosion" },
+                    damage = { amount = 250, type = "electric" },
                   },
                   {
                     type = "create-entity",
