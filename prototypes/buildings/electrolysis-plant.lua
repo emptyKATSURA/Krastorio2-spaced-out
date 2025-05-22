@@ -32,6 +32,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "kr-electrolysis-plant" },
     max_health = 500,
+    heating_energy = "100kW",
     corpse = "kr-medium-random-pipes-remnant",
     dying_explosion = "big-explosion",
     resistances = {

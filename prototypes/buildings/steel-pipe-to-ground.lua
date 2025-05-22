@@ -28,6 +28,7 @@ data:extend({
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "kr-steel-pipe-to-ground" },
     fast_replaceable_group = "pipe",
+    heating_energy = "150kW",
     collision_box = { { -0.29, -0.29 }, { 0.29, 0.2 } },
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     fluid_box = {

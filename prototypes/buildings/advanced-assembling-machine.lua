@@ -83,6 +83,7 @@ data:extend({
       "cryogenics-or-assembling",
       "crafting-with-fluid-or-metallurgy",
     },
+    heating_energy = "400kW",
     crafting_speed = 5,
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" , "quality"},

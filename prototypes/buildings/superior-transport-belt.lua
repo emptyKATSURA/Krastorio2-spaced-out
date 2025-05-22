@@ -36,6 +36,7 @@ data:extend({
     speed = 0.1875,
     related_underground_belt = "kr-superior-underground-belt",
     max_health = 200,
+    heating_energy = "10kW",
     corpse = "kr-superior-transport-belt-remnant",
     resistances = {
       {

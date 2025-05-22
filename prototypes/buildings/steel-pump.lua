@@ -34,6 +34,7 @@ data:extend({
     collision_box = { { -0.29, -0.9 }, { 0.29, 0.9 } },
     selection_box = { { -0.5, -1 }, { 0.5, 1 } },
     pumping_speed = 50,
+    heating_energy = "30kW",
     fluid_box = {
       volume = 500,
       pipe_covers = require("prototypes.buildings.steel-pipe-covers"),

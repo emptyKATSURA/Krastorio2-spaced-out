@@ -31,6 +31,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { hardness = 0.5, mining_time = 0.5, result = "kr-fuel-refinery" },
     max_health = 300,
+    heating_energy = "100kW",
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
     collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },

@@ -27,6 +27,7 @@ data:extend({
     icon = "__Krastorio2Assets__/icons/entities/big-storage-tank.png",
     flags = { "placeable-player", "player-creation", "not-rotatable" },
     minable = { mining_time = 0.5, result = "kr-big-storage-tank" },
+    heating_energy = "100kW",
     collision_box = { { -1.25, -1.25 }, { 1.25, 1.25 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     flow_length_in_ticks = 360,

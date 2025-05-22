@@ -32,6 +32,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "kr-filtration-plant" },
     max_health = 1000,
+    heating_energy = "100kW",
     corpse = "kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
     damaged_trigger_effect = hit_effects.entity(),

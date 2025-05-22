@@ -56,6 +56,7 @@ data:extend({
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = sounds.inserter_fast,
     max_health = 200,
+    heating_energy = "40kW",
     corpse = "kr-superior-inserter-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

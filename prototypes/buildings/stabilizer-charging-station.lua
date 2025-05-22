@@ -45,6 +45,7 @@ data:extend({
     },
     energy_usage = "1MW",
     max_health = 200,
+    heating_energy = "50kW",
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "kr-small-matter-explosion",
     corpse = "medium-remnants",

@@ -35,6 +35,7 @@ data:extend({
     selection_box = { { -0.9, -0.5 }, { 0.9, 0.5 } },
     speed = 0.1875,
     max_health = 250,
+    heating_energy = "40kW",
     corpse = "kr-superior-splitter-remnant",
     resistances = {
       {

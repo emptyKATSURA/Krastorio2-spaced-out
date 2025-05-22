@@ -35,6 +35,7 @@ data:extend({
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "assembling-machine",
     max_health = 2000,
+    heating_energy = "100kW",
     corpse = "kr-medium-random-pipes-remnant",
     dying_explosion = "kr-medium-matter-explosion",
     damaged_trigger_effect = hit_effects.entity(),

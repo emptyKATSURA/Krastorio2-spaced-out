@@ -34,6 +34,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
     minable = { mining_time = 2, result = "kr-antimatter-reactor" },
     max_health = 5000,
+    heating_energy = "1000kW",
     damaged_trigger_effect = hit_effects.entity(),
     corpse = "kr-antimatter-reactor-remnant",
     dying_explosion = "kr-large-matter-explosion",

@@ -31,6 +31,7 @@ data:extend({
     fast_replaceable_group = "radar",
     collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    heating_energy = "300kW",
     energy_per_sector = "2MJ",
     max_distance_of_sector_revealed = 20,
     max_distance_of_nearby_sector_revealed = 8,

@@ -52,6 +52,7 @@ data:extend({
     },
     energy_per_item = "9kJ",
     max_health = 300,
+    heating_energy = "50kW",
     corpse = "small-remnants",
     resistances = { { type = "fire", percent = 90 } },
     open_sound = sounds.machine_open,

@@ -30,6 +30,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.5, result = "kr-flare-stack" },
     max_health = 250,
+    heating_energy = "100kW",
     corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
     resistances = {

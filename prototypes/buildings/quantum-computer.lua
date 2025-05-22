@@ -72,6 +72,7 @@ data:extend({
     collision_box = { { -2.8, -2.8 }, { 2.8, 2.8 } },
     selection_box = { { -2.95, -2.95 }, { 2.95, 2.95 } },
     crafting_categories = { "kr-research-data", "kr-tech-cards" },
+    heating_energy = "100kW",
     crafting_speed = 3,
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },

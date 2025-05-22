@@ -34,6 +34,7 @@ data:extend({
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "kr-greenhouse",
     max_health = 500,
+    heating_energy = "1000kW",
     surface_conditions = {
       { property = "pressure", min = 1000, max = 2000, }
     },

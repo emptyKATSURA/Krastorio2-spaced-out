@@ -32,6 +32,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { hardness = 1, mining_time = 1, result = "kr-bio-lab" },
     max_health = 500,
+    heating_energy = "1000kW",
     surface_conditions = {
       { property = "pressure", min = 1000, max = 1000, }
     },

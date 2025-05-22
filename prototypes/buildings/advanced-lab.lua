@@ -31,6 +31,7 @@ data:extend({
     flags = { "placeable-player", "player-creation" },
     minable = { mining_time = 0.2, result = "kr-advanced-lab" },
     fast_replaceable_group = "lab",
+    heating_energy = "100kW",
     collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     researching_speed = 1.5,

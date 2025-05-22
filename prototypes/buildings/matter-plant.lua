@@ -35,6 +35,7 @@ data:extend({
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "assembling-machine",
     crafting_categories = { "kr-matter-conversion" },
+    heating_energy = "100kW",
     crafting_speed = 1.0,
     fluid_boxes = {
       {

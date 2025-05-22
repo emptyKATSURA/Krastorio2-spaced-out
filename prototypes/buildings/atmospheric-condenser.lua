@@ -32,6 +32,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "kr-atmospheric-condenser" },
     max_health = 500,
+    heating_energy = "100kW",
     surface_conditions = {
       { property = "pressure", min = 500, }
     },

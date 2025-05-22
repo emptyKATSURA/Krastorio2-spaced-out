@@ -62,6 +62,7 @@ data:extend({
     },
     energy_usage = "50kW",
     max_health = 350,
+    heating_energy = "300kW",
     surface_conditions = {
       { property = "pressure", min = 10, }
     },

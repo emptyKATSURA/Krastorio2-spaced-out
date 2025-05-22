@@ -33,6 +33,7 @@ data:extend({
     icon = "__Krastorio2Assets__/icons/entities/big-roboport.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
     minable = { mining_time = 1, result = "kr-big-roboport" },
+    heating_energy = "300kW",
     collision_box = { { -3.75, -3.38 }, { 3.99, 3.75 } },
     selection_box = { { -4, -4 }, { 4, 4 } },
     logistics_radius = 100,

@@ -47,6 +47,7 @@ data:extend({
     profile = require("prototypes.buildings.singularity-beacon-profile"),
     beacon_counter = "same_type",
     max_health = 300,
+    heating_energy = "400kW",
     corpse = "medium-remnants",
     dying_explosion = "kr-matter-explosion",
     damaged_trigger_effect = hit_effects.entity(),

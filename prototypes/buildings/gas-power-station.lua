@@ -65,6 +65,7 @@ data:extend({
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 1, result = "kr-gas-power-station" },
     max_health = 750,
+    heating_energy = "100kW",
     corpse = "kr-medium-random-pipes-remnant",
     dying_explosion = "medium-explosion",
     collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },

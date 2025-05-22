@@ -30,6 +30,7 @@ data:extend({
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 1, result = "kr-advanced-steam-turbine" },
     max_health = 900,
+    heating_energy = "100kW",
     corpse = "kr-medium-random-pipes-remnant",
     dying_explosion = "medium-explosion",
     alert_icon_shift = util.by_pixel(0, -12),

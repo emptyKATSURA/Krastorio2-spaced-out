@@ -35,6 +35,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "kr-advanced-furnace" },
     max_health = 2000,
+    heating_energy = "400kW",
     effect_receiver = { base_effect = { productivity = 0.5 }},
     corpse = "kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",

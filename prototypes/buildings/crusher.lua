@@ -31,6 +31,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { hardness = 1, mining_time = 1, result = "kr-crusher" },
     max_health = 750,
+    heating_energy = "100kW",
     corpse = "kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
     resistances = {

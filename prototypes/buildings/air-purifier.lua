@@ -33,6 +33,7 @@ data:extend({
     result_inventory_size = 1,
     source_inventory_size = 1,
     max_health = 200,
+    heating_energy = "100kW",
     corpse = "medium-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "explosion",

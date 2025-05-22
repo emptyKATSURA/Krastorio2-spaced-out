@@ -33,6 +33,7 @@ data:extend({
     minable = { mining_time = 0.5, result = "kr-mineral-water-pumpjack" },
     fast_replaceable_group = "pumpjack",
     resource_categories = { "basic-fluid" },
+    heating_energy = "100kW",
     mining_speed = 2,
     resource_searching_radius = 0.49,
     vector_to_place_result = { 0, 0 },
