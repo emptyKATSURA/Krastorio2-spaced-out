@@ -159,6 +159,13 @@ matter_lib.make_conversion_recipe({
   unlocked_by = "kr-matter-minerals-processing",
 })
 
+matter_lib.make_conversion_recipe({
+  material = { type = "item", name = "scrap", amount = 10 },
+  matter_count = 3,
+  energy_required = 0.5,
+  unlocked_by = "kr-matter-scrap-processing",
+})
+
 matter_lib.make_deconversion_recipe({
   material = { type = "item", name = "copper-plate", amount = 10 },
   matter_count = 7.5,
@@ -229,6 +236,42 @@ matter_lib.make_deconversion_recipe({
   needs_stabilizer = true,
   unlocked_by = "kr-matter-oil-processing",
 })
+
+matter_lib.make_deconversion_recipe({
+  material = { type = "item", name = "holmium-plate", amount = 10 },
+  matter_count = 18,
+  energy_required = 2,
+  needs_stabilizer = true,
+  unlocked_by = "kr-matter-holmium-processing",
+})
+data.raw.recipe["kr-matter-to-holmium-plate"].surface_conditions = { { property = "magnetic-field", min = 99, max = 99 } },
+
+matter_lib.make_deconversion_recipe({
+  material = { type = "fluid", name = "electrolyte", amount = 100 },
+  matter_count = 10,
+  energy_required = 1,
+  needs_stabilizer = true,
+  unlocked_by = "kr-matter-holmium-processing",
+})
+data.raw.recipe["kr-matter-to-electrolyte"].surface_conditions = { { property = "magnetic-field", min = 99, max = 99 } },
+
+matter_lib.make_deconversion_recipe({
+  material = { type = "item", name = "tungsten-carbide", amount = 10 },
+  matter_count = 30,
+  energy_required = 2,
+  needs_stabilizer = true,
+  unlocked_by = "kr-matter-tungsten-processing",
+})
+data.raw.recipe["kr-matter-to-tungsten-carbide"].surface_conditions = { { property = "pressure", min = 4000, max = 4000 } },
+
+matter_lib.make_deconversion_recipe({
+  material = { type = "item", name = "tungsten-plate", amount = 10 },
+  matter_count = 40,
+  energy_required = 2,
+  needs_stabilizer = true,
+  unlocked_by = "kr-matter-tungsten-processing",
+})
+data.raw.recipe["kr-matter-to-tungsten-plate"].surface_conditions = { { property = "pressure", min = 4000, max = 4000 } },
 
 matter_lib.make_deconversion_recipe({
   material = { type = "fluid", name = "water", amount = 100 },
