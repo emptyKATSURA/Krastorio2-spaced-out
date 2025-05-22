@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-05-22
+  Compatibility:
+    - Fixed a crash when lauching aii industry and bzcarbon
+  Features:
+    - Added heating requirement to krastorio 2 buildings
+    - Added specialized matter conversion recipes
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 2025-05-21
   Compatibility:
