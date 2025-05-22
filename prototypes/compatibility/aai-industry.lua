@@ -38,3 +38,7 @@ data.raw.technology["electronics"].research_trigger = {
       item = "copper-plate",
       count = 50
     }
+
+if  mods["bzcarbon"] then
+  data_util.remove_prerequisite("automation-science-pack", "electronics")
+end
