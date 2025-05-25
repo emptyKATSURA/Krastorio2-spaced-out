@@ -18,3 +18,5 @@ handler.add_libraries({
   require("scripts.shelter"),
   require("scripts.tesla-coil"),
 })
+
+require("scripts.milestones")

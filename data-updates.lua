@@ -28,7 +28,10 @@ require("prototypes.updates.generate-void-crushing-recipes")
 require("prototypes.updates.remove-nuclear-fuel")
 require("prototypes.updates.set-new-resource-autoplace")
 
+require("prototypes.compatibility.aai-industry")
+require("prototypes.compatibility.any-planet-start")
+
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")
-require("prototypes.compatibility.aai-industry")
+
 

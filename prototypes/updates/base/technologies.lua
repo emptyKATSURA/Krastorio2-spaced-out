@@ -17,7 +17,6 @@ data_util.add_prerequisite("heavy-armor", "kr-light-armor")
 data_util.add_prerequisite("kr-advanced-tech-card", "kr-lithium-sulfur-battery")
 data_util.add_prerequisite("kr-iron-pickaxe", "kr-automation-core")
 data_util.add_prerequisite("kr-matter-tech-card", "kr-lithium-processing")
-data_util.add_prerequisite("kr-railgun-turret", "gun-turret")
 data_util.add_prerequisite("lamp", "kr-stone-processing")
 data_util.add_prerequisite("logistics-2", "steel-processing")
 data_util.add_prerequisite("military", "electronics")
@@ -151,7 +150,9 @@ data.raw.technology["fission-reactor-equipment"].unit.count = 350
 data.raw.technology["kovarex-enrichment-process"].unit.count = 500
 data.raw.technology["laser"].unit.count = 200
 data.raw.technology["logistic-system"].unit.count = 250
-data.raw.technology["low-density-structure"].unit.count = 500
+if not mods["any-planet-start"] then
+  data.raw.technology["low-density-structure"].unit.count = 500
+end
 data.raw.technology["military-4"].unit.count = 350
 data.raw.technology["nuclear-fuel-reprocessing"].unit.count = 250
 data.raw.technology["nuclear-power"].unit.count = 500

@@ -1,8 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Date: 2025-05-23
+  Compatibility:
+    - Added a milestones preset for milestones mod
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 2025-05-23
+  Compatibility:
+    - Added compatability for any planet start
+  Changes:
+    - Rebalanced laser artillery now its explosion do electric damage
+  Bugfixes:
+    - Fixed artillery range research applied bonus twice
+---------------------------------------------------------------------------------------------------
 Version: 1.2.2
 Date: 2025-05-22
   Compatibility:
-    - Fixed a crash when lauching aii industry and bzcarbon
+    - Fixed a crash when launching aii industry and bzcarbon
   Features:
     - Added heating requirement to krastorio 2 buildings
     - Added specialized matter conversion recipes
@@ -213,8 +227,3 @@ Date: 2025-05-01
     - Moved Technologies around the tech tree.
     - Rebalanced Krastorio2 buildings around space age.
     - Added molten recipes for enriched ores.
----------------------------------------------------------------------------------------------------
-Version: 0.0.1
-Date: 2025-04-30
-  Changes:
-    - Just started.
