@@ -55,7 +55,6 @@ data:extend({
       "kr-advanced-tank-cannon-c",
     },
     equipment_grid = "kr-tank-grid-2",
-    trash_inventory_size = 20,
     energy_source = {
       type = "burner",
       fuel_categories = { "kr-vehicle-fuel" },
