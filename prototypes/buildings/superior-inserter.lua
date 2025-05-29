@@ -59,6 +59,7 @@ data:extend({
     heating_energy = "40kW",
     corpse = "kr-superior-inserter-remnants",
     damaged_trigger_effect = hit_effects.entity(),
+    icon_draw_specification = { scale = 0.5 },
     resistances = {
       {
         type = "fire",

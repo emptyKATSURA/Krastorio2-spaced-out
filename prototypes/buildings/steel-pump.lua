@@ -28,6 +28,7 @@ data:extend({
     type = "pump",
     name = "kr-steel-pump",
     icon = "__Krastorio2Assets__/icons/entities/steel-pump.png",
+    icon_draw_specification = { scale = 0.5 },
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.2, result = "kr-steel-pump" },
     fast_replaceable_group = "pump",
