@@ -31,7 +31,7 @@ data:extend({
     type = "logistic-container",
     name = "kr-buffer-warehouse",
     icon = "__Krastorio2Assets__/icons/entities/buffer-warehouse.png",
-    flags = { "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-player", "player-creation" },
     fast_replaceable_group = "container",
     minable = { mining_time = 1, result = "kr-buffer-warehouse" },
     collision_box = { { -2.75, -2.75 }, { 2.75, 2.75 } },

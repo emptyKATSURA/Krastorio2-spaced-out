@@ -35,7 +35,7 @@ data:extend({
       { "factoriopedia-description.kr-planetary-teleporter" },
     },
     icon = "__Krastorio2Assets__/icons/entities/planetary-teleporter.png",
-    flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
     map_color = { r = 0.337, g = 0.011, b = 0.184 },
     minable = { mining_time = 10, result = "kr-planetary-teleporter" },
     collision_box = { { -2.65, -1.9 }, { 2.65, 3.2 } },

@@ -31,7 +31,7 @@ data:extend({
     type = "container",
     name = "kr-warehouse",
     icon = "__Krastorio2Assets__/icons/entities/warehouse.png",
-    flags = { "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-player", "player-creation" },
     fast_replaceable_group = "container",
     minable = { mining_time = 1, result = "kr-warehouse" },
     collision_box = { { -2.75, -2.75 }, { 2.75, 2.75 } },
