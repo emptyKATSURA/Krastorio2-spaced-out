@@ -114,7 +114,7 @@ data:extend({
     localised_name = { "entity-name.kr-shelter-plus" },
     localised_description = { "entity-description.kr-shelter-plus" },
     icon = "__Krastorio2Assets__/icons/entities/shelter-plus.png",
-    flags = { "not-blueprintable", "not-rotatable", "player-creation" },
+    flags = { "not-blueprintable", "player-creation" },
     minable = { mining_time = 0.5, result = "kr-shelter-plus" },
     allow_copy_paste = false,
     inventory_size = 200,

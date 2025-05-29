@@ -191,12 +191,17 @@ data.raw.technology["kr-automation-core"].research_trigger = {
       count = 10
     }
 
+table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 } )
+table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-carbide-processing-circuit", change = 0.1 } )
+table.insert(data.raw["technology"]["rocket-fuel-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-ammonia", change = 0.1 } )
+table.insert(data.raw["technology"]["rocket-fuel-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 } )
+
 -- stylua: ignore start
-data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png", 256))
+data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png"))
 data_util.set_icon(data.raw.technology["chemical-science-pack"], "__Krastorio2Assets__/technologies/chemical-tech-card.png", 256)
 data_util.set_icon(data.raw.technology["coal-liquefaction"], "__Krastorio2Assets__/technologies/coal-liquefaction.png", 256)
-data_util.set_icons(data.raw.technology["energy-shield-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/energy-shield-mk1-equipment.png", 256))
-data_util.set_icons(data.raw.technology["energy-shield-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/energy-shield-mk2-equipment.png", 256))
+data_util.set_icons(data.raw.technology["energy-shield-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/energy-shield-mk1-equipment.png"))
+data_util.set_icons(data.raw.technology["energy-shield-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/energy-shield-mk2-equipment.png"))
 data_util.set_icon(data.raw.technology["heavy-armor"], "__Krastorio2Assets__/technologies/heavy-armor.png", 256)
 data_util.set_icon(data.raw.technology[kr_optimization_tech_card_name], "__Krastorio2Assets__/technologies/optimization-tech-card.png", 256)
 data_util.set_icon(data.raw.technology["logistics-2"], "__Krastorio2Assets__/technologies/logistics-2.png", 256)
@@ -204,9 +209,9 @@ data_util.set_icon(data.raw.technology["logistics-3"], "__Krastorio2Assets__/tec
 data_util.set_icon(data.raw.technology["logistic-science-pack"], "__Krastorio2Assets__/technologies/logistic-tech-card.png", 256)
 data_util.set_icon(data.raw.technology["logistics"], "__Krastorio2Assets__/technologies/logistics-1.png", 256)
 data_util.set_icon(data.raw.technology["military-science-pack"], "__Krastorio2Assets__/technologies/military-tech-card.png", 256)
-data_util.set_icons(data.raw.technology["night-vision-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/night-vision-equipment.png", 256))
+data_util.set_icons(data.raw.technology["night-vision-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/night-vision-equipment.png"))
 data_util.set_icon(data.raw.technology["oil-processing"], "__Krastorio2Assets__/technologies/oil-gathering.png", 256)
-data_util.set_icons(data.raw.technology["personal-laser-defense-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/personal-laser-defense-mk1-equipments.png", 256))
+data_util.set_icons(data.raw.technology["personal-laser-defense-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/personal-laser-defense-mk1-equipments.png"))
 data_util.set_icon(data.raw.technology["production-science-pack"], "__Krastorio2Assets__/technologies/production-tech-card.png", 256)
 data_util.set_icon(data.raw.technology["steel-processing"], "__Krastorio2Assets__/technologies/steel-processing.png", 256)
 data_util.set_icon(data.raw.technology["utility-science-pack"], "__Krastorio2Assets__/technologies/utility-tech-card.png", 256)

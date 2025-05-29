@@ -82,6 +82,7 @@ data:extend({
     folding_speed = 0.02,
     shoot_in_prepare_state = false,
     turret_base_has_direction = true,
+    start_attacking_only_when_can_shoot = true,
     call_for_help_radius = 110,
     attack_parameters = {
       type = "projectile",

@@ -31,7 +31,7 @@ data:extend({
     type = "container",
     name = "kr-strongbox",
     icon = "__Krastorio2Assets__/icons/entities/strongbox.png",
-    flags = { "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-player", "player-creation" },
     fast_replaceable_group = "container",
     minable = { mining_time = 0.5, result = "kr-strongbox" },
     collision_box = { { -0.8, -0.8 }, { 0.8, 0.8 } },

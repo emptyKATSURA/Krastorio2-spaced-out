@@ -223,9 +223,10 @@ end
 local function update_gui(self)
   local charged = flib_math.round(self.entity.energy / max_energy, 0.01)
   local transceiver_data = storage.intergalactic_transceiver.forces[self.player.force_index]
-  local status_properties = status_properties[transceiver_data.status]
-  self.elems.status_icon.sprite = status_properties.icon
-  self.elems.status_label.caption = status_properties.label
+  local props = status_properties[transceiver_data.status]
+  self.elems.status_icon.sprite = props.icon
+  self.elems.status_label.caption = props.label
+  self.elems.status_label.tooltip = props.tooltip
   self.elems.charge_progressbar.value = charged
   self.elems.charge_progressbar.caption = math.floor(charged * 100) .. " %"
   self.elems.activate_button.enabled = charged == 1
@@ -243,9 +244,10 @@ local function create_gui(player, entity)
     {
       type = "flow",
       style = "flib_titlebar_flow",
+      drag_target = "kr_intergalactic_transceiver_window",
       {
         type = "label",
-        style = "frame_title",
+        style = "flib_frame_title",
         caption = { "entity-name.kr-intergalactic-transceiver" },
         ignored_by_interaction = true,
       },

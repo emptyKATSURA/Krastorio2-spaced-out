@@ -30,7 +30,7 @@ data:extend({
     type = "accumulator",
     name = "kr-energy-storage",
     icon = "__Krastorio2Assets__/icons/entities/energy-storage.png",
-    flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "kr-energy-storage" },
     max_health = 750,
     corpse = "big-remnants",

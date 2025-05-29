@@ -45,7 +45,7 @@ data:extend({
     type = "electric-energy-interface",
     name = "kr-wind-turbine",
     icon = "__Krastorio2Assets__/icons/entities/wind-turbine.png",
-    flags = { "placeable-neutral", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.25, result = "kr-wind-turbine" },
     fast_replaceable_group = "wind-turbine",
     collision_box = { { -1.25, -1.25 }, { 1.25, 1.25 } },
