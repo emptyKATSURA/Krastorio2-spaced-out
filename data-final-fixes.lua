@@ -2,6 +2,85 @@ require("prototypes.final-fixes.enforce-science-tier-separation")
 require("prototypes.final-fixes.internal-turret-logic")
 require("prototypes.final-fixes.steel-pipe-connectivity")
 require("prototypes.final-fixes.biter-nests")
+
+-- Helper function to convert sand/glass ingredients to kr-sand/kr-glass
+local function process_ingredients(ingredients_table, recipe_name_for_log)
+  if not ingredients_table then return false end
+
+  local total_sand_amount = 0
+  local total_glass_amount = 0
+  local sand_indices_to_remove = {}
+  local glass_indices_to_remove = {}
+  local kr_sand_exists = false
+  local kr_glass_exists = false
+  local kr_sand_type = "item" -- default
+  local kr_glass_type = "item" -- default
+
+  -- First pass: find amounts, mark for removal, check for existing kr-items
+  for i, ingredient in ipairs(ingredients_table) do
+    if ingredient.name == "sand" then
+      total_sand_amount = total_sand_amount + ingredient.amount
+      table.insert(sand_indices_to_remove, i)
+      if ingredient.type then kr_sand_type = ingredient.type end -- capture type if specified
+    elseif ingredient.name == "glass" then
+      total_glass_amount = total_glass_amount + ingredient.amount
+      table.insert(glass_indices_to_remove, i)
+      if ingredient.type then kr_glass_type = ingredient.type end -- capture type if specified
+    elseif ingredient.name == "kr-sand" then
+      kr_sand_exists = true
+      if ingredient.type then kr_sand_type = ingredient.type end
+    elseif ingredient.name == "kr-glass" then
+      kr_glass_exists = true
+      if ingredient.type then kr_glass_type = ingredient.type end
+    end
+  end
+
+  local ingredients_changed = false
+
+  -- Remove marked "sand" ingredients (in reverse order to maintain indices)
+  for i = #sand_indices_to_remove, 1, -1 do
+    table.remove(ingredients_table, sand_indices_to_remove[i])
+    ingredients_changed = true
+  end
+
+  -- Remove marked "glass" ingredients (in reverse order)
+  for i = #glass_indices_to_remove, 1, -1 do
+    table.remove(ingredients_table, glass_indices_to_remove[i])
+    ingredients_changed = true
+  end
+  
+  -- Add or update kr-sand
+  if total_sand_amount > 0 then
+    ingredients_changed = true
+    if kr_sand_exists then
+      for _, ingredient in ipairs(ingredients_table) do
+        if ingredient.name == "kr-sand" then
+          ingredient.amount = ingredient.amount + total_sand_amount
+          break
+        end
+      end
+    else
+      table.insert(ingredients_table, {type = kr_sand_type, name = "kr-sand", amount = total_sand_amount})
+    end
+  end
+
+  -- Add or update kr-glass
+  if total_glass_amount > 0 then
+    ingredients_changed = true
+    if kr_glass_exists then
+      for _, ingredient in ipairs(ingredients_table) do
+        if ingredient.name == "kr-glass" then
+          ingredient.amount = ingredient.amount + total_glass_amount
+          break
+        end
+      end
+    else
+      table.insert(ingredients_table, {type = kr_glass_type, name = "kr-glass", amount = total_glass_amount})
+    end
+  end
+  return ingredients_changed
+end
+
 if mods["aai-industry"] then
   -- Disable AAI Industry's recipe for its own "sand" item
   if data.raw.recipe["sand"] then
@@ -70,82 +149,6 @@ if mods["aai-industry"] then
     end
     log("K2-AAI compat: Hid AAI 'glass' item.")
   end
-  local function process_ingredients(ingredients_table, recipe_name_for_log)
-    if not ingredients_table then return false end
-
-    local total_sand_amount = 0
-    local total_glass_amount = 0
-    local sand_indices_to_remove = {}
-    local glass_indices_to_remove = {}
-    local kr_sand_exists = false
-    local kr_glass_exists = false
-    local kr_sand_type = "item" -- default
-    local kr_glass_type = "item" -- default
-
-    -- First pass: find amounts, mark for removal, check for existing kr-items
-    for i, ingredient in ipairs(ingredients_table) do
-      if ingredient.name == "sand" then
-        total_sand_amount = total_sand_amount + ingredient.amount
-        table.insert(sand_indices_to_remove, i)
-        if ingredient.type then kr_sand_type = ingredient.type end -- capture type if specified
-      elseif ingredient.name == "glass" then
-        total_glass_amount = total_glass_amount + ingredient.amount
-        table.insert(glass_indices_to_remove, i)
-        if ingredient.type then kr_glass_type = ingredient.type end -- capture type if specified
-      elseif ingredient.name == "kr-sand" then
-        kr_sand_exists = true
-        if ingredient.type then kr_sand_type = ingredient.type end
-      elseif ingredient.name == "kr-glass" then
-        kr_glass_exists = true
-        if ingredient.type then kr_glass_type = ingredient.type end
-      end
-    end
-
-    local ingredients_changed = false
-
-    -- Remove marked "sand" ingredients (in reverse order to maintain indices)
-    for i = #sand_indices_to_remove, 1, -1 do
-      table.remove(ingredients_table, sand_indices_to_remove[i])
-      ingredients_changed = true
-    end
-
-    -- Remove marked "glass" ingredients (in reverse order)
-    for i = #glass_indices_to_remove, 1, -1 do
-      table.remove(ingredients_table, glass_indices_to_remove[i])
-      ingredients_changed = true
-    end
-    
-    -- Add or update kr-sand
-    if total_sand_amount > 0 then
-      ingredients_changed = true
-      if kr_sand_exists then
-        for _, ingredient in ipairs(ingredients_table) do
-          if ingredient.name == "kr-sand" then
-            ingredient.amount = ingredient.amount + total_sand_amount
-            break
-          end
-        end
-      else
-        table.insert(ingredients_table, {type = kr_sand_type, name = "kr-sand", amount = total_sand_amount})
-      end
-    end
-
-    -- Add or update kr-glass
-    if total_glass_amount > 0 then
-      ingredients_changed = true
-      if kr_glass_exists then
-        for _, ingredient in ipairs(ingredients_table) do
-          if ingredient.name == "kr-glass" then
-            ingredient.amount = ingredient.amount + total_glass_amount
-            break
-          end
-        end
-      else
-        table.insert(ingredients_table, {type = kr_glass_type, name = "kr-glass", amount = total_glass_amount})
-      end
-    end
-    return ingredients_changed
-  end
 
   for recipe_name, recipe_data in pairs(data.raw.recipe) do
     local main_changed = process_ingredients(recipe_data.ingredients, recipe_name .. " (main)")
@@ -186,6 +189,43 @@ if mods["maraxsis"] then
                     end
                 end
             end
+        end
+    end
+
+    -- Hide/disable Maraxsis sand extraction recipe to prevent crafting Maraxsis sand
+    if data.raw.recipe["maraxsis-sand-extraction"] then
+        data.raw.recipe["maraxsis-sand-extraction"].hidden = true
+        data.raw.recipe["maraxsis-sand-extraction"].enabled = false
+        log("K2-Maraxsis compat: Hidden and disabled 'maraxsis-sand-extraction' recipe.")
+    end
+
+    -- Remove maraxsis-sand-extraction recipe from technology unlocks
+    for tech_name, tech_data in pairs(data.raw.technology) do
+        if tech_data.effects then
+            for i = #tech_data.effects, 1, -1 do
+                local effect = tech_data.effects[i]
+                if effect.type == "unlock-recipe" and effect.recipe == "maraxsis-sand-extraction" then
+                    table.remove(tech_data.effects, i)
+                    log("K2-Maraxsis compat: Removed 'maraxsis-sand-extraction' recipe from technology '" .. tech_name .. "' effects.")
+                end
+            end
+        end
+    end
+
+    -- Convert all recipes that use "sand" to use "kr-sand" (for Maraxsis compatibility)
+    for recipe_name, recipe_data in pairs(data.raw.recipe) do
+        local main_changed = process_ingredients(recipe_data.ingredients, recipe_name .. " (main)")
+        local normal_changed = false
+        if recipe_data.normal then
+            normal_changed = process_ingredients(recipe_data.normal.ingredients, recipe_name .. " (normal)")
+        end
+        local expensive_changed = false
+        if recipe_data.expensive then
+            expensive_changed = process_ingredients(recipe_data.expensive.ingredients, recipe_name .. " (expensive)")
+        end
+
+        if main_changed or normal_changed or expensive_changed then
+            log("K2-Maraxsis compat: Converted sand to kr-sand in recipe '" .. recipe_name .. "'.")
         end
     end
 
