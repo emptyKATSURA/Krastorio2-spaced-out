@@ -14,7 +14,7 @@ data:extend({
         { "kr-matter-tech-card", 1 },
       },
     },
-    prerequisites = { "steel-axe", "kr-imersium-processing" },
+    prerequisites = { "steel-axe", "kr-advanced-tech-card" },
     effects = {
       { type = "character-mining-speed", modifier = 2 },
     },
