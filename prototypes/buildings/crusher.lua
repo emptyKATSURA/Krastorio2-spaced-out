@@ -47,7 +47,7 @@ data:extend({
     source_inventory_size = 1,
     result_inventory_size = 3,
     return_ingredients_on_change = true,
-    module_slots = 4,
+    module_slots = 0,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     energy_source = {
       type = "electric",
