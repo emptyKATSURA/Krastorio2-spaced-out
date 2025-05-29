@@ -49,9 +49,18 @@ data_util.add_prerequisite("electric-lab", "electricity")
 data_util.convert_ingredient("personal-laser-defense-equipment","glass", "kr-glass" )
 data_util.convert_ingredient("laser-turret","glass", "kr-glass" )
 
-data.raw.item["glass"].hidden = true
-data.raw.technology["sand-processing"] = nil
-data.raw.technology["glass-processing"] = nil
+if mods["Moshine"] then 
+  data_util.convert_ingredient("optical-cable","glass", "kr-glass" )
+  data_util.remove_prerequisite("moshine-tech-data-extractor", "glass-processing")
+
+  data_util.convert_ingredient("ai-trainer","glass", "kr-glass" )
+
+  data_util.convert_ingredient("3d-data-storage","glass", "kr-glass" )
+
+  data_util.convert_ingredient("concrete-from-molten-iron-and-sand","sand", "kr-sand" )
+  data_util.convert_ingredient("petroleum-from-sand-sulfur-steam-carbon","sand", "kr-sand" )
+  data_util.convert_ingredient("silicon","sand", "kr-sand" )
+end
 ----------
 
 data.raw.recipe["electronic-circuit"].energy_required = 0.5
