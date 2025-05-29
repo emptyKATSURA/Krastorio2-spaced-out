@@ -191,6 +191,11 @@ data.raw.technology["kr-automation-core"].research_trigger = {
       count = 10
     }
 
+table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 } )
+table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-carbide-processing-circuit", change = 0.1 } )
+table.insert(data.raw["technology"]["rocket-fuel-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-ammonia", change = 0.1 } )
+table.insert(data.raw["technology"]["rocket-fuel-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 } )
+
 -- stylua: ignore start
 data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png"))
 data_util.set_icon(data.raw.technology["chemical-science-pack"], "__Krastorio2Assets__/technologies/chemical-tech-card.png", 256)
