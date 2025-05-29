@@ -37,6 +37,7 @@ data:extend({
     collision_box = { { -2.75, -2.75 }, { 2.75, 2.75 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
     inventory_size = 500,
+    trash_inventory_size = 20,
     logistic_mode = "buffer",
     max_health = 1500,
     surface_conditions = {
