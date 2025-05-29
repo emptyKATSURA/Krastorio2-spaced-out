@@ -37,6 +37,7 @@ data:extend({
     max_health = 250,
     heating_energy = "40kW",
     corpse = "kr-superior-splitter-remnant",
+    icon_draw_specification = { scale = 0.5 },
     resistances = {
       {
         type = "fire",

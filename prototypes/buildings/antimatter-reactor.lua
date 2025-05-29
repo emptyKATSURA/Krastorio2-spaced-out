@@ -31,7 +31,7 @@ data:extend({
     type = "burner-generator",
     name = "kr-antimatter-reactor",
     icon = "__Krastorio2Assets__/icons/entities/antimatter-reactor.png",
-    flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 2, result = "kr-antimatter-reactor" },
     max_health = 5000,
     heating_energy = "1000kW",

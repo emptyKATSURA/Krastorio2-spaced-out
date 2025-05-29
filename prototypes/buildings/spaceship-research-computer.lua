@@ -52,6 +52,11 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20,
     },
+    alert_icon_shift = util.by_pixel(37.5, 0),
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.lab_input, shift = util.by_pixel(37.5, -27.5)}
+    },
     on_animation = {
       layers = {
         {
@@ -130,7 +135,6 @@ data:extend({
         },
       },
     },
-    entity_info_icon_shift = util.by_pixel(32, 0),
     light = {
       intensity = 0.34,
       size = 3,

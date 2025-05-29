@@ -90,6 +90,7 @@ data:extend({
     allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
+    main_product = "kr-lithium",
     crafting_machine_tint = {
       primary = { r = 0.70, g = 0.50, b = 0.05, a = 0.10 },
     },

@@ -193,6 +193,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    hide_from_signal_gui = false,
     crafting_machine_tint = {
       primary = { r = 0.421, g = 0.720, b = 0.350, a = 0.100 },
       secondary = { r = 0.541, g = 0.797, b = 0.370, a = 0.250 },

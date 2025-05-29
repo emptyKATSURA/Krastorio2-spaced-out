@@ -55,7 +55,7 @@ data:extend({
     ingredients = {
       { type = "item", name = "kr-used-pollution-filter", amount = 1 },
       { type = "item", name = "kr-biomass", amount = 5 },
-      { type = "fluid", name = "water", amount = 50 },
+      { type = "fluid", name = "water", amount = 50, fluidbox_index = 1 },
     },
     results = {
       { type = "item", name = "kr-pollution-filter", amount = 1 },

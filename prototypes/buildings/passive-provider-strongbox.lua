@@ -31,7 +31,7 @@ data:extend({
     type = "logistic-container",
     name = "kr-passive-provider-strongbox",
     icon = "__Krastorio2Assets__/icons/entities/passive-provider-strongbox.png",
-    flags = { "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-player", "player-creation" },
     fast_replaceable_group = "container",
     minable = { mining_time = 0.5, result = "kr-passive-provider-strongbox" },
     collision_box = { { -0.8, -0.8 }, { 0.8, 0.8 } },

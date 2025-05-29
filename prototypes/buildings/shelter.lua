@@ -97,7 +97,7 @@ data:extend({
     localised_name = { "entity-name.kr-shelter" },
     localised_description = { "entity-description.kr-shelter" },
     icon = "__Krastorio2Assets__/icons/entities/shelter.png",
-    flags = { "not-blueprintable", "not-rotatable", "player-creation" },
+    flags = { "not-blueprintable", "player-creation" },
     collision_box = { { -2.75, -2.75 }, { 2.75, 2.75 } },
     selection_box = { { -3, -3 }, { 3, 3.20 } },
     allow_copy_paste = false,

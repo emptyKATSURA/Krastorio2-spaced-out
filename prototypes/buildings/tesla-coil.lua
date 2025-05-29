@@ -35,7 +35,7 @@ data:extend({
     collision_mask = {
       layers = { item = true, object = true, player = true, water_tile = true, kr_tesla_coil = true },
     },
-    flags = { "placeable-neutral", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.25, result = "kr-tesla-coil" },
     fast_replaceable_group = "tesla-coil",
     gui_mode = "none",
