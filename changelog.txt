@@ -1,3 +1,18 @@
+Version: 1.2.5
+Date: 2025-05-23
+  Compatibility:
+    - Extra compatability with aii industry
+  Changes:
+    - Unified kr lithium in factoriopedia
+    - Centered the icons on spaceship research computer
+  Bugfixes:
+    - Fixed entities with square footprints being non-rotable
+    - Fixed missing ammo-categories in in factoriopedia
+    - Fixed fuel and proccesing units productivity research didn affect new recipes
+    - Fixed bio lab couldn't take water in one of it's inlets
+    - Fixed laser artillery was loud while when low powder
+    - Fixed added missing trash slots on buffer and requester chests
+    - Fixed some issues with intergalactic transreceiver GUI
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
 Date: 2025-05-23
