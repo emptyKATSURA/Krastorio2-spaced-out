@@ -9,6 +9,7 @@ data:extend({
     name = "kr-electric-mining-drill-mk3",
     energy_required = 5,
     enabled = false,
+    hidden = true,
     ingredients = {
       { type = "item", name = "kr-electric-mining-drill-mk2", amount = 1 },
       { type = "item", name = "kr-imersium-gear-wheel", amount = 5 },
@@ -19,6 +20,7 @@ data:extend({
   {
     type = "item",
     name = "kr-electric-mining-drill-mk3",
+    hidden = true,
     icon = "__Krastorio2Assets__/icons/entities/electric-mining-drill-mk3.png",
     subgroup = "extraction-machine",
     order = "a[items]-c[electric-mining-drill-mk3]",
@@ -32,6 +34,7 @@ data:extend({
     icon = "__Krastorio2Assets__/icons/entities/electric-mining-drill-mk3.png",
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.5, result = "kr-electric-mining-drill-mk3" },
+    hidden = true,
     fast_replaceable_group = "electric-mining-drill",
     collision_box = { { -1.35, -1.35 }, { 1.35, 1.35 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
