@@ -87,6 +87,7 @@ data_util.add_recipe_unlock("steel-processing", "kr-coke")
 data_util.add_recipe_unlock("steel-processing", "kr-coke-carbon")
 data_util.add_recipe_unlock("steel-processing", "kr-steel-beam")
 data_util.add_recipe_unlock("steel-processing", "kr-steel-gear-wheel")
+data_util.add_recipe_unlock("coal-liquefaction", "kr-coal-filtration")
 data_util.add_recipe_unlock("foundry", "molten-enriched-copper")
 data_util.add_recipe_unlock("foundry", "molten-enriched-iron")
 data_util.add_recipe_unlock("foundry", "kr-casting-iron-beam")
@@ -147,7 +148,9 @@ data.raw.technology["destroyer"].unit.count = 350
 data.raw.technology["discharge-defense-equipment"].unit.count = 300
 data.raw.technology["effect-transmission"].unit.count = 500
 data.raw.technology["fission-reactor-equipment"].unit.count = 350
-data.raw.technology["kovarex-enrichment-process"].unit.count = 500
+if not mods["atan-nuclear-science"] then
+  data.raw.technology["kovarex-enrichment-process"].unit.count = 500
+end
 data.raw.technology["laser"].unit.count = 200
 data.raw.technology["logistic-system"].unit.count = 250
 if not mods["any-planet-start"] then

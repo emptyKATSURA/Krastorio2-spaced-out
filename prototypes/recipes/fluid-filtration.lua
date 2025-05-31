@@ -8,12 +8,13 @@ data:extend({
     category = "kr-fluid-filtration",
     energy_required = 2,
     ingredients = {
-      { type = "fluid", name = "heavy-oil", amount = 80 },
+      { type = "fluid", name = "heavy-oil", amount = 100 },
     },
     results = {
       { type = "item", name = "coal", amount = 8 },
       { type = "fluid", name = "water", amount = 40 },
     },
+    surface_conditions = { { property = "pressure", min = 1000 } },
     always_show_made_in = true,
     always_show_products = true,
     crafting_machine_tint = {
