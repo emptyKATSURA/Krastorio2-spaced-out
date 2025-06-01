@@ -30,6 +30,7 @@ require("prototypes.updates.set-new-resource-autoplace")
 
 require("prototypes.compatibility.aai-industry")
 require("prototypes.compatibility.any-planet-start")
+require("prototypes.compatibility.moshine")
 
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")

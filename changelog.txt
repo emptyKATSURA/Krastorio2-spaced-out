@@ -1,11 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.7
+Date: 2025-06-1
+  Compatibility:
+    - AAI Industry - stone processing is now split into sand and glass processing. this also should fix some crashes
+    - Moshine - unified sand and glass with K2 counterparts
+---------------------------------------------------------------------------------------------------
 Version: 1.2.6
 Date: 2025-05-31
   Changes:
     - Coal liquifaction now unlocks coal filtration recipe
-    - Advanced furnace has 2 less module slots
-    - Advanced furnace uses 10MW of power instead of 2 MW
-    - Advanced furnace recipe got reworked
+    - Advanced furnace:
+      has 2 less module slots
+      uses 10MW of power instead of 2 MW
+      recipe got reworked
   Bugfixes:
     - Fixed electric mining drill mk3 wasn't hidden properly
     - Fixed mining drills and foundries had been shown in wrong order in factoriopedia
@@ -21,7 +28,7 @@ Date: 2025-05-29
   Bugfixes:
     - Fixed entities with square footprints being non-rotable
     - Fixed missing ammo-categories in in factoriopedia
-    - Fixed fuel and proccesing units productivity research didn affect new recipes
+    - Fixed fuel and proccesing units productivity research didn't affect new recipes
     - Fixed bio lab couldn't take water in one of it's inlets
     - Fixed laser artillery was loud while when low powder
     - Fixed added missing trash slots on buffer and requester chests
