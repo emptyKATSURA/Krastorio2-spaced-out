@@ -27,6 +27,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -45,6 +46,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -64,6 +66,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -83,6 +86,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -102,6 +106,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -120,6 +125,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -138,6 +144,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -156,6 +163,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -174,6 +182,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -192,6 +201,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -210,6 +220,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -229,6 +240,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -248,5 +260,6 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
 })

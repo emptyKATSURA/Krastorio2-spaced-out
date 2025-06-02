@@ -73,6 +73,7 @@ data:extend({
     },
     subgroup = "raw-material",
     order = "e02[enriched-copper]",
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -101,6 +102,7 @@ data:extend({
       tertiary = { r = 0.10, g = 0.25, b = 0.50, a = 0.100 },
       quaternary = { r = 0.25, g = 0.50, b = 0.65, a = 0.850 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -129,6 +131,7 @@ data:extend({
       tertiary = { r = 0.690, g = 0.768, b = 0.870, a = 0.000 },
       quaternary = { r = 0.0, g = 0.980, b = 0.603, a = 0.900 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -150,6 +153,7 @@ data:extend({
       tertiary = { r = 0.054, g = 0.239, b = 0.086, a = 0.500 },
       quaternary = { r = 0.054, g = 0.239, b = 0.086, a = 0.300 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",

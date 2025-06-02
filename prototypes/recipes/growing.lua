@@ -12,6 +12,8 @@ data:extend({
     results = {
       { type = "item", name = "wood", amount = 40 },
     },
+    auto_recycle = false,
+    main_product = "wood",
   },
   {
     type = "recipe",
@@ -29,6 +31,7 @@ data:extend({
     results = {
       { type = "item", name = "wood", amount = 80 },
     },
+    auto_recycle = false,
     main_product = "wood",
   },
   {
@@ -51,6 +54,7 @@ data:extend({
     results = {
       { type = "item", name = "jellynut", amount = 300 },
     },
+    auto_recycle = false,
     main_product = "jellynut",
   },
   {
@@ -73,6 +77,7 @@ data:extend({
     results = {
       { type = "item", name = "yumako", amount = 300 },
     },
+    auto_recycle = false,
     main_product = "yumako",
   },
 })
