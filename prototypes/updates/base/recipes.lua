@@ -529,6 +529,7 @@ data_util.add_or_replace_ingredient("roboport", "steel-plate", { type = "item", 
 
 data.raw.recipe["rocket-fuel"].category = "kr-fuel-refinery"
 data.raw.recipe["rocket-fuel"].energy_required = 16
+data.raw.recipe["rocket-fuel"].auto_recycle = false
 data_util.add_or_replace_ingredient("rocket-fuel", "light-oil", { type = "fluid", name = "light-oil", amount = 30 })
 data_util.add_or_replace_ingredient("rocket-fuel", "solid-fuel", { type = "item", name = "iron-plate", amount = 1 })
 table.insert(data.raw.recipe["rocket-fuel"].ingredients, { type = "fluid", name = "kr-oxygen", amount = 50 })
@@ -699,6 +700,9 @@ data.raw.recipe["casting-steel"].icons = {
       { icon = "__Krastorio2Assets__/icons/items/steel-plate.png" },
       { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
 }
+
+data_util.add_or_replace_product( "scrap-recycling", "electronic-circuit", { type = "item", name = "electronic-circuit", amount = 1, probability = 0.1, } )
+
 -- Science packs
 
 data.raw.recipe["automation-science-pack"] = {
