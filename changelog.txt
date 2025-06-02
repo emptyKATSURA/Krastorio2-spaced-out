@@ -1,6 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2025-06-02
+  Changes:
+    - WARNING: this update will heavily break your scrap recycling on Fulgora
+    - fulgora scrap recycling has 10% to drop electronic circuit
+  Bugfixes:
+    - Major fix many recycling recipes were outdated or missing
+    - Fixed it was impossible to research crushing when starting on Vulcanus using any planet start
+---------------------------------------------------------------------------------------------------
 Version: 1.2.7
-Date: 2025-06-1
+Date: 2025-06-01
   Compatibility:
     - AAI Industry - stone processing is now split into sand and glass processing. this also should fix some crashes
     - Moshine - unified sand and glass with K2 counterparts
