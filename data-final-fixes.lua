@@ -3,6 +3,43 @@ require("prototypes.final-fixes.internal-turret-logic")
 require("prototypes.final-fixes.steel-pipe-connectivity")
 require("prototypes.final-fixes.biter-nests")
 
+local recycling = require("scripts.recycling")
+
+-- Generating the recycle (reverse) recipes
+for name, recipe in pairs(data.raw.recipe) do
+  recycling.generate_recycling_recipe(recipe)
+end
+
+local generate_self_recycling_recipe = function(item)
+  if item.auto_recycle == false then return end
+  if item.parameter then return end
+
+  if not data.raw.recipe[item.name .. "-recycling"] then
+    if not string.find(item.name, "-barrel") then
+      recycling.generate_self_recycling_recipe(item)
+    end
+  end
+end
+
+for type_name in pairs(defines.prototypes.item) do
+  if data.raw[type_name] then
+    for k, item in pairs(data.raw[type_name]) do
+      generate_self_recycling_recipe(item)
+    end
+  end
+end
+
+data.raw.quality.normal.hidden = false
+
+--The code below had been made by Johannes2070
+--Fix: Ensure the recycler has enough result inventory slots to handle all recycling outputs.
+local recycler = data.raw["furnace"]["recycler"]
+if recycler then
+  if recycler.result_inventory_size < 13 then
+    recycler.result_inventory_size = 13
+  end
+end
+
 if settings.startup["kr-steel-pipes-need-pumps"].value then
   return
 end
@@ -54,39 +91,4 @@ for entity_type in pairs(defines.prototypes["entity"]) do
   end
 end
 
-local recycling = require("scripts.recycling")
 
--- Generating the recycle (reverse) recipes
-for name, recipe in pairs(data.raw.recipe) do
-  recycling.generate_recycling_recipe(recipe)
-end
-
-local generate_self_recycling_recipe = function(item)
-  if item.auto_recycle == false then return end
-  if item.parameter then return end
-
-  if not data.raw.recipe[item.name .. "-recycling"] then
-    if not string.find(item.name, "-barrel") then
-      recycling.generate_self_recycling_recipe(item)
-    end
-  end
-end
-
-for type_name in pairs(defines.prototypes.item) do
-  if data.raw[type_name] then
-    for k, item in pairs(data.raw[type_name]) do
-      generate_self_recycling_recipe(item)
-    end
-  end
-end
-
-data.raw.quality.normal.hidden = false
-
---The code below had been made by Johannes2070
---Fix: Ensure the recycler has enough result inventory slots to handle all recycling outputs.
-local recycler = data.raw["furnace"]["recycler"]
-if recycler then
-  if recycler.result_inventory_size < 13 then
-    recycler.result_inventory_size = 13
-  end
-end
