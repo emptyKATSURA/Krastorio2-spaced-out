@@ -81,3 +81,12 @@ for type_name in pairs(defines.prototypes.item) do
 end
 
 data.raw.quality.normal.hidden = false
+
+--The code below had been made by Johannes2070
+--Fix: Ensure the recycler has enough result inventory slots to handle all recycling outputs.
+local recycler = data.raw["furnace"]["recycler"]
+if recycler then
+  if recycler.result_inventory_size < 13 then
+    recycler.result_inventory_size = 13
+  end
+end
