@@ -133,7 +133,7 @@ data_util.update_ammo_effects(data.raw["technology"]["laser-weapons-damage-4"], 
   { type = "ammo-damage", ammo_category = "laser", modifier = 0.35 },
 })
 data_util.update_ammo_effects(data.raw["technology"]["laser-weapons-damage-5"], {
-  { type = "ammo-damage", ammo_category = "laser", modifier = 0.35 },
+  { type = "ammo-damage", ammo_category = "laser", modifier = 0.4 },
 })
 data_util.update_ammo_effects(data.raw["technology"]["laser-weapons-damage-6"], {
   { type = "ammo-damage", ammo_category = "laser", modifier = 0.5 },
