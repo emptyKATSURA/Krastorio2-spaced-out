@@ -332,7 +332,7 @@ data:extend({
     },
     energy_required = 1,
     allow_decomposition = false,
-    results = {{type = "item", name = "kr-steel-pipe-to-ground", amount = 1}},
+    results = {{type = "item", name = "kr-steel-pipe-to-ground", amount = 2}},
     allow_productivity = true
   },
 })
