@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.4
+Date: 2025-06-06
+  Changes:
+    - Readjusted casting recipes cost, mostly follows 1 steel - 20 molten iron. Low density structer casting is cheaper because normal recipe is also cheaper
+    - Gear casting recipe uses krastorio2 icon
+    - Cryoplant can use fuel refining recipes
+---------------------------------------------------------------------------------------------------
 Version: 1.3.3
 Date: 2025-06-04
   Changes:
