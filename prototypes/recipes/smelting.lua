@@ -264,7 +264,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "fluid", name = "molten-iron", amount = 60, fluidbox_multiplier = 10},
+      {type = "fluid", name = "molten-iron", amount = 40, fluidbox_multiplier = 10},
     },
     energy_required = 1,
     allow_decomposition = false,
@@ -285,7 +285,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "fluid", name = "molten-iron", amount = 30, fluidbox_multiplier = 10},
+      {type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10},
     },
     energy_required = 1,
     allow_decomposition = false,
@@ -306,7 +306,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "fluid", name = "molten-iron", amount = 30, fluidbox_multiplier = 10},
+      {type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10},
     },
     energy_required = 1,
     allow_decomposition = false,
@@ -328,7 +328,7 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "kr-steel-pipe", amount = 10, fluidbox_multiplier = 10},
-      {type = "fluid", name = "molten-iron", amount = 150, fluidbox_multiplier = 10},
+      {type = "fluid", name = "molten-iron", amount = 100, fluidbox_multiplier = 10},
     },
     energy_required = 1,
     allow_decomposition = false,
