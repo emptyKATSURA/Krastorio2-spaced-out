@@ -700,6 +700,16 @@ data.raw.recipe["casting-steel"].icons = {
       { icon = "__Krastorio2Assets__/icons/items/steel-plate.png" },
       { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
 }
+data.raw.recipe["casting-iron-gear-wheel"].icons = {
+      { icon = "__Krastorio2Assets__/icons/items/iron-gear-wheel.png" },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
+}
+
+data_util.add_or_replace_ingredient( "casting-iron-gear-wheel", "molten-iron", { type = "fluid", name = "molten-iron", amount = 5 } )
+data_util.add_or_replace_ingredient( "casting-steel", "molten-iron", { type = "fluid", name = "molten-iron", amount = 20 } )
+data_util.add_or_replace_ingredient( "casting-low-density-structure", "molten-iron", { type = "fluid", name = "molten-iron", amount = 60 } )
+data_util.add_or_replace_ingredient( "casting-low-density-structure", "molten-copper", { type = "fluid", name = "molten-copper", amount = 120 } )
+
 data.raw.recipe["scrap-recycling"].results = {
       {type = "item", name = "iron-gear-wheel",        amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
       {type = "item", name = "electronic-circuit",     amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
