@@ -41,15 +41,6 @@ data:extend({
     default_value = false,
     order = "a5",
   },
-  -- TODO: Make this react to player color / be adjustable at runtime
-  {
-    type = "string-setting",
-    name = "kr-shelter-tint",
-    setting_type = "startup",
-    default_value = "white",
-    allowed_values = { "white", "gray", "yellow", "pink", "olive", "red", "blue", "green", "cyan", "purple" },
-    order = "b1",
-  },
   {
     type = "string-setting",
     name = "kr-main-menu-background",
