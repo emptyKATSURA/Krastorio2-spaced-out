@@ -16,6 +16,7 @@ data:extend({
       { type = "item", name = "turbo-transport-belt", amount = 1 },
       { type = "item", name = "kr-express-loader", amount = 2 },
       { type = "item", name = "tungsten-plate", amount = 20 },
+      { type = "fluid", name = "lubricant", amount = 40 },
     },
     results = { { type = "item", name = "kr-advanced-loader", amount = 1 } },
     surface_conditions = { { property = "pressure", min = 4000, max = 4000 } },
