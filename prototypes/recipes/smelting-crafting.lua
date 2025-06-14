@@ -51,7 +51,6 @@ data:extend({
   {
     type = "recipe",
     name = "kr-easy-electronic-components",
-    subgroup = "kr-smelting-crafting",
     hide_from_player_crafting = true,
     enabled = false,
     category = "kr-smelting-crafting",
