@@ -13,7 +13,6 @@ require("prototypes.updates.base.resources")
 require("prototypes.updates.base.technologies")
 require("prototypes.updates.base.turrets")
 require("prototypes.updates.base.weapons-realistic")
-require("prototypes.updates.base.weapons-standard")
 
 require("prototypes.updates.adjust-spawn-rates")
 require("prototypes.updates.adjust-stack-sizes")
