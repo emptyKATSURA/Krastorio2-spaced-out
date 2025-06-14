@@ -28,11 +28,9 @@ data.raw["beacon"]["kr-singularity-beacon"].squeak_behavior = false
 data.raw["burner-generator"]["kr-antimatter-reactor"].squeak_behavior = false
 
 data.raw["container"]["kr-shelter-container"].squeak_behavior = false
-data.raw["container"]["kr-shelter-plus-container"].squeak_behavior = false
 
 data.raw["electric-energy-interface"]["kr-activated-intergalactic-transceiver"].squeak_behavior = false
 data.raw["electric-energy-interface"]["kr-shelter"].squeak_behavior = false
-data.raw["electric-energy-interface"]["kr-shelter-plus"].squeak_behavior = false
 data.raw["electric-energy-interface"]["kr-wind-turbine"].squeak_behavior = false
 
 data.raw["furnace"]["kr-air-purifier"].squeak_behavior = false
