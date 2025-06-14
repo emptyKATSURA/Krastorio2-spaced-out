@@ -228,7 +228,7 @@ data:extend({
         { "agricultural-science-pack", 1 },
       },
     },
-    prerequisites = { "agricultural-science-pack" },
+    prerequisites = { "agricultural-science-pack", "kr-advanced-tech-card" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-jellynut" },
       { type = "unlock-recipe", recipe = "kr-yumako" },
