@@ -27,7 +27,6 @@ data.raw.capsule["raw-fish"].capsule_action.attack_parameters.ammo_type.action.a
   type = "damage",
   damage = { type = "physical", amount = -50 },
 }
-data.raw.capsule["raw-fish"].rocket_launch_products = { { type = "item", name = "kr-dolphin-gun", amount = 1 } }
 
 data.raw.item["artillery-turret"].subgroup = "kr-vanilla-turret"
 data.raw.item["artillery-turret"].order = "04[artillery-turret]"
