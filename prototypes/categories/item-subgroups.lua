@@ -1,9 +1,9 @@
 data:extend({
   {
-    type = "item-group",
+    type = "item-subgroup",
     name = "kr-smelting-crafting",
-    icon = "__Krastorio2Assets__/icons/item-groups/smelting-crafting.png",
-    order = "m4",
+    group = "intermediate-products",
+    order = "k1",
   },
   {
     type = "item-subgroup",
@@ -70,12 +70,6 @@ data:extend({
     name = "kr-rocket-turret",
     group = "combat",
     order = "g3",
-  },
-  {
-    type = "item-subgroup",
-    name = "kr-smelting-crafting",
-    group = "kr-smelting-crafting",
-    order = "m4",
   },
   {
     type = "item-subgroup",
