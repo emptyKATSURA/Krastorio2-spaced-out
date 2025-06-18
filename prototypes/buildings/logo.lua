@@ -4,6 +4,7 @@ data:extend({
     name = "kr-logo",
     energy_required = 666,
     enabled = false,
+    hidden_in_factoriopedia = true,
     ingredients = {
       { type = "item", name = "iron-stick", amount = 5000 },
     },
@@ -12,6 +13,7 @@ data:extend({
   {
     type = "item",
     name = "kr-logo",
+    hidden_in_factoriopedia = true,
     icon = "__Krastorio2Assets__/icons/entities/k-logo.png",
     stack_size = 50,
     subgroup = "energy",
@@ -47,6 +49,7 @@ data:extend({
       render_no_network_icon = false,
     },
     energy_production = "666W",
+    hidden_in_factoriopedia = true,
     animation = {
       layers = {
         {

@@ -22,7 +22,7 @@ data:extend({
     name = "kr-singularity-lab",
     icon = "__Krastorio2Assets__/icons/entities/singularity-lab.png",
     subgroup = "production-machine",
-    order = "g[lab]-g3[kr-singularity-lab]",
+    order = "z[z-lab]-g3[kr-singularity-lab]",
     place_result = "kr-singularity-lab",
     stack_size = 25,
     weight = 1000*kg,

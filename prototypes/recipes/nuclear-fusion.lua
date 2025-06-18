@@ -17,5 +17,6 @@ data:extend({
       { type = "fluid", name = "steam", amount = 10000, temperature = 975 },
       { type = "item", name = "kr-empty-dt-fuel-cell", amount = 1 },
     },
+    auto_recycle = false,
   },
 })

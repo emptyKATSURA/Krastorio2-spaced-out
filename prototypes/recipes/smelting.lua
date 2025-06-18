@@ -234,7 +234,8 @@ data:extend({
     name = "kr-casting-iron-beam",
     category = "metallurgy",
     subgroup = "vulcanus-processes",
-    order = "b[casting]-e[casting-iron]",
+    order = "b[casting]-e[casting-iron-beam]",
+    localised_name = {"", {"recipe-name.casting"}, " ", {"item-name.kr-iron-beam"} },
     icons = {
       { icon = "__Krastorio2Assets__/icons/items/iron-beam.png" },
       { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
@@ -254,7 +255,8 @@ data:extend({
     name = "kr-casting-steel-beam",
     category = "metallurgy",
     subgroup = "vulcanus-processes",
-    order = "b[casting]-e[casting-iron]",
+    order = "b[casting]-e[casting-steel-beam]",
+    localised_name = {"", {"recipe-name.casting"}, " ", {"item-name.kr-steel-beam"} },
     icons = {
       { icon = "__Krastorio2Assets__/icons/items/steel-beam.png" },
       { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
@@ -262,7 +264,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "fluid", name = "molten-iron", amount = 60, fluidbox_multiplier = 10},
+      {type = "fluid", name = "molten-iron", amount = 40, fluidbox_multiplier = 10},
     },
     energy_required = 1,
     allow_decomposition = false,
@@ -274,7 +276,8 @@ data:extend({
     name = "kr-casting-steel-gear",
     category = "metallurgy",
     subgroup = "vulcanus-processes",
-    order = "b[casting]-d[casting-iron]",
+    order = "b[casting]-d[casting-steel-gear]",
+    localised_name = {"", {"recipe-name.casting"}, " ", {"item-name.kr-steel-gear-wheel"} },
     icons = {
       { icon = "__Krastorio2Assets__/icons/items/steel-gear-wheel.png" },
       { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
@@ -282,11 +285,54 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "fluid", name = "molten-iron", amount = 30, fluidbox_multiplier = 10},
+      {type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10},
     },
     energy_required = 1,
     allow_decomposition = false,
     results = {{type = "item", name = "kr-steel-gear-wheel", amount = 1}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "kr-casting-steel-pipe",
+    category = "metallurgy",
+    subgroup = "energy-pipe-distribution",
+    order = "b[casting]-f[steel-pipe]",
+       localised_name = {"", {"recipe-name.casting"}, " ", {"entity-name.kr-steel-pipe"} },
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/entities/steel-pipe.png", scale = 0.5, shift = { -8, 8 }, },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.5, shift = { 8, -8 }, },
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "kr-steel-pipe", amount = 1}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "kr-casting-steel-pipe-to-ground",
+    category = "metallurgy",
+    subgroup = "energy-pipe-distribution",
+    order = "b[casting]-g[steel-pipe-to-ground.png]",
+    localised_name = {"", {"recipe-name.casting"}, " ", {"entity-name.kr-steel-pipe-to-ground"} },
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/entities/steel-pipe-to-ground.png", scale = 0.5, shift = { -8, 8 }, },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.5, shift = { 8, -8 }, },
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "kr-steel-pipe", amount = 10, fluidbox_multiplier = 10},
+      {type = "fluid", name = "molten-iron", amount = 100, fluidbox_multiplier = 10},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "kr-steel-pipe-to-ground", amount = 2}},
     allow_productivity = true
   },
 })

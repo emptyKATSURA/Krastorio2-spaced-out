@@ -529,6 +529,7 @@ data_util.add_or_replace_ingredient("roboport", "steel-plate", { type = "item", 
 
 data.raw.recipe["rocket-fuel"].category = "kr-fuel-refinery"
 data.raw.recipe["rocket-fuel"].energy_required = 16
+data.raw.recipe["rocket-fuel"].auto_recycle = false
 data_util.add_or_replace_ingredient("rocket-fuel", "light-oil", { type = "fluid", name = "light-oil", amount = 30 })
 data_util.add_or_replace_ingredient("rocket-fuel", "solid-fuel", { type = "item", name = "iron-plate", amount = 1 })
 table.insert(data.raw.recipe["rocket-fuel"].ingredients, { type = "fluid", name = "kr-oxygen", amount = 50 })
@@ -699,6 +700,32 @@ data.raw.recipe["casting-steel"].icons = {
       { icon = "__Krastorio2Assets__/icons/items/steel-plate.png" },
       { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
 }
+data.raw.recipe["casting-iron-gear-wheel"].icons = {
+      { icon = "__Krastorio2Assets__/icons/items/iron-gear-wheel.png" },
+      { icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 }, },
+}
+
+data_util.add_or_replace_ingredient( "casting-iron-gear-wheel", "molten-iron", { type = "fluid", name = "molten-iron", amount = 5 } )
+data_util.add_or_replace_ingredient( "casting-steel", "molten-iron", { type = "fluid", name = "molten-iron", amount = 20 } )
+data_util.add_or_replace_ingredient( "casting-low-density-structure", "molten-iron", { type = "fluid", name = "molten-iron", amount = 60 } )
+data_util.add_or_replace_ingredient( "casting-low-density-structure", "molten-copper", { type = "fluid", name = "molten-copper", amount = 120 } )
+
+data.raw.recipe["scrap-recycling"].results = {
+      {type = "item", name = "iron-gear-wheel",        amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "electronic-circuit",     amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "solid-fuel",             amount = 1, probability = 0.07, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "concrete",               amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "ice",                    amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "steel-plate",            amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "battery",                amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "stone",                  amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "advanced-circuit",       amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "copper-cable",           amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "processing-unit",        amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "low-density-structure",  amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "holmium-ore",            amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
+}
+
 -- Science packs
 
 data.raw.recipe["automation-science-pack"] = {

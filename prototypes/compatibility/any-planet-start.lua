@@ -15,13 +15,11 @@ if settings.startup["aps-planet"].value == "gleba" then
 end
 
 if settings.startup["aps-planet"].value == "vulcanus" then
+    data.raw.technology["kr-crusher"].research_trigger = { type = "mine-entity", entity = "big-volcanic-rock" }
     data_util.remove_prerequisite("solar-energy", "kr-silicon-processing")
     data_util.add_prerequisite("solar-energy", "kr-stone-processing")
     data_util.remove_ingredient("solar-panel", "silicon")
-    data_util.add_or_replace_ingredient(
-        "solar-panel",
-        "kr-silicon",
-    { type = "item", name = "copper-plate", amount = 5 } )
+    data_util.add_or_replace_ingredient( "solar-panel", "kr-silicon", { type = "item", name = "copper-plate", amount = 5 } )
     data_util.remove_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
     data_util.add_recipe_unlock("processing-unit", "kr-carbide-processing-circuit")
 end

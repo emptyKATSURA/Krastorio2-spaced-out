@@ -24,6 +24,7 @@ data:extend({
       tertiary = { r = 0.454, g = 0.517, b = 0.529, a = 0.500 },
       quaternary = { r = 0.662, g = 0.807, b = 0.839, a = 0.900 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -50,6 +51,7 @@ data:extend({
       tertiary = { r = 0.454, g = 0.517, b = 0.529, a = 0.500 },
       quaternary = { r = 0.662, g = 0.807, b = 0.839, a = 0.900 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -107,6 +109,7 @@ data:extend({
       tertiary = { r = 0.454, g = 0.517, b = 0.529, a = 0.500 },
       quaternary = { r = 0.662, g = 0.807, b = 0.839, a = 0.900 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -141,6 +144,7 @@ data:extend({
       tertiary = { r = 0.454, g = 0.517, b = 0.529, a = 0.500 },
       quaternary = { r = 0.662, g = 0.807, b = 0.839, a = 0.900 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -168,6 +172,7 @@ data:extend({
       tertiary = { r = 0.204, g = 0.417, b = 0.529, a = 0.500 },
       quaternary = { r = 0.312, g = 0.407, b = 0.739, a = 0.900 },
     },
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -200,5 +205,6 @@ data:extend({
       tertiary = { r = 0.354, g = 0.527, b = 0.229, a = 0.500 },
       quaternary = { r = 0.362, g = 0.617, b = 0.439, a = 0.900 },
     },
+    auto_recycle = false,
   },
 })

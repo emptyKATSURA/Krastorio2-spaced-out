@@ -27,6 +27,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -45,11 +46,11 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
     name = "kr-easy-electronic-components",
-    subgroup = "kr-smelting-crafting",
     hide_from_player_crafting = true,
     enabled = false,
     category = "kr-smelting-crafting",
@@ -64,6 +65,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -83,6 +85,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -102,6 +105,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -120,6 +124,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -138,6 +143,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -156,6 +162,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -174,6 +181,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -192,6 +200,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -210,6 +219,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -229,6 +239,7 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -248,5 +259,6 @@ data:extend({
     },
     allow_productivity = true,
     always_show_made_in = true,
+    auto_recycle = false,
   },
 })

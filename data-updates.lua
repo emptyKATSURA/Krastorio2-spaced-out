@@ -13,7 +13,6 @@ require("prototypes.updates.base.resources")
 require("prototypes.updates.base.technologies")
 require("prototypes.updates.base.turrets")
 require("prototypes.updates.base.weapons-realistic")
-require("prototypes.updates.base.weapons-standard")
 
 require("prototypes.updates.adjust-spawn-rates")
 require("prototypes.updates.adjust-stack-sizes")
@@ -30,6 +29,7 @@ require("prototypes.updates.set-new-resource-autoplace")
 
 require("prototypes.compatibility.aai-industry")
 require("prototypes.compatibility.any-planet-start")
+require("prototypes.compatibility.moshine")
 
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")

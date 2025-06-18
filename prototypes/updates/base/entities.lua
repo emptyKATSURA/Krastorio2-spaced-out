@@ -189,15 +189,10 @@ if not mods["boblogistics"] then
 end
 
 data.raw.container["crash-site-chest-1"].minable = small_crash_site_minable
-
 data.raw.container["crash-site-chest-2"].minable = small_crash_site_minable
-
 data.raw.container["crash-site-spaceship-wreck-medium-1"].minable = small_crash_site_minable
-
 data.raw.container["crash-site-spaceship-wreck-medium-2"].minable = small_crash_site_minable
-
 data.raw.container["crash-site-spaceship-wreck-medium-3"].minable = small_crash_site_minable
-
 data.raw.container["crash-site-spaceship"].minable = {
   mining_time = 10,
   results = {
@@ -487,6 +482,8 @@ data.raw["lab"]["biolab"].inputs = {
       "promethium-science-pack",
     }
 
+
+table.insert( data.raw ["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery" )
 table.insert( data.raw ["assembling-machine"]["crusher"].crafting_categories, "kr-crushing" )
 data.raw ["assembling-machine"]["crusher"].surface_conditions = nil
 

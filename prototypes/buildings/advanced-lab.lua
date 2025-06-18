@@ -19,7 +19,7 @@ data:extend({
     name = "kr-advanced-lab",
     icon = "__Krastorio2Assets__/icons/entities/advanced-lab.png",
     subgroup = "production-machine",
-    order = "g[lab]-g2[advanced-lab]",
+    order = "z[lab]-g2[advanced-lab]",
     place_result = "kr-advanced-lab",
     stack_size = 50,
     weight = 100*kg,

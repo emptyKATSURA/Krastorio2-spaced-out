@@ -1,10 +1,6 @@
 local flib_table = require("__flib__.table")
 local data_util = require("data-util")
 
-if not settings.startup["kr-realistic-weapons"].value then
-  return
-end
-
 data_util.update_ammo_effects(data.raw["technology"]["physical-projectile-damage-1"], {
   { type = "ammo-damage", ammo_category = "bullet", modifier = 0.25 },
   { type = "turret-attack", turret_id = "gun-turret", modifier = 0.25 },
@@ -133,7 +129,7 @@ data_util.update_ammo_effects(data.raw["technology"]["laser-weapons-damage-4"], 
   { type = "ammo-damage", ammo_category = "laser", modifier = 0.35 },
 })
 data_util.update_ammo_effects(data.raw["technology"]["laser-weapons-damage-5"], {
-  { type = "ammo-damage", ammo_category = "laser", modifier = 0.35 },
+  { type = "ammo-damage", ammo_category = "laser", modifier = 0.4 },
 })
 data_util.update_ammo_effects(data.raw["technology"]["laser-weapons-damage-6"], {
   { type = "ammo-damage", ammo_category = "laser", modifier = 0.5 },
@@ -183,351 +179,123 @@ data_util.update_ammo_effects(data.raw["technology"]["weapon-shooting-speed-6"],
 
 ------------------------------------------------
 
-data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-1"], {
-  { type = "gun-speed", ammo_category = "laser", modifier = 0.2 },
-})
-data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-2"], {
-  { type = "gun-speed", ammo_category = "laser", modifier = 0.2 },
-})
-data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-3"], {
-  { type = "gun-speed", ammo_category = "laser", modifier = 0.15 },
-})
-data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-4"], {
-  { type = "gun-speed", ammo_category = "laser", modifier = 0.15 },
-})
-data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-5"], {
-  { type = "gun-speed", ammo_category = "laser", modifier = 0.1 },
-})
-data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-6"], {
-  { type = "gun-speed", ammo_category = "laser", modifier = 0.1 },
-})
-data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-7"], {
-  { type = "gun-speed", ammo_category = "laser", modifier = 0.1 },
-})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-1"], {  { type = "gun-speed", ammo_category = "laser", modifier = 0.2  },})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-2"], {  { type = "gun-speed", ammo_category = "laser", modifier = 0.2  },})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-3"], {  { type = "gun-speed", ammo_category = "laser", modifier = 0.15 },})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-4"], {  { type = "gun-speed", ammo_category = "laser", modifier = 0.15 },})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-5"], {  { type = "gun-speed", ammo_category = "laser", modifier = 0.1  },})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-6"], {  { type = "gun-speed", ammo_category = "laser", modifier = 0.1  },})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-7"], {  { type = "gun-speed", ammo_category = "laser", modifier = 0.1  },})
 
-------------------------------------------------
-
-data_util.update_ammo_effects(data.raw["technology"]["artillery-shell-speed-1"], {
-  { type = "gun-speed", ammo_category = "artillery-shell", modifier = 0.25 },
+data_util.update_ammo_effects(data.raw["technology"]["artillery-shell-speed-1"], {  { type = "gun-speed", ammo_category = "artillery-shell", modifier = 0.25 },
 })
 
 -- -- -- Adding new Krastorio ammo damages effects in vanilla technologies
 
+-- Technology for railgun turret
+
+data_util.add_effect( "physical-projectile-damage-1", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 } )
+data_util.add_effect( "physical-projectile-damage-2", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 } )
+data_util.add_effect( "physical-projectile-damage-3", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 } )
+data_util.add_effect( "physical-projectile-damage-4", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 } )
+data_util.add_effect( "physical-projectile-damage-5", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 } )
+data_util.add_effect( "physical-projectile-damage-6", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 } )
+data_util.add_effect( "physical-projectile-damage-7", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.5  } )
+
+data_util.add_effect( "weapon-shooting-speed-2", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
+data_util.add_effect( "weapon-shooting-speed-3", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
+data_util.add_effect( "weapon-shooting-speed-4", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
+data_util.add_effect( "weapon-shooting-speed-5", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
+data_util.add_effect( "weapon-shooting-speed-6", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
+
+-- Technology for rocket turret
+
+data_util.add_effect(  "stronger-explosives-1",  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.25 } )
+data_util.add_effect(  "stronger-explosives-2",  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.25 } )
+data_util.add_effect(  "stronger-explosives-3",  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.25 } )
+data_util.add_effect(  "stronger-explosives-4",  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.35 } )
+data_util.add_effect(  "stronger-explosives-5",  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.35 } )
+data_util.add_effect(  "stronger-explosives-6",  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.35 } )
+data_util.add_effect(  "stronger-explosives-7",  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.5  } )
+
+data_util.add_effect(  "weapon-shooting-speed-2",  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-3",  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-4",  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-5",  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-6",  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 } )
+
+-- Technology for heavy rocket launcher
+
+data_util.add_effect(  "stronger-explosives-1",  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.25 } )
+data_util.add_effect(  "stronger-explosives-2",  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.25 } )
+data_util.add_effect(  "stronger-explosives-3",  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.25 } )
+data_util.add_effect(  "stronger-explosives-4",  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.35 } )
+data_util.add_effect(  "stronger-explosives-5",  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.35 } )
+data_util.add_effect(  "stronger-explosives-6",  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.35 } )
+data_util.add_effect(  "stronger-explosives-7",  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.5  } )
+
+data_util.add_effect(  "weapon-shooting-speed-2",  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-3",  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-4",  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-5",  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 } )
+data_util.add_effect(  "weapon-shooting-speed-6",  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 } )
+
+-- Technology for impulse rifle
+
+data_util.add_effect(  "laser-weapons-damage-1",  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.25 } )
+data_util.add_effect(  "laser-weapons-damage-2",  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.25 } )
+data_util.add_effect(  "laser-weapons-damage-3",  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.25 } )
+data_util.add_effect(  "laser-weapons-damage-4",  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.35 } )
+data_util.add_effect(  "laser-weapons-damage-5",  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.35 } )
+data_util.add_effect(  "laser-weapons-damage-6",  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.35 } )
+data_util.add_effect(  "laser-weapons-damage-7",  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.5  } )
+
+data_util.add_effect(  "laser-shooting-speed-1",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.2  } )
+data_util.add_effect(  "laser-shooting-speed-2",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.2  } )
+data_util.add_effect(  "laser-shooting-speed-3",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.15 } )
+data_util.add_effect(  "laser-shooting-speed-4",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.15 } )
+data_util.add_effect(  "laser-shooting-speed-5",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1  } )
+data_util.add_effect(  "laser-shooting-speed-6",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1  } )
+data_util.add_effect(  "laser-shooting-speed-7",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1  } )
+
+table.insert(flib_table.get_or_insert(data.raw.ammo["uranium-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
+table.insert(flib_table.get_or_insert(data.raw.ammo["kr-imersite-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
+
+if not settings.startup["kr-realistic-weapons"].value then
+  return
+end
+
 -- Technology for new ammo
 
-data_util.add_effect(
-  "physical-projectile-damage-1",
-  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-2",
-  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-3",
-  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-4",
-  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-5",
-  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-6",
-  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-7",
-  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.5 }
-)
+data_util.add_effect(  "physical-projectile-damage-1",  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.25 })
+data_util.add_effect(  "physical-projectile-damage-2",  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.25 })
+data_util.add_effect(  "physical-projectile-damage-3",  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.25 })
+data_util.add_effect(  "physical-projectile-damage-4",  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.35 })
+data_util.add_effect(  "physical-projectile-damage-5",  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.35 })
+data_util.add_effect(  "physical-projectile-damage-6",  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.35 })
+data_util.add_effect(  "physical-projectile-damage-7",  { type = "ammo-damage", ammo_category = "kr-pistol", modifier = 0.5  })
 
-data_util.add_effect("weapon-shooting-speed-1", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.2 })
-data_util.add_effect("weapon-shooting-speed-2", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.2 })
+data_util.add_effect("weapon-shooting-speed-1", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.2  })
+data_util.add_effect("weapon-shooting-speed-2", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.2  })
 data_util.add_effect("weapon-shooting-speed-3", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.15 })
 data_util.add_effect("weapon-shooting-speed-4", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.15 })
 data_util.add_effect("weapon-shooting-speed-5", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.15 })
 data_util.add_effect("weapon-shooting-speed-6", { type = "gun-speed", ammo_category = "kr-pistol", modifier = 0.15 })
 
--- --
+data_util.add_effect(  "physical-projectile-damage-1",  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.25 })
+data_util.add_effect(  "physical-projectile-damage-2",  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.25 })
+data_util.add_effect(  "physical-projectile-damage-3",  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.25 })
+data_util.add_effect(  "physical-projectile-damage-4",  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.35 })
+data_util.add_effect(  "physical-projectile-damage-5",  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.35 })
+data_util.add_effect(  "physical-projectile-damage-6",  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.35 })
+data_util.add_effect(  "physical-projectile-damage-7",  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.5  })
 
--- --
-
-data_util.add_effect(
-  "physical-projectile-damage-1",
-  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-2",
-  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-3",
-  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-4",
-  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-5",
-  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-6",
-  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-7",
-  { type = "ammo-damage", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.5 }
-)
-
-data_util.add_effect(
-  "weapon-shooting-speed-1",
-  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-2",
-  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-3",
-  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-4",
-  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-5",
-  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-6",
-  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 }
-)
-
--- Technology for railgun turret
-
-data_util.add_effect(
-  "physical-projectile-damage-1",
-  { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-2",
-  { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-3",
-  { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-4",
-  { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-5",
-  { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-6",
-  { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 }
-)
-data_util.add_effect(
-  "physical-projectile-damage-7",
-  { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.5 }
-)
-
-data_util.add_effect(
-  "weapon-shooting-speed-2",
-  { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-3",
-  { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-4",
-  { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-5",
-  { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-6",
-  { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 }
-)
-
--- Technology for rocker turret
-
-data_util.add_effect(
-  "stronger-explosives-1",
-  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.25 }
-)
-data_util.add_effect(
-  "stronger-explosives-2",
-  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.25 }
-)
-data_util.add_effect(
-  "stronger-explosives-3",
-  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.25 }
-)
-data_util.add_effect(
-  "stronger-explosives-4",
-  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.35 }
-)
-data_util.add_effect(
-  "stronger-explosives-5",
-  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.35 }
-)
-data_util.add_effect(
-  "stronger-explosives-6",
-  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.35 }
-)
-data_util.add_effect(
-  "stronger-explosives-7",
-  { type = "ammo-damage", ammo_category = "kr-turret-missile", modifier = 0.5 }
-)
-
-data_util.add_effect(
-  "weapon-shooting-speed-2",
-  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-3",
-  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-4",
-  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-5",
-  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-6",
-  { type = "gun-speed", ammo_category = "kr-turret-missile", modifier = 0.2 }
-)
-
--- Technology for heavy rocket launcher
-
-data_util.add_effect(
-  "stronger-explosives-1",
-  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.25 }
-)
-data_util.add_effect(
-  "stronger-explosives-2",
-  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.25 }
-)
-data_util.add_effect(
-  "stronger-explosives-3",
-  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.25 }
-)
-data_util.add_effect(
-  "stronger-explosives-4",
-  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.35 }
-)
-data_util.add_effect(
-  "stronger-explosives-5",
-  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.35 }
-)
-data_util.add_effect(
-  "stronger-explosives-6",
-  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.35 }
-)
-data_util.add_effect(
-  "stronger-explosives-7",
-  { type = "ammo-damage", ammo_category = "kr-heavy-rocket", modifier = 0.5 }
-)
-
-data_util.add_effect(
-  "weapon-shooting-speed-2",
-  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-3",
-  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-4",
-  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-5",
-  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 }
-)
-data_util.add_effect(
-  "weapon-shooting-speed-6",
-  { type = "gun-speed", ammo_category = "kr-heavy-rocket", modifier = 0.2 }
-)
-
--- Technology for impulse rifle
-
-data_util.add_effect(
-  "laser-weapons-damage-1",
-  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.25 }
-)
-data_util.add_effect(
-  "laser-weapons-damage-2",
-  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.25 }
-)
-data_util.add_effect(
-  "laser-weapons-damage-3",
-  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.25 }
-)
-data_util.add_effect(
-  "laser-weapons-damage-4",
-  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.35 }
-)
-data_util.add_effect(
-  "laser-weapons-damage-5",
-  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.35 }
-)
-data_util.add_effect(
-  "laser-weapons-damage-6",
-  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.35 }
-)
-data_util.add_effect(
-  "laser-weapons-damage-7",
-  { type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.5 }
-)
-
-data_util.add_effect(
-  "laser-shooting-speed-1",
-  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.2 }
-)
-data_util.add_effect(
-  "laser-shooting-speed-2",
-  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.2 }
-)
-data_util.add_effect(
-  "laser-shooting-speed-3",
-  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.15 }
-)
-data_util.add_effect(
-  "laser-shooting-speed-4",
-  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.15 }
-)
-data_util.add_effect(
-  "laser-shooting-speed-5",
-  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1 }
-)
-data_util.add_effect(
-  "laser-shooting-speed-6",
-  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1 }
-)
-data_util.add_effect(
-  "laser-shooting-speed-7",
-  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1 }
-)
-
-table.insert(flib_table.get_or_insert(data.raw.ammo["uranium-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
-table.insert(flib_table.get_or_insert(data.raw.ammo["kr-imersite-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
-
+data_util.add_effect(  "weapon-shooting-speed-1",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.2  })
+data_util.add_effect(  "weapon-shooting-speed-2",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.2  })
+data_util.add_effect(  "weapon-shooting-speed-3",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 })
+data_util.add_effect(  "weapon-shooting-speed-4",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 })
+data_util.add_effect(  "weapon-shooting-speed-5",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 })
+data_util.add_effect(  "weapon-shooting-speed-6",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 })
 -- ------------------------------------------------------------------------------------------------------
 -- Everything below this point has been moved verbatim, I really don't feel like going through any of it.
 -- TODO: Clean up this mess
@@ -648,10 +416,6 @@ data.raw.gun["pistol"].attack_parameters.range = pistol_range - 2
 data.raw.gun["pistol"].attack_parameters.min_range = k_pistol_min_range
 data.raw.gun["pistol"].attack_parameters.cooldown = 20
 data.raw.gun["pistol"].attack_parameters.movement_slow_down_factor = 0.15
-
-data.raw.gun["kr-accelerator"].attack_parameters.ammo_category = "kr-pistol"
-data.raw.gun["kr-accelerator"].attack_parameters.range = pistol_range
-data.raw.gun["kr-accelerator"].min_range = k_pistol_min_range
 
 data.raw.ammo["firearm-magazine"].order = "a[basic-clips]-a01[pistol-magazine]"
 data.raw.ammo["firearm-magazine"].stack_size = 200
