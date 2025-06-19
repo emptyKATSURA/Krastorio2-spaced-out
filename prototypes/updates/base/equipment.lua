@@ -124,6 +124,7 @@ data.raw["night-vision-equipment"]["night-vision-equipment"].shape = {
 
 data.raw["roboport-equipment"]["personal-roboport-equipment"].construction_radius = 15
 data.raw["roboport-equipment"]["personal-roboport-equipment"].robot_limit = 20
+data.raw["roboport-equipment"]["personal-roboport-mk2-equipment"].robot_limit = 50
 
 table.insert(data.raw["solar-panel-equipment"]["solar-panel-equipment"].categories, "kr-vehicle")
 data.raw["solar-panel-equipment"]["solar-panel-equipment"].power = "40kW"
