@@ -1,14 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.6
+Date: 2025-06-19
+  Changes:
+    - Increased scrap stack size to 200
+    - Personal roboport mk2 robot capacity has been buffed from 25 to 50
+    - immersite solar panels rocket capacity is now 25
+    - Change inserter drop lane is now optional
+  Bugfixes:
+    - Fixed startup error when using maraxis with mining drones or transport drones
+---------------------------------------------------------------------------------------------------
 Version: 1.3.5
 Date: 2025-06-14
   Changes:
     - Cleaned up factoriopedia
-    - Advanced loader now ir ranamed to turbo loader and requires lube
+    - Advanced loader now is ranamed to turbo loader and requires lube
     - Deleted inaccessible items from game
-    - Buffed power armort mk2 grid to 10x10
-    - Removed setting to changle of patreon shelter since it doesn't exist
+    - Buffed power armor mk2 grid to 10x10
+    - Removed setting to change color of patreon shelter since it doesn't exist
   Bugfixes:
-    - Fixed tech for using greenhouse with gleba plants now requires advanced tech cards as prerequisite
+    - Fixed tech for using greenhouse with gleba plants didn't required advanced tech cards as prerequisite
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.4
 Date: 2025-06-06
