@@ -25,6 +25,7 @@ data:extend({
     order = "d[solar-panel]-b[advanced-solar-panel]",
     place_result = "kr-advanced-solar-panel",
     stack_size = 50,
+    weight = 40*kg,
   },
   {
     type = "solar-panel",
