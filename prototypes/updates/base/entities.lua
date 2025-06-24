@@ -289,6 +289,9 @@ data.raw.lab["lab"].next_upgrade = "kr-advanced-lab"
 table.insert(data.raw.lab["lab"].inputs, "kr-matter-tech-card")
 table.insert(data.raw.lab["lab"].inputs, "kr-advanced-tech-card")
 table.insert(data.raw.lab["lab"].inputs, "kr-singularity-tech-card")
+if mods["rubia"] then
+table.insert(data.raw.lab["lab"].inputs, "rubia-biofusion-science-pack")
+end
 
 data.raw.lamp["small-lamp"].glow_size = 8 --6
 
