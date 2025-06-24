@@ -184,7 +184,7 @@ local function on_script_trigger_effect(e)
     return
   end
 
-  if not e.source_entity.valid or not e.target_entity.valid then
+  if not e.source_entity.valid or not e.target_entity.valid or e.target_entity.type ~= "character" then
     return
   end
 
