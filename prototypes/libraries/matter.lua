@@ -40,6 +40,7 @@ function matter_lib.make_conversion_recipe(def)
       subgroup = "kr-matter-conversion",
       hide_from_player_crafting = true,
       enabled = false,
+      hide_from_signal_gui = false,
       energy_required = def.energy_required or 2,
       ingredients = {
         { type = material.type, name = material.name, amount = material.amount },
@@ -88,6 +89,7 @@ function matter_lib.make_deconversion_recipe(def)
       category = "kr-matter-deconversion",
       subgroup = "kr-matter-deconversion",
       hide_from_player_crafting = true,
+      hide_from_signal_gui = false,
       enabled = false,
       energy_required = def.energy_required or 2,
       ingredients = {
