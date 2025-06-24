@@ -3,6 +3,11 @@ require("prototypes.final-fixes.internal-turret-logic")
 require("prototypes.final-fixes.steel-pipe-connectivity")
 require("prototypes.final-fixes.biter-nests")
 
+--sync all labs inputs
+data.raw["lab"]["biolab"].inputs = data.raw["lab"]["lab"].inputs
+data.raw["lab"]["kr-advanced-lab"].inputs = data.raw["lab"]["lab"].inputs
+data.raw["lab"]["kr-singularity-lab"].inputs = data.raw["lab"]["lab"].inputs
+
 local recycling = require("scripts.recycling")
 
 -- Generating the recycle (reverse) recipes
