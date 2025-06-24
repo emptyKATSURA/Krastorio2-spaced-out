@@ -286,6 +286,9 @@ data.raw["inserter"]["long-handed-inserter"].next_upgrade = "kr-superior-long-in
 data.raw.lab["lab"].energy_usage = "200kW"
 data.raw.lab["lab"].fast_replaceable_group = "lab"
 data.raw.lab["lab"].next_upgrade = "kr-advanced-lab"
+table.insert(data.raw.lab["lab"].inputs, "kr-matter-tech-card")
+table.insert(data.raw.lab["lab"].inputs, "kr-advanced-tech-card")
+table.insert(data.raw.lab["lab"].inputs, "kr-singularity-tech-card")
 
 data.raw.lamp["small-lamp"].glow_size = 8 --6
 
@@ -463,25 +466,6 @@ data.raw["unit"]["big-spitter"].max_health = 350
 data.raw["unit"]["medium-spitter"].max_health = 75
 
 data.raw["unit"]["behemoth-spitter"].absorptions_to_join_attack.pollution = 500
-
-data.raw["lab"]["biolab"].inputs = {
-      "automation-science-pack",
-      "logistic-science-pack",
-      "military-science-pack",
-      "chemical-science-pack",
-      "production-science-pack",
-      "utility-science-pack",
-      "space-science-pack",
-      "kr-matter-tech-card",
-      "kr-advanced-tech-card",
-      "kr-singularity-tech-card",
-      "metallurgic-science-pack",
-      "agricultural-science-pack",
-      "electromagnetic-science-pack",
-      "cryogenic-science-pack",
-      "promethium-science-pack",
-    }
-
 
 table.insert( data.raw ["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery" )
 table.insert( data.raw ["assembling-machine"]["crusher"].crafting_categories, "kr-crushing" )
