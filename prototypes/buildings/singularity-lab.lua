@@ -38,7 +38,6 @@ data:extend({
     selection_box = { { -3.9, -3.9 }, { 3.9, 3.9 } },
     researching_speed = 10,
     science_pack_drain_rate_percent = 40,
-        include_all_base_lab_science = true, --PlanetsLib
     inputs = {
       "automation-science-pack",
       "logistic-science-pack",

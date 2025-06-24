@@ -35,8 +35,7 @@ data:extend({
     collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     researching_speed = 1.5,
-    science_pack_drain_rate_percent = 80, --new
-    include_all_base_lab_science = true,
+    science_pack_drain_rate_percent = 80,
     inputs = {
       "automation-science-pack",
       "logistic-science-pack",
