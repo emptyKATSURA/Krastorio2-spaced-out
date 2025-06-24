@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.7
+Date: 2025-06-24
+  Compatibility:
+    - All labs inputs are synchronized, dropped planetlib dependency
+  Changes:
+    - Shield mk3 now requires optimization and production tech cards
+  Bugfixes:
+    - Fixed a crash when a planetary teleporter targets a non-character entity
+    - Fixed that matter recipes were not selectable as circuit signals
+    - Fixed that the spidertron technology was missing portable fusion reactor as a prerequisite
+    - Fixed that the gate technology was missing steel processing as a prerequisite
+---------------------------------------------------------------------------------------------------
 Version: 1.3.6
 Date: 2025-06-19
   Changes:
