@@ -71,6 +71,11 @@ data_util.remove_prerequisite("big-mining-drill", "electric-mining-drill")
 
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 
+data_util.add_research_unit_ingredient("promethium-science-pack", "kr-singularity-tech-card")
+data_util.add_research_unit_ingredient("research-productivity", "kr-matter-tech-card")
+data_util.add_research_unit_ingredient("research-productivity", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("research-productivity", "kr-singularity-tech-card")
+
 data_util.add_recipe_unlock("advanced-circuit", "kr-electronic-components")
 data_util.add_recipe_unlock("atomic-bomb", "kr-nuclear-artillery-shell")
 data_util.add_recipe_unlock("automation-science-pack", "kr-blank-tech-card")
@@ -123,27 +128,29 @@ data_util.remove_recipe_unlock("kovarex-enrichment-process", "nuclear-fuel")
 data_util.remove_recipe_unlock("military-3", "slowdown-capsule")
 data_util.remove_recipe_unlock("oil-processing", "chemical-plant")
 
+data.raw.technology["steel-plate-productivity"].max_level = 5
+data.raw.technology["mining-productivity-3"].max_level = 5
+
+function generate_upgrade(previous, new_name, new_science_pack, max)
+local previous = data.raw.technology[previous]
+local next = table.deepcopy(previous)
+next.name = new_name
+next.max_level = max
+next.prerequisites = {previous.name, new_science_pack}
+data:extend({ next })
+data_util.add_research_unit_ingredient(next.name, new_science_pack )
+end
+
+generate_upgrade("steel-plate-productivity","steel-plate-productivity-6",kr_optimization_tech_card_name, "infinite")
+generate_upgrade("mining-productivity-3","mining-productivity-6",kr_optimization_tech_card_name, "infinite")
+
+data_util.add_research_unit_ingredient("plastic-bar-productivity", kr_optimization_tech_card_name )
+data_util.add_research_unit_ingredient("rocket-fuel-productivity", kr_optimization_tech_card_name )
+data_util.add_research_unit_ingredient("low-density-structure-productivity", kr_optimization_tech_card_name )
+data_util.add_research_unit_ingredient("scrap-recycling-productivity", kr_optimization_tech_card_name )
+data_util.add_research_unit_ingredient("processing-unit-productivity", kr_optimization_tech_card_name )
+data_util.add_research_unit_ingredient("rocket-part-productivity", kr_optimization_tech_card_name )
 data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
-
-data.raw.technology["energy-shield-mk2-equipment"].unit = {
-      time = 30,
-      count = 500,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        {kr_optimization_tech_card_name, 1}
-      }
-}
-table.insert ( data.raw.technology["promethium-science-pack"].unit.ingredients,
-    { "kr-singularity-tech-card", 1 }
-)
-
-data.raw.technology["automation"].unit = nil
-data.raw.technology["automation"].research_trigger = {
-      type = "craft-item",
-      item = "kr-automation-core",
-      count = 10
-    }
 
 data.raw.technology["artillery"].unit.count = 1000
 data.raw.technology["atomic-bomb"].unit.count = 1500
