@@ -7,6 +7,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "z2[fusion]",
     enabled = true,
+    hide_from_player_crafting = true,
     category = "kr-nuclear-fusion",
     energy_required = 5, --2.5GW
     ingredients = {
@@ -27,6 +28,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "z1[fusion]",
     enabled = true,
+    hide_from_player_crafting = true,
     category = "kr-nuclear-fusion",
     energy_required = 20, --10GW
     ingredients = {
@@ -47,6 +49,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "z3[fusion]",
     enabled = true,
+    hide_from_player_crafting = true,
     category = "kr-nuclear-fusion",
     energy_required = 2, --1GW
     ingredients = {
@@ -67,10 +70,11 @@ data:extend({
     subgroup = "intermediate-product",
     order = "z4[fusion-high]",
     enabled = false,
+    hide_from_player_crafting = true,
     category = "kr-nuclear-fusion",
     energy_required = 10, --5GW
     ingredients = {
-      { type = "fluid", name = "water", amount = 1000 },
+      { type = "fluid", name = "water", amount = 2000 },
       { type = "item", name = "fusion-power-cell", amount = 1 }, --40GW
     },
     results = {
