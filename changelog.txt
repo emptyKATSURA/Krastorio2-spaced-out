@@ -1,8 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.12
+Date: 2025-06-25
+  Bugfixes:
+    - Fixed fusion crafting recipes were visible in player crafting menu
+---------------------------------------------------------------------------------------------------
 Version: 1.3.11
 Date: 2025-06-25
   Bugfixes:
     - Fixed fusion reactor underclocking used too much water
+    - Fixed fusion reactor high temputure setting used too few water
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.10
 Date: 2025-06-25
