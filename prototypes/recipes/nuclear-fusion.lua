@@ -30,7 +30,7 @@ data:extend({
     category = "kr-nuclear-fusion",
     energy_required = 20, --10GW
     ingredients = {
-      { type = "fluid", name = "water", amount = 40000 },
+      { type = "fluid", name = "water", amount = 4000 },
       { type = "item", name = "kr-dt-fuel-cell", amount = 1 }, --10GW
     },
     results = {
