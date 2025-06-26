@@ -40,7 +40,6 @@ data:extend({
       { type = "fire", percent = 95 },
       { type = "impact", percent = 95 },
     },
-    surface_conditions = { { property = "pressure", min = 100, } },
     collision_box = { { -7.25, -7.25 }, { 7.25, 7.25 } },
     selection_box = { { -7.5, -7.5 }, { 7.5, 7.5 } },
     crafting_speed = 1,
