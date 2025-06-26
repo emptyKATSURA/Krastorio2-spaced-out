@@ -790,6 +790,7 @@ data.raw.recipe["chemical-science-pack"] = {
   allow_productivity = true,
 }
 
+data_util.convert_ingredient("fluoroketone","lithium", "kr-lithium" )
 data_util.convert_ingredient("lithium-plate","lithium", "kr-lithium" )
 data_util.add_or_replace_product("lithium", "lithium", { type = "item", name = "kr-lithium", amount = 5 })
 
