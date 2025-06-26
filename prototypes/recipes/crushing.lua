@@ -224,7 +224,7 @@ data:extend({
       { type = "item", name = "biter-egg", amount = 1 },
     },
     results = {
-      { type = "item", name = "kr-biomass", amount_min = 30, amount_max = 50 },
+      { type = "item", name = "kr-biomass", amount_min = 3, amount_max = 5 },
     },
     allow_as_intermediate = false,
     allow_intermediates = false,
