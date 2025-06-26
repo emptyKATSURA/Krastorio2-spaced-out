@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-06-26
+  Features:
+    - Science overhaul:
+      - All science pack use tech cards icon
+      - Data from planet research must be processed into usefull data cards
+      - Warning this will break your research if you colonised any planet, but should be easy to fix
+  Changes:
+    - Nerfed biomass from biter egg by factor of 10
+    - All tech cards follow 1 tech card to 1 blank card ratio
+---------------------------------------------------------------------------------------------------
 Version: 1.3.13
 Date: 2025-06-26
   Features:
