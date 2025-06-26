@@ -19,6 +19,7 @@ data:extend({
       { type = "item", name = "kr-empty-dt-fuel-cell", amount = 1 },
     },
     auto_recycle = false,
+    surface_conditions = { { property = "pressure", min = 100, } },
   },
   -- 0.5 GW output, 100% Effieciency
   {
@@ -61,6 +62,7 @@ data:extend({
       { type = "item", name = "kr-empty-dt-fuel-cell", amount = 1 },
     },
     auto_recycle = false,
+    surface_conditions = { { property = "pressure", min = 100, } },
   },
   --3.5GW output,  87.5% Effieciency
   {
@@ -81,5 +83,6 @@ data:extend({
       { type = "fluid", name = "steam", amount = 20000, temperature = 4015 }, --40GW
     },
     auto_recycle = false,
+    surface_conditions = { { property = "pressure", min = 100, } },
   }
 })
