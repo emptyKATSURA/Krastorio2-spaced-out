@@ -248,24 +248,3 @@ data_util.set_icon(data.raw.technology["cryogenic-science-pack"],  "__Krastorio2
 data_util.set_icon(data.raw.technology["promethium-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/promethium-tech-card.png",256)
 -- stylua: ignore end
 
--- Ensure scrap-recycling recipe is unlocked by recycling technology
-if data.raw.technology["recycling"] then
-  -- Add scrap-recycling to the recycling technology if it's not already there
-  local has_scrap_recycling = false
-  if data.raw.technology["recycling"].effects then
-    for _, effect in pairs(data.raw.technology["recycling"].effects) do
-      if effect.type == "unlock-recipe" and effect.recipe == "scrap-recycling" then
-        has_scrap_recycling = true
-        break
-      end
-    end
-  end
-  
-  if not has_scrap_recycling then
-    table.insert(data.raw.technology["recycling"].effects, {
-      type = "unlock-recipe",
-      recipe = "scrap-recycling"
-    })
-  end
-end
-

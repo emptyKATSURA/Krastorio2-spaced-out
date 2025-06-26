@@ -715,24 +715,21 @@ data_util.add_or_replace_ingredient( "casting-steel", "molten-iron", { type = "f
 data_util.add_or_replace_ingredient( "casting-low-density-structure", "molten-iron", { type = "fluid", name = "molten-iron", amount = 60 } )
 data_util.add_or_replace_ingredient( "casting-low-density-structure", "molten-copper", { type = "fluid", name = "molten-copper", amount = 120 } )
 
--- Update scrap-recycling recipe results with Krastorio items
-if data.raw.recipe["scrap-recycling"] then
-  data.raw.recipe["scrap-recycling"].results = {
-        {type = "item", name = "iron-gear-wheel",        amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "electronic-circuit",     amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "solid-fuel",             amount = 1, probability = 0.07, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "concrete",               amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "ice",                    amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "steel-plate",            amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "battery",                amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "stone",                  amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "advanced-circuit",       amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "copper-cable",           amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "processing-unit",        amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "low-density-structure",  amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "holmium-ore",            amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
-  }
-end
+data.raw.recipe["scrap-recycling"].results = {
+      {type = "item", name = "iron-gear-wheel",        amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "electronic-circuit",     amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "solid-fuel",             amount = 1, probability = 0.07, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "concrete",               amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "ice",                    amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "steel-plate",            amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "battery",                amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "stone",                  amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "advanced-circuit",       amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "copper-cable",           amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "processing-unit",        amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "low-density-structure",  amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "holmium-ore",            amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
+}
 
 -- Science packs
 
