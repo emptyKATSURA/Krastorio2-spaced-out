@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.13
+Date: 2025-06-26
+  Features:
+    - Use coolant to buff tech cards production speed and productivity
+  Changes:
+    - K2 Fusion reactor can be placed on space platforms, but can only be used with underclocking
+    - All tech cards follow 1 tech card to 1 blank card ratio
+  Bugfixes:
+    - Fixed fluoroketone recipe used old lithium prototype
+---------------------------------------------------------------------------------------------------
 Version: 1.3.12
 Date: 2025-06-25
   Bugfixes:
