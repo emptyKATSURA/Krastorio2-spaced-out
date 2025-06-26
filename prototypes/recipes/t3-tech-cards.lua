@@ -50,6 +50,146 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "kr-metallurgic-research-data",
+    category = "metallurgy",
+    surface_conditions =
+    {
+      {
+        property = "pressure",
+        min = 4000,
+        max = 4000
+      }
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "tungsten-carbide", amount = 3},
+      {type = "item", name = "tungsten-plate", amount = 2},
+      {type = "fluid", name = "molten-copper", amount = 200},
+    },
+    energy_required = 10,
+    results = {{type="item", name="kr-metallurgic-research-data", amount=1}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "kr-agricultural-research-data",
+    category = "organic",
+    subgroup = "science-pack",
+    surface_conditions =
+    {
+      {
+        property = "pressure",
+        min = 2000,
+        max = 2000
+      }
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "bioflux", amount = 1},
+      {type = "item", name = "pentapod-egg", amount = 1}
+
+    },
+    energy_required = 4,
+    results = {{type="item", name="kr-agricultural-research-data", amount=1}},
+    allow_productivity = true,
+    crafting_machine_tint =
+    {
+      primary = {0.95, 1, 0, 1},
+      secondary = {255, 233, 163, 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-electromagnetic-research-data",
+    category = "electromagnetics",
+    surface_conditions =
+    {
+      {
+        property = "magnetic-field",
+        min = 99,
+        max = 99
+      }
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "supercapacitor", amount = 1},
+      {type = "item", name = "accumulator", amount = 1},
+      {type = "fluid", name = "electrolyte", amount = 25},
+      {type = "fluid", name = "holmium-solution", amount = 25},
+    },
+    energy_required = 10,
+    results = {{type="item", name="kr-electromagnetic-research-data", amount=1}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "kr-cryogenic-research-data",
+    category = "cryogenics",
+    surface_conditions =
+    {
+      {
+        property = "pressure",
+        min = 300,
+        max = 300
+      }
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "ice", amount = 3},
+      {type = "item", name = "lithium-plate", amount = 1},
+      {type = "fluid", name = "fluoroketone-cold", amount = 6, ignored_by_stats = 3}
+    },
+    energy_required = 20,
+    results =
+    {
+      {type = "item", name = "kr-cryogenic-research-data", amount = 1},
+      {type = "fluid", name = "fluoroketone-hot", amount = 3, ignored_by_stats = 3, ignored_by_productivity = 3}
+    },
+    main_product = "kr-cryogenic-research-data",
+    allow_productivity = true,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.040, g = 0.186, b = 1.000, a = 1.000}, -- #0a2fffff
+      secondary = {r = 0.200, g = 0.400, b = 1.000, a = 1.000}, -- #3366ffff
+      tertiary = {r = 0.600, g = 0.651, b = 1.000, a = 1.000}, -- #99a6ffff
+      quaternary = {r = 0.100, g = 0.300, b = 0.500, a = 1.000}, -- #194c7fff
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-promethium-research-data",
+    energy_required = 5,
+    surface_conditions =
+    {
+      {
+        property = "gravity",
+        min = 0,
+        max = 0
+      }
+    },
+    enabled = false,
+    allow_productivity = true,
+    category = "cryogenics",
+    ingredients =
+    {
+      {type = "item", name = "promethium-asteroid-chunk", amount = 25},
+      {type = "item", name = "quantum-processor", amount = 1}
+    },
+    results = {{type="item", name="kr-promethium-research-data", amount=10}},
+    crafting_machine_tint =
+    {
+      primary = {r = 0, g = 0, b = 0.1, a = 1},
+      secondary = {r = 0, g = 0, b = 0.4, a = 1},
+      tertiary = {r = 0.1, g = 0.1, b = 0.4, a = 1},
+      quaternary = {r = 0, g = 0, b = 0.1, a = 1},
+    }
+  },
+  {
+    type = "recipe",
     name = "kr-singularity-tech-card",
     enabled = false,
     category = "kr-tech-cards",
