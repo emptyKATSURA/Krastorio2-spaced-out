@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.1
+Date: 2025-06-30
+  Changes:
+    - Rougly doubled projecile speed, this also should fix turrets missing their targets at higher quality
+    - Advanced chemical plants can use filtration recipes
+    - Added multiple missing technology prerequisites
+---------------------------------------------------------------------------------------------------
 Version: 1.4.0
 Date: 2025-06-26
   Features:
