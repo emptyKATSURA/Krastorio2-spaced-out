@@ -1,6 +1,8 @@
 local flib_table = require("__flib__.table")
 local data_util = require("data-util")
 
+local speed_mult, dev_mult = 2, 0.5
+
 data_util.update_ammo_effects(data.raw["technology"]["physical-projectile-damage-1"], {
   { type = "ammo-damage", ammo_category = "bullet", modifier = 0.25 },
   { type = "turret-attack", turret_id = "gun-turret", modifier = 0.25 },
@@ -296,6 +298,7 @@ data_util.add_effect(  "weapon-shooting-speed-3",  { type = "gun-speed", ammo_ca
 data_util.add_effect(  "weapon-shooting-speed-4",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 })
 data_util.add_effect(  "weapon-shooting-speed-5",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 })
 data_util.add_effect(  "weapon-shooting-speed-6",  { type = "gun-speed", ammo_category = "kr-anti-materiel-rifle-ammo", modifier = 0.15 })
+
 -- ------------------------------------------------------------------------------------------------------
 -- Everything below this point has been moved verbatim, I really don't feel like going through any of it.
 -- TODO: Clean up this mess
@@ -431,9 +434,9 @@ data.raw.ammo["firearm-magazine"].ammo_type = {
         {
           type = "projectile",
           projectile = "kr-firearm-magazine-projectile",
-          starting_speed = 1,
-          direction_deviation = 0.15,
-          range_deviation = 0.15,
+          starting_speed = speed_mult * 1,
+          direction_deviation = dev_mult * 0.15,
+          range_deviation = dev_mult * 0.15,
           max_range = pistol_range,
           source_effects = {
             {
@@ -481,9 +484,9 @@ data.raw.ammo["piercing-rounds-magazine"].ammo_type = {
         {
           type = "projectile",
           projectile = "kr-piercing-rounds-magazine-projectile",
-          starting_speed = 1.1,
-          direction_deviation = 0.15,
-          range_deviation = 0.15,
+          starting_speed = speed_mult * 1.1,
+          direction_deviation = dev_mult * 0.15,
+          range_deviation = dev_mult * 0.15,
           max_range = pistol_range,
           source_effects = {
             {
@@ -629,9 +632,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-rifle-magazine-projectile",
-              starting_speed = 1.5,
-              direction_deviation = 0.15,
-              range_deviation = 0.15,
+              starting_speed = speed_mult * 1.5,
+              direction_deviation = dev_mult * 0.15,
+              range_deviation = dev_mult * 0.15,
               max_range = rifle_range,
               source_effects = {
                 {
@@ -726,9 +729,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-armor-piercing-rifle-magazine-projectile",
-              starting_speed = 1.75,
-              direction_deviation = 0.15,
-              range_deviation = 0.15,
+              starting_speed = speed_mult * 1.75,
+              direction_deviation = dev_mult * 0.15,
+              range_deviation = dev_mult * 0.15,
               max_range = rifle_range,
               source_effects = {
                 {
@@ -821,9 +824,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-uranium-rifle-magazine-projectile",
-              starting_speed = 1.75,
-              direction_deviation = 0.15,
-              range_deviation = 0.15,
+              starting_speed = speed_mult * 1.75,
+              direction_deviation = dev_mult * 0.15,
+              range_deviation = dev_mult * 0.15,
               max_range = rifle_range,
               source_effects = {
                 {
@@ -924,9 +927,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-imersite-rifle-magazine-projectile",
-              starting_speed = 2.25,
-              direction_deviation = 0.1,
-              range_deviation = 0.1,
+              starting_speed = speed_mult * 2.25,
+              direction_deviation = dev_mult * 0.1,
+              range_deviation = dev_mult * 0.1,
               max_range = rifle_range,
               source_effects = {
                 {
@@ -1024,7 +1027,7 @@ data:extend({
       movement_slow_down_factor = 0.75,
       shell_particle = {
         name = "shell-particle",
-        direction_deviation = 0.1,
+        direction_deviation = dev_mult * 0.1,
         speed = 0.1,
         speed_deviation = 0.03,
         center = { 0, 0.1 },
@@ -1077,9 +1080,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-anti-materiel-rifle-magazine-projectile",
-              starting_speed = 3,
-              direction_deviation = 0.02,
-              range_deviation = 0.02,
+              starting_speed = speed_mult * 3,
+              direction_deviation = dev_mult * 0.02,
+              range_deviation = dev_mult * 0.02,
               max_range = sniper_range,
               source_effects = {
                 {
@@ -1192,9 +1195,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-armor-piercing-anti-materiel-rifle-magazine-projectile",
-              starting_speed = 3,
-              direction_deviation = 0.02,
-              range_deviation = 0.02,
+              starting_speed = speed_mult * 3,
+              direction_deviation = dev_mult * 0.02,
+              range_deviation = dev_mult * 0.02,
               max_range = sniper_range,
               source_effects = {
                 {
@@ -1307,9 +1310,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-uranium-anti-materiel-rifle-magazine-projectile",
-              starting_speed = 3,
-              direction_deviation = 0.02,
-              range_deviation = 0.02,
+              starting_speed = speed_mult * 3,
+              direction_deviation = dev_mult * 0.02,
+              range_deviation = dev_mult * 0.02,
               max_range = sniper_range,
               source_effects = {
                 {
@@ -1425,9 +1428,9 @@ data:extend({
             {
               type = "projectile",
               projectile = "kr-imersite-anti-materiel-rifle-magazine-projectile",
-              starting_speed = 5,
-              direction_deviation = 0.02,
-              range_deviation = 0.02,
+              starting_speed = speed_mult * 5,
+              direction_deviation = dev_mult * 0.02,
+              range_deviation = dev_mult * 0.02,
               max_range = sniper_range,
               source_effects = {
                 {
@@ -1560,15 +1563,41 @@ data.raw.ammo["shotgun-shell"].ammo_type.action = {
     action_delivery = {
       type = "projectile",
       projectile = "shotgun-pellet",
-      starting_speed = 1,
+      starting_speed = speed_mult * 1,
       starting_speed_deviation = 0.1,
-      direction_deviation = 0.3,
-      range_deviation = 0.3,
+      direction_deviation = dev_mult * 0.3,
+      range_deviation = dev_mult * 0.3,
       max_range = 15,
     },
   },
 }
-
+data.raw.ammo["piercing-shotgun-shell"].ammo_type.action = {
+  {
+    type = "direct",
+    action_delivery = {
+      type = "instant",
+      source_effects = {
+        {
+          type = "create-explosion",
+          entity_name = "explosion-gunshot",
+        },
+      },
+    },
+  },
+  {
+    type = "direct",
+    repeat_count = 16,
+    action_delivery = {
+      type = "projectile",
+      projectile = "shotgun-pellet",
+      starting_speed = speed_mult * 1.2,
+      starting_speed_deviation = 0.1,
+      direction_deviation = dev_mult * 0.3,
+      range_deviation = dev_mult * 0.3,
+      max_range = 15,
+    },
+  },
+}
 data.raw.projectile["shotgun-pellet"].acceleration = -0.01
 data.raw.projectile["shotgun-pellet"].action.action_delivery.target_effects.damage = { amount = 6, type = "physical" }
 
