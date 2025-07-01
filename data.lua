@@ -231,10 +231,6 @@ require("prototypes.compatibility.aircraft")
 require("prototypes.compatibility.early-electric-furnaces")
 require("prototypes.compatibility.squeak-through-2")
 
-if settings.startup["kr-steel-pipes-need-pumps"].value then
-  return
-end
-
 -- The code below has been made by Quezler Thanks
 -- global table shared between all mods for compat
 names_ignored_by_steel_pipes = util.list_to_map({

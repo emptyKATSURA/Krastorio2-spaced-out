@@ -1,6 +1,5 @@
 require("prototypes.final-fixes.enforce-science-tier-separation")
 require("prototypes.final-fixes.internal-turret-logic")
-require("prototypes.final-fixes.steel-pipe-connectivity")
 require("prototypes.final-fixes.biter-nests")
 
 --sync all labs inputs
@@ -43,10 +42,6 @@ if recycler then
   if recycler.result_inventory_size < 13 then
     recycler.result_inventory_size = 13
   end
-end
-
-if settings.startup["kr-steel-pipes-need-pumps"].value then
-  return
 end
 
 --The code below had been made by Quezler

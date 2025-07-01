@@ -35,13 +35,6 @@ data:extend({
     order = "a5",
   },
   {
-    type = "bool-setting",
-    name = "kr-steel-pipes-need-pumps",
-    setting_type = "startup",
-    default_value = false,
-    order = "a5",
-  },
-  {
     type = "string-setting",
     name = "kr-main-menu-background",
     setting_type = "startup",
