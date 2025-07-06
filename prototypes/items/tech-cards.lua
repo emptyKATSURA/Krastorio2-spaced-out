@@ -43,6 +43,7 @@ data:extend({
     order = "a04[electromagnetic-research-data]",
     stack_size = 200,
     weight = 1*kg,
+    default_import_location = "fulgora",
   },
   {
     type = "item",
@@ -52,6 +53,7 @@ data:extend({
     order = "a06[metallurgic-research-data]",
     stack_size = 200,
     weight = 1*kg,
+    default_import_location = "vulcanus",
   },
   {
     type = "item",
@@ -62,7 +64,8 @@ data:extend({
     stack_size = 200,
     weight = 1*kg,
     spoil_result = "spoilage",
-    spoil_ticks = 54000
+    spoil_ticks = 54000,
+    default_import_location = "gleba",
   },
   {
     type = "item",
@@ -72,6 +75,7 @@ data:extend({
     order = "a08[cryogenic-research-data]",
     stack_size = 200,
     weight = 1*kg,
+    default_import_location = "aquilo",
   },
   {
     type = "item",
@@ -81,6 +85,7 @@ data:extend({
     order = "a09[promethium-research-data]",
     stack_size = 200,
     weight = 1*kg,
+    default_import_location = "aquilo",
   },
   {
     type = "tool",
