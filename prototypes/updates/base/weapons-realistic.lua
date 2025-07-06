@@ -260,12 +260,18 @@ data_util.add_effect(  "laser-shooting-speed-5",  { type = "gun-speed", ammo_cat
 data_util.add_effect(  "laser-shooting-speed-6",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1  } )
 data_util.add_effect(  "laser-shooting-speed-7",  { type = "gun-speed", ammo_category = "kr-impulse-rifle", modifier = 0.1  } )
 
-table.insert(flib_table.get_or_insert(data.raw.ammo["uranium-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
-table.insert(flib_table.get_or_insert(data.raw.ammo["kr-imersite-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
-
 if not settings.startup["kr-realistic-weapons"].value then
   return
 end
+
+table.insert(flib_table.get_or_insert(data.raw.ammo["uranium-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
+table.insert(flib_table.get_or_insert(data.raw.ammo["kr-imersite-rounds-magazine"], "flags", {}), "hide-from-bonus-gui")
+
+data.raw["ammo"]["uranium-rounds-magazine"].hidden_in_factoriopedia = true
+data.raw["ammo"]["kr-imersite-rounds-magazine"].hidden_in_factoriopedia = true
+
+data.raw.recipe["uranium-rounds-magazine"].hidden_in_factoriopedia = true
+data.raw.recipe["kr-imersite-rounds-magazine"].hidden_in_factoriopedia = true
 
 -- Technology for new ammo
 
