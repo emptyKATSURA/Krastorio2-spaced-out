@@ -30,6 +30,7 @@ data:extend({
     place_result = "kr-advanced-loader",
     stack_size = 50,
     weight = 40*kg,
+    default_import_location = "vulcanus",
   },
   {
     type = "loader-1x1",
