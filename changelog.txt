@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.3
+Date: 2025-07-06
+  Bugfixes:
+    - Fixed immersite and Uranium ammo round were visible in factoriopedia while realisic weapons were turned on
+    - Fixed advanced loader and research data had incorrect default import location
+---------------------------------------------------------------------------------------------------
 Version: 1.4.2
 Date: 2025-07-01
   Changes:
