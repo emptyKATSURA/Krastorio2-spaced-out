@@ -488,3 +488,14 @@ data.raw["tree"]["ashland-lichen-tree-flaming"].minable = {
   { type = "item", name = "wood", amount_min = 4, amount_max = 4 },
   },
 }
+
+data.raw["simple-entity"]["lithium-iceberg-big"].minable.results = {
+  { type = "item", name = "ice-platform", amount = 1 },
+  { type = "item", name = "ice", amount_min = 3, amount_max = 7 },
+  { type = "item", name = "kr-lithium", amount_min = 1, amount_max = 3 },
+}
+data.raw["simple-entity"]["lithium-iceberg-huge"].minable.results = {
+  { type = "item", name = "ice-platform", amount_min = 2, amount_max = 4 },
+  { type = "item", name = "ice", amount_min = 6, amount_max = 1 },
+  { type = "item", name = "kr-lithium", amount_min = 2, amount_max = 5 },
+}
