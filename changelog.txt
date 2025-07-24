@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.4
+Date: 2025-07-24
+  Changes:
+    - Rocket silo now requires rocket fuel as prerequisite
+  Bugfixes:
+    - Fixed aquilo ice formations gave vanilla lithium instead of krastorio2 lithium
+---------------------------------------------------------------------------------------------------
 Version: 1.4.3
 Date: 2025-07-06
   Bugfixes:
