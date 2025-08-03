@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.6
+Date: 2025-08-03
+  Compatibility:
+    - Fixed Some ammo couldn't be crafted in advanced assemblers with age of production enabled
+---------------------------------------------------------------------------------------------------
 Version: 1.4.5
 Date: 2025-08-03
   Compatibility:
