@@ -32,6 +32,7 @@ require("prototypes.compatibility.aai-industry")
 require("prototypes.compatibility.any-planet-start")
 require("prototypes.compatibility.maraxsis")
 require("prototypes.compatibility.moshine")
+require("prototypes.compatibility.castra")
 
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")

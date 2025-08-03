@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.5
+Date: 2025-08-03
+  Compatibility:
+    - Fixed Castra and Age of industry couldn't make some ammo in Forge/Armory
+    - Fixed Castra science required Uranium ammo instead of Uranium rifle magazine also should apply to other mods
+---------------------------------------------------------------------------------------------------
 Version: 1.4.4
 Date: 2025-07-24
   Changes:
