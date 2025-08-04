@@ -82,6 +82,7 @@ local function change_mode(entity, player, to_mode)
     position = entity.position,
     force = entity.force,
     direction = entity.direction,
+    quality = entity.quality,
     fast_replace = true,
     raise_built = true,
     spill = false,
