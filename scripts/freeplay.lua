@@ -101,8 +101,8 @@ local function set_custom_intro()
 end
 
 local function disable_rocket_victory()
-  if remote.interfaces.silo_script then
-    remote.call("silo_script", "set_no_victory", true)
+  if remote.interfaces.space_finish_script then
+    remote.call("space_finish_script", "set_no_victory", true)
   end
 end
 
@@ -159,10 +159,6 @@ local function on_player_created()
   storage.crash_site_init_ran = true
 
   local recipes = game.forces.player.recipes
---  set_minable("kr-spaceship-material-fabricator-1", recipes["assembling-machine-1"].enabled)
---  set_minable("kr-spaceship-material-fabricator-2", recipes["assembling-machine-1"].enabled)
---  set_minable("kr-spaceship-research-computer", recipes["lab"].enabled)
---  set_minable("kr-spaceship-reactor", recipes["steam-engine"].enabled)
 end
 
 local freeplay = {}
