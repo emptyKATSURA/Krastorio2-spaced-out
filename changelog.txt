@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.7
+Date: 2025-08-05
+  Changes:
+    - Disabled solar system edge victory contdition, use intergalactic transreceiver to win
+  Bugfixes:
+    - Fixed roboports reseted their quality after changing their operating mode
+---------------------------------------------------------------------------------------------------
 Version: 1.4.6
 Date: 2025-08-03
   Compatibility:
