@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.8
+Date: 2025-08-6
+  Bugfixes:
+    - Fixed castra and age of production making ammo not craftable in assembling machines, should work with any mod combination this time
+---------------------------------------------------------------------------------------------------
 Version: 1.4.7
 Date: 2025-08-05
   Changes:
