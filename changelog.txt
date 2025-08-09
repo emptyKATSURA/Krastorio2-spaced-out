@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.9
+Date: 2025-08-9
+  Changes:
+    - Renamed kr bio lab to bioprocessing facility
+    - Renamed base fusion reactor and it's tech to Cold fusion reactor
+    - scrap recycling now has 4% chance of yielding electronic components, instead of 7% of giving solid fuel
+---------------------------------------------------------------------------------------------------
 Version: 1.4.8
 Date: 2025-08-6
   Bugfixes:
