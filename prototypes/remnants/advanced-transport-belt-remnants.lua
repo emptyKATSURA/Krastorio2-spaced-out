@@ -1,9 +1,9 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-superior-transport-belt-remnant",
-    localised_name = { "remnant-name", { "entity-name.kr-superior-transport-belt" } },
-    icon = "__Krastorio2Assets__/icons/entities/superior-transport-belt.png",
+    name = "kr-advanced-transport-belt-remnants",
+    localised_name = { "remnants-name", { "entity-name.kr-advanced-transport-belt" } },
+    icon = "__Krastorio2Assets__/icons/entities/advanced-transport-belt.png",
     flags = { "placeable-neutral", "not-on-map" },
     hidden_in_factoriopedia = true,
     subgroup = "remnants",
@@ -16,7 +16,7 @@ data:extend({
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet(8, {
-      filename = "__Krastorio2Assets__/remnants/superior-transport-belt-remnant/superior-transport-belt-remnant.png",
+      filename = "__Krastorio2Assets__/remnants/advanced-transport-belt-remnants.png",
       line_length = 1,
       width = 106,
       height = 102,

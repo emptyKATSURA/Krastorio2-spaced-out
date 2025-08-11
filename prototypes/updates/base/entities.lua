@@ -206,7 +206,7 @@ data.raw.container["crash-site-spaceship"].minable = {
 data.raw.corpse["spidertron-remnants"].animation = make_rotated_animation_variations_from_sheet(1, {
   layers = {
     {
-      filename = "__Krastorio2Assets__/remnants/spidertron-remnant/spidertron-remnants.png",
+      filename = "__Krastorio2Assets__/remnants/spidertron-remnants.png",
       line_length = 1,
       width = 448,
       height = 448,

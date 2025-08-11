@@ -32,7 +32,7 @@ data:extend({
     minable = { hardness = 1, mining_time = 1, result = "kr-crusher" },
     max_health = 750,
     heating_energy = "100kW",
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "kr-big-random-pipes-remnants",
     dying_explosion = "big-explosion",
     resistances = {
       { type = "physical", percent = 50 },

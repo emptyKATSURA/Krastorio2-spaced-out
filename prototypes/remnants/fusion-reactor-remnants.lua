@@ -1,13 +1,13 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-fusion-reactor-remnant",
-    localised_name = { "remnant-name", { "entity-name.kr-fusion-reactor" } },
+    name = "kr-fusion-reactor-remnants",
+    localised_name = { "remnants-name", { "entity-name.kr-fusion-reactor" } },
     icon = "__Krastorio2Assets__/icons/entities/fusion-reactor.png",
     flags = { "placeable-neutral", "building-direction-8-way", "not-on-map" },
     hidden_in_factoriopedia = true,
     subgroup = "remnants",
-    order = "z[remnants]-a[generic]-b[fusion-reactor-remnant]",
+    order = "z[remnants]-a[generic]-b[fusion-reactor-remnants]",
     selection_box = { { -7.5, -7.5 }, { 7.5, 7.5 } },
     tile_width = 9,
     tile_height = 9,
@@ -16,7 +16,7 @@ data:extend({
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet(1, {
-      filename = "__Krastorio2Assets__/remnants/fusion-reactor-remnant/fusion-reactor-remnant.png",
+      filename = "__Krastorio2Assets__/remnants/fusion-reactor-remnants.png",
       line_length = 1,
       width = 1100,
       height = 1100,

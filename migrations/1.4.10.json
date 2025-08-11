@@ -1,0 +1,20 @@
+{
+  "entity": [
+    ["kr-advanced-radar-remnant", "kr-advanced-radar-remnants"],
+    ["kr-advanced-splitter-remnant", "kr-advanced-splitter-remnants"],
+    ["kr-advanced-tank-remnant", "kr-advanced-tank-remnants"],
+    ["kr-advanced-transport-belt-remnant", "kr-advanced-transport-belt-remnants"],
+    ["kr-advanced-underground-belt-remnant", "kr-advanced-underground-belt-remnants"],
+    ["kr-antimatter-reactor-remnant", "kr-antimatter-reactor-remnants"],
+    ["kr-fusion-reactor-remnant", "kr-fusion-reactor-remnants"],
+    ["kr-big-random-pipes-remnant", "kr-big-random-pipes-remnants"],
+    ["kr-medium-random-pipes-remnant", "kr-medium-random-pipes-remnants"],
+    ["kr-mineral-water-pumpjack-remnant", "kr-mineral-water-pumpjack-remnants"],
+    ["kr-matter-plant-remnant", "kr-matter-plant-remnants"],
+    ["kr-superior-inserter-remnant", "kr-superior-inserter-remnants"],
+    ["kr-superior-splitter-remnant", "kr-superior-splitter-remnants"],
+    ["kr-superior-transport-belt-remnant", "kr-superior-transport-belt-remnants"],
+    ["kr-superior-underground-belt-remnant", "kr-superior-underground-belt-remnants"],
+    ["kr-turret-remnant", "kr-turret-remnants"]
+  ]
+}

@@ -41,7 +41,7 @@ data:extend({
       usage_priority = "secondary-input",
     },
     energy_usage = "2MW",
-    corpse = "kr-advanced-radar-remnant",
+    corpse = "kr-advanced-radar-remnants",
     max_health = 350,
     resistances = {
       { type = "fire", percent = 80 },

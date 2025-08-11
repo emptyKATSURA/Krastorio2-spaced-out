@@ -36,7 +36,7 @@ data:extend({
     max_health = 5000,
     heating_energy = "1000kW",
     damaged_trigger_effect = hit_effects.entity(),
-    corpse = "kr-antimatter-reactor-remnant",
+    corpse = "kr-antimatter-reactor-remnants",
     dying_explosion = "kr-large-matter-explosion",
     resistances = {
       { type = "physical", percent = 60 },

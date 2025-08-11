@@ -57,7 +57,7 @@ data:extend({
     energy_usage = "100kW",
     max_health = 200,
     dying_explosion = "medium-explosion",
-    corpse = "kr-mineral-water-pumpjack-remnant",
+    corpse = "kr-mineral-water-pumpjack-remnants",
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = {
       sound = { filename = "__base__/sound/pumpjack.ogg" },

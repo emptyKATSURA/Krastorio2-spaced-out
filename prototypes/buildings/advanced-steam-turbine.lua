@@ -31,7 +31,7 @@ data:extend({
     minable = { mining_time = 1, result = "kr-advanced-steam-turbine" },
     max_health = 900,
     heating_energy = "100kW",
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "kr-medium-random-pipes-remnants",
     dying_explosion = "medium-explosion",
     alert_icon_shift = util.by_pixel(0, -12),
     fluid_usage_per_tick = 5 / 3,

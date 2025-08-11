@@ -42,7 +42,7 @@ data:extend({
     },
     logistic_mode = "active-provider",
     max_health = 1500,
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "kr-big-random-pipes-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {
       { type = "physical", percent = 50 },

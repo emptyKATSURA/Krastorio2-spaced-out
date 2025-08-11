@@ -79,7 +79,7 @@ data:extend({
     surface_conditions = {
       { property = "gravity", min = 1, }
     },
-    corpse = "kr-advanced-tank-remnant",
+    corpse = "kr-advanced-tank-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "big-explosion",
     resistances = {

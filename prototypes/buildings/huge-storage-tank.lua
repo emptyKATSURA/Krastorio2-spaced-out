@@ -98,7 +98,7 @@ data:extend({
       },
     },
     max_health = 2000,
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "kr-medium-random-pipes-remnants",
     resistances = {
       { type = "physical", percent = 50 },
       { type = "fire", percent = 80 },

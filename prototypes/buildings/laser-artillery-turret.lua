@@ -129,7 +129,7 @@ data:extend({
       usage_priority = "primary-input",
     },
     max_health = 1000,
-    corpse = "kr-turret-remnant",
+    corpse = "kr-turret-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "big-explosion",
     resistances = {

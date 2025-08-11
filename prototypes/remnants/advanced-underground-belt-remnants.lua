@@ -1,8 +1,8 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-advanced-underground-belt-remnant",
-    localised_name = { "remnant-name", { "entity-name.kr-advanced-underground-belt" } },
+    name = "kr-advanced-underground-belt-remnants",
+    localised_name = { "remnants-name", { "entity-name.kr-advanced-underground-belt" } },
     icon = "__Krastorio2Assets__/icons/entities/advanced-underground-belt.png",
     flags = { "placeable-neutral", "not-on-map", "building-direction-8-way" },
     hidden_in_factoriopedia = true,
@@ -16,7 +16,7 @@ data:extend({
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
     animation = {
-      filename = "__Krastorio2Assets__/remnants/advanced-underground-belt-remnant/advanced-underground-belt-remnant.png",
+      filename = "__Krastorio2Assets__/remnants/advanced-underground-belt-remnants.png",
       line_length = 1,
       width = 116,
       height = 100,

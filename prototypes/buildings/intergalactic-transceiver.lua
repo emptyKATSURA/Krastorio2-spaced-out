@@ -158,7 +158,7 @@ data:extend({
     selection_box = { { -6, -5.5 }, { 6, 5.5 } },
     drawing_box = { { -6, -6.5 }, { 6, 4.5 } },
     max_health = 20000,
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "kr-big-random-pipes-remnants",
     dying_explosion = "nuclear-reactor-explosion",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {
@@ -204,7 +204,7 @@ data:extend({
     selection_box = { { -6, -5.5 }, { 6, 5.5 } },
     drawing_box = { { -6, -6.5 }, { 6, 4.5 } },
     max_health = 10000,
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "kr-big-random-pipes-remnants",
     dying_explosion = "nuclear-reactor-explosion",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

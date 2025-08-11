@@ -1,8 +1,8 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-advanced-radar-remnant",
-    localised_name = { "remnant-name", { "entity-name.kr-advanced-radar" } },
+    name = "kr-advanced-radar-remnants",
+    localised_name = { "remnants-name", { "entity-name.kr-advanced-radar" } },
     icon = "__Krastorio2Assets__/icons/entities/remnants-icon.png",
     icon_size = 32,
     flags = { "placeable-neutral", "building-direction-8-way", "not-on-map" },
@@ -17,7 +17,7 @@ data:extend({
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet(1, {
-      filename = "__Krastorio2Assets__/remnants/advanced-radar-remnant/radar-remnants.png",
+      filename = "__Krastorio2Assets__/remnants/advanced-radar-remnants.png",
       line_length = 1,
       width = 282,
       height = 212,

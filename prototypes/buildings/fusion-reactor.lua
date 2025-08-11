@@ -33,7 +33,7 @@ data:extend({
     minable = { hardness = 1, mining_time = 3, result = "kr-fusion-reactor" },
     max_health = 7500,
     heating_energy = "400kW",
-    corpse = "kr-fusion-reactor-remnant",
+    corpse = "kr-fusion-reactor-remnants",
     dying_explosion = "medium-explosion",
     resistances = {
       { type = "physical", percent = 60 },

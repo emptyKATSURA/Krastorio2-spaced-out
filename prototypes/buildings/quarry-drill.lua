@@ -48,7 +48,7 @@ data:extend({
     },
     energy_usage = "2.5MW",
     max_health = 1000,
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "kr-big-random-pipes-remnants",
     dying_explosion = "big-explosion",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

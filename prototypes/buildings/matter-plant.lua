@@ -78,7 +78,7 @@ data:extend({
     allowed_effects = { "consumption", "speed", "pollution" },
     max_health = 2000,
     damaged_trigger_effect = hit_effects.entity(),
-    corpse = "kr-matter-plant-remnant",
+    corpse = "kr-matter-plant-remnants",
     dying_explosion = "kr-medium-matter-explosion",
     resistances = {
       { type = "physical", percent = 60 },

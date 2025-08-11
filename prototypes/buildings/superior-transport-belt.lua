@@ -37,7 +37,7 @@ data:extend({
     related_underground_belt = "kr-superior-underground-belt",
     max_health = 200,
     heating_energy = "10kW",
-    corpse = "kr-superior-transport-belt-remnant",
+    corpse = "kr-superior-transport-belt-remnants",
     resistances = {
       {
         type = "fire",

@@ -66,7 +66,7 @@ data:extend({
     minable = { mining_time = 1, result = "kr-gas-power-station" },
     max_health = 750,
     heating_energy = "100kW",
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "kr-medium-random-pipes-remnants",
     dying_explosion = "medium-explosion",
     collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },

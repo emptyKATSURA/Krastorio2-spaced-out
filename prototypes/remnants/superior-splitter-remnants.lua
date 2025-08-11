@@ -1,9 +1,9 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-advanced-splitter-remnant",
-    localised_name = { "remnant-name", { "entity-name.kr-advanced-splitter" } },
-    icon = "__Krastorio2Assets__/icons/entities/advanced-splitter.png",
+    name = "kr-superior-splitter-remnants",
+    localised_name = { "remnants-name", { "entity-name.kr-superior-splitter" } },
+    icon = "__Krastorio2Assets__/icons/entities/superior-splitter.png",
     flags = { "placeable-neutral", "not-on-map" },
     hidden_in_factoriopedia = true,
     subgroup = "remnants",
@@ -16,7 +16,7 @@ data:extend({
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
     animation = {
-      filename = "__Krastorio2Assets__/remnants/advanced-splitter-remnant/advanced-splitter-remnant.png",
+      filename = "__Krastorio2Assets__/remnants/superior-splitter-remnants.png",
       line_length = 1,
       width = 172,
       height = 156,

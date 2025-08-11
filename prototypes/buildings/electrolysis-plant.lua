@@ -33,7 +33,7 @@ data:extend({
     minable = { mining_time = 1, result = "kr-electrolysis-plant" },
     max_health = 500,
     heating_energy = "100kW",
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "kr-medium-random-pipes-remnants",
     dying_explosion = "big-explosion",
     resistances = {
       { type = "physical", percent = 50 },

@@ -1,8 +1,8 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-mineral-water-pumpjack-remnant",
-    localised_name = { "remnant-name", { "entity-name.kr-mineral-water-pumpjack" } },
+    name = "kr-mineral-water-pumpjack-remnants",
+    localised_name = { "remnants-name", { "entity-name.kr-mineral-water-pumpjack" } },
     icon = "__Krastorio2Assets__/icons/entities/mineral-water-pumpjack.png",
     flags = { "placeable-neutral", "building-direction-8-way", "not-on-map" },
     hidden_in_factoriopedia = true,
@@ -16,7 +16,7 @@ data:extend({
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet(2, {
-      filename = "__Krastorio2Assets__/remnants/mineral-water-pumpjack-remnant/mineral-water-pumpjack-remnant.png",
+      filename = "__Krastorio2Assets__/remnants/mineral-water-pumpjack-remnants.png",
       line_length = 1,
       width = 274,
       height = 284,

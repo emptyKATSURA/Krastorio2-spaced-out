@@ -36,7 +36,7 @@ data:extend({
     speed = 0.1875,
     max_health = 250,
     heating_energy = "40kW",
-    corpse = "kr-superior-splitter-remnant",
+    corpse = "kr-superior-splitter-remnants",
     icon_draw_specification = { scale = 0.5 },
     resistances = {
       {

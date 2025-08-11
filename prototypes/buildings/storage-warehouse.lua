@@ -43,7 +43,7 @@ data:extend({
     surface_conditions = {
       { property = "pressure", min = 0.1, }
     },
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "kr-big-random-pipes-remnants",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {
       { type = "physical", percent = 50 },

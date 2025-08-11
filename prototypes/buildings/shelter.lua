@@ -104,7 +104,7 @@ data:extend({
     minable = { mining_time = 0.5, result = "kr-shelter" },
     inventory_size = 200,
     max_health = 1500,
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "kr-medium-random-pipes-remnants",
     resistances = {
       { type = "physical", percent = 50 },
       { type = "fire", percent = 75 },

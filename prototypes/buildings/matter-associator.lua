@@ -36,7 +36,7 @@ data:extend({
     fast_replaceable_group = "assembling-machine",
     max_health = 2000,
     heating_energy = "100kW",
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "kr-medium-random-pipes-remnants",
     dying_explosion = "kr-medium-matter-explosion",
     damaged_trigger_effect = hit_effects.entity(),
     resistances = {

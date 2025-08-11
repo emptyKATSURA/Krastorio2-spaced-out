@@ -36,7 +36,7 @@ data:extend({
     surface_conditions = {
       { property = "pressure", min = 500, }
     },
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "kr-medium-random-pipes-remnants",
     dying_explosion = "big-explosion",
     resistances = {
       { type = "physical", percent = 50 },
