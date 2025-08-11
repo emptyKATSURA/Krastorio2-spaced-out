@@ -13,6 +13,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "kr-advanced-tech-card", 1 },
         { "metallurgic-science-pack", 1 },
@@ -38,6 +39,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "metallurgic-science-pack", 1 },
       },
@@ -60,12 +62,37 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "metallurgic-science-pack", 1 },
       },
     },
     prerequisites = { "kr-matter-processing", "metallurgic-science-pack" },
     effects = {},
+  },
+  {
+    type = "technology",
+    name = "kr-molten-rare-metals",
+    icon = "__Krastorio2-spaced-out__/graphics/icons/molten-rare-metals.png",
+    icon_size = 256,
+    order = "g-e-e",
+    unit = {
+      time = 60,
+      count = 2000,
+      ingredients = {
+        { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
+        { "metallurgic-science-pack", 1 },
+      },
+    },
+    prerequisites = { "metallurgic-science-pack" },
+    effects = { 
+      { type = "unlock-recipe", recipe = "kr-molten-rare-metals" },
+      { type = "unlock-recipe", recipe = "kr-molten-enriched-rare-metals" },
+      { type = "unlock-recipe", recipe = "kr-molten-rare-metals-from-lava" },
+      { type = "unlock-recipe", recipe = "kr-casting-rare-metals" },
+    },
   },
 
 --Fulgora
@@ -82,9 +109,6 @@ data:extend({
       time = 60,
       count = 350,
       ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
         { "utility-science-pack", 1 },
         { kr_optimization_tech_card_name, 1 },
         { "electromagnetic-science-pack", 1 },
@@ -133,6 +157,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "electromagnetic-science-pack", 1 },
       },
@@ -155,6 +180,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "electromagnetic-science-pack", 1 },
       },
@@ -176,6 +202,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "kr-advanced-tech-card", 1 },
         { "agricultural-science-pack", 1 },
@@ -198,6 +225,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "kr-advanced-tech-card", 1 },
         { "agricultural-science-pack", 1 },
@@ -224,6 +252,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "kr-advanced-tech-card", 1 },
         { "agricultural-science-pack", 1 },
@@ -276,6 +305,7 @@ data:extend({
         { "military-science-pack", 1 },
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-advanced-tech-card", 1 },
         { "metallurgic-science-pack", 1 },
         { "electromagnetic-science-pack", 1 },
@@ -382,6 +412,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "cryogenic-science-pack", 1 },
       },
@@ -404,6 +435,7 @@ data:extend({
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card", 1 },
         { "cryogenic-science-pack", 1 },
       },
@@ -423,11 +455,9 @@ data:extend({
       time = 30,
       count = 10000,
       ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "kr-matter-tech-card",1},
         { "kr-advanced-tech-card",1},
         { "kr-singularity-tech-card",1},

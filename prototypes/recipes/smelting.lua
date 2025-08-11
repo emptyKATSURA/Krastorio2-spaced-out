@@ -81,6 +81,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "kr-molten-enriched-rare-metals",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "a[melting]-f[molten-rare-metals]",
+    icon = "__Krastorio2-spaced-out__/graphics/icons/melting-enriched-rare-metals.png",
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "calcite", amount = 2, fluidbox_multiplier = 10},
+      {type = "item", name = "kr-enriched-rare-metals", amount = 40, fluidbox_multiplier = 10},
+    },
+    energy_required = 24,
+    allow_decomposition = false,
+    results = {
+      {type = "fluid", name = "kr-molten-rare-metals", amount = 750},
+    },
+    allow_productivity = true,
+  },
+  {
+    type = "recipe",
     name = "kr-glass",
     enabled = false,
     category = "smelting",
@@ -182,10 +201,10 @@ data:extend({
   {
     type = "recipe",
     name = "molten-enriched-copper",
-    icon = "__space-age__/graphics/icons/fluid/molten-copper.png",
+    icon = "__Krastorio2-spaced-out__/graphics/icons/melting-enriched-copper.png",
     category = "metallurgy",
     subgroup = "vulcanus-processes",
-    order = "a[melting]-b[molten-copper]",
+    order = "a[melting]-e[molten-copper]",
     auto_recycle = false,
     show_amount_in_title = false,
     always_show_products = true,
@@ -207,10 +226,10 @@ data:extend({
   {
     type = "recipe",
     name = "molten-enriched-iron",
-    icon = "__space-age__/graphics/icons/fluid/molten-iron.png",
+    icon = "__Krastorio2-spaced-out__/graphics/icons/melting-enriched-iron.png",
     category = "metallurgy",
     subgroup = "vulcanus-processes",
-    order = "a[melting]-a[molten-iron]",
+    order = "a[melting]-d[molten-iron]",
     auto_recycle = false,
     show_amount_in_title = false,
     always_show_products = true,
@@ -335,4 +354,69 @@ data:extend({
     results = {{type = "item", name = "kr-steel-pipe-to-ground", amount = 2}},
     allow_productivity = true
   },
+  {
+    type = "recipe",
+    name = "kr-molten-rare-metals-from-lava",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "a[melting]-a[lava-c]",
+    icon = "__Krastorio2-spaced-out__/graphics/icons/molten-rare-metals-from-lava.png",
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "calcite", amount = 2, fluidbox_multiplier = 10},
+      {type = "fluid", name = "lava", amount = 500, fluidbox_multiplier = 10},
+      {type = "fluid", name = "kr-hydrogen-chloride", amount = 10, fluidbox_multiplier = 10},
+    },
+    energy_required = 16,
+    allow_decomposition = false,
+    results = {
+      {type = "fluid", name = "kr-molten-rare-metals", amount = 100},
+      {type = "fluid", name = "molten-iron", amount = 20},
+    },
+    allow_productivity = true,
+    main_product = "kr-molten-rare-metals"
+  },
+  {
+    type = "recipe",
+    name = "kr-molten-rare-metals",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "a[melting]-c[molten-rare-metals]",
+    icon = "__Krastorio2-spaced-out__/graphics/icons/melting-rare-metals.png",
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "calcite", amount = 2, fluidbox_multiplier = 10},
+      {type = "item", name = "kr-rare-metal-ore", amount = 50, fluidbox_multiplier = 10},
+    },
+    energy_required = 32,
+    allow_decomposition = false,
+    results = {
+      {type = "fluid", name = "kr-molten-rare-metals", amount = 500},
+    },
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "kr-casting-rare-metals",
+    category = "metallurgy",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-ca[casting-molten-rare-metals]",
+    icons = {
+      {icon = "__Krastorio2Assets__/icons/items/rare-metals.png",},
+      {icon = "__Krastorio2-spaced-out__/graphics/icons/molten-rare-metals.png", scale = 0.35, shift = { 8, -8 }, }, 
+    },
+    enabled = false,
+    ingredients = {
+      {type = "fluid", name = "kr-molten-rare-metals", amount = 20, fluidbox_multiplier = 10},
+      {type = "fluid", name = "water", amount = 10, fluidbox_multiplier = 10},
+    },
+    energy_required = 1.6,
+    allow_decomposition = false,
+    results = {
+      {type = "item", name = "kr-rare-metals", amount = 1 },
+      {type = "fluid", name = "kr-dirty-water", amount = 5, fluidbox_multiplier = 10, ignored_by_productivity = 5 },
+    },
+    allow_productivity = true,
+    main_product = "kr-rare-metals",
+  }
 })
