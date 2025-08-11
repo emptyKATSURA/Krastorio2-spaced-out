@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.10
+Date: 2025-08-12
+  Changes:
+    - implemented molten rare metals including recipes and new technology
+    - updated icons and order for ore melting recipes
+  Bugfixes:
+    - fixed fluid filtration applied productivity to water
+    - adapted the mod to work with krastorio2 assets 2.0.3 and it's dependency is now constant, sorry for inconvienience
+---------------------------------------------------------------------------------------------------
 Version: 1.4.9
 Date: 2025-08-9
   Changes:
