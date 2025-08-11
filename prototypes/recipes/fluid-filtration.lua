@@ -45,8 +45,8 @@ data:extend({
       { type = "fluid", name = "kr-dirty-water", amount = 100 },
     },
     results = {
-      { type = "fluid", name = "water", amount = 100 },
-      { type = "item", name = "stone", probability = 0.30, amount = 1 },
+      { type = "fluid", name = "water", amount = 100, ignored_by_productivity = 100 },
+      { type = "item", name = "stone", probability = 0.30, amount = 1, },
       { type = "item", name = "iron-ore", probability = 0.10, amount = 1 },
     },
     allow_as_intermediate = false,
@@ -78,7 +78,7 @@ data:extend({
       { type = "fluid", name = "kr-dirty-water", amount = 100 },
     },
     results = {
-      { type = "fluid", name = "water", amount = 100 },
+      { type = "fluid", name = "water", amount = 100, ignored_by_productivity = 100 },
       { type = "item", name = "stone", probability = 0.30, amount = 1 },
       { type = "item", name = "copper-ore", probability = 0.10, amount = 1 },
     },
@@ -110,7 +110,7 @@ data:extend({
       { type = "fluid", name = "kr-dirty-water", amount = 100 },
     },
     results = {
-      { type = "fluid", name = "water", amount = 100 },
+      { type = "fluid", name = "water", amount = 100, ignored_by_productivity = 100},
       { type = "item", name = "stone", probability = 0.30, amount = 1 },
       { type = "item", name = "kr-rare-metal-ore", probability = 0.05, amount = 1 },
     },
