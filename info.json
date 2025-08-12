@@ -11,6 +11,7 @@
     "base >= 2.0.47",
     "space-age >= 2.0.47",
     "Krastorio2Assets = 2.0.3",
+    "Krastorio2MenuSimulations >= 2.0.0",
     "flib >= 0.16.2",
     "? ChangeInserterDropLane >= 1.1.0",
     "(?) aai-industry >= 0.6.10",

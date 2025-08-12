@@ -15,17 +15,3 @@ local background = backgrounds[path_name]
 if background then
   data.raw["utility-constants"]["default"].main_menu_background_image_location = background
 end
-
-data.raw["utility-constants"]["default"].main_menu_simulations = {
-  -- TODO: Add new menu simulations
-  -- kr_menu_simulation = {
-  --   checkboard = false,
-  --   save = "__Krastorio2__/menu-simulations/sim.zip",
-  --   length = minute,
-  --   init = [[
-  --     game.simulation.camera_zoom = 1
-  --     game.tick_paused = false
-  --     game.surfaces.nauvis.daytime = 0.5
-  -- ]],
-  -- },
-}
