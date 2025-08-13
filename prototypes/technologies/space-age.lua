@@ -239,12 +239,7 @@ data:extend({
   {
     type = "technology",
     name = "kr-gleba-greenhouse",
-    localised_name = {"", {"space-location-name.gleba"}, " ", {"technology-name.kr-greenhouse"} },
-  icons = {
-     { icon = "__Krastorio2Assets__/icons/entities/greenhouse.png" },
-     { icon = "__space-age__/graphics/icons/jellynut.png", scale = 1, shift = { -32, 32 } },
-     { icon = "__space-age__/graphics/icons/yumako.png", scale = 1, shift = { 32, 32 } },
-   },
+    icon = "__Krastorio2-spaced-out__/graphics/technologies/gleba-greenhouse.png",
     icon_size = 256,
     unit = {
       time = 45,
