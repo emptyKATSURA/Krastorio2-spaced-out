@@ -124,6 +124,7 @@ local function on_cutscene_finished(e)
     },
     final_message = { "gui.kr-victory-final-message" },
   })
+  game.enable_galaxy_of_fame_button = true
   game.set_game_state({
     can_continue = true,
     game_finished = true,
