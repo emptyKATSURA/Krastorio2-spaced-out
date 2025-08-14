@@ -8,6 +8,7 @@ Date: 2025-08-14
   Bugfixes:
     - Fixed galaxy of fame didn't show up after activating intergalactic transreceiver
     - Fixed FPS issues when rendering tech cards on belts with the "Occlude light sprites" graphics setting turned on
+    - Fixed that electric mining drill mk2 and mk3 would not consume all fluid from their input pipes
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.10
 Date: 2025-08-12

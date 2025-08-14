@@ -48,7 +48,6 @@ data:extend({
     },
     energy_usage = "125kW",
     input_fluid_box = {
-      production_type = "input-output",
       pipe_picture = assembler2pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 200,
