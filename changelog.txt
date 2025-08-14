@@ -4,7 +4,8 @@ Date: 2025-08-14
   Features:
     - Added support for K2 menu simulations
   Changes:
-    - updated gleba greenhouse technology icon, name and description
+    - Updated gleba greenhouse technology icon, name and description
+    - Flare stack recipes are now sorted under the "fluids" group in Factoriopedia
   Bugfixes:
     - Fixed galaxy of fame didn't show up after activating intergalactic transreceiver
     - Fixed FPS issues when rendering tech cards on belts with the "Occlude light sprites" graphics setting turned on

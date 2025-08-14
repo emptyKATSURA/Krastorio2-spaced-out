@@ -89,4 +89,10 @@ data:extend({
     group = "combat",
     order = "e-e4",
   },
+  {
+    type = "item-subgroup",
+    name = "kr-flare-stack",
+    group = "fluids",
+    order = "z[kr-flare-stack]",
+  },
 })

@@ -158,6 +158,7 @@ function flare_stack_lib.make_recipe(fluid_name, fluid_emissions_multiplier, byp
         },
         data_util.transform_icons(data_util.get_icons(fluid), { scale = 0.34 }),
       }),
+      subgroup = "kr-flare-stack", 
       order = fluid.order,
       hide_from_player_crafting = true,
       enabled = false,
