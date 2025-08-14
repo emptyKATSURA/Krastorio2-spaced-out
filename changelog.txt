@@ -2,17 +2,18 @@
 Version: 1.4.11
 Date: 2025-08-14
   Features:
-    - Added support for K2 menu simulations, thanks Raiguard
-    - Added unique icons for crushing recipes
+    - Added support for K2 menu simulations, thanks Raiguard (requires Krastorio2 menu simulations 2.0.1 to function properly)
+    - Added unique icons for crushing recipes (from base K2)
   Changes:
     - Updated gleba greenhouse technology icon, name and description
-    - Flare stack recipes are now sorted under the "fluids" group in Factoriopedia
+    - Flare stack recipes are now sorted under the "fluids" group in Factoriopedia (from base K2)
     - Blacklisted molten metals from flare stack voiding
+    - Ban molten rare metals from barrelling
   Bugfixes:
     - Fixed galaxy of fame didn't show up after activating intergalactic transreceiver
-    - Fixed FPS issues when rendering tech cards on belts with the "Occlude light sprites" graphics setting turned on
-    - Fixed that electric mining drill mk2 and mk3 would not consume all fluid from their input pipes
-    - Fixed that you could not place shelters on certain surfaces if the surface's index is re-used from a previous surface that contained a shelter when destroyed
+    - Fixed FPS issues when rendering tech cards on belts with the "Occlude light sprites" graphics setting turned on (from base K2)
+    - Fixed that electric mining drill mk2 and mk3 would not consume all fluid from their input pipes (from base K2)
+    - Fixed that you could not place shelters on certain surfaces if the surface's index is re-used from a previous surface that contained a shelter when destroyed (from base K2)
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.10
 Date: 2025-08-12

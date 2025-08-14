@@ -1,6 +1,6 @@
   {
   "name": "Krastorio2-spaced-out",
-  "version": "1.4.10",
+  "version": "1.4.11",
   "title": "Krastorio 2 Spaced Out",
   "description": "Overhaul merging Krastorio 2 with Space Age.",
   "contact": "https://discord.gg/wCR2MVYqef",
@@ -8,8 +8,8 @@
   "author": "Polka_37",
   "factorio_version": "2.0",
   "dependencies": [
-    "base >= 2.0.47",
-    "space-age >= 2.0.47",
+    "base >= 2.0.60",
+    "space-age >= 2.0.60",
     "Krastorio2Assets = 2.0.3",
     "Krastorio2MenuSimulations >= 2.0.0",
     "flib >= 0.16.2",
