@@ -24,6 +24,18 @@ local function spawn_flying_texts()
   end
 end
 
+--- @param shelter_data ShelterData
+local function all_are_valid(shelter_data)
+  return shelter_data.container.valid and shelter_data.electric.valid and shelter_data.light.valid
+end
+
+--- @param entity LuaEntity
+local function destroy_if_valid(entity)
+  if entity.valid then
+    entity.destroy()
+  end
+end
+
 --- @param e EntityBuiltEvent
 local function on_entity_built(e)
   local entity = e.entity or e.destination
@@ -39,29 +51,37 @@ local function on_entity_built(e)
   local surface = entity.surface
   local force_shelters = storage.shelter.forces[force.index]
 
-  if force_shelters[surface.index] then
-    local name = entity.name:gsub("kr%-", "kr-inactive-"):gsub("%-container", "")
-    local position = entity.position
-    local force = entity.force
-    local player = entity.last_user
-    local surface = entity.surface
-    entity.destroy()
+  local existing_shelter_data = force_shelters[surface.index]
+  if existing_shelter_data then
+    if all_are_valid(existing_shelter_data) then
+      local name = entity.name:gsub("kr%-", "kr-inactive-"):gsub("%-container", "")
+      local position = entity.position
+      local force = entity.force
+      local player = entity.last_user
+      local surface = entity.surface
+      entity.destroy()
 
-    local new_entity = surface.create_entity({
-      name = name,
-      position = position,
-      force = force,
-      player = player,
-      create_build_effect_smoke = false,
-      raise_built = true,
-    })
-    if new_entity and new_entity.valid then
-      storage.shelter.inactive[new_entity.unit_number] = new_entity
+      local new_entity = surface.create_entity({
+        name = name,
+        position = position,
+        force = force,
+        player = player,
+        create_build_effect_smoke = false,
+        raise_built = true,
+      })
+      if new_entity and new_entity.valid then
+        storage.shelter.inactive[new_entity.unit_number] = new_entity
+      end
+      return
+    else
+      force.set_spawn_position(existing_shelter_data.former_spawn_point, surface)
+      destroy_if_valid(existing_shelter_data.container)
+      destroy_if_valid(existing_shelter_data.electric)
+      destroy_if_valid(existing_shelter_data.light)
+      force_shelters[force.index] = nil
     end
-    return
   end
 
-  -- Build entities
   local _, _, base_name = string.find(entity.name, "^(.*)%-container")
   --- @type ShelterData
   local shelter_data = { container = entity }
@@ -78,7 +98,6 @@ local function on_entity_built(e)
     })
   end
 
-  -- Set spawn point
   shelter_data.former_spawn_point = force.get_spawn_position(surface)
   force.set_spawn_position({ x = entity.position.x, y = entity.position.y + 3.5 }, surface)
 
@@ -112,12 +131,10 @@ local function on_entity_destroyed(e)
       return
     end
 
-    -- Destroy entities
-    shelter_data.electric.destroy()
-    shelter_data.light.destroy()
+    destroy_if_valid(shelter_data.electric)
+    destroy_if_valid(shelter_data.light)
     force_shelters[surface_index] = nil
 
-    -- Restore former spawn point
     force.set_spawn_position(shelter_data.former_spawn_point, surface_index)
   end
 end
@@ -129,6 +146,7 @@ local function on_force_created(e)
   end
 end
 
+--- @class ShelterHandler : event_handler
 local shelter = {}
 
 function shelter.on_init()
