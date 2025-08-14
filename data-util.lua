@@ -356,7 +356,10 @@ function data_util.get_icons(prototype)
   if icons then
     return table.deepcopy(icons)
   end
-  return { { icon = prototype.icon, icon_size = prototype.icon_size } }
+  if prototype.icon then
+    return { { icon = prototype.icon, icon_size = prototype.icon_size } }
+  end
+  return {}
 end
 
 --- Converts the given prototype's icons to the standard format and returns a reference to them.
