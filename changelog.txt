@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.11
+Date: 2025-08-14
+  Features:
+    - Added support for K2 menu simulations
+  Changes:
+    - updated gleba greenhouse technology icon, name and description
+  Bugfixes:
+    - Fixed galaxy of fame didn't show up after activating intergalactic transreceiver
+    - Fixed FPS issues when rendering tech cards on belts with the "Occlude light sprites" graphics setting turned on
+---------------------------------------------------------------------------------------------------
 Version: 1.4.10
 Date: 2025-08-12
   Changes:
