@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.12
+Date: 2025-08-17
+  Compatibility:
+    - Moshine:
+      - Merged silicon into kr-silicon
+      - Moshine solar panels and substation buildings need their K2 counterparts
+      - Added special modules only usable in labs and research computers
+  Bugfixes:
+    - Fixed that imersite powder recycled into imersite crystal
+---------------------------------------------------------------------------------------------------
 Version: 1.4.11
 Date: 2025-08-14
   Features:

@@ -34,7 +34,7 @@ if not mods["aai-industry"] then
     data_util.remove_prerequisite("moshine-tech-data-extractor", "moshine-tech-glass")
 end
 
-data_util.add_prerequisite("planet-discovery-moshine", "kr-molten-metals")
+data_util.add_prerequisite("planet-discovery-moshine", "kr-molten-rare-metals")
 data_util.add_prerequisite("big-solar-energy", "kr-advanced-solar-panel")
 data_util.add_prerequisite("snouz_better_substation_tech", "electric-energy-distribution-3")
 data_util.add_prerequisite("moshine-tech-silicon-cell", "planet-discovery-moshine")
