@@ -8,6 +8,16 @@ data.raw["lab"]["biolab"].inputs = data.raw["lab"]["lab"].inputs
 data.raw["lab"]["kr-advanced-lab"].inputs = data.raw["lab"]["lab"].inputs
 data.raw["lab"]["kr-singularity-lab"].inputs = data.raw["lab"]["lab"].inputs
 
+if mods["tech-cards-retexture-AI-powered"] then
+  for _, pack in pairs(data.raw.tool) do
+    if pack.subgroup == "science-pack" then
+      pack.spoil_result = "biter-egg"
+      pack.spoil_ticks = 3600
+    end
+  end
+  data.raw.item["biter-egg"].spoil_ticks = 1
+end
+
 local recycling = require("scripts.recycling")
 
 -- Generating the recycle (reverse) recipes
