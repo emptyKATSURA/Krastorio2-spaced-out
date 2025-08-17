@@ -76,6 +76,7 @@ crushing_lib.make_recipe(data.raw.item["kr-imersite-crystal"], {
     { type = "item", name = "kr-imersite-powder", amount = 3 },
   },
 })
+data.raw.recipe["kr-crush-kr-imersite-crystal"].auto_recycle = false
 
 data:extend({
   {
