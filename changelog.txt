@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.14
+Date: 2025-08-19
+  Features:
+    - Added lighting for space age tech cards
+  Changes:
+    - Improved icons for space age research data
+    - Reorganized research data recipes to match order of tech cards
+---------------------------------------------------------------------------------------------------
 Version: 1.4.13
 Date: 2025-08-18
   Bugfixes:
