@@ -188,7 +188,6 @@ data.raw.ammo["atomic-bomb"].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -211,7 +210,6 @@ data.raw.tool["automation-science-pack"].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -231,7 +229,6 @@ data.raw.tool["logistic-science-pack"].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -251,7 +248,6 @@ data.raw.tool["military-science-pack"].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -271,7 +267,6 @@ data.raw.tool["chemical-science-pack"].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -294,7 +289,6 @@ data.raw.tool["production-science-pack"].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -314,7 +308,6 @@ data.raw.tool["utility-science-pack"].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -338,7 +331,6 @@ data.raw.tool[kr_optimization_tech_card_name].pictures = {
       size = 64,
       scale = 0.5,
       draw_as_light = true,
-      flags = { "light" },
     },
   },
 }
@@ -368,3 +360,28 @@ data.raw.tool["metallurgic-science-pack"].localised_name = {"item-name.kr-metall
 data.raw.tool["agricultural-science-pack"].localised_name = {"item-name.kr-agricultural-tech-card"}
 data.raw.tool["cryogenic-science-pack"].localised_name = {"item-name.kr-cryogenic-tech-card"}
 data.raw.tool["promethium-science-pack"].localised_name = {"item-name.kr-promethium-tech-card"}
+
+local function add_light(item)
+local card = data.raw.tool[item]
+card.pictures = {
+  layers = {
+    {
+      filename = card.icon,
+      size = 64,
+      scale = 0.5,
+    },
+    {
+      filename = "__Krastorio2-spaced-out__/graphics/icons/tech-card-light.png",
+      size = 64,
+      scale = 0.5,
+      draw_as_light = true,
+    },
+  },
+}
+end
+
+add_light("metallurgic-science-pack")
+add_light("electromagnetic-science-pack")
+add_light("agricultural-science-pack")
+add_light("cryogenic-science-pack")
+add_light("promethium-science-pack")
