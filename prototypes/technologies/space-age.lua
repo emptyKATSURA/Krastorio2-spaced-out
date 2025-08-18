@@ -74,7 +74,7 @@ data:extend({
     type = "technology",
     name = "kr-molten-rare-metals",
     icon = "__Krastorio2-spaced-out__/graphics/icons/molten-rare-metals.png",
-    icon_size = 256,
+    icon_size = 64,
     order = "g-e-e",
     unit = {
       time = 60,
