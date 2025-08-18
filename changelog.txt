@@ -2,7 +2,7 @@
 Version: 1.4.13
 Date: 2025-08-18
   Bugfixes:
-    -  Change rare metals technology icon size from 256 to actual sprite size 64
+    - Change rare metals technology icon size from 256 to actual sprite size 64
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.12
 Date: 2025-08-17
