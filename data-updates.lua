@@ -30,9 +30,9 @@ require("prototypes.updates.set-new-resource-autoplace")
 
 require("prototypes.compatibility.aai-industry")
 require("prototypes.compatibility.any-planet-start")
-require("prototypes.compatibility.maraxsis")
-require("prototypes.compatibility.moshine")
-require("prototypes.compatibility.castra")
+require("prototypes.compatibility.planets.maraxsis")
+require("prototypes.compatibility.planets.moshine")
+require("prototypes.compatibility.planets.castra")
 
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")
