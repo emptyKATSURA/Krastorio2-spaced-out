@@ -19,8 +19,7 @@ local function on_player_placed_equipment(e)
   local found = 0
   for _, equipment_spec in pairs(grid.get_contents()) do
     if equipment_spec.name == "kr-energy-absorber-equipment" then
-      found = equipment_spec.count
-      break
+      found = found + equipment_spec.count
     end
   end
   if found <= 1 then

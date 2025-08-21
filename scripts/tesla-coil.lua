@@ -35,8 +35,6 @@ local loss_multiplier = 1.8
 local range = 20
 local required_energy = 10000000 -- 10 MW
 
-local absorber_buffer_capacity = prototypes.equipment["kr-energy-absorber-equipment"].energy_source.buffer_capacity
-
 -- TOWER
 -- The entity that is interacted with
 
@@ -141,21 +139,15 @@ end
 local function get_grid_data(target)
   --- @type LuaEquipmentGrid
   local grid
-  if target.type == "character" then
-    local armor_inventory = target.get_inventory(defines.inventory.character_armor)
-    if armor_inventory and armor_inventory.valid then
-      local armor = armor_inventory[1]
-      if armor and armor.valid_for_read then
-        grid = armor.grid
-      end
-    end
-  else
-    grid = target.grid
-  end
+  grid = target.grid
 
   if grid then
+    for _, quality in pairs(prototypes.quality) do
+      absorber = grid.find({ name = "kr-energy-absorber-equipment", quality = quality.name })
+      if absorber then break end
+    end
     return {
-      absorber = grid.find("kr-energy-absorber-equipment"),
+      absorber = absorber,
       grid = grid,
     }
   end
@@ -167,7 +159,11 @@ local function update_target_grid(grid)
   for _, target_data in pairs(storage.tesla_coil.targets) do
     local grid_data = target_data.grid_data
     if grid_data.grid.valid and grid_data.grid == grid then
-      grid_data.absorber = grid.find("kr-energy-absorber-equipment")
+      for _, quality in pairs(prototypes.quality) do
+        absorber = grid.find({ name = "kr-energy-absorber-equipment", quality = quality.name })
+        if absorber then break end
+      end
+      grid_data.absorber = absorber
     end
   end
 end
@@ -229,7 +225,7 @@ local function add_connection(target_data, tower_data)
     return false
   end
 
-  if absorber.energy >= absorber_buffer_capacity then
+  if absorber.energy >= absorber.max_energy then
     return false
   end
 
@@ -302,14 +298,14 @@ local function update_connection(target_data, tower_data)
   end
 
   local energy = absorber.energy
-  if energy < absorber_buffer_capacity then
+  if energy < absorber.max_energy then
     -- Calculate how much to add
     local to_add = charging_rate / 60 * cooldown
     local result = energy + to_add
     local tower = tower_data.entities.tower
 
-    if result >= absorber_buffer_capacity then
-      absorber.energy = absorber_buffer_capacity
+    if result >= absorber.max_energy then
+      absorber.energy = absorber.max_energy
       target_data.full_tick = game.tick
     else
       absorber.energy = result
@@ -367,7 +363,7 @@ end
 
 --- @param e EventData.on_equipment_removed
 local function on_equipment_removed(e)
-  if e.equipment == "kr-energy-absorber-equipment" then
+  if e.equipment.name == "kr-energy-absorber-equipment" then
     update_target_grid(e.grid)
   end
 end
