@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.15
+Date: 2025-08-21
+  Bugfixes:
+    - Fixed multiple different quality power absorbers could placed inside equipment grid
+    - Fixed power absorbers with quality other than normal couldn't connect to tesla towers
+---------------------------------------------------------------------------------------------------
 Version: 1.4.14
 Date: 2025-08-19
   Features:
