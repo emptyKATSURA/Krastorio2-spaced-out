@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.16
+Date: 2025-08-21
+  Bugfixes:
+    - Fixed ctrl + clicking an quality power absorber would give back normal quality absorber if there already was power absorber in equipment grid
+---------------------------------------------------------------------------------------------------
 Version: 1.4.15
 Date: 2025-08-21
   Bugfixes:
