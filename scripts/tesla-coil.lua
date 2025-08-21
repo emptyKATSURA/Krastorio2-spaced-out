@@ -29,7 +29,7 @@
 --- @field tower LuaEntity
 --- @field turret LuaEntity
 
-local charging_rate = 3000000 -- 3 MW
+local charging_rate = 0.1 -- % of energy absorber max energy
 local cooldown = 10
 local loss_multiplier = 1.8
 local range = 20
@@ -300,7 +300,7 @@ local function update_connection(target_data, tower_data)
   local energy = absorber.energy
   if energy < absorber.max_energy then
     -- Calculate how much to add
-    local to_add = charging_rate / 60 * cooldown
+    local to_add = absorber.max_energy * charging_rate 
     local result = energy + to_add
     local tower = tower_data.entities.tower
 
