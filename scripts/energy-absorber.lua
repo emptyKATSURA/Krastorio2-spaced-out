@@ -26,18 +26,13 @@ local function on_player_placed_equipment(e)
     return
   end
 
+  local quality = equipment.quality
+
   -- Retrieve the equipment
   grid.take({ equipment = equipment, by_player = player })
 
   -- Return the item
-  local cursor_stack = player.cursor_stack
-  -- If we're holding another absorber
-  if cursor_stack and cursor_stack.valid_for_read and cursor_stack.name == "kr-energy-absorber-equipment" then
-    cursor_stack.count = cursor_stack.count + 1 --[[@as uint]]
-    -- If we're holding something else or the stack is empty
-  elseif cursor_stack and player.clear_cursor() then
-    cursor_stack.set_stack({ name = "kr-energy-absorber-equipment", count = 1 })
-  end
+  player.character.insert({ name = "kr-energy-absorber-equipment", count = 1, quality = quality.name })
 
   -- Show the error
   if (storage.error_message_tick[e.player_index] or 0) + 30 < game.ticks_played then
