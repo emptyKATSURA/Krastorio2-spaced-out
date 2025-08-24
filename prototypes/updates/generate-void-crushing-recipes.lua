@@ -3,6 +3,9 @@ local crushing_lib = require("prototypes.libraries.crushing")
 
 local blacklist = {
   ["cryolab"] = true, --Muluna finishes generating cryolab at later stage, causing error at startup
+  ["stone"] = true, 
+  ["kr-imersite"] = true, 
+  ["biter-egg"] = true, 
 }
 
 for _, item in pairs(flib_prototypes.all("item")) do
