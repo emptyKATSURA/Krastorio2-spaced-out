@@ -68,6 +68,7 @@ data_util.remove_prerequisite("energy-shield-mk2-equipment", "power-armor")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "military-4")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "electromagnetic-science-pack")
 data_util.remove_prerequisite("big-mining-drill", "electric-mining-drill")
+data_util.remove_prerequisite("health", "military-science-pack")
 
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 
@@ -159,6 +160,7 @@ data_util.add_research_unit_ingredient("low-density-structure-productivity", kr_
 data_util.add_research_unit_ingredient("scrap-recycling-productivity", kr_optimization_tech_card_name )
 data_util.add_research_unit_ingredient("processing-unit-productivity", kr_optimization_tech_card_name )
 data_util.add_research_unit_ingredient("rocket-part-productivity", kr_optimization_tech_card_name )
+data_util.add_research_unit_ingredient("health", kr_optimization_tech_card_name )
 data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
 
 data.raw.technology["artillery"].unit.count = 1000
