@@ -112,7 +112,6 @@ data:extend({
     energy_required = 10,
     ingredients = {
       { type = "item", name = "steel-plate", amount = 5 },
-      { type = "item", name = "advanced-circuit", amount = 1 },
     },
     results = { { type = "item", name = "kr-basic-railgun-shell", amount = 1 } },
   },

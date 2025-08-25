@@ -15,7 +15,7 @@ data:extend({
         target_effects = {
           {
             type = "damage",
-            damage = { amount = 2000, type = "physical" },
+            damage = { amount = 3000, type = "physical" },
           },
           {
             type = "damage",

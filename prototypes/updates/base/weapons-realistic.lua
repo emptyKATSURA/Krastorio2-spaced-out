@@ -196,19 +196,9 @@ data_util.update_ammo_effects(data.raw["technology"]["artillery-shell-speed-1"],
 
 -- Technology for railgun turret
 
-data_util.add_effect( "physical-projectile-damage-1", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 } )
-data_util.add_effect( "physical-projectile-damage-2", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 } )
-data_util.add_effect( "physical-projectile-damage-3", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.25 } )
-data_util.add_effect( "physical-projectile-damage-4", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 } )
-data_util.add_effect( "physical-projectile-damage-5", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 } )
-data_util.add_effect( "physical-projectile-damage-6", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.35 } )
-data_util.add_effect( "physical-projectile-damage-7", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.5  } )
+data_util.add_effect( "railgun-damage-1", { type = "ammo-damage", ammo_category = "kr-railgun-shell", modifier = 0.4 } )
 
-data_util.add_effect( "weapon-shooting-speed-2", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
-data_util.add_effect( "weapon-shooting-speed-3", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
-data_util.add_effect( "weapon-shooting-speed-4", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
-data_util.add_effect( "weapon-shooting-speed-5", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
-data_util.add_effect( "weapon-shooting-speed-6", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.2 } )
+data_util.add_effect( "railgun-shooting-speed-1", { type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.15 } )
 
 -- Technology for rocket turret
 

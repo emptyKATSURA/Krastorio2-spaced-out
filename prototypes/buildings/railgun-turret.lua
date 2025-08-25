@@ -143,8 +143,8 @@ data:extend({
     selection_box = { { -2, -2 }, { 2, 2 } },
     inventory_size = 1,
     automated_ammo_count = 10,
-    attacking_speed = 0.2,
-    rotation_speed = 0.002,
+    attacking_speed = 0.3,
+    rotation_speed = 0.006,
     attack_parameters = {
       type = "projectile",
       ammo_category = "kr-railgun-shell",

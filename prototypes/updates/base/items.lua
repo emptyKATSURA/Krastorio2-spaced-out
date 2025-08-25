@@ -96,6 +96,12 @@ data.raw.item["gun-turret"].order = "01[gun-turret]"
 data.raw.item["laser-turret"].subgroup = "kr-vanilla-turret"
 data.raw.item["laser-turret"].order = "03a[laser-turret]"
 
+data.raw.item["rocket-turret"].subgroup = "kr-rocket-turret"
+data.raw.item["rocket-turret"].order = "a01[rocket-turret]"
+
+data.raw.item["railgun-turret"].subgroup = "kr-railgun-turret"
+data.raw.item["railgun-turret"].order = "a00[railgun-turret]"
+
 data.raw.item["night-vision-equipment"].subgroup = "kr-character-equipment"
 data.raw.item["night-vision-equipment"].order = "f[night-vision]-a1[night-vision-equipment]"
 
