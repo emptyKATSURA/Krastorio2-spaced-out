@@ -25,6 +25,7 @@ local auto_blacklist = {
   ["kr-molten-rare-metals"] = true,
   ["molten-iron"] = true,
   ["molten-copper"] = true,
+  ["lava"] = true,
 }
 
 --- Adds the given fluid to the auto-generation blacklist.
