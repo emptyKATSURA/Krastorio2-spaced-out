@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.18
+Date: 2025-08-25
+  Changes:
+    - Lava can no longer be voided usign flare stacks
+    - Health research now requires optimisation tech card instead of military tech card
+    - K2 rocket turret is now called long ranged rocket turret
+    - Reworked railguns:
+      - Increased rotation speed
+      - Basic railgun shell no longer requires advanced circuit
+      - Basic shell damage Increased from 2000 to 3000
+      - Renamed to light railgun turret
+      - Damage and speed is increased by railgun damage and speed research, instead
+---------------------------------------------------------------------------------------------------
 Version: 1.4.17
 Date: 2025-08-24
   Bugfixes:
