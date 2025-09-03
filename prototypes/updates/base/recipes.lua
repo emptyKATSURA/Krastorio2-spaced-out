@@ -399,8 +399,6 @@ data_util.add_or_replace_ingredient(
 )
 table.insert(data.raw.recipe["nuclear-reactor"].ingredients, { type = "item", name = "kr-rare-metals", amount = 200 })
 
-data.raw.recipe["offshore-pump"].enabled = false
-
 data_util.add_or_replace_ingredient("oil-refinery", "steel-plate", { type = "item", name = "kr-steel-beam", amount = 4 })
 data_util.convert_ingredient("oil-refinery", "iron-gear-wheel", "kr-steel-gear-wheel")
 
