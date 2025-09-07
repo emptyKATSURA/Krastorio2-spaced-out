@@ -18,6 +18,7 @@ crushing_lib.make_recipe(data.raw.item["burner-inserter"], {
     { type = "item", name = "kr-inserter-parts", amount = 1 },
   },
 })
+data.raw.recipe["kr-crush-burner-inserter"].auto_recycle = false
 
 crushing_lib.make_recipe(data.raw.item["fast-inserter"], {
   subgroup = "intermediate-product",
@@ -27,6 +28,7 @@ crushing_lib.make_recipe(data.raw.item["fast-inserter"], {
     { type = "item", name = "kr-inserter-parts", amount = 1 },
   },
 })
+data.raw.recipe["kr-crush-fast-inserter"].auto_recycle = false
 
 crushing_lib.make_recipe(data.raw.item["inserter"], {
   subgroup = "intermediate-product",
@@ -36,6 +38,7 @@ crushing_lib.make_recipe(data.raw.item["inserter"], {
     { type = "item", name = "kr-inserter-parts", amount = 1 },
   },
 })
+data.raw.recipe["kr-crush-inserter"].auto_recycle = false
 
 crushing_lib.make_recipe(data.raw.item["long-handed-inserter"], {
   subgroup = "intermediate-product",
@@ -45,6 +48,7 @@ crushing_lib.make_recipe(data.raw.item["long-handed-inserter"], {
     { type = "item", name = "kr-inserter-parts", amount = 1 },
   },
 })
+data.raw.recipe["kr-crush-long-handed-inserter"].auto_recycle = false
 
 crushing_lib.make_recipe(data.raw.item["kr-superior-inserter"], {
   subgroup = "intermediate-product",
