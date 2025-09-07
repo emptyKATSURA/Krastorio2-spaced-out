@@ -1,5 +1,6 @@
 local flib_position = require("__flib__.position")
 local flib_table = require("__flib__.table")
+local flib_locale = require("__flib__.locale")
 
 local data_util = {}
 
@@ -542,4 +543,29 @@ function data_util.add_fuel_category(energy_source, category_name)
   table.insert(energy_source.fuel_categories, category_name)
 end
 
+function data_util.generate_atmosphere(planet_name, results)
+  local planet = data.raw.planet[planet_name]
+  data:extend({
+  {
+    type = "recipe",
+    name = "kr-atmosphere-" .. planet_name,
+    localised_name = {"", {"technology-name.kr-atmosphere-condensation"}, " ", flib_locale.of(planet)},
+    category = "kr-atmosphere-condensation",
+    icon = planet.icon,
+    subgroup = "raw-material",
+    order = "b[atmosphere-condensation]-" .. planet_name,
+    enabled = true,
+    always_show_made_in = true,
+    always_show_products = true,
+    hide_from_player_crafting = true,
+    energy_required = 5,
+    ingredients = {},
+    results = results,
+    surface_conditions = {},
+  },
+  })
+  table.insert(data.raw.recipe["kr-atmosphere-" .. planet_name].surface_conditions, { property = "gravity", min = planet.surface_properties["gravity"], max = planet.surface_properties["gravity"] } )
+  table.insert(data.raw.recipe["kr-atmosphere-" .. planet_name].surface_conditions, { property = "magnetic-field", min = planet.surface_properties["magnetic-field"], max = planet.surface_properties["magnetic-field"] } )
+  table.insert(data.raw.recipe["kr-atmosphere-" .. planet_name].surface_conditions, { property = "pressure", min = planet.surface_properties["pressure"], max = planet.surface_properties["pressure"] } )
+end
 return data_util

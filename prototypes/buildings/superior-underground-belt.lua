@@ -28,6 +28,7 @@ data:extend({
     flags = { "placeable-neutral", "player-creation" },
     fast_replaceable_group = "transport-belt",
     minable = { mining_time = 0.2, result = "kr-superior-underground-belt" },
+    underground_collision_mask = {layers={lava_tile=true, empty_space=true}},
     collision_box = { { -0.4, -0.4 }, { 0.4, 0.4 } },
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     speed = 0.1875,
