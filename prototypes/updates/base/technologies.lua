@@ -120,6 +120,7 @@ data_util.add_recipe_unlock("metallurgic-science-pack", "kr-metallurgic-research
 data_util.add_recipe_unlock("agricultural-science-pack", "kr-agricultural-research-data")
 data_util.add_recipe_unlock("cryogenic-science-pack", "kr-cryogenic-research-data")
 data_util.add_recipe_unlock("promethium-science-pack", "kr-promethium-research-data")
+data_util.add_recipe_unlock("electronics", "kr-electronic-circuit-wood")
 
 if settings.startup["kr-loaders"].value then
   data_util.add_recipe_unlock("logistics", "kr-loader")

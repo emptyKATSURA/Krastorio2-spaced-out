@@ -400,4 +400,23 @@ data:extend({
     results = { { type = "item", name = "kr-steel-gear-wheel", amount = 1 } },
     allow_productivity = true,
   },
+  {
+    type = "recipe",
+    name = "kr-electronic-circuit-wood",
+    enabled = false,
+    order = "b[circuits]-a[electronic-circuit-wood]",
+    icons = {
+      { icon = "__Krastorio2Assets__/icons/items/electronic-circuit.png" },
+      { icon = "__base__/graphics/icons/wood.png", scale = 0.26, shift = { -8, -8 } },
+    },
+    energy_required = 2,
+    category = "electronics",
+    ingredients = {
+      { type = "item", name = "iron-plate", amount = 1 },
+      { type = "item", name = "wood", amount = 1 },
+      { type = "item", name = "copper-cable", amount = 4 },
+    },
+    results = { { type = "item", name = "electronic-circuit", amount = 2 } },
+    allow_productivity = true,
+  },
 })
