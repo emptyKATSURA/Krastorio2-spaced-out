@@ -87,7 +87,7 @@ data:extend({
       count = 60,
       ingredients = {
         { "datacell-raw-data", 1 },
-        { "model-stable", 1 },
+        { "datacell-ai-model-data", 1 },
       },
     },
     prerequisites = { "moshine-tech-ai-tier-4", "kr-ai-core" },
@@ -105,7 +105,7 @@ data:extend({
       count = 100,
       ingredients = {
         { "datacell-raw-data", 1 },
-        { "model-stable", 1 },
+        { "datacell-ai-model-data", 1 },
       },
     },
     prerequisites = { "moshine-tech-ai-tier-7", "kr-gamma-core", "kr-advanced-tech-card" },
@@ -123,7 +123,7 @@ data:extend({
       count = 200,
       ingredients = {
         { "datacell-raw-data", 1 },
-        { "model-stable", 1 },
+        { "datacell-ai-model-data", 1 },
       },
     },
     prerequisites = { "moshine-tech-ai-tier-10", "kr-beta-core", "kr-singularity-tech-card" },
