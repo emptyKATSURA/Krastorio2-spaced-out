@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.20
+Date: 2025-09-15
+  Changes:
+    - Uranium and imersite can only be made on Nauvis via matter deconversion
+    - Changed icons for Personal batteries
+    - Renamed base portable fusion reactor to portable cold fusion reactor
+  Bugfixes:
+    - Fixed startup error with Moshine
+---------------------------------------------------------------------------------------------------
 Version: 1.4.19
 Date: 2025-09-07
   Changes:
