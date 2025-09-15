@@ -177,3 +177,14 @@ update_equipment_graphics(
 update_equipment_graphics("personal-roboport-equipment", "personal-roboport-equipment", 64, { 128, 128 }, 1)
 update_equipment_graphics("personal-roboport-mk2-equipment", "personal-roboport-mk2-equipment", 64, { 128, 128 }, 2)
 update_equipment_graphics("solar-panel-equipment", "solar-panel-equipment", 64, { 64, 64 }, 1)
+
+data.raw["battery-equipment"]["battery-mk3-equipment"].sprite = { filename = "__Krastorio2-spaced-out__/graphics/equipment/battery-mk3-equipment.png", size = { 64, 144 }, scale = 0.5 }
+data.raw.item["battery-mk3-equipment"].icons = {
+  { icon = "__Krastorio2-spaced-out__/graphics/icons/battery-mk3-equipment.png" },
+  { icon = "__Krastorio2Assets__/icons/equipment/tier-3.png", icon_size = 64 },
+}
+
+data.raw.item["battery-mk2-equipment"].icons = {
+  { icon = "__Krastorio2Assets__/icons/equipment/big-battery-mk2-equipment.png" },
+  { icon = "__Krastorio2Assets__/icons/equipment/tier-2.png" },
+}
