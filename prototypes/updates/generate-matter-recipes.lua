@@ -33,6 +33,7 @@ matter_lib.make_recipes({
   energy_required = 1,
   unlocked_by = "kr-matter-minerals-processing",
 })
+data.raw.recipe["kr-matter-to-kr-imersite-powder"].surface_conditions = { { property = "pressure", min = 1000, max = 1000 } },
 
 matter_lib.make_recipes({
   material = { type = "item", name = "iron-ore", amount = 10 },
@@ -76,6 +77,7 @@ matter_lib.make_recipes({
   energy_required = 1,
   unlocked_by = "kr-matter-uranium-processing",
 })
+data.raw.recipe["kr-matter-to-uranium-238"].surface_conditions = { { property = "pressure", min = 1000, max = 1000 } },
 
 matter_lib.make_recipes({
   material = { type = "item", name = "uranium-ore", amount = 10 },
@@ -83,6 +85,7 @@ matter_lib.make_recipes({
   energy_required = 1,
   unlocked_by = "kr-matter-uranium-processing",
 })
+data.raw.recipe["kr-matter-to-uranium-ore"].surface_conditions = { { property = "pressure", min = 1000, max = 1000 } },
 
 matter_lib.make_recipes({
   material = { type = "item", name = "wood", amount = 10 },
