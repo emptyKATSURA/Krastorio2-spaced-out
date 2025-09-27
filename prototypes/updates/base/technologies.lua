@@ -198,6 +198,11 @@ data_util.set_icons(
   util.technology_icon_constant_mining("__Krastorio2Assets__/technologies/steel-pickaxe.png")
 )
 
+data_util.set_icons(
+  data.raw.technology["turbo-transport-belt"],
+  util.technology_icon_constant_mining("__Krastorio2Assets__/technologies/logistics-4.png")
+)
+
 data.raw.technology["personal-laser-defense-equipment"].localised_name = {
   "technology-name.kr-personal-laser-defense-mk1-equipment",
 }
