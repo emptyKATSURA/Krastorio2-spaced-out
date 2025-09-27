@@ -7,6 +7,7 @@ Date: 2025-09-27
     - Singularity tech card recipe has been changed
     - Underground belt recipes are more aligned to each other
     - Turbo transport belt research now is uses icon of and is called logistics 4
+    - Added 2 module slots to K2 crusher, remember that K2SO lifts surface requirement from SA crushers
   Bugfixes:
     - Fixed beacon rocket capacity has been 18, instead of 20
     - Fixed several recipes couldn't be selected in singnal gui
