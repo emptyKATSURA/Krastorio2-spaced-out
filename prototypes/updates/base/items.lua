@@ -50,6 +50,8 @@ data.raw.capsule["cliff-explosives"].weight = 5*kg
 data.raw.item["uranium-235"].weight = 10*kg
 data.raw.item["uranium-238"].weight = 10*kg
 
+data.raw.item["beacon"].weight = 50*kg
+
 data.raw.item["discharge-defense-equipment"].order = "f[active-defense-equipment]-a[discharge-defense-equipment]"
 data.raw.item["discharge-defense-equipment"].subgroup = "equipment"
 
