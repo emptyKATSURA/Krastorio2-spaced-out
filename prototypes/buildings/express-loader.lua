@@ -16,6 +16,7 @@ data:extend({
       { type = "item", name = "express-transport-belt", amount = 1 },
       { type = "item", name = "kr-fast-loader", amount = 2 },
       { type = "item", name = "kr-steel-gear-wheel", amount = 10 },
+      { type = "fluid", name = "lubricant", amount = 40 },
     },
     results = { { type = "item", name = "kr-express-loader", amount = 1 } },
   },
