@@ -6,6 +6,7 @@ local blacklist = {
   ["stone"] = true, 
   ["kr-imersite"] = true, 
   ["biter-egg"] = true, 
+  ["pentapod-egg"] = true, 
 }
 
 for _, item in pairs(flib_prototypes.all("item")) do
