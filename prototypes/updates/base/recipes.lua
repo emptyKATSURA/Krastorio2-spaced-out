@@ -189,13 +189,6 @@ data_util.add_or_replace_ingredient(
   "iron-gear-wheel",
   { type = "item", name = "kr-steel-gear-wheel", amount = 4 }
 )
---[[data_util.remove_ingredient("express-splitter", "lubricant")
-data_util.add_or_replace_ingredient(
-  "express-splitter",
-  "advanced-circuit",
-  { type = "item", name = "kr-electronic-components", amount = 4 }
-)]]--
---data.raw.recipe["express-splitter"].category = "crafting"
 
 data_util.add_or_replace_ingredient(
   "express-transport-belt",
@@ -208,8 +201,18 @@ data_util.add_or_replace_ingredient(
   "iron-gear-wheel",
   { type = "item", name = "express-transport-belt", amount = 20 }
 )
---data_util.remove_ingredient("express-underground-belt", "lubricant")
---data.raw.recipe["express-underground-belt"].category = "crafting"
+
+data_util.add_or_replace_ingredient(
+  "turbo-underground-belt",
+  "turbo-transport-belt",
+  { type = "item", name = "turbo-transport-belt", amount = 20 }
+)
+
+data_util.add_or_replace_ingredient(
+  "turbo-underground-belt",
+  "tungsten-plate",
+  { type = "item", name = "tungsten-plate", amount = 10 }
+)
 
 data.raw.recipe["fast-inserter"].ingredients = {
   { type = "item", name = "kr-inserter-parts", amount = 1 },
