@@ -197,9 +197,9 @@ data:extend({
     ingredients = {
       { type = "item", name = "kr-blank-tech-card", amount = 5 },
       { type = "item", name = "kr-charged-matter-stabilizer", amount = 5 },
-      { type = "item", name = "kr-electromagnetic-research-data", amount = 2 },
-      { type = "item", name = "kr-agricultural-research-data", amount = 2 },
-      { type = "item", name = "kr-metallurgic-research-data", amount = 2 },
+      { type = "item", name = "tungsten-carbide", amount = 1 },
+      { type = "item", name = "superconductor", amount = 2 },
+      { type = "item", name = "bioflux", amount = 1 },
     },
     results = {
       { type = "item", name = "kr-singularity-tech-card", amount = 5 },
