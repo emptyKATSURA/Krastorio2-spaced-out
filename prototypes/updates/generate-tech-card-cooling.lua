@@ -9,6 +9,7 @@ for _, original_recipe in pairs(data.raw.recipe) do
             recipe.category = "kr-tech-cards-cooling"
             recipe.subgroup = "kr-tech-cards-cooling"
             recipe.localised_name = {"", flib_locale.of(original_recipe), " ", {"recipe-name.kr-cooling"} }
+            recipe.hide_from_signal_gui = false
             local pack = original_recipe.name
             recipe.order = data.raw.tool[pack].order
             recipe.icons = {

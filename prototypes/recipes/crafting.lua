@@ -17,6 +17,7 @@ data:extend({
       { type = "item", name = "tungsten-carbide", amount = 3 },
     },
     results = { { type = "item", name = "processing-unit", amount = 2 } },
+    hide_from_signal_gui = false,
     allow_productivity = true,
   },
     {
@@ -38,6 +39,7 @@ data:extend({
     },
     results = { { type = "item", name = "processing-unit", amount = 2 } },
     allow_productivity = true,
+    hide_from_signal_gui = false,
   },
   {
     type = "recipe",
@@ -418,5 +420,6 @@ data:extend({
     },
     results = { { type = "item", name = "electronic-circuit", amount = 2 } },
     allow_productivity = true,
+    hide_from_signal_gui = false,
   },
 })

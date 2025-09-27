@@ -104,6 +104,7 @@ data:extend({
     allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
+    hide_from_signal_gui = false,
   },
   {
     type = "recipe",
@@ -126,6 +127,7 @@ data:extend({
     allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
+    hide_from_signal_gui = false,
   },
   {
     type = "recipe",
