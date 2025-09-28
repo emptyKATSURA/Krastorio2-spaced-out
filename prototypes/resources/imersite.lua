@@ -18,7 +18,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -36,7 +35,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -54,7 +52,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -72,7 +69,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,

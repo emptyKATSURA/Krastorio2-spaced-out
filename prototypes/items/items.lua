@@ -312,7 +312,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/imersium-plate-light.png",
           scale = 0.5,
@@ -337,7 +336,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/imersium-gear-wheel-light.png",
           scale = 0.5,
@@ -362,7 +360,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/imersium-beam-light.png",
           scale = 0.5,
@@ -559,7 +556,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -577,7 +573,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -595,7 +590,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -624,7 +618,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -642,7 +635,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -660,7 +652,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -678,7 +669,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -696,7 +686,6 @@ data:extend({
           },
           {
             draw_as_light = true,
-            flags = { "light" },
             blend_mode = "additive",
             tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
             size = 64,
@@ -724,7 +713,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/lithium-sulfur-battery-light.png",
           scale = 0.5,
@@ -749,7 +737,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/ai-core-light.png",
           scale = 0.5,
@@ -792,7 +779,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/tritium-light.png",
           scale = 0.5,
@@ -826,7 +812,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/dt-fuel-light.png",
           scale = 0.5,
@@ -855,7 +840,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/energy-control-unit-light.png",
           scale = 0.5,
@@ -890,7 +874,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/charged-matter-stabilizer-light.png",
           scale = 0.5,
@@ -933,7 +916,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/charged-antimatter-fuel-cell-light.png",
           scale = 0.5,
@@ -997,7 +979,6 @@ data:extend({
         },
         {
           draw_as_light = true,
-          flags = { "light" },
           size = 64,
           filename = "__Krastorio2Assets__/icons/items/teleportation-gps-module-light.png",
           scale = 0.5,
