@@ -25,7 +25,15 @@ local auto_blacklist = {
   ["kr-molten-rare-metals"] = true,
   ["molten-iron"] = true,
   ["molten-copper"] = true,
+  ["molten-salt"] = true,
+  ["molten-aluminum"] = true,
+  ["holmium-solution"] = true,
   ["lava"] = true,
+  ["muluna-heat"] = true,
+  ["raw-data"] = true,
+  ["muluna-astronomical-data"] = true,
+  ["oxygen"] = true,--duplicate
+  ["hydrogen"] = true,--duplicate
 }
 
 --- Adds the given fluid to the auto-generation blacklist.
