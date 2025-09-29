@@ -1,8 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.22
 Date: 2025-09-28
+  Compatibility:
+    - Automated replacement of mods prototypes example: sand -> kr-sand
   Bugfixes:
-    - Fixed electronic circuit recycling outputed wood
+    - Fixed electronic circuit recycling outputs wood
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.21
 Date: 2025-09-27
@@ -11,7 +13,7 @@ Date: 2025-09-27
     - Added a recipe to make biomass from pentapod egg
     - Singularity tech card recipe has been changed
     - Underground belt recipes are more aligned to each other
-    - Turbo transport belt research now is uses icon of and is called logistics 4
+    - Turbo transport belt research now uses icon logistics 4 and is called logistics 4
     - Added 2 module slots to K2 crusher, remember that K2SO lifts surface requirement from SA crushers
   Bugfixes:
     - Fixed beacon rocket capacity has been 18, instead of 20

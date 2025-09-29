@@ -17,20 +17,7 @@ data.raw.resource["multi-ore"].minable = {
     },
 }
 
-data_util.convert_ingredient("optical-cable","glass", "kr-glass" )
-data_util.convert_ingredient("ai-trainer","glass", "kr-glass" )
-data_util.convert_ingredient("3d-data-storage","glass", "kr-glass" )
-data_util.convert_ingredient("concrete-from-molten-iron-and-sand","sand", "kr-sand" )
-data_util.convert_ingredient("petroleum-from-sand-sulfur-steam-carbon","sand", "kr-sand" )
-data_util.convert_ingredient("silicon","sand", "kr-sand" )
-data_util.convert_ingredient("silicon-cell","silicon", "kr-silicon" )
-data_util.convert_ingredient("silicon-carbide","silicon", "kr-silicon" )
-data_util.convert_ingredient("optical-cable","silicon", "kr-silicon" )
-
 if not mods["aai-industry"] then
-    data.raw.item["glass"].hidden = true
-    data.raw.recipe["glass"].hidden = true
-    data.raw.item["sand"].hidden = true
     data_util.remove_prerequisite("moshine-tech-data-extractor", "moshine-tech-glass")
 end
 
@@ -48,11 +35,6 @@ data_util.remove_prerequisite("moshine-tech-silicon-carbide", "moshine-tech-sili
 data_util.add_or_replace_ingredient("big-solar-panel", "solar-panel", { type = "item", name = "kr-advanced-solar-panel", amount = 12 })
 data_util.add_or_replace_ingredient("snouz_better_substation", "substation", { type = "item", name = "kr-superior-substation", amount = 2 })
 
-data.raw.item["silicon"].hidden = true
-data.raw.item["silicon"].hidden_in_factoriopedia = true
-data.raw.recipe["silicon"].hidden = true
-data.raw.recipe["silicon"].hidden_in_factoriopedia = true
-
 data.raw.technology["moshine-tech-glass"] = nil
 data.raw.technology["moshine-tech-silicon"] = nil
 
@@ -62,14 +44,14 @@ data.raw.technology["moshine-tech-silicon-cell"].unit = {
   count = 200,
   ingredients = {
        { kr_optimization_tech_card_name, 1 },
-     },
+  },
 }
 data.raw.technology["moshine-tech-magnet"].unit = {
   time = 60,
   count = 200,
   ingredients = {
        { kr_optimization_tech_card_name, 1 },
-     },
+  },
 }
 
 data:extend({
