@@ -145,12 +145,12 @@ data:extend({
     subgroup = "raw-material",
     enabled = true,
     category = "smelting",
-    energy_required = 16,
+    energy_required = 3.2,
     ingredients = {
-      { type = "item", name = "kr-rare-metal-ore", amount = 10 },
+      { type = "item", name = "kr-rare-metal-ore", amount = 2 },
     },
     results = {
-      { type = "item", name = "kr-rare-metals", amount = 5 },
+      { type = "item", name = "kr-rare-metals", amount = 1 },
     },
     allow_productivity = true,
     always_show_made_in = true,
@@ -171,12 +171,12 @@ data:extend({
     order = "c[rare-metals]-b[enriched-rare-metals]",
     enabled = false,
     category = "smelting",
-    energy_required = 16,
+    energy_required = 3.2,
     ingredients = {
-      { type = "item", name = "kr-enriched-rare-metals", amount = 5 },
+      { type = "item", name = "kr-enriched-rare-metals", amount = 1 },
     },
     results = {
-      { type = "item", name = "kr-rare-metals", amount = 5 },
+      { type = "item", name = "kr-rare-metals", amount = 1 },
     },
     allow_productivity = true,
     always_show_made_in = true,

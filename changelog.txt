@@ -2,8 +2,10 @@
 Version: 1.4.23
 Date: 2025-09-30
   Balancing:
-    - Greenhouse now emmit 3 spores/min
+    - Greenhouse now emit 3 spores/min
     - Nerf molten metal from ore output by 40% and from enriched ore by 20%
+  Changes:
+    - Rare metals are made in a single batch, instead of 5 at once
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.22
 Date: 2025-09-28
