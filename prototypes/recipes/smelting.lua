@@ -94,7 +94,7 @@ data:extend({
     energy_required = 24,
     allow_decomposition = false,
     results = {
-      {type = "fluid", name = "kr-molten-rare-metals", amount = 750},
+      {type = "fluid", name = "kr-molten-rare-metals", amount = 600},
     },
     allow_productivity = true,
   },
@@ -217,7 +217,7 @@ data:extend({
     energy_required = 24,
     results =
     {
-      {type = "fluid", name = "molten-copper", amount = 750},
+      {type = "fluid", name = "molten-copper", amount = 600},
     },
     allow_productivity = true,
     hide_from_signal_gui = false,
@@ -242,7 +242,7 @@ data:extend({
     energy_required = 24,
     results =
     {
-      {type = "fluid", name = "molten-iron", amount = 750},
+      {type = "fluid", name = "molten-iron", amount = 600},
     },
     allow_productivity = true,
     hide_from_signal_gui = false,
@@ -391,9 +391,10 @@ data:extend({
     energy_required = 32,
     allow_decomposition = false,
     results = {
-      {type = "fluid", name = "kr-molten-rare-metals", amount = 500},
+      {type = "fluid", name = "kr-molten-rare-metals", amount = 300},
     },
-    allow_productivity = true
+    allow_productivity = true,
+    always_show_products = true
   },
   {
     type = "recipe",

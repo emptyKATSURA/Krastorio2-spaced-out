@@ -319,6 +319,16 @@ data_util.add_or_replace_product(
   "uranium-238",
   { type = "item", name = "stone", amount = 2 }
 )
+data_util.add_or_replace_product(
+  "molten-iron",
+  "molten-iron",
+  { type = "fluid", name = "molten-iron", amount = 300 }
+)
+data_util.add_or_replace_product(
+  "molten-copper",
+  "molten-copper",
+  { type = "fluid", name = "molten-copper", amount = 300 }
+)
 
 data_util.add_or_replace_ingredient("lab", "electronic-circuit", { type = "item", name = "kr-iron-beam", amount = 10 })
 data_util.add_or_replace_ingredient("lab", "iron-gear-wheel", { type = "item", name = "copper-plate", amount = 10 })
