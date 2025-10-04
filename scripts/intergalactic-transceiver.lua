@@ -224,7 +224,8 @@ end
 
 --- @param self IntergalacticTransceiverGuiData
 local function update_gui(self)
-  local charged = flib_math.round(self.entity.energy / max_energy, 0.01)
+  local max_energy_quality = max_energy * self.entity.quality.accumulator_capacity_multiplier
+  local charged = flib_math.round(self.entity.energy / max_energy_quality, 0.01)
   local transceiver_data = storage.intergalactic_transceiver.forces[self.player.force_index]
   local props = status_properties[transceiver_data.status]
   self.elems.status_icon.sprite = props.icon
@@ -432,9 +433,10 @@ local function update_transceiver(data, entity)
       status = "not_enough_input"
     end
   else
-    if current_energy > max_energy then
+    local max_energy_quality = max_energy * entity.quality.accumulator_capacity_multiplier
+    if current_energy > max_energy_quality then
       -- XXX: If the energy remains constant, the entity status will change to "normal", so give it a random offset.
-      new_energy = max_energy + math.random(0, 20) * 1000000
+      new_energy = max_energy_quality + math.random(0, 20) * 1000000
       status = "ready"
     else
       local current_status = defines_to_status[entity.status]

@@ -173,6 +173,9 @@ data:extend({
       input_flow_limit = "60GW",
       output_flow_limit = "0W",
     },
+    surface_conditions = {
+      { property = "gravity", min = 0.1 },
+    },
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     vehicle_impact_sound = sounds.generic_impact,
@@ -222,6 +225,9 @@ data:extend({
     },
     energy_production = "10GW",
     energy_usage = "0kW",
+    surface_conditions = {
+      { property = "gravity", min = 0.1 },
+    },
     working_sound = working_sound,
     continuous_animation = true,
     light = {
