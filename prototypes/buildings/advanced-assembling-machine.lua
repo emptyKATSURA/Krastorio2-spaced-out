@@ -58,6 +58,7 @@ data:extend({
     order = "c2[advanced-assembling-machine]",
     place_result = "kr-advanced-assembling-machine",
     stack_size = 50,
+    weight = 100 * kg,
   },
   {
     type = "assembling-machine",

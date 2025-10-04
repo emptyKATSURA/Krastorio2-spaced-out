@@ -6,6 +6,7 @@ Date: 2025-10-04
   Changes:
     - Intergalactic transceiver can only be placed on ground
     - Gleba biomethanol recipe can now accept productivity modules
+    - Advanced assembler rocket capacity is now 10  
   Bugfixes:
     - Fixed intergalactic transceiver reseting it's quality after activation
     - Fixed intergalactic transceiver couldn't fully charge if it was quality other than normal
