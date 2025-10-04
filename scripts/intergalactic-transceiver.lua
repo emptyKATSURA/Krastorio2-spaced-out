@@ -170,6 +170,7 @@ local function on_cutscene_waypoint_reached(e)
     local player = entity.last_user
     local position = entity.position
     local surface = entity.surface
+    local quality = entity.quality
     entity.destroy()
     transceiver_data.activating = true
     local new_entity = surface.create_entity({
@@ -179,6 +180,7 @@ local function on_cutscene_waypoint_reached(e)
       player = player,
       create_build_effect_smoke = false,
       raise_built = true,
+      quality = quality,
     })
     transceiver_data.activating = false
     if not new_entity or not new_entity.valid then
