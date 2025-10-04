@@ -74,6 +74,7 @@ data:extend({
     order = "a1[organics]-a[compost]",
     enabled = false,
     category = "organic",
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       { type = "item", name = "spoilage", amount = 30 },
