@@ -8,7 +8,7 @@ Date: 2025-10-09
     - Increased price of endgame research
   Changes:
     - Changed prerequisites for research productivity and intergalactic transceiver
-    - Updated description for research labs research
+    - Updated descriptions for research labs research
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.25
 Date: 2025-10-04
