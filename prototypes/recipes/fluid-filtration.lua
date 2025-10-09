@@ -14,7 +14,6 @@ data:extend({
       { type = "item", name = "coal", amount = 8 },
       { type = "fluid", name = "water", amount = 40 },
     },
-    surface_conditions = { { property = "pressure", min = 1000 } },
     always_show_made_in = true,
     always_show_products = true,
     allow_productivity = false,
