@@ -36,7 +36,7 @@ data:extend({
       { type = "item", name = "kr-tritium", amount = 1 },
       { type = "item", name = "kr-empty-dt-fuel-cell", amount = 1 },
     },
-    results = { { type = "item", name = "kr-dt-fuel-cell", amount = 1 } },
+    results = { { type = "item", name = "kr-dt-fuel-cell", amount = 1, ignored_by_productivity = 1 } },
     always_show_made_in = true,
     allow_productivity = false,
     crafting_machine_tint = {
