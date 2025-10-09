@@ -4,6 +4,7 @@ Date: 2025-10-09
   Balancing:
     - DT cells no longer can be affected by productivity
     - Coal filtration can be used on fulgora
+    - Change rare metal casting cost from 20 to 10 rare molten metals
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.25
 Date: 2025-10-04

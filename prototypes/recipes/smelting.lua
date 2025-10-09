@@ -408,7 +408,7 @@ data:extend({
     },
     enabled = false,
     ingredients = {
-      {type = "fluid", name = "kr-molten-rare-metals", amount = 20, fluidbox_multiplier = 10},
+      {type = "fluid", name = "kr-molten-rare-metals", amount = 10, fluidbox_multiplier = 10},
       {type = "fluid", name = "water", amount = 10, fluidbox_multiplier = 10},
     },
     energy_required = 1.6,
