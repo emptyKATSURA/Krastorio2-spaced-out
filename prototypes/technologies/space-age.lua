@@ -270,7 +270,7 @@ data:extend({
     essential = true,
     unit = {
       time = 45,
-      count = 1250,
+      count = 3000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -475,7 +475,7 @@ data:extend({
     icon_size = 256,
     unit = {
       time = 60,
-      count = 2500,
+      count = 10000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -502,7 +502,7 @@ data:extend({
     prerequisites = { "kr-fusion-energy", "kr-singularity-tech-card", "promethium-science-pack"  },
     unit = {
       time = 60,
-      count = 2000,
+      count = 10000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -529,7 +529,7 @@ data:extend({
     upgrade = false,
     unit = {
       time = 45,
-      count = 500,
+      count = 10000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -552,7 +552,7 @@ data:extend({
     icon_size = 256,
     unit = {
       time = 60,
-      count = 10000,
+      count = 100000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -563,7 +563,7 @@ data:extend({
         { "promethium-science-pack", 1 },
       },
     },
-    prerequisites = { "kr-antimatter-reactor" },
+    prerequisites = { "kr-antimatter-reactor", "kr-singularity-lab" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-intergalactic-transceiver" },
     },

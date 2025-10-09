@@ -7,7 +7,7 @@ data:extend({
     order = "g-f-z",
     unit = {
       time = 60,
-      count = 500,
+      count = 5000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -27,7 +27,7 @@ data:extend({
     icon_size = 256,
     unit = {
       time = 60,
-      count = 500,
+      count = 2000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -50,7 +50,7 @@ data:extend({
     icon_size = 256,
     unit = {
       time = 60,
-      count = 1000,
+      count = 5000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -95,7 +95,7 @@ data:extend({
     icon_size = 256,
     unit = {
       time = 45,
-      count = 500,
+      count = 2000,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },

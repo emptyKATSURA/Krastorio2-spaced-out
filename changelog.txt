@@ -3,8 +3,11 @@ Version: 1.4.26
 Date: 2025-10-09
   Balancing:
     - DT cells no longer can be affected by productivity
-    - Coal filtration can be used on fulgora
+    - Coal filtration can be used on Fulgora
     - Change rare metal casting cost from 20 to 10 rare molten metals
+    - Increased price of endgame research
+  Changes:
+    - Changed prerequisites for research productivity and intergalactic transceiver
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.25
 Date: 2025-10-04
@@ -134,7 +137,7 @@ Date: 2025-08-14
     - Blacklisted molten metals from flare stack voiding
     - Ban molten rare metals from barrelling
   Bugfixes:
-    - Fixed galaxy of fame didn't show up after activating intergalactic transreceiver
+    - Fixed galaxy of fame didn't show up after activating intergalactic transceiver
     - Fixed FPS issues when rendering tech cards on belts with the "Occlude light sprites" graphics setting turned on (from base K2)
     - Fixed that electric mining drill mk2 and mk3 would not consume all fluid from their input pipes (from base K2)
     - Fixed that you could not place shelters on certain surfaces if the surface's index is re-used from a previous surface that contained a shelter when destroyed (from base K2)
@@ -163,7 +166,7 @@ Date: 2025-08-6
 Version: 1.4.7
 Date: 2025-08-05
   Changes:
-    - Disabled solar system edge victory contdition, use intergalactic transreceiver to win
+    - Disabled solar system edge victory contdition, use intergalactic transceiver to win
   Bugfixes:
     - Fixed roboports reseted their quality after changing their operating mode
 ---------------------------------------------------------------------------------------------------
@@ -361,7 +364,7 @@ Date: 2025-05-29
     - Fixed bio lab couldn't take water in one of it's inlets
     - Fixed laser artillery was loud while when low powder
     - Fixed added missing trash slots on buffer and requester chests
-    - Fixed some issues with intergalactic transreceiver GUI
+    - Fixed some issues with intergalactic transceiver GUI
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
 Date: 2025-05-23
@@ -536,7 +539,7 @@ Date: 2025-05-05
     - Fixed express underground belts having incorrect lenght.
     - Fixed express loader not upgrading into advanced loaders.
     - Fixed space age equipment couldn't be used in vechicles.
-    - Fixed intergalactic transreceiver causing crash on cutscene.
+    - Fixed intergalactic transceiver causing crash on cutscene.
     - Fixed advanced tank couldn't be driven remotely and didn't had logistic access.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0

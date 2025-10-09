@@ -48,6 +48,7 @@ data_util.add_prerequisite(kr_optimization_tech_card_name, "kr-research-server")
 data_util.add_prerequisite("energy-shield-mk2-equipment", "power-armor-mk2")
 data_util.add_prerequisite("big-mining-drill", "kr-electric-mining-drill-mk2")
 data_util.add_prerequisite("promethium-science-pack", "kr-singularity-tech-card")
+data_util.add_prerequisite("research-productivity", "kr-singularity-lab")
 
 data_util.remove_prerequisite("spidertron", "fission-reactor-equipment")
 data_util.remove_prerequisite("atomic-bomb", "military-4")
@@ -69,6 +70,7 @@ data_util.remove_prerequisite("energy-shield-mk2-equipment", "military-4")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "electromagnetic-science-pack")
 data_util.remove_prerequisite("big-mining-drill", "electric-mining-drill")
 data_util.remove_prerequisite("health", "military-science-pack")
+data_util.remove_prerequisite("research-productivity", "promethium-science-pack")
 
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 
@@ -187,6 +189,7 @@ data.raw.technology["nuclear-power"].unit.count = 500
 data.raw.technology["production-science-pack"].unit.count = 250
 data.raw.technology["uranium-ammo"].unit.count = 300
 data.raw.technology["utility-science-pack"].unit.count = 250
+data.raw.technology["promethium-science-pack"].unit.count = 5000
 
 data_util.set_icons(
   data.raw.technology["fission-reactor-equipment"],
@@ -227,7 +230,7 @@ data.raw.technology["kr-automation-core"].research_trigger = {
       type = "craft-item",
       item = "iron-gear-wheel",
       count = 10
-    }
+}
 
 table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 } )
 table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-carbide-processing-circuit", change = 0.1 } )
