@@ -3,11 +3,11 @@ local data_util = require("data-util")
 --- @param resource_name data.ResourceID
 --- @param multiplier double
 local function increase_base_density(resource_name, multiplier)
-  local resource = data.raw.resource[resource_name]
-  if not resource then
-    data_util.error("Resource " .. resource_name .. " does not exist.")
-  end
-  resource.autoplace.base_density = (resource.autoplace.base_density or 1) * multiplier
+	local resource = data.raw.resource[resource_name]
+	if not resource then
+		data_util.error("Resource " .. resource_name .. " does not exist.")
+	end
+	resource.autoplace.base_density = (resource.autoplace.base_density or 1) * multiplier
 end
 
 data.raw.resource["crude-oil"].category = "kr-oil"
@@ -23,3 +23,6 @@ data.raw["mining-drill"]["pumpjack"].resource_categories = { "kr-oil" }
 
 increase_base_density("coal", 2)
 increase_base_density("copper-ore", 1.5)
+
+data.raw["planet"]["gleba"].map_gen_settings.autoplace_controls["gleba_stone"] =
+	{ size = 3, frequency = 1.5, richness = 2 }
