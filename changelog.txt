@@ -8,6 +8,7 @@ Date: 2025-10-09
     - Oxygen can only be collected via atmosphere condensation on Gleba and Nauvis, use electrolysis for rest of planets
     - Water condensation recipe has been removed
     - Removed rare metal utilisation technology and moved it's recipes to foundry technology
+    - Big electric drill requires electric drills mk2
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.26
 Date: 2025-10-09
