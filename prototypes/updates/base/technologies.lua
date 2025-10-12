@@ -106,6 +106,10 @@ data_util.add_recipe_unlock("foundry", "kr-casting-steel-beam")
 data_util.add_recipe_unlock("foundry", "kr-casting-steel-gear")
 data_util.add_recipe_unlock("foundry", "kr-casting-steel-pipe")
 data_util.add_recipe_unlock("foundry", "kr-casting-steel-pipe-to-ground")
+data_util.add_recipe_unlock("foundry", "kr-molten-rare-metals")
+data_util.add_recipe_unlock("foundry", "kr-molten-enriched-rare-metals")
+data_util.add_recipe_unlock("foundry", "kr-molten-rare-metals-from-lava")
+data_util.add_recipe_unlock("foundry", "kr-casting-rare-metals")
 data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
 data_util.add_recipe_unlock("biochamber", "kr-bio-processing-circuit")
 data_util.add_recipe_unlock("bioflux-processing", "kr-spoilage-decomposition")
@@ -126,10 +130,10 @@ data_util.add_recipe_unlock("promethium-science-pack", "kr-promethium-research-d
 data_util.add_recipe_unlock("electronics", "kr-electronic-circuit-wood")
 
 if settings.startup["kr-loaders"].value then
-  data_util.add_recipe_unlock("logistics", "kr-loader")
-  data_util.add_recipe_unlock("logistics-2", "kr-fast-loader")
-  data_util.add_recipe_unlock("logistics-3", "kr-express-loader")
-  data_util.add_recipe_unlock("turbo-transport-belt", "kr-advanced-loader")
+	data_util.add_recipe_unlock("logistics", "kr-loader")
+	data_util.add_recipe_unlock("logistics-2", "kr-fast-loader")
+	data_util.add_recipe_unlock("logistics-3", "kr-express-loader")
+	data_util.add_recipe_unlock("turbo-transport-belt", "kr-advanced-loader")
 end
 
 data_util.remove_recipe_unlock("automation", "long-handed-inserter")
@@ -144,27 +148,27 @@ data.raw.technology["steel-plate-productivity"].max_level = 5
 data.raw.technology["mining-productivity-3"].max_level = 5
 
 function generate_upgrade(previous, new_name, new_science_pack, max)
-local previous = data.raw.technology[previous]
-local next = table.deepcopy(previous)
-next.name = new_name
-next.max_level = max
-next.prerequisites = {previous.name, new_science_pack}
-data:extend({ next })
-data_util.add_research_unit_ingredient(next.name, new_science_pack )
+	local previous = data.raw.technology[previous]
+	local next = table.deepcopy(previous)
+	next.name = new_name
+	next.max_level = max
+	next.prerequisites = { previous.name, new_science_pack }
+	data:extend({ next })
+	data_util.add_research_unit_ingredient(next.name, new_science_pack)
 end
 
-generate_upgrade("steel-plate-productivity","steel-plate-productivity-6",kr_optimization_tech_card_name, "infinite")
+generate_upgrade("steel-plate-productivity", "steel-plate-productivity-6", kr_optimization_tech_card_name, "infinite")
 if not mods["planet_erimos_prime"] then
-   generate_upgrade("mining-productivity-3","mining-productivity-6",kr_optimization_tech_card_name, "infinite")
+	generate_upgrade("mining-productivity-3", "mining-productivity-6", kr_optimization_tech_card_name, "infinite")
 end
 
-data_util.add_research_unit_ingredient("plastic-bar-productivity", kr_optimization_tech_card_name )
-data_util.add_research_unit_ingredient("rocket-fuel-productivity", kr_optimization_tech_card_name )
-data_util.add_research_unit_ingredient("low-density-structure-productivity", kr_optimization_tech_card_name )
-data_util.add_research_unit_ingredient("scrap-recycling-productivity", kr_optimization_tech_card_name )
-data_util.add_research_unit_ingredient("processing-unit-productivity", kr_optimization_tech_card_name )
-data_util.add_research_unit_ingredient("rocket-part-productivity", kr_optimization_tech_card_name )
-data_util.add_research_unit_ingredient("health", kr_optimization_tech_card_name )
+data_util.add_research_unit_ingredient("plastic-bar-productivity", kr_optimization_tech_card_name)
+data_util.add_research_unit_ingredient("rocket-fuel-productivity", kr_optimization_tech_card_name)
+data_util.add_research_unit_ingredient("low-density-structure-productivity", kr_optimization_tech_card_name)
+data_util.add_research_unit_ingredient("scrap-recycling-productivity", kr_optimization_tech_card_name)
+data_util.add_research_unit_ingredient("processing-unit-productivity", kr_optimization_tech_card_name)
+data_util.add_research_unit_ingredient("rocket-part-productivity", kr_optimization_tech_card_name)
+data_util.add_research_unit_ingredient("health", kr_optimization_tech_card_name)
 data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
 
 data.raw.technology["artillery"].unit.count = 1000
@@ -176,12 +180,12 @@ data.raw.technology["discharge-defense-equipment"].unit.count = 300
 data.raw.technology["effect-transmission"].unit.count = 500
 data.raw.technology["fission-reactor-equipment"].unit.count = 350
 if not mods["atan-nuclear-science"] then
-  data.raw.technology["kovarex-enrichment-process"].unit.count = 500
+	data.raw.technology["kovarex-enrichment-process"].unit.count = 500
 end
 data.raw.technology["laser"].unit.count = 200
 data.raw.technology["logistic-system"].unit.count = 250
 if not mods["any-planet-start"] then
-  data.raw.technology["low-density-structure"].unit.count = 500
+	data.raw.technology["low-density-structure"].unit.count = 500
 end
 data.raw.technology["military-4"].unit.count = 350
 data.raw.technology["nuclear-fuel-reprocessing"].unit.count = 250
@@ -192,22 +196,22 @@ data.raw.technology["utility-science-pack"].unit.count = 250
 data.raw.technology["promethium-science-pack"].unit.count = 5000
 
 data_util.set_icons(
-  data.raw.technology["fission-reactor-equipment"],
-  util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/fission-reactor-equipment.png")
+	data.raw.technology["fission-reactor-equipment"],
+	util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/fission-reactor-equipment.png")
 )
 
 data_util.set_icons(
-  data.raw.technology["steel-axe"],
-  util.technology_icon_constant_mining("__Krastorio2Assets__/technologies/steel-pickaxe.png")
+	data.raw.technology["steel-axe"],
+	util.technology_icon_constant_mining("__Krastorio2Assets__/technologies/steel-pickaxe.png")
 )
 
 data_util.set_icons(
-  data.raw.technology["turbo-transport-belt"],
-  util.technology_icon_constant_mining("__Krastorio2Assets__/technologies/logistics-4.png")
+	data.raw.technology["turbo-transport-belt"],
+	util.technology_icon_constant_mining("__Krastorio2Assets__/technologies/logistics-4.png")
 )
 
 data.raw.technology["personal-laser-defense-equipment"].localised_name = {
-  "technology-name.kr-personal-laser-defense-mk1-equipment",
+	"technology-name.kr-personal-laser-defense-mk1-equipment",
 }
 
 data.raw.technology["logistic-science-pack"].localised_name = { "item-name.logistic-tech-card" }
@@ -217,25 +221,37 @@ data.raw.technology["production-science-pack"].localised_name = { "item-name.pro
 data.raw.technology["utility-science-pack"].localised_name = { "item-name.utility-tech-card" }
 data.raw.technology[kr_optimization_tech_card_name].localised_name = { "item-name.optimization-tech-card" }
 data.raw.technology[kr_optimization_tech_card_name].localised_description =
-  { "technology-description.optimization-tech-card" }
+	{ "technology-description.optimization-tech-card" }
 data.raw.technology["electromagnetic-science-pack"].localised_name = { "item-name.kr-electromagnetic-tech-card" }
-data.raw.technology["metallurgic-science-pack"].localised_name = {"item-name.kr-metallurgic-tech-card"}
-data.raw.technology["agricultural-science-pack"].localised_name = {"item-name.kr-agricultural-tech-card"}
-data.raw.technology["cryogenic-science-pack"].localised_name = {"item-name.kr-cryogenic-tech-card"}
-data.raw.technology["promethium-science-pack"].localised_name = {"item-name.kr-promethium-tech-card"}
+data.raw.technology["metallurgic-science-pack"].localised_name = { "item-name.kr-metallurgic-tech-card" }
+data.raw.technology["agricultural-science-pack"].localised_name = { "item-name.kr-agricultural-tech-card" }
+data.raw.technology["cryogenic-science-pack"].localised_name = { "item-name.kr-cryogenic-tech-card" }
+data.raw.technology["promethium-science-pack"].localised_name = { "item-name.kr-promethium-tech-card" }
 
 --Remove once aai industry updates
 data.raw.technology["kr-automation-core"].unit = nil
 data.raw.technology["kr-automation-core"].research_trigger = {
-      type = "craft-item",
-      item = "iron-gear-wheel",
-      count = 10
+	type = "craft-item",
+	item = "iron-gear-wheel",
+	count = 10,
 }
 
-table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 } )
-table.insert(data.raw["technology"]["processing-unit-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-carbide-processing-circuit", change = 0.1 } )
-table.insert(data.raw["technology"]["rocket-fuel-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-ammonia", change = 0.1 } )
-table.insert(data.raw["technology"]["rocket-fuel-productivity"].effects, { type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 } )
+table.insert(
+	data.raw["technology"]["processing-unit-productivity"].effects,
+	{ type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 }
+)
+table.insert(
+	data.raw["technology"]["processing-unit-productivity"].effects,
+	{ type = "change-recipe-productivity", recipe = "kr-carbide-processing-circuit", change = 0.1 }
+)
+table.insert(
+	data.raw["technology"]["rocket-fuel-productivity"].effects,
+	{ type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-ammonia", change = 0.1 }
+)
+table.insert(
+	data.raw["technology"]["rocket-fuel-productivity"].effects,
+	{ type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 }
+)
 
 -- stylua: ignore start
 data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png"))
@@ -262,4 +278,3 @@ data_util.set_icon(data.raw.technology["agricultural-science-pack"],  "__Krastor
 data_util.set_icon(data.raw.technology["cryogenic-science-pack"],  "__Krastorio2-spaced-out__/graphics/technologies/cryogenic-tech-card.png",256)
 data_util.set_icon(data.raw.technology["promethium-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/promethium-tech-card.png",256)
 -- stylua: ignore end
-
