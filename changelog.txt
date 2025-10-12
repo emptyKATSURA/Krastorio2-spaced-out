@@ -4,6 +4,9 @@ Date: 2025-10-09
   Balancing:
     - Increased Gleba stone patches size, won't be applied retroactively
     - Mining drill mk2 now has 75% resource drain
+  Changes:
+    - Oxygen can only be collected via atmosphere condensation on Gleba and Nauvis, use electrolysis for rest of planets
+    - Water condensation recipe has been removed
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.26
 Date: 2025-10-09
