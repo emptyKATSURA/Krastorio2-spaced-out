@@ -2,9 +2,12 @@
 Krastorio2 Spaced Out is  [Krastorio 2](https://mods.factorio.com/mod/Krastorio2) based overhaul for longer and more complex Space Age playthrough
 
 ***
+
 ## Installation
 * Download of the mod portal
 * Download from releases and put it in factorio /mods folder
+
+***
 
 ## Features
 * Fully implemented quality support for K2
