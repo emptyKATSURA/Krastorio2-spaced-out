@@ -1,0 +1,13 @@
+{
+"item": [
+  ["silicon", "kr-silicon"],
+  ["sand", "kr-sand"],
+  ["glass", "kr-glass"],
+  ["hydrogen-barrel", "kr-hydrogen-barrel"],
+  ["oxygen-barrel", "kr-oxygen-barrel"]
+],
+"fluid":[
+  ["hydrogen","kr-hydrogen"],
+  ["oxygen","kr-oxygen"]
+]
+}
