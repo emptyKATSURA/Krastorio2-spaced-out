@@ -3,6 +3,7 @@ Version: 1.4.26
 Date: 2025-10-09
   Balancing:
     - Increased Gleba stone patches size, won't be applied retroactively
+    - Mining drill mk2 now has 75% resource drain
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.26
 Date: 2025-10-09
