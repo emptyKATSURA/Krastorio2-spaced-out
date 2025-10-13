@@ -3,6 +3,7 @@ Version: 1.4.28
 Date: 2025-10-12
   Changes:
     - Greenhouses products are always 100% fresh (yumako/jellynut)
+    - Marked factorio+ as incompatible
   Bugfixes:
     - Fixed electric mining drill mk2 colission box doesn't apply with maraxsis enabled
 ---------------------------------------------------------------------------------------------------
