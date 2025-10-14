@@ -45,6 +45,8 @@ data.raw.item["coal"].fuel_acceleration_multiplier = 0.5
 data.raw.item["coal"].fuel_top_speed_multiplier = 0.6
 data.raw.item["coal"].fuel_emissions_multiplier = 2.5
 
+data.raw.item["solar-panel"].weight = 40 * kg
+
 data.raw.capsule["cliff-explosives"].weight = 5 * kg
 
 data.raw.item["uranium-235"].weight = 10 * kg
