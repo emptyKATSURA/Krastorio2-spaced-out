@@ -2,7 +2,8 @@
 Version: 1.4.29
 Date: 2025-10-??
   Changes:
-    - Solar panel rocket stack size now 25
+    - Solar panel rocket stack size is now 25 items
+    - Stone wall rocket stack size now 200 items
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.28
 Date: 2025-10-13
