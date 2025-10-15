@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.30
 Date: 2025-10-15
+  Compatibility:
+    - Fixed Vesta Hydrogen couldn't be used for anything
   Balancing:
     - Electromagnetic plants now can do electrolysis recipes
     - Matter associator no longer can use quality modules for now
