@@ -7,36 +7,36 @@ local sounds = require("__base__.prototypes.entity.sounds")
 --- @param vehicle_name data.EntityID
 --- @param new_equipment_grid_id data.EquipmentGridID
 local function convert_equipment_grid(vehicle_type, vehicle_name, new_equipment_grid_id)
-  local vehicle = data.raw[vehicle_type][vehicle_name]
-  if not vehicle then
-    data_util.error("Vehicle " .. vehicle_type .. "/" .. vehicle_name .. " does not exist.")
-    return
-  end
+	local vehicle = data.raw[vehicle_type][vehicle_name]
+	if not vehicle then
+		data_util.error("Vehicle " .. vehicle_type .. "/" .. vehicle_name .. " does not exist.")
+		return
+	end
 
-  local new_equipment_grid = data.raw["equipment-grid"][new_equipment_grid_id]
-  if not new_equipment_grid then
-    data_util.error("Equipment grid " .. new_equipment_grid_id .. " does not exist.")
-    return
-  end
+	local new_equipment_grid = data.raw["equipment-grid"][new_equipment_grid_id]
+	if not new_equipment_grid then
+		data_util.error("Equipment grid " .. new_equipment_grid_id .. " does not exist.")
+		return
+	end
 
-  local old_equipment_grid_id = vehicle.equipment_grid
-  if old_equipment_grid_id then
-    local old_equipment_grid = data.raw["equipment-grid"][old_equipment_grid_id]
-    if old_equipment_grid then
-      local equipment_categories_set = {}
-      for _, equipment_category in pairs(new_equipment_grid.equipment_categories) do
-        equipment_categories_set[equipment_category] = true
-      end
+	local old_equipment_grid_id = vehicle.equipment_grid
+	if old_equipment_grid_id then
+		local old_equipment_grid = data.raw["equipment-grid"][old_equipment_grid_id]
+		if old_equipment_grid then
+			local equipment_categories_set = {}
+			for _, equipment_category in pairs(new_equipment_grid.equipment_categories) do
+				equipment_categories_set[equipment_category] = true
+			end
 
-      for _, equipment_category in pairs(old_equipment_grid.equipment_categories) do
-        if equipment_category ~= "armor" and not equipment_categories_set[equipment_category] then
-          table.insert(new_equipment_grid.equipment_categories, equipment_category)
-        end
-      end
-    end
-  end
+			for _, equipment_category in pairs(old_equipment_grid.equipment_categories) do
+				if equipment_category ~= "armor" and not equipment_categories_set[equipment_category] then
+					table.insert(new_equipment_grid.equipment_categories, equipment_category)
+				end
+			end
+		end
+	end
 
-  data.raw[vehicle_type][vehicle_name].equipment_grid = new_equipment_grid_id
+	data.raw[vehicle_type][vehicle_name].equipment_grid = new_equipment_grid_id
 end
 
 data.raw["accumulator"]["accumulator"].energy_source.buffer_capacity = "10MJ" --5
@@ -45,16 +45,16 @@ data.raw["accumulator"]["accumulator"].energy_source.output_flow_limit = "600kW"
 
 --- @type data.MinableProperties
 local small_crash_site_minable = {
-  mining_time = 2,
-  results = {
-    { type = "item", name = "iron-plate", amount_min = 1, amount_max = 3, probability = 0.70 },
-    { type = "item", name = "copper-cable", amount_min = 0, amount_max = 3, probability = 0.55 },
-    { type = "item", name = "iron-gear-wheel", amount_min = 0, amount_max = 3, probability = 0.55 },
-    { type = "item", name = "electronic-circuit", amount_min = 0, amount_max = 3, probability = 0.20 },
-    { type = "item", name = "kr-sentinel", amount_min = 0, amount_max = 3, probability = 0.10 },
-  },
-  mining_particle = "shell-particle",
-  transfer_entity_health_to_products = false,
+	mining_time = 2,
+	results = {
+		{ type = "item", name = "iron-plate", amount_min = 1, amount_max = 3, probability = 0.70 },
+		{ type = "item", name = "copper-cable", amount_min = 0, amount_max = 3, probability = 0.55 },
+		{ type = "item", name = "iron-gear-wheel", amount_min = 0, amount_max = 3, probability = 0.55 },
+		{ type = "item", name = "electronic-circuit", amount_min = 0, amount_max = 3, probability = 0.20 },
+		{ type = "item", name = "kr-sentinel", amount_min = 0, amount_max = 3, probability = 0.10 },
+	},
+	mining_particle = "shell-particle",
+	transfer_entity_health_to_products = false,
 }
 convert_equipment_grid("artillery-wagon", "artillery-wagon", "kr-wagons-grid")
 data.raw["artillery-wagon"]["artillery-wagon"].max_health = 1000
@@ -103,89 +103,89 @@ data.raw["cargo-wagon"]["cargo-wagon"].weight = 2000
 
 data.raw["combat-robot"]["defender"].time_to_live = 60 * 120
 data.raw["combat-robot"]["defender"].attack_parameters = {
-  type = "projectile",
-  cooldown = 20,
-  projectile_center = { 0, 1 },
-  projectile_creation_distance = 0.6,
-  range = 20,
-  sound = sounds.light_gunshot,
-  ammo_category = "bullet",
-  ammo_type = {
-    action = {
-      type = "direct",
-      action_delivery = {
-        type = "instant",
-        source_effects = {
-          type = "create-explosion",
-          entity_name = "explosion-gunshot-small",
-        },
-        target_effects = {
-          {
-            type = "create-entity",
-            entity_name = "explosion-hit",
-          },
-          {
-            type = "damage",
-            damage = { amount = 8, type = "physical" },
-          },
-        },
-      },
-    },
-  },
+	type = "projectile",
+	cooldown = 20,
+	projectile_center = { 0, 1 },
+	projectile_creation_distance = 0.6,
+	range = 20,
+	sound = sounds.light_gunshot,
+	ammo_category = "bullet",
+	ammo_type = {
+		action = {
+			type = "direct",
+			action_delivery = {
+				type = "instant",
+				source_effects = {
+					type = "create-explosion",
+					entity_name = "explosion-gunshot-small",
+				},
+				target_effects = {
+					{
+						type = "create-entity",
+						entity_name = "explosion-hit",
+					},
+					{
+						type = "damage",
+						damage = { amount = 8, type = "physical" },
+					},
+				},
+			},
+		},
+	},
 }
 
 data.raw["combat-robot"]["destroyer"].time_to_live = 60 * 180
 data.raw["combat-robot"]["destroyer"].attack_parameters = {
-  type = "beam",
-  ammo_category = "laser",
-  cooldown = 20,
-  damage_modifier = 2,
-  range = 25,
-  ammo_type = {
-    category = "laser",
-    action = {
-      type = "direct",
-      action_delivery = {
-        type = "beam",
-        beam = "electric-beam",
-        max_length = 25,
-        duration = 20,
-        source_offset = { 0.15, -0.5 },
-      },
-    },
-  },
+	type = "beam",
+	ammo_category = "laser",
+	cooldown = 20,
+	damage_modifier = 2,
+	range = 25,
+	ammo_type = {
+		category = "laser",
+		action = {
+			type = "direct",
+			action_delivery = {
+				type = "beam",
+				beam = "electric-beam",
+				max_length = 25,
+				duration = 20,
+				source_offset = { 0.15, -0.5 },
+			},
+		},
+	},
 }
 
 data.raw["combat-robot"]["distractor"].time_to_live = 60 * 120
 data.raw["combat-robot"]["distractor"].attack_parameters = {
-  type = "beam",
-  ammo_category = "laser",
-  cooldown = 20,
-  damage_modifier = 2,
-  projectile_center = { 0, 0 },
-  projectile_creation_distance = 0.6,
-  range = 20,
-  sound = make_laser_sounds(),
-  ammo_type = {
-    category = "laser",
-    action = {
-      type = "direct",
-      action_delivery = {
-        type = "beam",
-        beam = "laser-beam",
-        max_length = 20,
-        duration = 20,
-        --starting_speed = 0.3
-      },
-    },
-  },
+	type = "beam",
+	ammo_category = "laser",
+	cooldown = 20,
+	damage_modifier = 2,
+	projectile_center = { 0, 0 },
+	projectile_creation_distance = 0.6,
+	range = 20,
+	sound = make_laser_sounds(),
+	ammo_type = {
+		category = "laser",
+		action = {
+			type = "direct",
+			action_delivery = {
+				type = "beam",
+				beam = "laser-beam",
+				max_length = 20,
+				duration = 20,
+				--starting_speed = 0.3
+			},
+		},
+	},
 }
 
 if not mods["boblogistics"] then
-  data.raw["construction-robot"]["construction-robot"].speed = 0.09257
-  data.raw["construction-robot"]["construction-robot"].max_energy = "3MJ"
-  data.raw["construction-robot"]["construction-robot"].max_health = 50
-  data.raw["construction-robot"]["construction-robot"].max_payload_size = 2
+	data.raw["construction-robot"]["construction-robot"].speed = 0.09257
+	data.raw["construction-robot"]["construction-robot"].max_energy = "3MJ"
+	data.raw["construction-robot"]["construction-robot"].max_health = 50
+	data.raw["construction-robot"]["construction-robot"].max_payload_size = 2
 end
 
 data.raw.container["crash-site-chest-1"].minable = small_crash_site_minable
@@ -194,41 +194,41 @@ data.raw.container["crash-site-spaceship-wreck-medium-1"].minable = small_crash_
 data.raw.container["crash-site-spaceship-wreck-medium-2"].minable = small_crash_site_minable
 data.raw.container["crash-site-spaceship-wreck-medium-3"].minable = small_crash_site_minable
 data.raw.container["crash-site-spaceship"].minable = {
-  mining_time = 10,
-  results = {
-    { type = "item", name = "iron-plate", amount_min = 75, amount_max = 200 },
-    { type = "item", name = "copper-cable", amount_min = 75, amount_max = 200 },
-    { type = "item", name = "kr-sentinel", amount_min = 1, amount_max = 3 },
-  },
-  mining_particle = "shell-particle",
+	mining_time = 10,
+	results = {
+		{ type = "item", name = "iron-plate", amount_min = 75, amount_max = 200 },
+		{ type = "item", name = "copper-cable", amount_min = 75, amount_max = 200 },
+		{ type = "item", name = "kr-sentinel", amount_min = 1, amount_max = 3 },
+	},
+	mining_particle = "shell-particle",
 }
 
 data.raw.corpse["spidertron-remnants"].animation = make_rotated_animation_variations_from_sheet(1, {
-  layers = {
-    {
-      filename = "__Krastorio2Assets__/remnants/spidertron-remnants.png",
-      line_length = 1,
-      width = 448,
-      height = 448,
-      frame_count = 1,
-      variation_count = 1,
-      axially_symmetrical = false,
-      direction_count = 1,
-      shift = util.by_pixel(0, 0),
-      scale = 0.5,
-    },
-    {
-      priority = "low",
-      filename = "__base__/graphics/entity/spidertron/remnants/mask/spidertron-remnants-mask.png",
-      width = 366,
-      height = 350,
-      frame_count = 1,
-      apply_runtime_tint = true,
-      direction_count = 1,
-      shift = util.by_pixel(9, 1),
-      scale = 0.5,
-    },
-  },
+	layers = {
+		{
+			filename = "__Krastorio2Assets__/remnants/spidertron-remnants.png",
+			line_length = 1,
+			width = 448,
+			height = 448,
+			frame_count = 1,
+			variation_count = 1,
+			axially_symmetrical = false,
+			direction_count = 1,
+			shift = util.by_pixel(0, 0),
+			scale = 0.5,
+		},
+		{
+			priority = "low",
+			filename = "__base__/graphics/entity/spidertron/remnants/mask/spidertron-remnants-mask.png",
+			width = 366,
+			height = 350,
+			frame_count = 1,
+			apply_runtime_tint = true,
+			direction_count = 1,
+			shift = util.by_pixel(9, 1),
+			scale = 0.5,
+		},
+	},
 })
 
 data.raw["electric-pole"]["big-electric-pole"].maximum_wire_distance = 32.25
@@ -254,13 +254,13 @@ data_util.add_fuel_category(data.raw.furnace["steel-furnace"].energy_source, "kr
 data_util.add_fuel_category(data.raw.furnace["stone-furnace"].energy_source, "kr-vehicle-fuel")
 
 data.raw.gate["gate"].resistances = {
-  { type = "physical", decrease = 3, percent = 20 },
-  { type = "impact", decrease = 45, percent = 60 },
-  { type = "explosion", decrease = 50, percent = 80 },
-  { type = "kr-radioactive", percent = 100 },
-  { type = "fire", percent = 100 },
-  { type = "acid", percent = 80 },
-  { type = "laser", percent = 70 },
+	{ type = "physical", decrease = 3, percent = 20 },
+	{ type = "impact", decrease = 45, percent = 60 },
+	{ type = "explosion", decrease = 50, percent = 80 },
+	{ type = "kr-radioactive", percent = 100 },
+	{ type = "fire", percent = 100 },
+	{ type = "acid", percent = 80 },
+	{ type = "laser", percent = 70 },
 }
 
 data.raw["generator"]["steam-engine"].effectivity = 1
@@ -290,7 +290,7 @@ table.insert(data.raw.lab["lab"].inputs, "kr-matter-tech-card")
 table.insert(data.raw.lab["lab"].inputs, "kr-advanced-tech-card")
 table.insert(data.raw.lab["lab"].inputs, "kr-singularity-tech-card")
 if mods["rubia"] then
-table.insert(data.raw.lab["lab"].inputs, "rubia-biofusion-science-pack")
+	table.insert(data.raw.lab["lab"].inputs, "rubia-biofusion-science-pack")
 end
 
 data.raw.lamp["small-lamp"].glow_size = 8 --6
@@ -307,10 +307,10 @@ data.raw.locomotive["locomotive"].max_power = "2MW"
 data.raw.locomotive["locomotive"].energy_source.effectivity = 1
 
 if not mods["boblogistics"] then
-  data.raw["logistic-robot"]["logistic-robot"].speed = 0.0694
-  data.raw["logistic-robot"]["logistic-robot"].max_energy = "3MJ"
-  data.raw["logistic-robot"]["logistic-robot"].max_health = 50
-  data.raw["logistic-robot"]["logistic-robot"].max_payload_size = 7
+	data.raw["logistic-robot"]["logistic-robot"].speed = 0.0694
+	data.raw["logistic-robot"]["logistic-robot"].max_energy = "3MJ"
+	data.raw["logistic-robot"]["logistic-robot"].max_health = 50
+	data.raw["logistic-robot"]["logistic-robot"].max_payload_size = 7
 end
 
 convert_equipment_grid("locomotive", "locomotive", "kr-locomotive-grid")
@@ -320,8 +320,8 @@ data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "100kW"
 data_util.add_fuel_category(data.raw["mining-drill"]["burner-mining-drill"].energy_source, "kr-vehicle-fuel")
 
 data_util.set_icon(
-  data.raw["mining-drill"]["electric-mining-drill"],
-  "__Krastorio2Assets__/icons/entities/electric-mining-drill.png"
+	data.raw["mining-drill"]["electric-mining-drill"],
+	"__Krastorio2Assets__/icons/entities/electric-mining-drill.png"
 )
 data.raw["mining-drill"]["electric-mining-drill"].fast_replaceable_group = "electric-mining-drill"
 data.raw["mining-drill"]["electric-mining-drill"].next_upgrade = "kr-electric-mining-drill-mk2"
@@ -348,35 +348,35 @@ data.raw.reactor["nuclear-reactor"].max_health = 1000
 data.raw.reactor["nuclear-reactor"].minable = { hardness = 1, mining_time = 1, result = "nuclear-reactor" }
 data.raw.reactor["nuclear-reactor"].neighbour_bonus = 0.25
 data.raw.reactor["nuclear-reactor"].meltdown_action.action_delivery.target_effects = {
-  {
-    type = "create-trivial-smoke",
-    smoke_name = "nuclear-smoke",
-    repeat_count = 200,
-    offset_deviation = { { -1, -1 }, { 1, 1 } },
-    starting_frame = 3,
-    starting_frame_deviation = 5,
-    starting_frame_speed = 0,
-    starting_frame_speed_deviation = 5,
-    speed_from_center = 0.5,
-  },
-  { type = "create-entity", entity_name = "big-explosion" },
-  { type = "damage", damage = { amount = 500, type = "explosion" } },
-  { type = "create-entity", entity_name = "small-scorchmark", check_buildability = true },
-  {
-    type = "nested-result",
-    action = {
-      type = "area",
-      target_entities = false,
-      trigger_from_target = true,
-      repeat_count = 3000,
-      radius = 128,
-      action_delivery = {
-        type = "projectile",
-        projectile = "atomic-bomb-wave",
-        starting_speed = 0.35,
-      },
-    },
-  },
+	{
+		type = "create-trivial-smoke",
+		smoke_name = "nuclear-smoke",
+		repeat_count = 200,
+		offset_deviation = { { -1, -1 }, { 1, 1 } },
+		starting_frame = 3,
+		starting_frame_deviation = 5,
+		starting_frame_speed = 0,
+		starting_frame_speed_deviation = 5,
+		speed_from_center = 0.5,
+	},
+	{ type = "create-entity", entity_name = "big-explosion" },
+	{ type = "damage", damage = { amount = 500, type = "explosion" } },
+	{ type = "create-entity", entity_name = "small-scorchmark", check_buildability = true },
+	{
+		type = "nested-result",
+		action = {
+			type = "area",
+			target_entities = false,
+			trigger_from_target = true,
+			repeat_count = 3000,
+			radius = 128,
+			action_delivery = {
+				type = "projectile",
+				projectile = "atomic-bomb-wave",
+				starting_speed = 0.35,
+			},
+		},
+	},
 }
 
 data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.pipe_connections[2].max_underground_distance = 20
@@ -414,14 +414,14 @@ data.raw["solar-panel"]["solar-panel"].production = "100kW"
 
 convert_equipment_grid("spider-vehicle", "spidertron", "kr-spidertron-equipment-grid")
 data.raw["spider-vehicle"]["spidertron"].energy_source = {
-  type = "burner",
-  emissions_per_minute = { pollution = 0 },
-  effectivity = 1,
-  render_no_power_icon = true,
-  render_no_network_icon = false,
-  fuel_inventory_size = 1,
-  burnt_inventory_size = 1,
-  fuel_categories = { "kr-fusion-fuel" },
+	type = "burner",
+	emissions_per_minute = { pollution = 0 },
+	effectivity = 1,
+	render_no_power_icon = true,
+	render_no_network_icon = false,
+	fuel_inventory_size = 1,
+	burnt_inventory_size = 1,
+	fuel_categories = { "kr-fusion-fuel" },
 }
 data.raw["spider-vehicle"]["spidertron"].movement_energy_consumption = "3MW"
 
@@ -435,14 +435,14 @@ data.raw["generator"]["steam-turbine"].maximum_temperature = 415
 data.raw["generator"]["steam-turbine"].max_power_output = "10MW"
 
 data.raw.wall["stone-wall"].resistances = {
-  { type = "physical", decrease = 3, percent = 20 },
-  { type = "impact", decrease = 45, percent = 60 },
-  { type = "explosion", decrease = 50, percent = 80 },
-  { type = "kr-explosion", percent = 100 },
-  { type = "kr-radioactive", percent = 100 },
-  { type = "fire", percent = 100 },
-  { type = "acid", percent = 80 },
-  { type = "laser", percent = 70 },
+	{ type = "physical", decrease = 3, percent = 20 },
+	{ type = "impact", decrease = 45, percent = 60 },
+	{ type = "explosion", decrease = 50, percent = 80 },
+	{ type = "kr-explosion", percent = 100 },
+	{ type = "kr-radioactive", percent = 100 },
+	{ type = "fire", percent = 100 },
+	{ type = "acid", percent = 80 },
+	{ type = "laser", percent = 70 },
 }
 
 data.raw["transport-belt"]["turbo-transport-belt"].next_upgrade = "kr-superior-transport-belt"
@@ -470,32 +470,33 @@ data.raw["unit"]["medium-spitter"].max_health = 75
 
 data.raw["unit"]["behemoth-spitter"].absorptions_to_join_attack.pollution = 500
 
-table.insert( data.raw ["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery" )
-table.insert( data.raw ["assembling-machine"]["crusher"].crafting_categories, "kr-crushing" )
-data.raw ["assembling-machine"]["crusher"].surface_conditions = nil
+table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "kr-electrolysis")
+table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery")
+table.insert(data.raw["assembling-machine"]["crusher"].crafting_categories, "kr-crushing")
+data.raw["assembling-machine"]["crusher"].surface_conditions = nil
 
 data.raw["tree"]["ashland-lichen-tree"].minable = {
-  mining_time = 0.5,
-  results = {
-  { type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
-  { type = "item", name = "wood", amount_min = 4, amount_max = 4 },
-  },
+	mining_time = 0.5,
+	results = {
+		{ type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
+		{ type = "item", name = "wood", amount_min = 4, amount_max = 4 },
+	},
 }
 data.raw["tree"]["ashland-lichen-tree-flaming"].minable = {
-  mining_time = 0.5,
-  results = {
-  { type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
-  { type = "item", name = "wood", amount_min = 4, amount_max = 4 },
-  },
+	mining_time = 0.5,
+	results = {
+		{ type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
+		{ type = "item", name = "wood", amount_min = 4, amount_max = 4 },
+	},
 }
 
 data.raw["simple-entity"]["lithium-iceberg-big"].minable.results = {
-  { type = "item", name = "ice-platform", amount = 1 },
-  { type = "item", name = "ice", amount_min = 3, amount_max = 7 },
-  { type = "item", name = "kr-lithium", amount_min = 1, amount_max = 3 },
+	{ type = "item", name = "ice-platform", amount = 1 },
+	{ type = "item", name = "ice", amount_min = 3, amount_max = 7 },
+	{ type = "item", name = "kr-lithium", amount_min = 1, amount_max = 3 },
 }
 data.raw["simple-entity"]["lithium-iceberg-huge"].minable.results = {
-  { type = "item", name = "ice-platform", amount_min = 2, amount_max = 4 },
-  { type = "item", name = "ice", amount_min = 6, amount_max = 1 },
-  { type = "item", name = "kr-lithium", amount_min = 2, amount_max = 5 },
+	{ type = "item", name = "ice-platform", amount_min = 2, amount_max = 4 },
+	{ type = "item", name = "ice", amount_min = 6, amount_max = 1 },
+	{ type = "item", name = "kr-lithium", amount_min = 2, amount_max = 5 },
 }
