@@ -3,6 +3,8 @@ Version: 1.4.30
 Date: 2025-10-15
   Balancing:
     - Electromagnetic plants now can do electrolysis recipes
+    - Matter associator no longer can use quality modules for now
+    - Crushing imersite crystal now yields 2-3 imersite powder, instead of 3 to prevent positive infinite loops
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.29
 Date: 2025-10-14
