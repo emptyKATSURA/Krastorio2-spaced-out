@@ -41,6 +41,9 @@ for _, item in pairs(data.raw.item) do
 	if convert[item.name] then
 		item.hidden = true
 		item.hidden_in_factoriopedia = true
+		if data.raw.recipe[item.name .. "-recycling"] then
+			data.raw.recipe[item.name .. "-recycling"] = nil
+		end
 	end
 end
 
