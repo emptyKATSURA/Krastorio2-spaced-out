@@ -9,7 +9,7 @@ data.raw["lab"]["biolab"].inputs = data.raw["lab"]["lab"].inputs
 data.raw["lab"]["kr-advanced-lab"].inputs = data.raw["lab"]["lab"].inputs
 data.raw["lab"]["kr-singularity-lab"].inputs = data.raw["lab"]["lab"].inputs
 
-local recycling = require("scripts.recycling")
+local recycling = require("__quality__.prototypes.recycling")
 
 -- Generating the recycle (reverse) recipes
 for name, recipe in pairs(data.raw.recipe) do
@@ -38,8 +38,6 @@ for type_name in pairs(defines.prototypes.item) do
 		end
 	end
 end
-
-data.raw.quality.normal.hidden = false
 
 --The code below had been made by Johannes2070
 --Fix: Ensure the recycler has enough result inventory slots to handle all recycling outputs.
