@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.32
+Date: 2025-10-16
+  Changes:
+    - Unified mineral and oil pumpjack to avoid conversio
+    - Pumpjack now has rocket stack size of 20
+---------------------------------------------------------------------------------------------------
 Version: 1.4.31
 Date: 2025-10-16
   Bugfixes:

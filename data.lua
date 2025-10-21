@@ -12,7 +12,6 @@ require("prototypes.sounds")
 require("prototypes.tips-and-tricks")
 require("prototypes.virtual-signals")
 
-
 require("prototypes.buildings.active-provider-strongbox")
 require("prototypes.buildings.active-provider-warehouse")
 require("prototypes.buildings.advanced-assembling-machine")
@@ -55,7 +54,6 @@ require("prototypes.buildings.loader")
 require("prototypes.buildings.logo")
 require("prototypes.buildings.matter-associator")
 require("prototypes.buildings.matter-plant")
-require("prototypes.buildings.mineral-water-pumpjack")
 require("prototypes.buildings.passive-provider-strongbox")
 require("prototypes.buildings.passive-provider-warehouse")
 require("prototypes.buildings.planetary-teleporter")
@@ -194,7 +192,6 @@ require("prototypes.remnants.antimatter-reactor-remnants")
 require("prototypes.remnants.fusion-reactor-remnants")
 require("prototypes.remnants.kr-big-random-pipes-remnants")
 require("prototypes.remnants.kr-medium-random-pipes-remnants")
-require("prototypes.remnants.kr-mineral-water-pumpjack-remnants")
 require("prototypes.remnants.matter-plant-remnants")
 require("prototypes.remnants.advanced-transport-belt-remnants")
 require("prototypes.remnants.advanced-underground-belt-remnants")
@@ -240,14 +237,15 @@ require("prototypes.compatibility.squeak-through-2")
 -- The code below has been made by Quezler Thanks
 -- global table shared between all mods for compat
 names_ignored_by_steel_pipes = util.list_to_map({
-  "pipe",
+	"pipe",
 })
 
-data.raw["pipe-to-ground"]["kr-steel-pipe-to-ground"].fluid_box.pipe_connections[1].connection_category = "kr-steel-pipe"
+data.raw["pipe-to-ground"]["kr-steel-pipe-to-ground"].fluid_box.pipe_connections[1].connection_category =
+	"kr-steel-pipe"
 
 for _, pipe_connection in ipairs(data.raw["pipe-to-ground"]["kr-steel-pipe-to-ground"].fluid_box.pipe_connections) do
-  if (pipe_connection.connection_type or "normal") == "normal" then
-    assert(pipe_connection.connection_category == "kr-steel-pipe")
-    pipe_connection.connection_category = {"default", "kr-steel-pipe"}
-  end
+	if (pipe_connection.connection_type or "normal") == "normal" then
+		assert(pipe_connection.connection_category == "kr-steel-pipe")
+		pipe_connection.connection_category = { "default", "kr-steel-pipe" }
+	end
 end

@@ -14,7 +14,7 @@ data:extend({
 				{ "chemical-science-pack", 1 },
 			},
 		},
-		prerequisites = { "kr-atmosphere-condensation", "kr-mineral-water-gathering" },
+		prerequisites = { "kr-atmosphere-condensation" },
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-water" },
 			{ type = "unlock-recipe", recipe = "kr-water-separation" },

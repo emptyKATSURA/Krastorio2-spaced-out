@@ -47,6 +47,7 @@ data.raw.item["coal"].fuel_emissions_multiplier = 2.5
 
 data.raw.item["solar-panel"].weight = 40 * kg
 data.raw.item["stone-wall"].weight = 5 * kg
+data.raw.item["pumpjack"].weight = 50 * kg
 
 data.raw.capsule["cliff-explosives"].weight = 5 * kg
 
@@ -109,8 +110,6 @@ data.raw.item["railgun-turret"].order = "a00[railgun-turret]"
 
 data.raw.item["night-vision-equipment"].subgroup = "kr-character-equipment"
 data.raw.item["night-vision-equipment"].order = "f[night-vision]-a1[night-vision-equipment]"
-
-data.raw.item["pumpjack"].localised_name = { "entity-name.kr-oil-pumpjack" }
 
 data.raw.item["nuclear-reactor"].stack_size = 1
 
@@ -181,7 +180,6 @@ data_util.set_icon(data.raw.item["electronic-circuit"], "__Krastorio2Assets__/ic
 data_util.set_icon(data.raw.item["iron-gear-wheel"], "__Krastorio2Assets__/icons/items/iron-gear-wheel.png")
 data_util.set_icon(data.raw.item["iron-plate"], "__Krastorio2Assets__/icons/items/iron-plate.png")
 data_util.set_icon(data.raw.item["processing-unit"], "__Krastorio2Assets__/icons/items/processing-unit.png")
-data_util.set_icon(data.raw.item["pumpjack"], "__Krastorio2Assets__/icons/entities/oil-pumpjack.png")
 data_util.set_icon(data.raw.item["steel-plate"], "__Krastorio2Assets__/icons/items/steel-plate.png")
 -- stylua: ignore end
 
