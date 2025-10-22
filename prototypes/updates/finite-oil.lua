@@ -34,9 +34,6 @@ if settings.startup["kr-finite-oil"].value then
 		regular_rq_factor_multiplier = 1,
 	})
 else
-	data.raw["mining-drill"]["kr-mineral-water-pumpjack"].energy_usage = "100kW"
-	data.raw["mining-drill"]["kr-mineral-water-pumpjack"].mining_speed = 2
-
 	data.raw.resource["kr-mineral-water"].infinite = true
 	data.raw.resource["kr-mineral-water"].minimum = 60000
 	data.raw.resource["kr-mineral-water"].normal = 300000
